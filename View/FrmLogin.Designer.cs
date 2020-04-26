@@ -33,7 +33,6 @@
             this.PnlMover2 = new System.Windows.Forms.Panel();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.txPassManager = new System.Windows.Forms.Label();
-            this.txbLogin = new System.Windows.Forms.TextBox();
             this.txbPass = new System.Windows.Forms.TextBox();
             this.LinLogin = new System.Windows.Forms.Panel();
             this.LinPass = new System.Windows.Forms.Panel();
@@ -42,6 +41,7 @@
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.BtnClose = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txbLogin1 = new System.Windows.Forms.TextBox();
             this.PnlLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnClose)).BeginInit();
@@ -92,29 +92,20 @@
             this.txPassManager.TabIndex = 2;
             this.txPassManager.Text = "PassManager";
             // 
-            // txbLogin
-            // 
-            this.txbLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(117)))), ((int)(((byte)(227)))));
-            this.txbLogin.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbLogin.Font = new System.Drawing.Font("Bahnschrift Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txbLogin.Location = new System.Drawing.Point(294, 131);
-            this.txbLogin.Name = "txbLogin";
-            this.txbLogin.Size = new System.Drawing.Size(195, 26);
-            this.txbLogin.TabIndex = 3;
-            this.txbLogin.Text = "Login";
-            // 
             // txbPass
             // 
             this.txbPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(117)))), ((int)(((byte)(227)))));
             this.txbPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbPass.Font = new System.Drawing.Font("Bahnschrift Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbPass.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.txbPass.Location = new System.Drawing.Point(294, 170);
             this.txbPass.Name = "txbPass";
             this.txbPass.Size = new System.Drawing.Size(195, 26);
-            this.txbPass.TabIndex = 4;
+            this.txbPass.TabIndex = 2;
             this.txbPass.Text = "Senha";
+
+            this.txbPass.MouseEnter += new System.EventHandler(this.txbPass_MouseEnter);
+            this.txbPass.MouseLeave += new System.EventHandler(this.txbPass_MouseLeave);
             // 
             // LinLogin
             // 
@@ -145,7 +136,7 @@
             this.BtnEntrar.Location = new System.Drawing.Point(354, 213);
             this.BtnEntrar.Name = "BtnEntrar";
             this.BtnEntrar.Size = new System.Drawing.Size(75, 23);
-            this.BtnEntrar.TabIndex = 7;
+            this.BtnEntrar.TabIndex = 0;
             this.BtnEntrar.Text = "Login";
             this.BtnEntrar.UseVisualStyleBackColor = true;
             this.BtnEntrar.Click += new System.EventHandler(this.BtnEntrar_Click);
@@ -188,6 +179,21 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // txbLogin1
+            // 
+            this.txbLogin1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(117)))), ((int)(((byte)(227)))));
+            this.txbLogin1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbLogin1.Font = new System.Drawing.Font("Bahnschrift Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbLogin1.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.txbLogin1.Location = new System.Drawing.Point(294, 132);
+            this.txbLogin1.Name = "txbLogin1";
+            this.txbLogin1.Size = new System.Drawing.Size(195, 26);
+            this.txbLogin1.TabIndex = 1;
+            this.txbLogin1.Text = "Login";
+            this.txbLogin1.TextChanged += new System.EventHandler(this.txbLogin1_TextChanged);
+            this.txbLogin1.MouseEnter += new System.EventHandler(this.txbLogin1_MouseEnter);
+            this.txbLogin1.MouseLeave += new System.EventHandler(this.txbLogin1_MouseLeave);
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -195,23 +201,24 @@
             this.BackColor = System.Drawing.Color.RoyalBlue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(573, 336);
+            this.Controls.Add(this.txbLogin1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.PnlMover);
             this.Controls.Add(this.BtnClose);
             this.Controls.Add(this.BtnEntrar);
             this.Controls.Add(this.LinPass);
             this.Controls.Add(this.LinLogin);
-            this.Controls.Add(this.txbPass);
-            this.Controls.Add(this.txbLogin);
             this.Controls.Add(this.txPassManager);
             this.Controls.Add(this.PnlLeft);
+            this.Controls.Add(this.txbPass);
             this.DoubleBuffered = true;
+            this.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmLogin";
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.FrmLogin_Load);
+            this.Text = "WKS";
             this.PnlLeft.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnClose)).EndInit();
@@ -226,7 +233,6 @@
         private System.Windows.Forms.Panel PnlLeft;
         private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.Label txPassManager;
-        private System.Windows.Forms.TextBox txbLogin;
         private System.Windows.Forms.TextBox txbPass;
         private System.Windows.Forms.Panel LinLogin;
         private System.Windows.Forms.Panel LinPass;
@@ -236,6 +242,7 @@
         private System.Windows.Forms.FontDialog fontDialog1;
         private System.Windows.Forms.PictureBox BtnClose;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txbLogin1;
     }
 }
 

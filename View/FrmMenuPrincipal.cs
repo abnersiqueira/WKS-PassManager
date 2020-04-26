@@ -21,5 +21,10 @@ namespace PassManager
         {
 
         }
+
+        private void txPassManager_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

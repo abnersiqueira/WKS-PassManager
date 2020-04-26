@@ -32,11 +32,6 @@ namespace PassManager
             return retval;
         }
 
-        private void FrmLogin_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void BtnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -65,9 +60,55 @@ namespace PassManager
             menu.Show();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void txbLogin1_MouseEnter(object sender, EventArgs e)
         {
 
+            if (txbLogin1.Text == "Login")
+            {
+                txbLogin1.Text = "";
+                txbLogin1.ForeColor = Color.DarkSlateGray;
+            }
         }
+
+        private void txbPass_MouseLeave(object sender, EventArgs e)
+        {
+            if (txbPass.Text == "")
+            {
+                txbPass.Text = "Senha";
+                txbPass.ForeColor = Color.DarkSlateGray;
+                txbPass.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void txbLogin1_MouseLeave(object sender, EventArgs e)
+        {
+            if (txbLogin1.Text == "")
+            {
+                txbLogin1.Text = "Login";
+                txbLogin1.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void txbPass_MouseEnter(object sender, EventArgs e)
+        {
+            if (txbPass.Text == "Senha")
+            {
+                txbPass.Text = "";
+                txbPass.ForeColor = Color.DarkSlateGray;
+                txbPass.UseSystemPasswordChar = true;
+
+            }
+        }
+        private void txbLogin1_TextChanged(object sender, EventArgs e)
+        {
+            if (txbLogin1.Text != "Login")
+            {
+                if (txbPass.Text != "Senha")
+                {
+                    txbPass.UseSystemPasswordChar = true;
+                }
+            }
+        }
+
     }
 }
