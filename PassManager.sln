@@ -5,13 +5,6 @@ VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassManager", "PassManager.csproj", "{FD2F9D7E-FB41-40CD-8F90-5F22CC266560}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aparences", "Aparences", "{7BA08DAE-573B-444F-9058-C66CB3A2951C}"
-	ProjectSection(SolutionItems) = preProject
-		FrmLogin.cs = FrmLogin.cs
-		FrmLogin.Designer.cs = FrmLogin.Designer.cs
-		FrmLogin.resx = FrmLogin.resx
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

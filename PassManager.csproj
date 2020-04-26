@@ -46,24 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Aparences\FrmLogin.cs">
+    <Compile Include="View\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Aparences\FrmLogin.Designer.cs">
+    <Compile Include="View\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Aparences\FrmMenuPrincipal.cs">
+    <Compile Include="View\FrmMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Aparences\FrmMenuPrincipal.Designer.cs">
+    <Compile Include="View\FrmMenuPrincipal.Designer.cs">
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Aparences\FrmLogin.resx">
+    <EmbeddedResource Include="View\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Aparences\FrmMenuPrincipal.resx">
+    <EmbeddedResource Include="View\FrmMenuPrincipal.resx">
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

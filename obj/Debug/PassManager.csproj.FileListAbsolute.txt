@@ -9,3 +9,14 @@ C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\PassManager\obj\Debug\
 C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\PassManager\obj\Debug\PassManager.exe
 C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\PassManager\obj\Debug\PassManager.pdb
 C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\PassManager\obj\Debug\PassManager.FrmMenuPrincipal.resources
+C:\Users\AbnerNB\Desktop\PROJETOS\WKS-PassManager\bin\Debug\PassManager.exe.config
+C:\Users\AbnerNB\Desktop\PROJETOS\WKS-PassManager\bin\Debug\PassManager.exe
+C:\Users\AbnerNB\Desktop\PROJETOS\WKS-PassManager\bin\Debug\PassManager.pdb
+C:\Users\AbnerNB\Desktop\PROJETOS\WKS-PassManager\obj\Debug\PassManager.csprojAssemblyReference.cache
+C:\Users\AbnerNB\Desktop\PROJETOS\WKS-PassManager\obj\Debug\PassManager.FrmLogin.resources
+C:\Users\AbnerNB\Desktop\PROJETOS\WKS-PassManager\obj\Debug\PassManager.FrmMenuPrincipal.resources
+C:\Users\AbnerNB\Desktop\PROJETOS\WKS-PassManager\obj\Debug\PassManager.Properties.Resources.resources
+C:\Users\AbnerNB\Desktop\PROJETOS\WKS-PassManager\obj\Debug\PassManager.csproj.GenerateResource.cache
+C:\Users\AbnerNB\Desktop\PROJETOS\WKS-PassManager\obj\Debug\PassManager.csproj.CoreCompileInputs.cache
+C:\Users\AbnerNB\Desktop\PROJETOS\WKS-PassManager\obj\Debug\PassManager.exe
+C:\Users\AbnerNB\Desktop\PROJETOS\WKS-PassManager\obj\Debug\PassManager.pdb
