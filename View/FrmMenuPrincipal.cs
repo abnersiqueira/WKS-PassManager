@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace PassManager
 {
@@ -17,14 +18,27 @@ namespace PassManager
             InitializeComponent();
         }
 
-        private void FrmMenuPrincipal_Load(object sender, EventArgs e)
-        {
+        //Inicializa componente para mover barras da janela
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleasCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
 
+
+        private void pnLMoveSup_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleasCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void txPassManager_Click(object sender, EventArgs e)
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
 
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

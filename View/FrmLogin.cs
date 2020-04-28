@@ -32,40 +32,38 @@ namespace PassManager
             return retval;
         }
 
-        private void BtnClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-           this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void PnlMover_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleasCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void PnlMover2_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleasCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void BtnEntrar_Click(object sender, EventArgs e)
+        private void BtnEntrar_Click_1(object sender, EventArgs e)
         {
             FrmMenuPrincipal menu = new FrmMenuPrincipal();
             menu.Show();
         }
 
-        private void txbLogin1_MouseEnter(object sender, EventArgs e)
+        private void BtnClose_Click_1(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
 
+        private void BtnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+
+        private void txbLogin1_MouseEnter_1(object sender, EventArgs e)
+        {
             if (txbLogin1.Text == "Login")
             {
                 txbLogin1.Text = "";
+                txbLogin1.ForeColor = Color.DarkSlateGray;
+            }
+        }
+
+        private void txbLogin1_MouseLeave_1(object sender, EventArgs e)
+        {
+            if (txbLogin1.Text == "")
+            {
+                txbLogin1.Text = "Login";
                 txbLogin1.ForeColor = Color.DarkSlateGray;
             }
         }
@@ -80,16 +78,7 @@ namespace PassManager
             }
         }
 
-        private void txbLogin1_MouseLeave(object sender, EventArgs e)
-        {
-            if (txbLogin1.Text == "")
-            {
-                txbLogin1.Text = "Login";
-                txbLogin1.ForeColor = Color.DarkSlateGray;
-            }
-        }
-
-        private void txbPass_MouseEnter(object sender, EventArgs e)
+        private void txbPass_MouseEnter_1(object sender, EventArgs e)
         {
             if (txbPass.Text == "Senha")
             {
@@ -99,16 +88,17 @@ namespace PassManager
 
             }
         }
-        private void txbLogin1_TextChanged(object sender, EventArgs e)
+
+        private void PnlMover_MouseDown(object sender, MouseEventArgs e)
         {
-            if (txbLogin1.Text != "Login")
-            {
-                if (txbPass.Text != "Senha")
-                {
-                    txbPass.UseSystemPasswordChar = true;
-                }
-            }
+            ReleasCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
+        private void PnLLogo_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleasCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
     }
 }
