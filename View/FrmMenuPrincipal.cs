@@ -40,5 +40,15 @@ namespace PassManager
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void BtnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+        }
+
+        private void BtnSairMenu_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

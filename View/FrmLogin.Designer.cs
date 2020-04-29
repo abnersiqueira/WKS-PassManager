@@ -31,18 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txbLogin1 = new System.Windows.Forms.TextBox();
             this.PnlMover = new System.Windows.Forms.Panel();
             this.BtnMinimize = new System.Windows.Forms.PictureBox();
             this.BtnClose = new System.Windows.Forms.PictureBox();
+            this.txbLogin1 = new System.Windows.Forms.TextBox();
             this.BtnEntrar = new System.Windows.Forms.Button();
             this.LinPass = new System.Windows.Forms.Panel();
             this.LinLogin = new System.Windows.Forms.Panel();
             this.txPassManager = new System.Windows.Forms.Label();
-            this.PnlLeft = new System.Windows.Forms.Panel();
-            this.picLogo = new System.Windows.Forms.PictureBox();
             this.txbPass = new System.Windows.Forms.TextBox();
+            this.PnlLeft = new System.Windows.Forms.Panel();
             this.PnLLogo = new System.Windows.Forms.Panel();
+            this.picLogo = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.PnlMover.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimize)).BeginInit();
@@ -68,20 +68,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(573, 336);
             this.panel1.TabIndex = 0;
-            // 
-            // txbLogin1
-            // 
-            this.txbLogin1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(117)))), ((int)(((byte)(227)))));
-            this.txbLogin1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbLogin1.Font = new System.Drawing.Font("Bahnschrift Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbLogin1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.txbLogin1.Location = new System.Drawing.Point(314, 132);
-            this.txbLogin1.Name = "txbLogin1";
-            this.txbLogin1.Size = new System.Drawing.Size(195, 26);
-            this.txbLogin1.TabIndex = 12;
-            this.txbLogin1.Text = "Login";
-            this.txbLogin1.MouseEnter += new System.EventHandler(this.txbLogin1_MouseEnter_1);
-            this.txbLogin1.MouseLeave += new System.EventHandler(this.txbLogin1_MouseLeave_1);
             // 
             // PnlMover
             // 
@@ -123,6 +109,20 @@
             this.BtnClose.TabIndex = 8;
             this.BtnClose.TabStop = false;
             this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click_1);
+            // 
+            // txbLogin1
+            // 
+            this.txbLogin1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(117)))), ((int)(((byte)(227)))));
+            this.txbLogin1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbLogin1.Font = new System.Drawing.Font("Bahnschrift Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbLogin1.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.txbLogin1.Location = new System.Drawing.Point(314, 132);
+            this.txbLogin1.Name = "txbLogin1";
+            this.txbLogin1.Size = new System.Drawing.Size(195, 26);
+            this.txbLogin1.TabIndex = 12;
+            this.txbLogin1.Text = "Login";
+            this.txbLogin1.MouseEnter += new System.EventHandler(this.txbLogin1_MouseEnter_1);
+            this.txbLogin1.MouseLeave += new System.EventHandler(this.txbLogin1_MouseLeave_1);
             // 
             // BtnEntrar
             // 
@@ -170,28 +170,6 @@
             this.txPassManager.TabIndex = 14;
             this.txPassManager.Text = "PassManager";
             // 
-            // PnlLeft
-            // 
-            this.PnlLeft.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PnlLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PnlLeft.Controls.Add(this.PnLLogo);
-            this.PnlLeft.Controls.Add(this.picLogo);
-            this.PnlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlLeft.Location = new System.Drawing.Point(0, 0);
-            this.PnlLeft.Name = "PnlLeft";
-            this.PnlLeft.Size = new System.Drawing.Size(200, 336);
-            this.PnlLeft.TabIndex = 13;
-            // 
-            // picLogo
-            // 
-            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
-            this.picLogo.Location = new System.Drawing.Point(12, 109);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(172, 105);
-            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picLogo.TabIndex = 0;
-            this.picLogo.TabStop = false;
-            // 
             // txbPass
             // 
             this.txbPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(117)))), ((int)(((byte)(227)))));
@@ -206,6 +184,18 @@
             this.txbPass.MouseEnter += new System.EventHandler(this.txbPass_MouseEnter_1);
             this.txbPass.MouseLeave += new System.EventHandler(this.txbPass_MouseLeave);
             // 
+            // PnlLeft
+            // 
+            this.PnlLeft.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.PnlLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PnlLeft.Controls.Add(this.PnLLogo);
+            this.PnlLeft.Controls.Add(this.picLogo);
+            this.PnlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PnlLeft.Location = new System.Drawing.Point(0, 0);
+            this.PnlLeft.Name = "PnlLeft";
+            this.PnlLeft.Size = new System.Drawing.Size(200, 336);
+            this.PnlLeft.TabIndex = 13;
+            // 
             // PnLLogo
             // 
             this.PnLLogo.Dock = System.Windows.Forms.DockStyle.Top;
@@ -214,6 +204,16 @@
             this.PnLLogo.Size = new System.Drawing.Size(200, 32);
             this.PnLLogo.TabIndex = 1;
             this.PnLLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PnLLogo_MouseDown);
+            // 
+            // picLogo
+            // 
+            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
+            this.picLogo.Location = new System.Drawing.Point(12, 109);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(172, 105);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogo.TabIndex = 0;
+            this.picLogo.TabStop = false;
             // 
             // FrmLogin
             // 
