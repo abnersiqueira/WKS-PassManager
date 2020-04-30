@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using PassManager.Model;
 
 namespace PassManager
 {
     public partial class FrmLogin : Form
     {
+
         public FrmLogin()
         {
             InitializeComponent();
@@ -35,8 +37,21 @@ namespace PassManager
 
         private void BtnEntrar_Click_1(object sender, EventArgs e)
         {
-            FrmMenuPrincipal menu = new FrmMenuPrincipal();
-            menu.Show();
+
+            Controle controle = new Controle();
+            controle.acessar(txbLogin1.Text, txbPass.Text);
+
+            if (controle.tem)
+            {
+                MessageBox.Show("Logon com sucesso", "LOGON", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                FrmMenuPrincipal menu = new FrmMenuPrincipal();
+                menu.Show();
+            }
+            else
+            {
+                MessageBox.Show("Login não cadastrado", "Erro ao se conectar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
         private void BtnClose_Click_1(object sender, EventArgs e)

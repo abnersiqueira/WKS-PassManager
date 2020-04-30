@@ -11,12 +11,11 @@ namespace PassManager.Model
     {
         public bool tem;
         public String mensagem = "";
-        public bool Acessar(String login, String senha)
-
+        public bool acessar(String login, String senha)
         {
             LoginDaoComandos loginDao = new LoginDaoComandos();
             tem = loginDao.verificarlogin(login, senha);
-
+            
             if(!loginDao.mensagem.Equals(""))
             {
                 this.mensagem = loginDao.mensagem;
@@ -24,7 +23,7 @@ namespace PassManager.Model
             return tem;
         }
 
-        public String Cadastrar(String login, String senha)
+        public String cadastrar(String login, String senha)
         {
             return mensagem;
         }

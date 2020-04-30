@@ -13,24 +13,24 @@ namespace PassManager.DAL
 
         public Conexao()
         {
-            con.ConnectionString = @"";
+             con.ConnectionString = "Server=tcp:wks.database.windows.net,1433;Initial Catalog=Passmanager;Persist Security Info=False;User ID=wksadmin;Password=$Rv#passmanager;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         }
 
-        public SqlConnection Conectar()
+        public SqlConnection conectar()
         {
             if(con.State == System.Data.ConnectionState.Closed)
             {
                 con.Open();
-
             }
+            return con;
         }
-
-        public SqlConnection Desconectar()
+        public SqlConnection desconectar()
         {
             if(con.State == System.Data.ConnectionState.Open)
             {
                 con.Close();
             }
+            return con;
         }
     }
 }

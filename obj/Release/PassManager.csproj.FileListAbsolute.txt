@@ -1,0 +1,11 @@
+C:\Users\AbnerNB\Desktop\PROJETOS\WKS-PassManager\obj\Release\PassManager.FrmLogin.resources
+C:\Users\AbnerNB\Desktop\PROJETOS\WKS-PassManager\obj\Release\PassManager.FrmMenuPrincipal.resources
+C:\Users\AbnerNB\Desktop\PROJETOS\WKS-PassManager\obj\Release\PassManager.Properties.Resources.resources
+C:\Users\AbnerNB\Desktop\PROJETOS\WKS-PassManager\obj\Release\PassManager.csproj.GenerateResource.cache
+C:\Users\AbnerNB\Desktop\PROJETOS\WKS-PassManager\obj\Release\PassManager.csproj.CoreCompileInputs.cache
+C:\Users\AbnerNB\Desktop\PROJETOS\WKS-PassManager\obj\Release\PassManager.csprojAssemblyReference.cache
+C:\Users\AbnerNB\Desktop\PROJETOS\WKS-PassManager\bin\Release\PassManager.exe.config
+C:\Users\AbnerNB\Desktop\PROJETOS\WKS-PassManager\bin\Release\PassManager.exe
+C:\Users\AbnerNB\Desktop\PROJETOS\WKS-PassManager\bin\Release\PassManager.pdb
+C:\Users\AbnerNB\Desktop\PROJETOS\WKS-PassManager\obj\Release\PassManager.exe
+C:\Users\AbnerNB\Desktop\PROJETOS\WKS-PassManager\obj\Release\PassManager.pdb
