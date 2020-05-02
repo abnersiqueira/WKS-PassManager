@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using PassManager.View;
 
 namespace PassManager
 {
     public partial class FrmMenuPrincipal : Form
     {
+
         public FrmMenuPrincipal()
         {
             InitializeComponent();
@@ -50,5 +52,7 @@ namespace PassManager
         {
             Application.Exit();
         }
+
+
     }
 }

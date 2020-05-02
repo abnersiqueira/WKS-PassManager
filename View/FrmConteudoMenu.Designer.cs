@@ -1,6 +1,6 @@
-﻿namespace PassManager
+﻿namespace PassManager.View
 {
-    partial class FrmMenuPrincipal
+    partial class FrmConteudoMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,28 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenuPrincipal));
-            this.pnLLeft = new System.Windows.Forms.Panel();
-            this.BtnChamados = new System.Windows.Forms.Button();
-            this.BtnAvulsos = new System.Windows.Forms.Button();
-            this.BtnConfigSistema = new System.Windows.Forms.Button();
-            this.BtnNoIP = new System.Windows.Forms.Button();
-            this.BtnRel = new System.Windows.Forms.Button();
-            this.BtnControlServidores = new System.Windows.Forms.Button();
-            this.BtnGuiaClientes = new System.Windows.Forms.Button();
-            this.BtnGuiaEstruturado = new System.Windows.Forms.Button();
-            this.BtnSairMenu = new System.Windows.Forms.Button();
-            this.BtnChat = new System.Windows.Forms.Button();
-            this.pnLLogo = new System.Windows.Forms.Panel();
-            this.PicLogo = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConteudoMenu));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pnLMoveSup = new System.Windows.Forms.Panel();
-            this.BtnMinimize = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.pnLLojas3 = new System.Windows.Forms.Panel();
             this.button22 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -82,367 +63,29 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.LabelAtivo = new System.Windows.Forms.Label();
-            this.txPassManager = new System.Windows.Forms.Label();
-            this.LabelSupContrato = new System.Windows.Forms.Label();
-            this.pnLLeft.SuspendLayout();
-            this.pnLLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PicLogo)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.pnLMoveSup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnMinimize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.pnLConteudoMenu = new System.Windows.Forms.Panel();
             this.pnLLojas3.SuspendLayout();
             this.pnLLojas2.SuspendLayout();
             this.pnLLojas1.SuspendLayout();
             this.pnLLojas0.SuspendLayout();
+            this.pnLConteudoMenu.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pnLLeft
-            // 
-            this.pnLLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.pnLLeft.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnLLeft.BackgroundImage")));
-            this.pnLLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pnLLeft.Controls.Add(this.BtnChamados);
-            this.pnLLeft.Controls.Add(this.BtnAvulsos);
-            this.pnLLeft.Controls.Add(this.BtnConfigSistema);
-            this.pnLLeft.Controls.Add(this.BtnNoIP);
-            this.pnLLeft.Controls.Add(this.BtnRel);
-            this.pnLLeft.Controls.Add(this.BtnControlServidores);
-            this.pnLLeft.Controls.Add(this.BtnGuiaClientes);
-            this.pnLLeft.Controls.Add(this.BtnGuiaEstruturado);
-            this.pnLLeft.Controls.Add(this.BtnSairMenu);
-            this.pnLLeft.Controls.Add(this.BtnChat);
-            this.pnLLeft.Controls.Add(this.pnLLogo);
-            this.pnLLeft.Location = new System.Drawing.Point(0, -2);
-            this.pnLLeft.Name = "pnLLeft";
-            this.pnLLeft.Size = new System.Drawing.Size(205, 1080);
-            this.pnLLeft.TabIndex = 79;
-            // 
-            // BtnChamados
-            // 
-            this.BtnChamados.BackColor = System.Drawing.Color.Transparent;
-            this.BtnChamados.FlatAppearance.BorderSize = 0;
-            this.BtnChamados.FlatAppearance.CheckedBackColor = System.Drawing.Color.Magenta;
-            this.BtnChamados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumBlue;
-            this.BtnChamados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
-            this.BtnChamados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnChamados.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnChamados.ForeColor = System.Drawing.Color.White;
-            this.BtnChamados.Location = new System.Drawing.Point(0, 140);
-            this.BtnChamados.Name = "BtnChamados";
-            this.BtnChamados.Size = new System.Drawing.Size(203, 35);
-            this.BtnChamados.TabIndex = 93;
-            this.BtnChamados.Text = "Chamados";
-            this.BtnChamados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnChamados.UseVisualStyleBackColor = false;
-            // 
-            // BtnAvulsos
-            // 
-            this.BtnAvulsos.BackColor = System.Drawing.Color.Transparent;
-            this.BtnAvulsos.FlatAppearance.BorderSize = 0;
-            this.BtnAvulsos.FlatAppearance.CheckedBackColor = System.Drawing.Color.Magenta;
-            this.BtnAvulsos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumBlue;
-            this.BtnAvulsos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
-            this.BtnAvulsos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAvulsos.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAvulsos.ForeColor = System.Drawing.Color.White;
-            this.BtnAvulsos.Location = new System.Drawing.Point(0, 175);
-            this.BtnAvulsos.Name = "BtnAvulsos";
-            this.BtnAvulsos.Size = new System.Drawing.Size(203, 35);
-            this.BtnAvulsos.TabIndex = 92;
-            this.BtnAvulsos.Text = "Clientes Avulsos";
-            this.BtnAvulsos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAvulsos.UseVisualStyleBackColor = false;
-            // 
-            // BtnConfigSistema
-            // 
-            this.BtnConfigSistema.BackColor = System.Drawing.Color.Transparent;
-            this.BtnConfigSistema.FlatAppearance.BorderSize = 0;
-            this.BtnConfigSistema.FlatAppearance.CheckedBackColor = System.Drawing.Color.Magenta;
-            this.BtnConfigSistema.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumBlue;
-            this.BtnConfigSistema.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
-            this.BtnConfigSistema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnConfigSistema.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnConfigSistema.ForeColor = System.Drawing.Color.White;
-            this.BtnConfigSistema.Location = new System.Drawing.Point(0, 385);
-            this.BtnConfigSistema.Name = "BtnConfigSistema";
-            this.BtnConfigSistema.Size = new System.Drawing.Size(203, 35);
-            this.BtnConfigSistema.TabIndex = 86;
-            this.BtnConfigSistema.Text = "Config. do Sistema";
-            this.BtnConfigSistema.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnConfigSistema.UseVisualStyleBackColor = false;
-            // 
-            // BtnNoIP
-            // 
-            this.BtnNoIP.BackColor = System.Drawing.Color.Transparent;
-            this.BtnNoIP.FlatAppearance.BorderSize = 0;
-            this.BtnNoIP.FlatAppearance.CheckedBackColor = System.Drawing.Color.Magenta;
-            this.BtnNoIP.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumBlue;
-            this.BtnNoIP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
-            this.BtnNoIP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNoIP.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnNoIP.ForeColor = System.Drawing.Color.White;
-            this.BtnNoIP.Location = new System.Drawing.Point(0, 210);
-            this.BtnNoIP.Name = "BtnNoIP";
-            this.BtnNoIP.Size = new System.Drawing.Size(203, 35);
-            this.BtnNoIP.TabIndex = 91;
-            this.BtnNoIP.Text = "No-Ip";
-            this.BtnNoIP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnNoIP.UseVisualStyleBackColor = false;
-            // 
-            // BtnRel
-            // 
-            this.BtnRel.BackColor = System.Drawing.Color.Transparent;
-            this.BtnRel.FlatAppearance.BorderSize = 0;
-            this.BtnRel.FlatAppearance.CheckedBackColor = System.Drawing.Color.Magenta;
-            this.BtnRel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumBlue;
-            this.BtnRel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
-            this.BtnRel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnRel.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnRel.ForeColor = System.Drawing.Color.White;
-            this.BtnRel.Location = new System.Drawing.Point(0, 350);
-            this.BtnRel.Name = "BtnRel";
-            this.BtnRel.Size = new System.Drawing.Size(203, 35);
-            this.BtnRel.TabIndex = 87;
-            this.BtnRel.Text = "Relatórios";
-            this.BtnRel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnRel.UseVisualStyleBackColor = false;
-            // 
-            // BtnControlServidores
-            // 
-            this.BtnControlServidores.BackColor = System.Drawing.Color.Transparent;
-            this.BtnControlServidores.FlatAppearance.BorderSize = 0;
-            this.BtnControlServidores.FlatAppearance.CheckedBackColor = System.Drawing.Color.Magenta;
-            this.BtnControlServidores.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumBlue;
-            this.BtnControlServidores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
-            this.BtnControlServidores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnControlServidores.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnControlServidores.ForeColor = System.Drawing.Color.White;
-            this.BtnControlServidores.Location = new System.Drawing.Point(0, 245);
-            this.BtnControlServidores.Name = "BtnControlServidores";
-            this.BtnControlServidores.Size = new System.Drawing.Size(203, 35);
-            this.BtnControlServidores.TabIndex = 90;
-            this.BtnControlServidores.Text = "Controle de Servidores";
-            this.BtnControlServidores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnControlServidores.UseVisualStyleBackColor = false;
-            // 
-            // BtnGuiaClientes
-            // 
-            this.BtnGuiaClientes.BackColor = System.Drawing.Color.Transparent;
-            this.BtnGuiaClientes.FlatAppearance.BorderSize = 0;
-            this.BtnGuiaClientes.FlatAppearance.CheckedBackColor = System.Drawing.Color.Magenta;
-            this.BtnGuiaClientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumBlue;
-            this.BtnGuiaClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
-            this.BtnGuiaClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGuiaClientes.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnGuiaClientes.ForeColor = System.Drawing.Color.White;
-            this.BtnGuiaClientes.Location = new System.Drawing.Point(0, 315);
-            this.BtnGuiaClientes.Name = "BtnGuiaClientes";
-            this.BtnGuiaClientes.Size = new System.Drawing.Size(203, 35);
-            this.BtnGuiaClientes.TabIndex = 88;
-            this.BtnGuiaClientes.Text = "Guia de Clientes";
-            this.BtnGuiaClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnGuiaClientes.UseVisualStyleBackColor = false;
-            // 
-            // BtnGuiaEstruturado
-            // 
-            this.BtnGuiaEstruturado.BackColor = System.Drawing.Color.Transparent;
-            this.BtnGuiaEstruturado.FlatAppearance.BorderSize = 0;
-            this.BtnGuiaEstruturado.FlatAppearance.CheckedBackColor = System.Drawing.Color.Magenta;
-            this.BtnGuiaEstruturado.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumBlue;
-            this.BtnGuiaEstruturado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
-            this.BtnGuiaEstruturado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGuiaEstruturado.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnGuiaEstruturado.ForeColor = System.Drawing.Color.White;
-            this.BtnGuiaEstruturado.Location = new System.Drawing.Point(0, 280);
-            this.BtnGuiaEstruturado.Name = "BtnGuiaEstruturado";
-            this.BtnGuiaEstruturado.Size = new System.Drawing.Size(203, 35);
-            this.BtnGuiaEstruturado.TabIndex = 89;
-            this.BtnGuiaEstruturado.Text = "Guia Estruturado";
-            this.BtnGuiaEstruturado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnGuiaEstruturado.UseVisualStyleBackColor = false;
-            // 
-            // BtnSairMenu
-            // 
-            this.BtnSairMenu.BackColor = System.Drawing.Color.Gray;
-            this.BtnSairMenu.FlatAppearance.BorderSize = 0;
-            this.BtnSairMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
-            this.BtnSairMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSairMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSairMenu.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.BtnSairMenu.Location = new System.Drawing.Point(14, 626);
-            this.BtnSairMenu.Name = "BtnSairMenu";
-            this.BtnSairMenu.Size = new System.Drawing.Size(176, 35);
-            this.BtnSairMenu.TabIndex = 0;
-            this.BtnSairMenu.Text = "Sair";
-            this.BtnSairMenu.UseVisualStyleBackColor = false;
-            this.BtnSairMenu.Click += new System.EventHandler(this.BtnSairMenu_Click);
-            // 
-            // BtnChat
-            // 
-            this.BtnChat.BackColor = System.Drawing.Color.Transparent;
-            this.BtnChat.FlatAppearance.BorderSize = 0;
-            this.BtnChat.FlatAppearance.CheckedBackColor = System.Drawing.Color.Magenta;
-            this.BtnChat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumBlue;
-            this.BtnChat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
-            this.BtnChat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnChat.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnChat.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.BtnChat.Image = ((System.Drawing.Image)(resources.GetObject("BtnChat.Image")));
-            this.BtnChat.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.BtnChat.Location = new System.Drawing.Point(0, 426);
-            this.BtnChat.Name = "BtnChat";
-            this.BtnChat.Size = new System.Drawing.Size(203, 35);
-            this.BtnChat.TabIndex = 94;
-            this.BtnChat.Text = "Chat Online";
-            this.BtnChat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnChat.UseVisualStyleBackColor = false;
-            // 
-            // pnLLogo
-            // 
-            this.pnLLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.pnLLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pnLLogo.Controls.Add(this.PicLogo);
-            this.pnLLogo.Controls.Add(this.panel2);
-            this.pnLLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnLLogo.Location = new System.Drawing.Point(0, 0);
-            this.pnLLogo.Name = "pnLLogo";
-            this.pnLLogo.Size = new System.Drawing.Size(205, 134);
-            this.pnLLogo.TabIndex = 95;
-            // 
-            // PicLogo
-            // 
-            this.PicLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.PicLogo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PicLogo.Image = ((System.Drawing.Image)(resources.GetObject("PicLogo.Image")));
-            this.PicLogo.Location = new System.Drawing.Point(1, 22);
-            this.PicLogo.Name = "PicLogo";
-            this.PicLogo.Size = new System.Drawing.Size(204, 126);
-            this.PicLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PicLogo.TabIndex = 83;
-            this.PicLogo.TabStop = false;
             // 
             // panel2
             // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel2.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.pictureBox5);
-            this.panel2.Controls.Add(this.pictureBox6);
-            this.panel2.Enabled = false;
-            this.panel2.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.panel2.Location = new System.Drawing.Point(204, 135);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(4, 1080);
-            this.panel2.TabIndex = 85;
+            this.panel2.Size = new System.Drawing.Size(1264, 65);
+            this.panel2.TabIndex = 1;
             // 
-            // pictureBox5
+            // panel3
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(88, -11);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(22, 23);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 11;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(108, -11);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(22, 23);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 10;
-            this.pictureBox6.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(228)))), ((int)(((byte)(230)))));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.pnLMoveSup);
-            this.panel1.Controls.Add(this.pnLLojas3);
-            this.panel1.Controls.Add(this.pnLLojas2);
-            this.panel1.Controls.Add(this.pnLLojas1);
-            this.panel1.Controls.Add(this.pnLLojas0);
-            this.panel1.Controls.Add(this.LabelAtivo);
-            this.panel1.Controls.Add(this.txPassManager);
-            this.panel1.Controls.Add(this.LabelSupContrato);
-            this.panel1.Controls.Add(this.pnLLeft);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1280, 720);
-            this.panel1.TabIndex = 0;
-            // 
-            // pnLMoveSup
-            // 
-            this.pnLMoveSup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(228)))), ((int)(((byte)(230)))));
-            this.pnLMoveSup.Controls.Add(this.BtnMinimize);
-            this.pnLMoveSup.Controls.Add(this.pictureBox4);
-            this.pnLMoveSup.Controls.Add(this.pictureBox3);
-            this.pnLMoveSup.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnLMoveSup.Location = new System.Drawing.Point(0, 0);
-            this.pnLMoveSup.Name = "pnLMoveSup";
-            this.pnLMoveSup.Size = new System.Drawing.Size(1280, 21);
-            this.pnLMoveSup.TabIndex = 85;
-            this.pnLMoveSup.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnLMoveSup_MouseDown);
-            // 
-            // BtnMinimize
-            // 
-            this.BtnMinimize.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.BtnMinimize.BackColor = System.Drawing.Color.Transparent;
-            this.BtnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.BtnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("BtnMinimize.Image")));
-            this.BtnMinimize.Location = new System.Drawing.Point(1237, -2);
-            this.BtnMinimize.Name = "BtnMinimize";
-            this.BtnMinimize.Size = new System.Drawing.Size(22, 23);
-            this.BtnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BtnMinimize.TabIndex = 82;
-            this.BtnMinimize.TabStop = false;
-            this.BtnMinimize.Click += new System.EventHandler(this.BtnMinimize_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(1256, -2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(22, 23);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 80;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1217, -2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(22, 23);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 81;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 565);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1264, 116);
+            this.panel3.TabIndex = 2;
             // 
             // pnLLojas3
             // 
@@ -454,10 +97,11 @@
             this.pnLLojas3.Controls.Add(this.button23);
             this.pnLLojas3.Controls.Add(this.button20);
             this.pnLLojas3.Controls.Add(this.button21);
-            this.pnLLojas3.Location = new System.Drawing.Point(209, 404);
+            this.pnLLojas3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnLLojas3.Location = new System.Drawing.Point(0, 273);
             this.pnLLojas3.Name = "pnLLojas3";
-            this.pnLLojas3.Size = new System.Drawing.Size(1068, 91);
-            this.pnLLojas3.TabIndex = 108;
+            this.pnLLojas3.Size = new System.Drawing.Size(1264, 91);
+            this.pnLLojas3.TabIndex = 112;
             // 
             // button22
             // 
@@ -617,10 +261,11 @@
             this.pnLLojas2.Controls.Add(this.button1);
             this.pnLLojas2.Controls.Add(this.button17);
             this.pnLLojas2.Controls.Add(this.button16);
-            this.pnLLojas2.Location = new System.Drawing.Point(209, 313);
+            this.pnLLojas2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnLLojas2.Location = new System.Drawing.Point(0, 91);
             this.pnLLojas2.Name = "pnLLojas2";
-            this.pnLLojas2.Size = new System.Drawing.Size(1068, 91);
-            this.pnLLojas2.TabIndex = 107;
+            this.pnLLojas2.Size = new System.Drawing.Size(1264, 91);
+            this.pnLLojas2.TabIndex = 111;
             // 
             // button13
             // 
@@ -779,10 +424,11 @@
             this.pnLLojas1.Controls.Add(this.button49);
             this.pnLLojas1.Controls.Add(this.button37);
             this.pnLLojas1.Controls.Add(this.button11);
-            this.pnLLojas1.Location = new System.Drawing.Point(209, 222);
+            this.pnLLojas1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnLLojas1.Location = new System.Drawing.Point(0, 0);
             this.pnLLojas1.Name = "pnLLojas1";
-            this.pnLLojas1.Size = new System.Drawing.Size(1068, 91);
-            this.pnLLojas1.TabIndex = 78;
+            this.pnLLojas1.Size = new System.Drawing.Size(1264, 91);
+            this.pnLLojas1.TabIndex = 110;
             // 
             // button36
             // 
@@ -941,10 +587,11 @@
             this.pnLLojas0.Controls.Add(this.button9);
             this.pnLLojas0.Controls.Add(this.button6);
             this.pnLLojas0.Controls.Add(this.button7);
-            this.pnLLojas0.Location = new System.Drawing.Point(209, 133);
+            this.pnLLojas0.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnLLojas0.Location = new System.Drawing.Point(0, 182);
             this.pnLLojas0.Name = "pnLLojas0";
-            this.pnLLojas0.Size = new System.Drawing.Size(1068, 91);
-            this.pnLLojas0.TabIndex = 77;
+            this.pnLLojas0.Size = new System.Drawing.Size(1264, 91);
+            this.pnLLojas0.TabIndex = 109;
             // 
             // btnCCPS
             // 
@@ -1093,71 +740,28 @@
             this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button7.UseVisualStyleBackColor = false;
             // 
-            // LabelAtivo
+            // pnLConteudoMenu
             // 
-            this.LabelAtivo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LabelAtivo.AutoSize = true;
-            this.LabelAtivo.BackColor = System.Drawing.Color.Transparent;
-            this.LabelAtivo.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelAtivo.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.LabelAtivo.Location = new System.Drawing.Point(755, 78);
-            this.LabelAtivo.Name = "LabelAtivo";
-            this.LabelAtivo.Size = new System.Drawing.Size(64, 30);
-            this.LabelAtivo.TabIndex = 86;
-            this.LabelAtivo.Text = "Ativo";
+            this.pnLConteudoMenu.Controls.Add(this.pnLLojas3);
+            this.pnLConteudoMenu.Controls.Add(this.pnLLojas0);
+            this.pnLConteudoMenu.Controls.Add(this.pnLLojas2);
+            this.pnLConteudoMenu.Controls.Add(this.pnLLojas1);
+            this.pnLConteudoMenu.Location = new System.Drawing.Point(0, 71);
+            this.pnLConteudoMenu.Name = "pnLConteudoMenu";
+            this.pnLConteudoMenu.Size = new System.Drawing.Size(1264, 483);
+            this.pnLConteudoMenu.TabIndex = 3;
             // 
-            // txPassManager
-            // 
-            this.txPassManager.AutoSize = true;
-            this.txPassManager.BackColor = System.Drawing.Color.Transparent;
-            this.txPassManager.Font = new System.Drawing.Font("Bahnschrift SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txPassManager.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.txPassManager.Location = new System.Drawing.Point(211, 24);
-            this.txPassManager.Name = "txPassManager";
-            this.txPassManager.Size = new System.Drawing.Size(158, 29);
-            this.txPassManager.TabIndex = 78;
-            this.txPassManager.Text = "PassManager";
-            // 
-            // LabelSupContrato
-            // 
-            this.LabelSupContrato.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LabelSupContrato.AutoSize = true;
-            this.LabelSupContrato.BackColor = System.Drawing.Color.Transparent;
-            this.LabelSupContrato.Font = new System.Drawing.Font("Haettenschweiler", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelSupContrato.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.LabelSupContrato.Location = new System.Drawing.Point(541, 67);
-            this.LabelSupContrato.Name = "LabelSupContrato";
-            this.LabelSupContrato.Size = new System.Drawing.Size(228, 40);
-            this.LabelSupContrato.TabIndex = 82;
-            this.LabelSupContrato.Text = "Clientes Contrato: ";
-            // 
-            // FrmMenuPrincipal
+            // FrmConteudoMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1280, 720);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.pnLConteudoMenu);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FrmMenuPrincipal";
-            this.Text = "Menu";
-            this.pnLLeft.ResumeLayout(false);
-            this.pnLLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PicLogo)).EndInit();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.pnLMoveSup.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.BtnMinimize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.Name = "FrmConteudoMenu";
+            this.Text = "FrmConteudoMenu";
             this.pnLLojas3.ResumeLayout(false);
             this.pnLLojas3.PerformLayout();
             this.pnLLojas2.ResumeLayout(false);
@@ -1166,29 +770,14 @@
             this.pnLLojas1.PerformLayout();
             this.pnLLojas0.ResumeLayout(false);
             this.pnLLojas0.PerformLayout();
+            this.pnLConteudoMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel pnLLeft;
-        private System.Windows.Forms.Button BtnChamados;
-        private System.Windows.Forms.Button BtnAvulsos;
-        private System.Windows.Forms.Button BtnConfigSistema;
-        private System.Windows.Forms.Button BtnNoIP;
-        private System.Windows.Forms.Button BtnRel;
-        private System.Windows.Forms.Button BtnControlServidores;
-        private System.Windows.Forms.Button BtnGuiaClientes;
-        private System.Windows.Forms.Button BtnGuiaEstruturado;
-        private System.Windows.Forms.Button BtnSairMenu;
-        private System.Windows.Forms.Button BtnChat;
-        private System.Windows.Forms.Panel pnLLogo;
-        private System.Windows.Forms.PictureBox PicLogo;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel pnLLojas3;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button10;
@@ -1221,12 +810,6 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Label LabelAtivo;
-        private System.Windows.Forms.Label txPassManager;
-        private System.Windows.Forms.Label LabelSupContrato;
-        private System.Windows.Forms.Panel pnLMoveSup;
-        private System.Windows.Forms.PictureBox BtnMinimize;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel pnLConteudoMenu;
     }
 }
