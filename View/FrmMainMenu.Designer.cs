@@ -40,6 +40,8 @@
             this.pnLConteudoMenu = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.BtnGuiaEstruturado = new System.Windows.Forms.Button();
             this.BtnRel = new System.Windows.Forms.Button();
             this.BtnConfigSistema = new System.Windows.Forms.Button();
@@ -51,15 +53,15 @@
             this.BtnMaximize = new System.Windows.Forms.PictureBox();
             this.BtnMinimize = new System.Windows.Forms.PictureBox();
             this.PnLMainMenu = new System.Windows.Forms.Panel();
-            this.PainelCentral = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PainelCentral = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.pnLLeft.SuspendLayout();
             this.pnLLogo.SuspendLayout();
@@ -73,10 +75,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.BtnMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimize)).BeginInit();
             this.PnLMainMenu.SuspendLayout();
-            this.PainelCentral.SuspendLayout();
-            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.PainelCentral.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -107,7 +109,6 @@
             this.pnLLeft.Name = "pnLLeft";
             this.pnLLeft.Size = new System.Drawing.Size(200, 681);
             this.pnLLeft.TabIndex = 0;
-            this.pnLLeft.Paint += new System.Windows.Forms.PaintEventHandler(this.pnLLeft_Paint);
             // 
             // BtnLojas
             // 
@@ -196,6 +197,7 @@
             this.pnLLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pnLLogo.Controls.Add(this.picLogo);
             this.pnLLogo.Controls.Add(this.pnLConteudoMenu);
+            this.pnLLogo.Controls.Add(this.shapeContainer1);
             this.pnLLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnLLogo.Location = new System.Drawing.Point(0, 0);
             this.pnLLogo.Name = "pnLLogo";
@@ -252,6 +254,27 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 10;
             this.pictureBox6.TabStop = false;
+            // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape1});
+            this.shapeContainer1.Size = new System.Drawing.Size(200, 120);
+            this.shapeContainer1.TabIndex = 87;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // lineShape1
+            // 
+            this.lineShape1.BorderWidth = 2;
+            this.lineShape1.Enabled = false;
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.X1 = 198;
+            this.lineShape1.X2 = 198;
+            this.lineShape1.Y1 = -4;
+            this.lineShape1.Y2 = 656;
             // 
             // BtnGuiaEstruturado
             // 
@@ -437,6 +460,28 @@
             this.PnLMainMenu.Size = new System.Drawing.Size(1064, 84);
             this.PnLMainMenu.TabIndex = 2;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(512, 17);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(149, 47);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(346, 17);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(149, 47);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // PainelCentral
             // 
             this.PainelCentral.BackColor = System.Drawing.Color.SlateGray;
@@ -447,15 +492,6 @@
             this.PainelCentral.Name = "PainelCentral";
             this.PainelCentral.Size = new System.Drawing.Size(1064, 567);
             this.PainelCentral.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.GhostWhite;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1064, 92);
-            this.panel2.TabIndex = 5;
             // 
             // panel5
             // 
@@ -470,25 +506,21 @@
             this.panel5.Size = new System.Drawing.Size(1064, 475);
             this.panel5.TabIndex = 8;
             // 
-            // pictureBox2
+            // label4
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(617, 17);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(149, 47);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(187, 17);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(149, 47);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Enabled = false;
+            this.label4.Font = new System.Drawing.Font("Nirmala UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label4.Location = new System.Drawing.Point(276, 224);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(301, 40);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "suporte@wksti.com.br";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
@@ -538,21 +570,14 @@
             this.label1.Text = "(15) 3211-0048 | 3031-1901";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // panel2
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Enabled = false;
-            this.label4.Font = new System.Drawing.Font("Nirmala UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label4.Location = new System.Drawing.Point(276, 224);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(301, 40);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "suporte@wksti.com.br";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel2.BackColor = System.Drawing.Color.GhostWhite;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1064, 92);
+            this.panel2.TabIndex = 5;
             // 
             // FrmMainMenu
             // 
@@ -580,11 +605,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.BtnMaximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimize)).EndInit();
             this.PnLMainMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.PainelCentral.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -622,5 +647,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
+        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
     }
 }

@@ -57,11 +57,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PassManagerDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="View\FrmConteudoMenu.cs">
+    <Compile Include="View\FrmPainelLojas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FrmConteudoMenu.Designer.cs">
-      <DependentUpon>FrmConteudoMenu.cs</DependentUpon>
+    <Compile Include="View\FrmPainelLojas.Designer.cs">
+      <DependentUpon>FrmPainelLojas.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FrmLogin.cs">
       <SubType>Form</SubType>
@@ -69,31 +69,31 @@
     <Compile Include="View\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FrmLOJAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmLOJAS.Designer.cs">
+      <DependentUpon>FrmLOJAS.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FrmMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\FrmMainMenu.Designer.cs">
       <DependentUpon>FrmMainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\DisableFrmMenuPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\DisableFrmMenuPrincipal.Designer.cs">
-      <DependentUpon>DisableFrmMenuPrincipal.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="View\FrmConteudoMenu.resx">
-      <DependentUpon>FrmConteudoMenu.cs</DependentUpon>
+    <EmbeddedResource Include="View\FrmPainelLojas.resx">
+      <DependentUpon>FrmPainelLojas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmLOJAS.resx">
+      <DependentUpon>FrmLOJAS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FrmMainMenu.resx">
       <DependentUpon>FrmMainMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\DisableFrmMenuPrincipal.resx">
-      <DependentUpon>DisableFrmMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

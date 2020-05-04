@@ -41,7 +41,7 @@ namespace PassManager.View
                 PainelCentral.Controls.Add(formulario);
                 PainelCentral.Tag = formulario;
                 formulario.Show();
-                formulario.BringToFront();
+                //formulario.BringToFront();
             }
             //Se form ou instancia existir
             else
@@ -50,8 +50,10 @@ namespace PassManager.View
             }
         }
 
-        private void BtnLojas_Click(object sender, EventArgs e)
+        
+        public void BtnLojas_Click(object sender, EventArgs e)
         {
+           
             AbrirFormulario<FrmConteudoMenu>();
         }
 
@@ -81,15 +83,6 @@ namespace PassManager.View
             Application.Exit();
         }
 
-        private void pnLLeft_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void BtnMaximize_Click(object sender, EventArgs e)
         {

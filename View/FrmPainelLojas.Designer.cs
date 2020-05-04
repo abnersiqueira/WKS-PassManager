@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConteudoMenu));
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnLConteudoMenu = new System.Windows.Forms.Panel();
             this.pnLLojas3 = new System.Windows.Forms.Panel();
             this.button22 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -38,6 +38,14 @@
             this.button23 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
+            this.pnLLojas0 = new System.Windows.Forms.Panel();
+            this.btnCCPS = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.pnLLojas2 = new System.Windows.Forms.Panel();
             this.button13 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
@@ -53,30 +61,26 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button49 = new System.Windows.Forms.Button();
             this.button37 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.pnLLojas0 = new System.Windows.Forms.Panel();
-            this.btnCCPS = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.pnLConteudoMenu = new System.Windows.Forms.Panel();
+            this.Btn_wks = new System.Windows.Forms.Button();
+            this.pnLConteudoMenu.SuspendLayout();
             this.pnLLojas3.SuspendLayout();
+            this.pnLLojas0.SuspendLayout();
             this.pnLLojas2.SuspendLayout();
             this.pnLLojas1.SuspendLayout();
-            this.pnLLojas0.SuspendLayout();
-            this.pnLConteudoMenu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel2
+            // pnLConteudoMenu
             // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1264, 65);
-            this.panel2.TabIndex = 1;
+            this.pnLConteudoMenu.Controls.Add(this.pnLLojas3);
+            this.pnLConteudoMenu.Controls.Add(this.pnLLojas0);
+            this.pnLConteudoMenu.Controls.Add(this.pnLLojas2);
+            this.pnLConteudoMenu.Controls.Add(this.pnLLojas1);
+            this.pnLConteudoMenu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnLConteudoMenu.Location = new System.Drawing.Point(0, 0);
+            this.pnLConteudoMenu.Name = "pnLConteudoMenu";
+            this.pnLConteudoMenu.Size = new System.Drawing.Size(1264, 681);
+            this.pnLConteudoMenu.TabIndex = 3;
+            this.pnLConteudoMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.pnLConteudoMenu_Paint_1);
             // 
             // pnLLojas3
             // 
@@ -91,8 +95,8 @@
             this.pnLLojas3.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnLLojas3.Location = new System.Drawing.Point(0, 273);
             this.pnLLojas3.Name = "pnLLojas3";
-            this.pnLLojas3.Size = new System.Drawing.Size(1264, 91);
-            this.pnLLojas3.TabIndex = 112;
+            this.pnLLojas3.Size = new System.Drawing.Size(1264, 100);
+            this.pnLLojas3.TabIndex = 116;
             // 
             // button22
             // 
@@ -110,7 +114,7 @@
             this.button22.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button22.Location = new System.Drawing.Point(840, 0);
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(140, 91);
+            this.button22.Size = new System.Drawing.Size(140, 100);
             this.button22.TabIndex = 100;
             this.button22.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button22.UseVisualStyleBackColor = false;
@@ -131,7 +135,7 @@
             this.button10.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button10.Location = new System.Drawing.Point(700, 0);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(140, 91);
+            this.button10.Size = new System.Drawing.Size(140, 100);
             this.button10.TabIndex = 90;
             this.button10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button10.UseVisualStyleBackColor = false;
@@ -152,7 +156,7 @@
             this.button24.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button24.Location = new System.Drawing.Point(560, 0);
             this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(140, 91);
+            this.button24.Size = new System.Drawing.Size(140, 100);
             this.button24.TabIndex = 102;
             this.button24.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button24.UseVisualStyleBackColor = false;
@@ -174,7 +178,7 @@
             this.button39.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button39.Location = new System.Drawing.Point(420, 0);
             this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(140, 91);
+            this.button39.Size = new System.Drawing.Size(140, 100);
             this.button39.TabIndex = 107;
             this.button39.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button39.UseVisualStyleBackColor = false;
@@ -195,7 +199,7 @@
             this.button23.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button23.Location = new System.Drawing.Point(280, 0);
             this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(140, 91);
+            this.button23.Size = new System.Drawing.Size(140, 100);
             this.button23.TabIndex = 101;
             this.button23.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button23.UseVisualStyleBackColor = false;
@@ -216,7 +220,7 @@
             this.button20.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button20.Location = new System.Drawing.Point(140, 0);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(140, 91);
+            this.button20.Size = new System.Drawing.Size(140, 100);
             this.button20.TabIndex = 103;
             this.button20.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button20.UseVisualStyleBackColor = false;
@@ -237,10 +241,173 @@
             this.button21.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button21.Location = new System.Drawing.Point(0, 0);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(140, 91);
+            this.button21.Size = new System.Drawing.Size(140, 100);
             this.button21.TabIndex = 99;
             this.button21.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button21.UseVisualStyleBackColor = false;
+            // 
+            // pnLLojas0
+            // 
+            this.pnLLojas0.BackColor = System.Drawing.Color.Transparent;
+            this.pnLLojas0.Controls.Add(this.btnCCPS);
+            this.pnLLojas0.Controls.Add(this.button2);
+            this.pnLLojas0.Controls.Add(this.button3);
+            this.pnLLojas0.Controls.Add(this.button8);
+            this.pnLLojas0.Controls.Add(this.button9);
+            this.pnLLojas0.Controls.Add(this.button6);
+            this.pnLLojas0.Controls.Add(this.button7);
+            this.pnLLojas0.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnLLojas0.Location = new System.Drawing.Point(0, 182);
+            this.pnLLojas0.Name = "pnLLojas0";
+            this.pnLLojas0.Size = new System.Drawing.Size(1264, 91);
+            this.pnLLojas0.TabIndex = 113;
+            // 
+            // btnCCPS
+            // 
+            this.btnCCPS.AutoSize = true;
+            this.btnCCPS.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnCCPS.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCCPS.BackgroundImage")));
+            this.btnCCPS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCCPS.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCCPS.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnCCPS.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.btnCCPS.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnCCPS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnCCPS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCCPS.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCCPS.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnCCPS.Location = new System.Drawing.Point(840, 0);
+            this.btnCCPS.Name = "btnCCPS";
+            this.btnCCPS.Size = new System.Drawing.Size(140, 91);
+            this.btnCCPS.TabIndex = 1;
+            this.btnCCPS.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnCCPS.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.AutoSize = true;
+            this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button2.Location = new System.Drawing.Point(700, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(140, 91);
+            this.button2.TabIndex = 3;
+            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.AutoSize = true;
+            this.button3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button3.Location = new System.Drawing.Point(560, 0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(140, 91);
+            this.button3.TabIndex = 4;
+            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button8
+            // 
+            this.button8.AutoSize = true;
+            this.button8.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button8.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button8.Location = new System.Drawing.Point(420, 0);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(140, 91);
+            this.button8.TabIndex = 9;
+            this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // button9
+            // 
+            this.button9.AutoSize = true;
+            this.button9.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button9.BackgroundImage")));
+            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button9.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button9.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button9.Location = new System.Drawing.Point(280, 0);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(140, 91);
+            this.button9.TabIndex = 10;
+            this.button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.AutoSize = true;
+            this.button6.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button6.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button6.Location = new System.Drawing.Point(140, 0);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(140, 91);
+            this.button6.TabIndex = 7;
+            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            this.button7.AutoSize = true;
+            this.button7.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button7.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button7.Location = new System.Drawing.Point(0, 0);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(140, 91);
+            this.button7.TabIndex = 8;
+            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button7.UseVisualStyleBackColor = false;
             // 
             // pnLLojas2
             // 
@@ -256,7 +423,7 @@
             this.pnLLojas2.Location = new System.Drawing.Point(0, 91);
             this.pnLLojas2.Name = "pnLLojas2";
             this.pnLLojas2.Size = new System.Drawing.Size(1264, 91);
-            this.pnLLojas2.TabIndex = 111;
+            this.pnLLojas2.TabIndex = 115;
             // 
             // button13
             // 
@@ -414,12 +581,12 @@
             this.pnLLojas1.Controls.Add(this.button4);
             this.pnLLojas1.Controls.Add(this.button49);
             this.pnLLojas1.Controls.Add(this.button37);
-            this.pnLLojas1.Controls.Add(this.button11);
+            this.pnLLojas1.Controls.Add(this.Btn_wks);
             this.pnLLojas1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnLLojas1.Location = new System.Drawing.Point(0, 0);
             this.pnLLojas1.Name = "pnLLojas1";
             this.pnLLojas1.Size = new System.Drawing.Size(1264, 91);
-            this.pnLLojas1.TabIndex = 110;
+            this.pnLLojas1.TabIndex = 114;
             // 
             // button36
             // 
@@ -547,201 +714,27 @@
             this.button37.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button37.UseVisualStyleBackColor = false;
             // 
-            // button11
+            // Btn_wks
             // 
-            this.button11.AutoSize = true;
-            this.button11.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button11.BackgroundImage")));
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button11.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button11.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button11.Location = new System.Drawing.Point(0, 0);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(140, 91);
-            this.button11.TabIndex = 91;
-            this.button11.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button11.UseVisualStyleBackColor = false;
-            // 
-            // pnLLojas0
-            // 
-            this.pnLLojas0.BackColor = System.Drawing.Color.Transparent;
-            this.pnLLojas0.Controls.Add(this.btnCCPS);
-            this.pnLLojas0.Controls.Add(this.button2);
-            this.pnLLojas0.Controls.Add(this.button3);
-            this.pnLLojas0.Controls.Add(this.button8);
-            this.pnLLojas0.Controls.Add(this.button9);
-            this.pnLLojas0.Controls.Add(this.button6);
-            this.pnLLojas0.Controls.Add(this.button7);
-            this.pnLLojas0.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnLLojas0.Location = new System.Drawing.Point(0, 182);
-            this.pnLLojas0.Name = "pnLLojas0";
-            this.pnLLojas0.Size = new System.Drawing.Size(1264, 91);
-            this.pnLLojas0.TabIndex = 109;
-            // 
-            // btnCCPS
-            // 
-            this.btnCCPS.AutoSize = true;
-            this.btnCCPS.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnCCPS.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCCPS.BackgroundImage")));
-            this.btnCCPS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCCPS.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCCPS.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnCCPS.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnCCPS.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnCCPS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnCCPS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCCPS.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCCPS.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnCCPS.Location = new System.Drawing.Point(840, 0);
-            this.btnCCPS.Name = "btnCCPS";
-            this.btnCCPS.Size = new System.Drawing.Size(140, 91);
-            this.btnCCPS.TabIndex = 1;
-            this.btnCCPS.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnCCPS.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.AutoSize = true;
-            this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(700, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(140, 91);
-            this.button2.TabIndex = 3;
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.AutoSize = true;
-            this.button3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.Location = new System.Drawing.Point(560, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(140, 91);
-            this.button3.TabIndex = 4;
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.AutoSize = true;
-            this.button8.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button8.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button8.Location = new System.Drawing.Point(420, 0);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(140, 91);
-            this.button8.TabIndex = 9;
-            this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.AutoSize = true;
-            this.button9.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button9.BackgroundImage")));
-            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button9.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button9.Location = new System.Drawing.Point(280, 0);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(140, 91);
-            this.button9.TabIndex = 10;
-            this.button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.AutoSize = true;
-            this.button6.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button6.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button6.Location = new System.Drawing.Point(140, 0);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(140, 91);
-            this.button6.TabIndex = 7;
-            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.AutoSize = true;
-            this.button7.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button7.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button7.Location = new System.Drawing.Point(0, 0);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(140, 91);
-            this.button7.TabIndex = 8;
-            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // pnLConteudoMenu
-            // 
-            this.pnLConteudoMenu.Controls.Add(this.pnLLojas3);
-            this.pnLConteudoMenu.Controls.Add(this.pnLLojas0);
-            this.pnLConteudoMenu.Controls.Add(this.pnLLojas2);
-            this.pnLConteudoMenu.Controls.Add(this.pnLLojas1);
-            this.pnLConteudoMenu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnLConteudoMenu.Location = new System.Drawing.Point(0, 65);
-            this.pnLConteudoMenu.Name = "pnLConteudoMenu";
-            this.pnLConteudoMenu.Size = new System.Drawing.Size(1264, 616);
-            this.pnLConteudoMenu.TabIndex = 3;
+            this.Btn_wks.AutoSize = true;
+            this.Btn_wks.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Btn_wks.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_wks.BackgroundImage")));
+            this.Btn_wks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Btn_wks.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_wks.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Btn_wks.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.Btn_wks.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Btn_wks.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Btn_wks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_wks.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_wks.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Btn_wks.Location = new System.Drawing.Point(0, 0);
+            this.Btn_wks.Name = "Btn_wks";
+            this.Btn_wks.Size = new System.Drawing.Size(140, 91);
+            this.Btn_wks.TabIndex = 91;
+            this.Btn_wks.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_wks.UseVisualStyleBackColor = false;
+            this.Btn_wks.Click += new System.EventHandler(this.Btn_wks_Click);
             // 
             // FrmConteudoMenu
             // 
@@ -749,25 +742,25 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.pnLConteudoMenu);
-            this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConteudoMenu";
-            this.Text = "FrmConteudoMenu";
+            this.Text = "PainelLojas";
+            this.Load += new System.EventHandler(this.FrmConteudoMenu_Load);
+            this.pnLConteudoMenu.ResumeLayout(false);
             this.pnLLojas3.ResumeLayout(false);
             this.pnLLojas3.PerformLayout();
+            this.pnLLojas0.ResumeLayout(false);
+            this.pnLLojas0.PerformLayout();
             this.pnLLojas2.ResumeLayout(false);
             this.pnLLojas2.PerformLayout();
             this.pnLLojas1.ResumeLayout(false);
             this.pnLLojas1.PerformLayout();
-            this.pnLLojas0.ResumeLayout(false);
-            this.pnLLojas0.PerformLayout();
-            this.pnLConteudoMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnLConteudoMenu;
         private System.Windows.Forms.Panel pnLLojas3;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button10;
@@ -776,6 +769,14 @@
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Panel pnLLojas0;
+        private System.Windows.Forms.Button btnCCPS;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel pnLLojas2;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button15;
@@ -791,15 +792,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button49;
         private System.Windows.Forms.Button button37;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Panel pnLLojas0;
-        private System.Windows.Forms.Button btnCCPS;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Panel pnLConteudoMenu;
+        private System.Windows.Forms.Button Btn_wks;
     }
 }

@@ -43,6 +43,7 @@
             this.PnlLeft = new System.Windows.Forms.Panel();
             this.PnLLogo = new System.Windows.Forms.Panel();
             this.picLogo = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.PnlMover.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimize)).BeginInit();
@@ -199,6 +200,7 @@
             // 
             this.PnlLeft.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.PnlLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PnlLeft.Controls.Add(this.label4);
             this.PnlLeft.Controls.Add(this.PnLLogo);
             this.PnlLeft.Controls.Add(this.picLogo);
             this.PnlLeft.Dock = System.Windows.Forms.DockStyle.Left;
@@ -226,6 +228,22 @@
             this.picLogo.TabIndex = 0;
             this.picLogo.TabStop = false;
             // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Enabled = false;
+            this.label4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label4.Location = new System.Drawing.Point(16, 203);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(165, 21);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "suporte@wksti.com.br";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -248,6 +266,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnClose)).EndInit();
             this.PnlLeft.ResumeLayout(false);
+            this.PnlLeft.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
 
@@ -268,6 +287,7 @@
         private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.TextBox txbPass;
         private System.Windows.Forms.Panel PnLLogo;
+        private System.Windows.Forms.Label label4;
     }
 }
 

@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace PassManager.View
 {
-    public partial class FrmConteudoMenu : Form
+    public partial class FrmLOJAS : Form
     {
-        public FrmConteudoMenu()
+        public FrmLOJAS()
         {
             InitializeComponent();
         }
 
-        private void masterDataSetBindingSource_CurrentChanged(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
+            
         }
     }
 }
