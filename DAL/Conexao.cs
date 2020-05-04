@@ -13,7 +13,10 @@ namespace PassManager.DAL
 
         public Conexao()
         {
-             con.ConnectionString = "Server=tcp:wks.database.windows.net,1433;Initial Catalog=Passmanager;Persist Security Info=False;User ID=wksadmin;Password=$Rv#passmanager;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            con.ConnectionString = @"Data Source=KIIMALA\SQLEXPRESS;Initial Catalog=master;Integrated Security=True";
+            
+            // String para Azure \\  
+            // "Server=tcp:wks.database.windows.net,1433;Initial Catalog=Passmanager;Persist Security Info=False;User ID=wksadmin;Password=$Rv#passmanager;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         }
 
         public SqlConnection conectar()

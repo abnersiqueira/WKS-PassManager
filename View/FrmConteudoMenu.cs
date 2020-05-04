@@ -16,5 +16,10 @@ namespace PassManager.View
         {
             InitializeComponent();
         }
+
+        private void masterDataSetBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

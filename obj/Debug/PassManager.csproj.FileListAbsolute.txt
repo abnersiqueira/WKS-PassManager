@@ -33,3 +33,6 @@ C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\obj\De
 C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\obj\Debug\PassManager.pdb
 C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\obj\Debug\PassManager.View.FrmMainMenu.resources
 C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\obj\Debug\PassManager.View.FrmConteudoMenu.resources
+C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\obj\Debug\PassManager.csproj.CopyComplete

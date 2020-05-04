@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConteudoMenu));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.pnLLojas3 = new System.Windows.Forms.Panel();
             this.button22 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -78,14 +77,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1264, 65);
             this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 565);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1264, 116);
-            this.panel3.TabIndex = 2;
             // 
             // pnLLojas3
             // 
@@ -335,7 +326,7 @@
             this.button51.AutoSize = true;
             this.button51.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button51.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button51.BackgroundImage")));
-            this.button51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button51.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button51.Dock = System.Windows.Forms.DockStyle.Left;
             this.button51.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
@@ -540,7 +531,7 @@
             this.button37.AutoSize = true;
             this.button37.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button37.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button37.BackgroundImage")));
-            this.button37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button37.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button37.Dock = System.Windows.Forms.DockStyle.Left;
             this.button37.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
@@ -561,7 +552,7 @@
             this.button11.AutoSize = true;
             this.button11.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button11.BackgroundImage")));
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button11.Dock = System.Windows.Forms.DockStyle.Left;
             this.button11.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
@@ -703,7 +694,7 @@
             this.button6.AutoSize = true;
             this.button6.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button6.Dock = System.Windows.Forms.DockStyle.Left;
             this.button6.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
@@ -746,9 +737,10 @@
             this.pnLConteudoMenu.Controls.Add(this.pnLLojas0);
             this.pnLConteudoMenu.Controls.Add(this.pnLLojas2);
             this.pnLConteudoMenu.Controls.Add(this.pnLLojas1);
-            this.pnLConteudoMenu.Location = new System.Drawing.Point(0, 71);
+            this.pnLConteudoMenu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnLConteudoMenu.Location = new System.Drawing.Point(0, 65);
             this.pnLConteudoMenu.Name = "pnLConteudoMenu";
-            this.pnLConteudoMenu.Size = new System.Drawing.Size(1264, 483);
+            this.pnLConteudoMenu.Size = new System.Drawing.Size(1264, 616);
             this.pnLConteudoMenu.TabIndex = 3;
             // 
             // FrmConteudoMenu
@@ -757,7 +749,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.pnLConteudoMenu);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConteudoMenu";
@@ -777,7 +768,6 @@
 
         #endregion
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel pnLLojas3;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button10;

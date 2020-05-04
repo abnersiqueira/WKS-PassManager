@@ -33,8 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -72,11 +75,11 @@
     <Compile Include="View\FrmMainMenu.Designer.cs">
       <DependentUpon>FrmMainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FrmMenuPrincipal.cs">
+    <Compile Include="View\DisableFrmMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FrmMenuPrincipal.Designer.cs">
-      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    <Compile Include="View\DisableFrmMenuPrincipal.Designer.cs">
+      <DependentUpon>DisableFrmMenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -89,8 +92,8 @@
     <EmbeddedResource Include="View\FrmMainMenu.resx">
       <DependentUpon>FrmMainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FrmMenuPrincipal.resx">
-      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="View\DisableFrmMenuPrincipal.resx">
+      <DependentUpon>DisableFrmMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

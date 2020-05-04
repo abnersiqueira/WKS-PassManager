@@ -134,10 +134,10 @@
             this.BtnEntrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BtnEntrar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEntrar.Image")));
             this.BtnEntrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnEntrar.Location = new System.Drawing.Point(333, 202);
+            this.BtnEntrar.Location = new System.Drawing.Point(337, 211);
             this.BtnEntrar.Name = "BtnEntrar";
             this.BtnEntrar.Size = new System.Drawing.Size(73, 35);
-            this.BtnEntrar.TabIndex = 11;
+            this.BtnEntrar.TabIndex = 0;
             this.BtnEntrar.Text = "Entrar";
             this.BtnEntrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEntrar.UseVisualStyleBackColor = false;

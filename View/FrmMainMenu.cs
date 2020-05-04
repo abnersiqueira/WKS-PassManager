@@ -81,6 +81,16 @@ namespace PassManager.View
             Application.Exit();
         }
 
+        private void pnLLeft_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void BtnMaximize_Click(object sender, EventArgs e)
         {
             //Pega a posição e tamanho antes de restaurar
@@ -97,7 +107,7 @@ namespace PassManager.View
         private void BtnRestaura_Click(object sender, EventArgs e)
         {
             BtnRestaura.Visible = true;
-            BtnRestaura.Visible = false;
+   
             this.Size = new Size(sw, sh);
             this.Location = new Point(lx, ly);
 
