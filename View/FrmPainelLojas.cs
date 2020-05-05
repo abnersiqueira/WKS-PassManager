@@ -66,10 +66,11 @@ namespace PassManager.View
 
         private void Btn_wks_Click(object sender, EventArgs e)
         {
-           //  FrmLojaWKS loja = new FrmLojaWKS();
-              //  loja.Show();
+             FrmLOJAS loja = new FrmLOJAS();
+            this.Close();
+            loja.Show();
 
-         AbrirFormulario<FrmLOJAS>();
+        // AbrirFormulario<FrmLOJAS>();
             // FrmConteudoMenu
         }
     }

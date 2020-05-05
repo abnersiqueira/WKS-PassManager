@@ -41,7 +41,7 @@ namespace PassManager.View
                 PainelCentral.Controls.Add(formulario);
                 PainelCentral.Tag = formulario;
                 formulario.Show();
-                //formulario.BringToFront();
+                formulario.BringToFront();
             }
             //Se form ou instancia existir
             else
@@ -49,8 +49,7 @@ namespace PassManager.View
                 formulario.BringToFront();
             }
         }
-
-        
+                        
         public void BtnLojas_Click(object sender, EventArgs e)
         {
            

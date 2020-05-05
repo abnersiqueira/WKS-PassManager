@@ -61,7 +61,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.pnLLeft.SuspendLayout();
             this.pnLLogo.SuspendLayout();
@@ -455,16 +454,16 @@
             this.PnLMainMenu.Controls.Add(this.pictureBox2);
             this.PnLMainMenu.Controls.Add(this.pictureBox1);
             this.PnLMainMenu.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.PnLMainMenu.Location = new System.Drawing.Point(200, 597);
+            this.PnLMainMenu.Location = new System.Drawing.Point(200, 626);
             this.PnLMainMenu.Name = "PnLMainMenu";
-            this.PnLMainMenu.Size = new System.Drawing.Size(1064, 84);
+            this.PnLMainMenu.Size = new System.Drawing.Size(1064, 55);
             this.PnLMainMenu.TabIndex = 2;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(512, 17);
+            this.pictureBox2.Location = new System.Drawing.Point(512, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(149, 47);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -475,7 +474,7 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(346, 17);
+            this.pictureBox1.Location = new System.Drawing.Point(346, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(149, 47);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -486,11 +485,10 @@
             // 
             this.PainelCentral.BackColor = System.Drawing.Color.SlateGray;
             this.PainelCentral.Controls.Add(this.panel5);
-            this.PainelCentral.Controls.Add(this.panel2);
             this.PainelCentral.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PainelCentral.Location = new System.Drawing.Point(200, 30);
             this.PainelCentral.Name = "PainelCentral";
-            this.PainelCentral.Size = new System.Drawing.Size(1064, 567);
+            this.PainelCentral.Size = new System.Drawing.Size(1064, 596);
             this.PainelCentral.TabIndex = 0;
             // 
             // panel5
@@ -501,9 +499,9 @@
             this.panel5.Controls.Add(this.label2);
             this.panel5.Controls.Add(this.label1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 92);
+            this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1064, 475);
+            this.panel5.Size = new System.Drawing.Size(1064, 596);
             this.panel5.TabIndex = 8;
             // 
             // label4
@@ -515,7 +513,7 @@
             this.label4.Font = new System.Drawing.Font("Nirmala UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label4.Location = new System.Drawing.Point(276, 224);
+            this.label4.Location = new System.Drawing.Point(276, 285);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(301, 40);
             this.label4.TabIndex = 10;
@@ -531,7 +529,7 @@
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label3.Location = new System.Drawing.Point(274, 79);
+            this.label3.Location = new System.Drawing.Point(274, 140);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(387, 52);
             this.label3.TabIndex = 7;
@@ -547,7 +545,7 @@
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Location = new System.Drawing.Point(276, 144);
+            this.label2.Location = new System.Drawing.Point(276, 205);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(513, 40);
             this.label2.TabIndex = 6;
@@ -563,21 +561,12 @@
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(276, 184);
+            this.label1.Location = new System.Drawing.Point(276, 245);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(378, 40);
             this.label1.TabIndex = 5;
             this.label1.Text = "(15) 3211-0048 | 3031-1901";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.GhostWhite;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1064, 92);
-            this.panel2.TabIndex = 5;
             // 
             // FrmMainMenu
             // 
@@ -639,7 +628,6 @@
         private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.PictureBox BtnRestaura;
         private System.Windows.Forms.PictureBox BtnExit;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
