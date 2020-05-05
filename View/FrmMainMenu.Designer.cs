@@ -169,6 +169,7 @@
             this.BtnChat.Text = "Chat Online";
             this.BtnChat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnChat.UseVisualStyleBackColor = false;
+            this.BtnChat.Visible = false;
             // 
             // BtnAvulsos
             // 
@@ -510,12 +511,12 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Enabled = false;
-            this.label4.Font = new System.Drawing.Font("Nirmala UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label4.Location = new System.Drawing.Point(276, 285);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(301, 40);
+            this.label4.Size = new System.Drawing.Size(219, 30);
             this.label4.TabIndex = 10;
             this.label4.Text = "suporte@wksti.com.br";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -526,12 +527,12 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Enabled = false;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label3.Location = new System.Drawing.Point(274, 140);
+            this.label3.Location = new System.Drawing.Point(275, 160);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(387, 52);
+            this.label3.Size = new System.Drawing.Size(260, 45);
             this.label3.TabIndex = 7;
             this.label3.Text = "WKS Soluções em TI";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -542,12 +543,12 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Enabled = false;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Location = new System.Drawing.Point(276, 205);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(513, 40);
+            this.label2.Size = new System.Drawing.Size(374, 30);
             this.label2.TabIndex = 6;
             this.label2.Text = "Rua Dr. Armando Sales de Oliveira, 832";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -558,12 +559,12 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Enabled = false;
-            this.label1.Font = new System.Drawing.Font("Nirmala UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Location = new System.Drawing.Point(276, 245);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(378, 40);
+            this.label1.Size = new System.Drawing.Size(262, 30);
             this.label1.TabIndex = 5;
             this.label1.Text = "(15) 3211-0048 | 3031-1901";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

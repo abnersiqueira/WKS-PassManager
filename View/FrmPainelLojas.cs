@@ -12,38 +12,15 @@ namespace PassManager.View
 {
     public partial class FrmConteudoMenu : Form
     {
+  
         public FrmConteudoMenu()
         {
             InitializeComponent();
         }
-
-        private void AbrirFormulario<MiForm>() where MiForm : Form, new()
-        {
-            Form formulario;
-            formulario = pnLConteudoMenu.Controls.OfType<MiForm>().FirstOrDefault();//Busca na coleção do formulário
-                                                                                  //Se form ou instancia existir
-            if (formulario == null)
-            {
-                formulario = new MiForm();
-                formulario.TopLevel = false;
-                formulario.FormBorderStyle = FormBorderStyle.None;
-                formulario.Dock = DockStyle.Fill;
-                pnLConteudoMenu.Controls.Add(formulario);
-                pnLConteudoMenu.Tag = formulario;
-                formulario.Show();
-                formulario.BringToFront();
-            }
-            //Se form ou instancia existir
-            else
-            {
-                formulario.BringToFront();
-            }
-        }
+            
 
         private void button11_Click(object sender, EventArgs e)
         {
-
-          
 
            // FrmLojaWKS loja = new FrmLojaWKS();
            //     loja.Show();
@@ -66,11 +43,13 @@ namespace PassManager.View
 
         private void Btn_wks_Click(object sender, EventArgs e)
         {
-             FrmLOJAS loja = new FrmLOJAS();
-            this.Close();
-            loja.Show();
 
-        // AbrirFormulario<FrmLOJAS>();
+
+        // FrmLOJAS loja = new FrmLOJAS();
+        //this.Close();
+        //loja.Show();
+
+           // AbrirFormulario<FrmLOJAS>();
             // FrmConteudoMenu
         }
     }

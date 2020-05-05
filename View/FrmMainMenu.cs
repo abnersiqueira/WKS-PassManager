@@ -14,6 +14,7 @@ namespace PassManager.View
 {
     public partial class FrmMainMenu : Form
     {
+        private Form _objForm;
         public FrmMainMenu()
         {
             InitializeComponent();
@@ -27,33 +28,27 @@ namespace PassManager.View
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
 
 
-        private void AbrirFormulario<MiForm>() where MiForm : Form, new()
-        {
-            Form formulario;
-            formulario = PainelCentral.Controls.OfType<MiForm>().FirstOrDefault();//Busca na coleção do formulário
-                                                                                  //Se form ou instancia existir
-            if (formulario == null)
-            {
-                formulario = new MiForm();
-                formulario.TopLevel = false;
-                formulario.FormBorderStyle = FormBorderStyle.None;
-                formulario.Dock = DockStyle.Fill;
-                PainelCentral.Controls.Add(formulario);
-                PainelCentral.Tag = formulario;
-                formulario.Show();
-                formulario.BringToFront();
-            }
-            //Se form ou instancia existir
-            else
-            {
-                formulario.BringToFront();
-            }
-        }
+
                         
-        public void BtnLojas_Click(object sender, EventArgs e)
+        private void BtnLojas_Click(object sender, EventArgs e)
         {
-           
-            AbrirFormulario<FrmConteudoMenu>();
+            
+            _objForm?.Close();
+            _objForm = new FrmLOJAS
+            {
+                TopLevel = false,
+                FormBorderStyle = FormBorderStyle.None,
+                Dock = DockStyle.Fill
+            };
+            panel5.Controls.Add(_objForm);
+            _objForm.Show();
+
+
+            _objForm.BringToFront();
+           // this.Close();
+            
+
+            // AbrirFormulario<FrmConteudoMenu>();
         }
 
         private void PnLSupMainMenu_MouseDown(object sender, MouseEventArgs e)
