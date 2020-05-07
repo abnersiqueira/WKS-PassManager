@@ -39,6 +39,20 @@ namespace PassManager.DAL
             return tem;
         }
 
+        public String SalvaResp(String txbNomeEmpresa, String txbRespEmpresa,
+            String txbEmailEmpresa, String txbTelefoneEmpresa,
+            String txbTelefoneEmpresa2, String txbCelEmpresa, String txbCelEmpresa2)
+        {
+            cmd.CommandText = "insert into tb_loja values (@nEmpresa @rEmpresa @eEmpresa @tEmpresa @eEmpresa2 @cEmpresa @cEmpresa2);";
+            cmd.Parameters.AddWithValue("@nEmpresa", txbNomeEmpresa);
+            cmd.Parameters.AddWithValue("@rEmpresa", txbRespEmpresa);
+            cmd.Parameters.AddWithValue("@eEmpresa",txbEmailEmpresa);
+            cmd.Parameters.AddWithValue("@tEmpresa",txbTelefoneEmpresa);
+            cmd.Parameters.AddWithValue("@eEmpresa2",txbTelefoneEmpresa2);
+            cmd.Parameters.AddWithValue("@cEmpresa",txbCelEmpresa);
+            cmd.Parameters.AddWithValue("@cEmpresa2",txbCelEmpresa2);
+        }
+
         //Validação de cadastro em banco
         public String cadastrar(String login, String senha, String confSenha)
         {

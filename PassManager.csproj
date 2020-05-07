@@ -52,11 +52,24 @@
     <Compile Include="DAL\Conexao.cs" />
     <Compile Include="DAL\LoginDaoComandos.cs" />
     <Compile Include="Funcions\Funcions.cs" />
+    <Compile Include="masterDataSet.cs">
+      <DependentUpon>masterDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="masterDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>masterDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Model\Controle.cs" />
     <Compile Include="PassManagerDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PassManagerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tb_loja.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tb_loja.xsd</DependentUpon>
     </Compile>
     <Compile Include="View\Disable\DIESABLEFrmPainelLojas.cs">
       <SubType>Form</SubType>
@@ -90,6 +103,12 @@
     <Compile Include="View\Lojas\FrmTodasLojas.Designer.cs">
       <DependentUpon>FrmTodasLojas.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Lojas\Teste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Lojas\Teste.Designer.cs">
+      <DependentUpon>Teste.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="View\Disable\DIESABLEFrmPainelLojas.resx">
       <DependentUpon>DIESABLEFrmPainelLojas.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,6 +133,20 @@
     <EmbeddedResource Include="View\Lojas\FrmTodasLojas.resx">
       <DependentUpon>FrmTodasLojas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Lojas\Teste.resx">
+      <DependentUpon>Teste.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="masterDataSet.xsc">
+      <DependentUpon>masterDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="masterDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>masterDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="masterDataSet.xss">
+      <DependentUpon>masterDataSet.xsd</DependentUpon>
+    </None>
     <None Include="PassManagerDataSet.xsc">
       <DependentUpon>PassManagerDataSet.xsd</DependentUpon>
     </None>
@@ -134,6 +167,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="tb_loja.xsc">
+      <DependentUpon>tb_loja.xsd</DependentUpon>
+    </None>
+    <None Include="tb_loja.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tb_loja.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tb_loja.xss">
+      <DependentUpon>tb_loja.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

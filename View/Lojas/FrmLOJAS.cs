@@ -18,13 +18,14 @@ namespace PassManager.View
         {
             InitializeComponent();
             DisableFirewall();          //--Desabilita as TextBox de preenchimento Relacionado ao Firewall\\
-            
-           
+        
         }
-
 
         private void FrmLOJAS_Load(object sender, EventArgs e)
         {
+            this.tb_DadosLojaTableAdapter.Fill(this.masterDataSet.tb_DadosLoja);
+            // TODO: esta linha de código carrega dados na tabela 'masterDataSet.tb_loja'. Você pode movê-la ou removê-la conforme necessário.
+            this.tb_lojaTableAdapter.Fill(this.masterDataSet.tb_loja);
 
         }
         public void DisableFirewall()
@@ -72,5 +73,21 @@ namespace PassManager.View
                 EnableFirewall();
             }
         }
+
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void tb_lojaBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.tb_lojaBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.masterDataSet);
+
+        }
+
+
     }
 }

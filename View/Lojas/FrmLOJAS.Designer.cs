@@ -28,6 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.Label idLabel;
+            System.Windows.Forms.Label nome_empresaLabel;
+            System.Windows.Forms.Label nome_responsavelLabel;
+            System.Windows.Forms.Label email_respLabel;
+            System.Windows.Forms.Label celular_1Label;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLOJAS));
             this.PainelCentralBranco = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -68,27 +74,88 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txbUsuario = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.BtnSalvar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.BtnSalvar = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.idTextBox = new System.Windows.Forms.TextBox();
+            this.tb_lojaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.masterDataSet = new PassManager.masterDataSet();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txbCelEmpresa2 = new System.Windows.Forms.TextBox();
+            this.txbCelEmpresa = new System.Windows.Forms.TextBox();
+            this.txbTelefoneEmpresa2 = new System.Windows.Forms.TextBox();
+            this.txbTelefoneEmpresa = new System.Windows.Forms.TextBox();
+            this.txbNomeEmpresa = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txbEmailEmpresa = new System.Windows.Forms.TextBox();
+            this.txbRespEmpresa = new System.Windows.Forms.TextBox();
+            this.tb_lojaTableAdapter = new PassManager.masterDataSetTableAdapters.tb_lojaTableAdapter();
+            this.tableAdapterManager = new PassManager.masterDataSetTableAdapters.TableAdapterManager();
+            this.tb_DadosLojaTableAdapter = new PassManager.masterDataSetTableAdapters.tb_DadosLojaTableAdapter();
+            this.tb_lojaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.tb_DadosLojaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            idLabel = new System.Windows.Forms.Label();
+            nome_empresaLabel = new System.Windows.Forms.Label();
+            nome_responsavelLabel = new System.Windows.Forms.Label();
+            email_respLabel = new System.Windows.Forms.Label();
+            celular_1Label = new System.Windows.Forms.Label();
             this.PainelCentralBranco.SuspendLayout();
             this.panel2.SuspendLayout();
             this.PnLPossuiFirewall.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_lojaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.masterDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_lojaBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_DadosLojaBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // idLabel
+            // 
+            idLabel.AutoSize = true;
+            idLabel.Location = new System.Drawing.Point(66, 101);
+            idLabel.Name = "idLabel";
+            idLabel.Size = new System.Drawing.Size(18, 13);
+            idLabel.TabIndex = 74;
+            idLabel.Text = "ID";
+            // 
+            // nome_empresaLabel
+            // 
+            nome_empresaLabel.AutoSize = true;
+            nome_empresaLabel.Location = new System.Drawing.Point(12, 166);
+            nome_empresaLabel.Name = "nome_empresaLabel";
+            nome_empresaLabel.Size = new System.Drawing.Size(94, 13);
+            nome_empresaLabel.TabIndex = 76;
+            nome_empresaLabel.Text = "Nome da Empresa";
+            // 
+            // nome_responsavelLabel
+            // 
+            nome_responsavelLabel.AutoSize = true;
+            nome_responsavelLabel.Location = new System.Drawing.Point(12, 205);
+            nome_responsavelLabel.Name = "nome_responsavelLabel";
+            nome_responsavelLabel.Size = new System.Drawing.Size(100, 13);
+            nome_responsavelLabel.TabIndex = 78;
+            nome_responsavelLabel.Text = "Nome Responsável";
+            // 
+            // email_respLabel
+            // 
+            email_respLabel.AutoSize = true;
+            email_respLabel.Location = new System.Drawing.Point(12, 244);
+            email_respLabel.Name = "email_respLabel";
+            email_respLabel.Size = new System.Drawing.Size(35, 13);
+            email_respLabel.TabIndex = 80;
+            email_respLabel.Text = "E-mail";
+            // 
+            // celular_1Label
+            // 
+            celular_1Label.AutoSize = true;
+            celular_1Label.Location = new System.Drawing.Point(12, 361);
+            celular_1Label.Name = "celular_1Label";
+            celular_1Label.Size = new System.Drawing.Size(39, 13);
+            celular_1Label.TabIndex = 86;
+            celular_1Label.Text = "Celular";
             // 
             // PainelCentralBranco
             // 
@@ -129,9 +196,9 @@
             this.panel2.Controls.Add(this.txbUsuario);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel2.Location = new System.Drawing.Point(210, 0);
+            this.panel2.Location = new System.Drawing.Point(205, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1038, 630);
+            this.panel2.Size = new System.Drawing.Size(1043, 775);
             this.panel2.TabIndex = 13;
             // 
             // txbTituloLoja
@@ -140,7 +207,7 @@
             this.txbTituloLoja.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbTituloLoja.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbTituloLoja.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.txbTituloLoja.Location = new System.Drawing.Point(232, 9);
+            this.txbTituloLoja.Location = new System.Drawing.Point(235, 12);
             this.txbTituloLoja.Multiline = true;
             this.txbTituloLoja.Name = "txbTituloLoja";
             this.txbTituloLoja.Size = new System.Drawing.Size(252, 37);
@@ -162,18 +229,19 @@
             this.PnLPossuiFirewall.Controls.Add(this.labIP);
             this.PnLPossuiFirewall.Controls.Add(this.txbUsuarioFirewall);
             this.PnLPossuiFirewall.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.PnLPossuiFirewall.Location = new System.Drawing.Point(0, 331);
+            this.PnLPossuiFirewall.Location = new System.Drawing.Point(0, 338);
             this.PnLPossuiFirewall.Name = "PnLPossuiFirewall";
-            this.PnLPossuiFirewall.Size = new System.Drawing.Size(1038, 299);
+            this.PnLPossuiFirewall.Size = new System.Drawing.Size(1043, 437);
             this.PnLPossuiFirewall.TabIndex = 61;
             // 
             // CheckFirewallEnable
             // 
             this.CheckFirewallEnable.AutoSize = true;
+            this.CheckFirewallEnable.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F);
             this.CheckFirewallEnable.ForeColor = System.Drawing.Color.Black;
             this.CheckFirewallEnable.Location = new System.Drawing.Point(19, 7);
             this.CheckFirewallEnable.Name = "CheckFirewallEnable";
-            this.CheckFirewallEnable.Size = new System.Drawing.Size(106, 17);
+            this.CheckFirewallEnable.Size = new System.Drawing.Size(135, 23);
             this.CheckFirewallEnable.TabIndex = 72;
             this.CheckFirewallEnable.Text = "Possuí Firewall ?";
             this.CheckFirewallEnable.UseVisualStyleBackColor = true;
@@ -197,7 +265,7 @@
             "PfSense",
             "Windows",
             "De mal a pior"});
-            this.txbSelecFirewall.Location = new System.Drawing.Point(19, 46);
+            this.txbSelecFirewall.Location = new System.Drawing.Point(19, 49);
             this.txbSelecFirewall.Name = "txbSelecFirewall";
             this.txbSelecFirewall.Size = new System.Drawing.Size(191, 27);
             this.txbSelecFirewall.TabIndex = 61;
@@ -207,7 +275,7 @@
             this.labSenha.AutoSize = true;
             this.labSenha.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labSenha.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labSenha.Location = new System.Drawing.Point(19, 211);
+            this.labSenha.Location = new System.Drawing.Point(19, 214);
             this.labSenha.Name = "labSenha";
             this.labSenha.Size = new System.Drawing.Size(49, 19);
             this.labSenha.TabIndex = 70;
@@ -218,7 +286,7 @@
             this.txbSenhaFirewall.BackColor = System.Drawing.SystemColors.Window;
             this.txbSenhaFirewall.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbSenhaFirewall.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.txbSenhaFirewall.Location = new System.Drawing.Point(19, 230);
+            this.txbSenhaFirewall.Location = new System.Drawing.Point(19, 233);
             this.txbSenhaFirewall.Name = "txbSenhaFirewall";
             this.txbSenhaFirewall.Size = new System.Drawing.Size(191, 27);
             this.txbSenhaFirewall.TabIndex = 65;
@@ -228,7 +296,7 @@
             this.labPorta.AutoSize = true;
             this.labPorta.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labPorta.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labPorta.Location = new System.Drawing.Point(19, 119);
+            this.labPorta.Location = new System.Drawing.Point(19, 122);
             this.labPorta.Name = "labPorta";
             this.labPorta.Size = new System.Drawing.Size(44, 19);
             this.labPorta.TabIndex = 69;
@@ -239,7 +307,7 @@
             this.labFirewall.AutoSize = true;
             this.labFirewall.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labFirewall.ForeColor = System.Drawing.Color.Crimson;
-            this.labFirewall.Location = new System.Drawing.Point(19, 27);
+            this.labFirewall.Location = new System.Drawing.Point(19, 30);
             this.labFirewall.Name = "labFirewall";
             this.labFirewall.Size = new System.Drawing.Size(60, 19);
             this.labFirewall.TabIndex = 66;
@@ -250,7 +318,7 @@
             this.txbIPFirewall.BackColor = System.Drawing.SystemColors.Window;
             this.txbIPFirewall.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbIPFirewall.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.txbIPFirewall.Location = new System.Drawing.Point(19, 92);
+            this.txbIPFirewall.Location = new System.Drawing.Point(19, 95);
             this.txbIPFirewall.Name = "txbIPFirewall";
             this.txbIPFirewall.Size = new System.Drawing.Size(191, 27);
             this.txbIPFirewall.TabIndex = 62;
@@ -260,7 +328,7 @@
             this.txbPorta.BackColor = System.Drawing.SystemColors.Window;
             this.txbPorta.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbPorta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.txbPorta.Location = new System.Drawing.Point(19, 138);
+            this.txbPorta.Location = new System.Drawing.Point(19, 141);
             this.txbPorta.Name = "txbPorta";
             this.txbPorta.Size = new System.Drawing.Size(191, 27);
             this.txbPorta.TabIndex = 63;
@@ -270,7 +338,7 @@
             this.labUsuario.AutoSize = true;
             this.labUsuario.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labUsuario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labUsuario.Location = new System.Drawing.Point(19, 165);
+            this.labUsuario.Location = new System.Drawing.Point(19, 168);
             this.labUsuario.Name = "labUsuario";
             this.labUsuario.Size = new System.Drawing.Size(59, 19);
             this.labUsuario.TabIndex = 68;
@@ -281,7 +349,7 @@
             this.labIP.AutoSize = true;
             this.labIP.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labIP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labIP.Location = new System.Drawing.Point(19, 73);
+            this.labIP.Location = new System.Drawing.Point(19, 76);
             this.labIP.Name = "labIP";
             this.labIP.Size = new System.Drawing.Size(21, 19);
             this.labIP.TabIndex = 67;
@@ -292,7 +360,7 @@
             this.txbUsuarioFirewall.BackColor = System.Drawing.SystemColors.Window;
             this.txbUsuarioFirewall.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbUsuarioFirewall.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.txbUsuarioFirewall.Location = new System.Drawing.Point(19, 184);
+            this.txbUsuarioFirewall.Location = new System.Drawing.Point(19, 187);
             this.txbUsuarioFirewall.Name = "txbUsuarioFirewall";
             this.txbUsuarioFirewall.Size = new System.Drawing.Size(191, 27);
             this.txbUsuarioFirewall.TabIndex = 64;
@@ -355,7 +423,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(227, 279);
+            this.label11.Location = new System.Drawing.Point(227, 276);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(49, 19);
             this.label11.TabIndex = 43;
@@ -366,7 +434,7 @@
             this.txbSenha2.BackColor = System.Drawing.SystemColors.Window;
             this.txbSenha2.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbSenha2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.txbSenha2.Location = new System.Drawing.Point(231, 298);
+            this.txbSenha2.Location = new System.Drawing.Point(231, 295);
             this.txbSenha2.Name = "txbSenha2";
             this.txbSenha2.Size = new System.Drawing.Size(191, 27);
             this.txbSenha2.TabIndex = 10;
@@ -407,7 +475,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label14.Location = new System.Drawing.Point(231, 233);
+            this.label14.Location = new System.Drawing.Point(231, 230);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(59, 19);
             this.label14.TabIndex = 40;
@@ -429,7 +497,7 @@
             this.txbUsuario2.BackColor = System.Drawing.SystemColors.Window;
             this.txbUsuario2.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbUsuario2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.txbUsuario2.Location = new System.Drawing.Point(231, 252);
+            this.txbUsuario2.Location = new System.Drawing.Point(231, 249);
             this.txbUsuario2.Name = "txbUsuario2";
             this.txbUsuario2.Size = new System.Drawing.Size(191, 27);
             this.txbUsuario2.TabIndex = 9;
@@ -439,7 +507,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label17.Location = new System.Drawing.Point(19, 279);
+            this.label17.Location = new System.Drawing.Point(19, 276);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(49, 19);
             this.label17.TabIndex = 33;
@@ -450,7 +518,7 @@
             this.txbSenha.BackColor = System.Drawing.SystemColors.Window;
             this.txbSenha.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.txbSenha.Location = new System.Drawing.Point(19, 298);
+            this.txbSenha.Location = new System.Drawing.Point(19, 295);
             this.txbSenha.Name = "txbSenha";
             this.txbSenha.Size = new System.Drawing.Size(191, 27);
             this.txbSenha.TabIndex = 5;
@@ -504,7 +572,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(19, 233);
+            this.label9.Location = new System.Drawing.Point(19, 230);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(59, 19);
             this.label9.TabIndex = 21;
@@ -526,178 +594,73 @@
             this.txbUsuario.BackColor = System.Drawing.SystemColors.Window;
             this.txbUsuario.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.txbUsuario.Location = new System.Drawing.Point(19, 252);
+            this.txbUsuario.Location = new System.Drawing.Point(19, 249);
             this.txbUsuario.Name = "txbUsuario";
             this.txbUsuario.Size = new System.Drawing.Size(191, 27);
             this.txbUsuario.TabIndex = 4;
             // 
             // panel1
             // 
+            this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(idLabel);
             this.panel1.Controls.Add(this.btnCancelar);
             this.panel1.Controls.Add(this.BtnSalvar);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.textBox5);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.idTextBox);
+            this.panel1.Controls.Add(nome_empresaLabel);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.txbCelEmpresa2);
+            this.panel1.Controls.Add(this.txbCelEmpresa);
+            this.panel1.Controls.Add(this.txbTelefoneEmpresa2);
+            this.panel1.Controls.Add(this.txbTelefoneEmpresa);
+            this.panel1.Controls.Add(this.txbNomeEmpresa);
+            this.panel1.Controls.Add(nome_responsavelLabel);
+            this.panel1.Controls.Add(celular_1Label);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.txbEmailEmpresa);
+            this.panel1.Controls.Add(this.txbRespEmpresa);
+            this.panel1.Controls.Add(email_respLabel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(210, 642);
+            this.panel1.Size = new System.Drawing.Size(205, 642);
             this.panel1.TabIndex = 12;
             // 
-            // pictureBox1
+            // button1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(15, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(181, 87);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
+            this.button1.BackColor = System.Drawing.Color.Gray;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.button1.Location = new System.Drawing.Point(70, 604);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(57, 35);
+            this.button1.TabIndex = 90;
+            this.button1.Text = "Editar";
+            this.button1.UseVisualStyleBackColor = false;
             // 
-            // textBox5
+            // btnCancelar
             // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox5.Location = new System.Drawing.Point(11, 299);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(185, 24);
-            this.textBox5.TabIndex = 8;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 323);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 13);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Celular";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox1.Location = new System.Drawing.Point(11, 151);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(185, 24);
-            this.textBox1.TabIndex = 0;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 286);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Telefone #2";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 138);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Empresa";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox4.Location = new System.Drawing.Point(11, 336);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(185, 24);
-            this.textBox4.TabIndex = 9;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox2.Location = new System.Drawing.Point(11, 188);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(185, 24);
-            this.textBox2.TabIndex = 2;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox3.Location = new System.Drawing.Point(11, 225);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(185, 24);
-            this.textBox3.TabIndex = 3;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 249);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 13);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Telefone #1";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 175);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Responsável";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox6.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox6.Location = new System.Drawing.Point(11, 262);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(185, 24);
-            this.textBox6.TabIndex = 6;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 212);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "E-mail";
+            this.btnCancelar.BackColor = System.Drawing.Color.Gray;
+            this.btnCancelar.FlatAppearance.BorderSize = 0;
+            this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnCancelar.Location = new System.Drawing.Point(128, 604);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(57, 35);
+            this.btnCancelar.TabIndex = 74;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // BtnSalvar
             // 
@@ -707,31 +670,161 @@
             this.BtnSalvar.FlatAppearance.BorderSize = 0;
             this.BtnSalvar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
             this.BtnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSalvar.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSalvar.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSalvar.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.BtnSalvar.Location = new System.Drawing.Point(16, 596);
+            this.BtnSalvar.Location = new System.Drawing.Point(13, 603);
             this.BtnSalvar.Name = "BtnSalvar";
-            this.BtnSalvar.Size = new System.Drawing.Size(87, 35);
+            this.BtnSalvar.Size = new System.Drawing.Size(57, 37);
             this.BtnSalvar.TabIndex = 73;
             this.BtnSalvar.Text = "Salvar";
             this.BtnSalvar.UseVisualStyleBackColor = false;
             // 
-            // btnCancelar
+            // label4
             // 
-            this.btnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancelar.BackColor = System.Drawing.Color.Gray;
-            this.btnCancelar.FlatAppearance.BorderSize = 0;
-            this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnCancelar.Location = new System.Drawing.Point(109, 596);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(87, 35);
-            this.btnCancelar.TabIndex = 74;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 400);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(55, 13);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Celular #2";
+            // 
+            // idTextBox
+            // 
+            this.idTextBox.BackColor = System.Drawing.Color.Gainsboro;
+            this.idTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_lojaBindingSource, "id", true));
+            this.idTextBox.Location = new System.Drawing.Point(90, 95);
+            this.idTextBox.Multiline = true;
+            this.idTextBox.Name = "idTextBox";
+            this.idTextBox.Size = new System.Drawing.Size(39, 27);
+            this.idTextBox.TabIndex = 75;
+            // 
+            // tb_lojaBindingSource
+            // 
+            this.tb_lojaBindingSource.DataMember = "tb_loja";
+            this.tb_lojaBindingSource.DataSource = this.masterDataSet;
+            // 
+            // masterDataSet
+            // 
+            this.masterDataSet.DataSetName = "masterDataSet";
+            this.masterDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 322);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Telefone #2";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(205, 87);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
+            // txbCelEmpresa2
+            // 
+            this.txbCelEmpresa2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_lojaBindingSource, "celular_2", true));
+            this.txbCelEmpresa2.Location = new System.Drawing.Point(12, 416);
+            this.txbCelEmpresa2.Name = "txbCelEmpresa2";
+            this.txbCelEmpresa2.Size = new System.Drawing.Size(162, 20);
+            this.txbCelEmpresa2.TabIndex = 89;
+            // 
+            // txbCelEmpresa
+            // 
+            this.txbCelEmpresa.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_lojaBindingSource, "celular_1", true));
+            this.txbCelEmpresa.Location = new System.Drawing.Point(12, 377);
+            this.txbCelEmpresa.Name = "txbCelEmpresa";
+            this.txbCelEmpresa.Size = new System.Drawing.Size(162, 20);
+            this.txbCelEmpresa.TabIndex = 87;
+            // 
+            // txbTelefoneEmpresa2
+            // 
+            this.txbTelefoneEmpresa2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_lojaBindingSource, "telefone_2", true));
+            this.txbTelefoneEmpresa2.Location = new System.Drawing.Point(12, 338);
+            this.txbTelefoneEmpresa2.Name = "txbTelefoneEmpresa2";
+            this.txbTelefoneEmpresa2.Size = new System.Drawing.Size(162, 20);
+            this.txbTelefoneEmpresa2.TabIndex = 85;
+            // 
+            // txbTelefoneEmpresa
+            // 
+            this.txbTelefoneEmpresa.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_lojaBindingSource, "telefone_1", true));
+            this.txbTelefoneEmpresa.Location = new System.Drawing.Point(12, 299);
+            this.txbTelefoneEmpresa.Name = "txbTelefoneEmpresa";
+            this.txbTelefoneEmpresa.Size = new System.Drawing.Size(162, 20);
+            this.txbTelefoneEmpresa.TabIndex = 83;
+            // 
+            // txbNomeEmpresa
+            // 
+            this.txbNomeEmpresa.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_lojaBindingSource, "nome_empresa", true));
+            this.txbNomeEmpresa.Location = new System.Drawing.Point(12, 182);
+            this.txbNomeEmpresa.Name = "txbNomeEmpresa";
+            this.txbNomeEmpresa.Size = new System.Drawing.Size(162, 20);
+            this.txbNomeEmpresa.TabIndex = 77;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(12, 283);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(49, 13);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "Telefone";
+            // 
+            // txbEmailEmpresa
+            // 
+            this.txbEmailEmpresa.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_lojaBindingSource, "email_resp", true));
+            this.txbEmailEmpresa.Location = new System.Drawing.Point(12, 260);
+            this.txbEmailEmpresa.Name = "txbEmailEmpresa";
+            this.txbEmailEmpresa.Size = new System.Drawing.Size(162, 20);
+            this.txbEmailEmpresa.TabIndex = 81;
+            // 
+            // txbRespEmpresa
+            // 
+            this.txbRespEmpresa.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_lojaBindingSource, "nome_responsavel", true));
+            this.txbRespEmpresa.Location = new System.Drawing.Point(12, 221);
+            this.txbRespEmpresa.Name = "txbRespEmpresa";
+            this.txbRespEmpresa.Size = new System.Drawing.Size(162, 20);
+            this.txbRespEmpresa.TabIndex = 79;
+            // 
+            // tb_lojaTableAdapter
+            // 
+            this.tb_lojaTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.logonTableAdapter = null;
+            this.tableAdapterManager.tb_DadosLojaTableAdapter = this.tb_DadosLojaTableAdapter;
+            this.tableAdapterManager.tb_lojaTableAdapter = this.tb_lojaTableAdapter;
+            this.tableAdapterManager.UpdateOrder = PassManager.masterDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // tb_DadosLojaTableAdapter
+            // 
+            this.tb_DadosLojaTableAdapter.ClearBeforeFill = true;
+            // 
+            // tb_lojaBindingSource1
+            // 
+            this.tb_lojaBindingSource1.DataMember = "tb_loja";
+            this.tb_lojaBindingSource1.DataSource = this.masterDataSet;
+            // 
+            // tb_DadosLojaBindingSource
+            // 
+            this.tb_DadosLojaBindingSource.DataMember = "tb_DadosLoja";
+            this.tb_DadosLojaBindingSource.DataSource = this.masterDataSet;
             // 
             // FrmLOJAS
             // 
@@ -750,7 +843,11 @@
             this.PnLPossuiFirewall.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_lojaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.masterDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_lojaBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_DadosLojaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -760,18 +857,9 @@
         private System.Windows.Forms.Panel PainelCentralBranco;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
         public System.Windows.Forms.Panel PnLPossuiFirewall;
         private System.Windows.Forms.TextBox txbOBS;
@@ -811,5 +899,21 @@
         public System.Windows.Forms.CheckBox CheckFirewallEnable;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button BtnSalvar;
+        private masterDataSet masterDataSet;
+        private System.Windows.Forms.BindingSource tb_lojaBindingSource;
+        private masterDataSetTableAdapters.tb_lojaTableAdapter tb_lojaTableAdapter;
+        private masterDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.TextBox idTextBox;
+        private System.Windows.Forms.TextBox txbNomeEmpresa;
+        private System.Windows.Forms.TextBox txbRespEmpresa;
+        private System.Windows.Forms.TextBox txbEmailEmpresa;
+        private System.Windows.Forms.TextBox txbTelefoneEmpresa;
+        private System.Windows.Forms.TextBox txbTelefoneEmpresa2;
+        private System.Windows.Forms.TextBox txbCelEmpresa;
+        private System.Windows.Forms.TextBox txbCelEmpresa2;
+        private System.Windows.Forms.BindingSource tb_lojaBindingSource1;
+        private masterDataSetTableAdapters.tb_DadosLojaTableAdapter tb_DadosLojaTableAdapter;
+        private System.Windows.Forms.BindingSource tb_DadosLojaBindingSource;
+        private System.Windows.Forms.Button button1;
     }
 }

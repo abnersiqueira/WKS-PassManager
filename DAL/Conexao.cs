@@ -13,7 +13,7 @@ namespace PassManager.DAL
 
         public Conexao()
         {
-            con.ConnectionString = @"Data Source=KIIMALA\SQLEXPRESS;Initial Catalog=master;Integrated Security=True";
+            con.ConnectionString = @"Data Source=DESKTOP-0P6UJBL\SQLEXPRESS;Initial Catalog=master;Integrated Security=True";
             //Note: DESKTOP-0P6UJBL\SQLEXPRESS
             //Casa: KIIMALA\SQLEXPRESS
                 // String para Azure \\

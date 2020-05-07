@@ -43,5 +43,16 @@ namespace PassManager.Properties {
                 return ((string)(this["masterConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-0P6UJBL\\SQLEXPRESS;Initial Catalog=master;Integrated Security" +
+            "=True")]
+        public string masterConnectionString1 {
+            get {
+                return ((string)(this["masterConnectionString1"]));
+            }
+        }
     }
 }
