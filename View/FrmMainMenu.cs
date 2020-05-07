@@ -34,7 +34,7 @@ namespace PassManager.View
         {
             
             _objForm?.Close();
-            _objForm = new FrmLOJAS
+            _objForm = new FrmTodasLojas
             {
                 TopLevel = false,
                 FormBorderStyle = FormBorderStyle.None,

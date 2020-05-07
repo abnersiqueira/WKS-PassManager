@@ -62,6 +62,7 @@
             this.button49 = new System.Windows.Forms.Button();
             this.button37 = new System.Windows.Forms.Button();
             this.Btn_wks = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pnLConteudoMenu.SuspendLayout();
             this.pnLLojas3.SuspendLayout();
             this.pnLLojas0.SuspendLayout();
@@ -71,6 +72,7 @@
             // 
             // pnLConteudoMenu
             // 
+            this.pnLConteudoMenu.Controls.Add(this.panel1);
             this.pnLConteudoMenu.Controls.Add(this.pnLLojas3);
             this.pnLConteudoMenu.Controls.Add(this.pnLLojas0);
             this.pnLConteudoMenu.Controls.Add(this.pnLLojas2);
@@ -106,7 +108,7 @@
             this.button22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button22.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button22.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button22.FlatAppearance.CheckedBackColor = System.Drawing.Color.Violet;
             this.button22.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -127,7 +129,7 @@
             this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button10.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button10.FlatAppearance.CheckedBackColor = System.Drawing.Color.Violet;
             this.button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -148,7 +150,7 @@
             this.button24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button24.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button24.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button24.FlatAppearance.CheckedBackColor = System.Drawing.Color.Violet;
             this.button24.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -170,7 +172,7 @@
             this.button39.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button39.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button39.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button39.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button39.FlatAppearance.CheckedBackColor = System.Drawing.Color.Violet;
             this.button39.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed;
             this.button39.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OrangeRed;
             this.button39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -191,7 +193,7 @@
             this.button23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button23.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button23.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button23.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button23.FlatAppearance.CheckedBackColor = System.Drawing.Color.Violet;
             this.button23.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -212,7 +214,7 @@
             this.button20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button20.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button20.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button20.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button20.FlatAppearance.CheckedBackColor = System.Drawing.Color.Violet;
             this.button20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -233,7 +235,7 @@
             this.button21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button21.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button21.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button21.FlatAppearance.CheckedBackColor = System.Drawing.Color.Violet;
             this.button21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -424,6 +426,7 @@
             this.pnLLojas2.Name = "pnLLojas2";
             this.pnLLojas2.Size = new System.Drawing.Size(1264, 91);
             this.pnLLojas2.TabIndex = 115;
+            this.pnLLojas2.Paint += new System.Windows.Forms.PaintEventHandler(this.pnLLojas2_Paint);
             // 
             // button13
             // 
@@ -736,6 +739,14 @@
             this.Btn_wks.UseVisualStyleBackColor = false;
             this.Btn_wks.Click += new System.EventHandler(this.Btn_wks_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 373);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(25, 308);
+            this.panel1.TabIndex = 117;
+            // 
             // FrmConteudoMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -761,7 +772,6 @@
 
         #endregion
         private System.Windows.Forms.Panel pnLConteudoMenu;
-        private System.Windows.Forms.Panel pnLLojas3;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button24;
@@ -769,7 +779,6 @@
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Panel pnLLojas0;
         private System.Windows.Forms.Button btnCCPS;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
@@ -777,7 +786,6 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Panel pnLLojas2;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button14;
@@ -785,7 +793,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Panel pnLLojas1;
         private System.Windows.Forms.Button button36;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button35;
@@ -793,5 +800,10 @@
         private System.Windows.Forms.Button button49;
         private System.Windows.Forms.Button button37;
         private System.Windows.Forms.Button Btn_wks;
+        private System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.Panel pnLLojas3;
+        public System.Windows.Forms.Panel pnLLojas0;
+        public System.Windows.Forms.Panel pnLLojas2;
+        public System.Windows.Forms.Panel pnLLojas1;
     }
 }

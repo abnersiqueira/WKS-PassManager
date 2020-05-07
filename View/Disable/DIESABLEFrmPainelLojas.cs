@@ -52,5 +52,10 @@ namespace PassManager.View
            // AbrirFormulario<FrmLOJAS>();
             // FrmConteudoMenu
         }
+
+        private void pnLLojas2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

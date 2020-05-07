@@ -51,17 +51,18 @@
   <ItemGroup>
     <Compile Include="DAL\Conexao.cs" />
     <Compile Include="DAL\LoginDaoComandos.cs" />
+    <Compile Include="Funcions\Funcions.cs" />
     <Compile Include="Model\Controle.cs" />
     <Compile Include="PassManagerDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PassManagerDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="View\FrmPainelLojas.cs">
+    <Compile Include="View\Disable\DIESABLEFrmPainelLojas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FrmPainelLojas.Designer.cs">
-      <DependentUpon>FrmPainelLojas.cs</DependentUpon>
+    <Compile Include="View\Disable\DIESABLEFrmPainelLojas.Designer.cs">
+      <DependentUpon>DIESABLEFrmPainelLojas.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FrmLogin.cs">
       <SubType>Form</SubType>
@@ -69,10 +70,10 @@
     <Compile Include="View\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FrmLOJAS.cs">
+    <Compile Include="View\Lojas\FrmLOJAS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\FrmLOJAS.Designer.cs">
+    <Compile Include="View\Lojas\FrmLOJAS.Designer.cs">
       <DependentUpon>FrmLOJAS.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FrmMainMenu.cs">
@@ -83,13 +84,19 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="View\FrmPainelLojas.resx">
-      <DependentUpon>FrmPainelLojas.cs</DependentUpon>
+    <Compile Include="View\Lojas\FrmTodasLojas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Lojas\FrmTodasLojas.Designer.cs">
+      <DependentUpon>FrmTodasLojas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\Disable\DIESABLEFrmPainelLojas.resx">
+      <DependentUpon>DIESABLEFrmPainelLojas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\FrmLOJAS.resx">
+    <EmbeddedResource Include="View\Lojas\FrmLOJAS.resx">
       <DependentUpon>FrmLOJAS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmMainMenu.resx">
@@ -104,6 +111,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\Lojas\FrmTodasLojas.resx">
+      <DependentUpon>FrmTodasLojas.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="PassManagerDataSet.xsc">
       <DependentUpon>PassManagerDataSet.xsd</DependentUpon>
     </None>
