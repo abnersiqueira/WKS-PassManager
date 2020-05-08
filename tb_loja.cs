@@ -2,7 +2,7 @@
 {
 
 
-    public partial class masterDataSet
+    public partial class tb_loja
     {
     }
 }

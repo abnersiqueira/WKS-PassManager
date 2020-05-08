@@ -50,7 +50,7 @@ namespace PassManager
 
                 FrmMainMenu menu = new FrmMainMenu();
                 menu.Show();
-
+              
 
             }
             else

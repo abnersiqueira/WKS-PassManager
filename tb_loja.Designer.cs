@@ -346,6 +346,10 @@ namespace PassManager {
             
             private global::System.Data.DataColumn columnsenhafirewall;
             
+            private global::System.Data.DataColumn columnfirewall;
+            
+            private global::System.Data.DataColumn columnipfirewall;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public tb_DadosLojaDataTable() {
@@ -509,6 +513,22 @@ namespace PassManager {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn firewallColumn {
+                get {
+                    return this.columnfirewall;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ipfirewallColumn {
+                get {
+                    return this.columnipfirewall;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -544,7 +564,24 @@ namespace PassManager {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tb_DadosLojaRow Addtb_DadosLojaRow(string dominio, string nomesrv, string nomesrv2, string teamviewer, string teamviewer2, string ipsrv, string ipsrv2, string usuariosrv, string usuariosrv2, string senhasrv, string senhasrv2, int checkfirewall, int portafirewall, string usuariofirewall, string senhafirewall) {
+            public tb_DadosLojaRow Addtb_DadosLojaRow(
+                        string dominio, 
+                        string nomesrv, 
+                        string nomesrv2, 
+                        string teamviewer, 
+                        string teamviewer2, 
+                        string ipsrv, 
+                        string ipsrv2, 
+                        string usuariosrv, 
+                        string usuariosrv2, 
+                        string senhasrv, 
+                        string senhasrv2, 
+                        int checkfirewall, 
+                        int portafirewall, 
+                        string usuariofirewall, 
+                        string senhafirewall, 
+                        string firewall, 
+                        string ipfirewall) {
                 tb_DadosLojaRow rowtb_DadosLojaRow = ((tb_DadosLojaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -562,7 +599,9 @@ namespace PassManager {
                         checkfirewall,
                         portafirewall,
                         usuariofirewall,
-                        senhafirewall};
+                        senhafirewall,
+                        firewall,
+                        ipfirewall};
                 rowtb_DadosLojaRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowtb_DadosLojaRow);
                 return rowtb_DadosLojaRow;
@@ -608,6 +647,8 @@ namespace PassManager {
                 this.columnportafirewall = base.Columns["portafirewall"];
                 this.columnusuariofirewall = base.Columns["usuariofirewall"];
                 this.columnsenhafirewall = base.Columns["senhafirewall"];
+                this.columnfirewall = base.Columns["firewall"];
+                this.columnipfirewall = base.Columns["ipfirewall"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -645,6 +686,10 @@ namespace PassManager {
                 base.Columns.Add(this.columnusuariofirewall);
                 this.columnsenhafirewall = new global::System.Data.DataColumn("senhafirewall", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnsenhafirewall);
+                this.columnfirewall = new global::System.Data.DataColumn("firewall", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnfirewall);
+                this.columnipfirewall = new global::System.Data.DataColumn("ipfirewall", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnipfirewall);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid_DadosLoja}, true));
                 this.columnid_DadosLoja.AutoIncrement = true;
@@ -799,7 +844,7 @@ namespace PassManager {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class tb_lojaDataTable : global::System.Data.TypedTableBase<tb_lojaRow> {
             
-            private global::System.Data.DataColumn columnid;
+            private global::System.Data.DataColumn columnid_loja;
             
             private global::System.Data.DataColumn columnnome_empresa;
             
@@ -850,9 +895,9 @@ namespace PassManager {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn idColumn {
+            public global::System.Data.DataColumn id_lojaColumn {
                 get {
-                    return this.columnid;
+                    return this.columnid_loja;
                 }
             }
             
@@ -982,7 +1027,7 @@ namespace PassManager {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnid = base.Columns["id"];
+                this.columnid_loja = base.Columns["id_loja"];
                 this.columnnome_empresa = base.Columns["nome_empresa"];
                 this.columnnome_responsavel = base.Columns["nome_responsavel"];
                 this.columnemail_resp = base.Columns["email_resp"];
@@ -995,8 +1040,8 @@ namespace PassManager {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnid = new global::System.Data.DataColumn("id", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnid);
+                this.columnid_loja = new global::System.Data.DataColumn("id_loja", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnid_loja);
                 this.columnnome_empresa = new global::System.Data.DataColumn("nome_empresa", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnnome_empresa);
                 this.columnnome_responsavel = new global::System.Data.DataColumn("nome_responsavel", typeof(string), null, global::System.Data.MappingType.Element);
@@ -1011,11 +1056,11 @@ namespace PassManager {
                 base.Columns.Add(this.columncelular_1);
                 this.columncelular_2 = new global::System.Data.DataColumn("celular_2", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columncelular_2);
-                this.columnid.AutoIncrement = true;
-                this.columnid.AutoIncrementSeed = -1;
-                this.columnid.AutoIncrementStep = -1;
-                this.columnid.AllowDBNull = false;
-                this.columnid.ReadOnly = true;
+                this.columnid_loja.AutoIncrement = true;
+                this.columnid_loja.AutoIncrementSeed = -1;
+                this.columnid_loja.AutoIncrementStep = -1;
+                this.columnid_loja.AllowDBNull = false;
+                this.columnid_loja.ReadOnly = true;
                 this.columnnome_empresa.MaxLength = 50;
                 this.columnnome_responsavel.MaxLength = 50;
                 this.columnemail_resp.MaxLength = 40;
@@ -1418,6 +1463,38 @@ namespace PassManager {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string firewall {
+                get {
+                    try {
+                        return ((string)(this[this.tabletb_DadosLoja.firewallColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'firewall\' na tabela \'tb_DadosLoja\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletb_DadosLoja.firewallColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string ipfirewall {
+                get {
+                    try {
+                        return ((string)(this[this.tabletb_DadosLoja.ipfirewallColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("O valor da coluna \'ipfirewall\' na tabela \'tb_DadosLoja\' é DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletb_DadosLoja.ipfirewallColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsdominioNull() {
                 return this.IsNull(this.tabletb_DadosLoja.dominioColumn);
             }
@@ -1595,6 +1672,30 @@ namespace PassManager {
             public void SetsenhafirewallNull() {
                 this[this.tabletb_DadosLoja.senhafirewallColumn] = global::System.Convert.DBNull;
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsfirewallNull() {
+                return this.IsNull(this.tabletb_DadosLoja.firewallColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetfirewallNull() {
+                this[this.tabletb_DadosLoja.firewallColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsipfirewallNull() {
+                return this.IsNull(this.tabletb_DadosLoja.ipfirewallColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetipfirewallNull() {
+                this[this.tabletb_DadosLoja.ipfirewallColumn] = global::System.Convert.DBNull;
+            }
         }
         
         /// <summary>
@@ -1613,12 +1714,12 @@ namespace PassManager {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int id {
+            public int id_loja {
                 get {
-                    return ((int)(this[this.tabletb_loja.idColumn]));
+                    return ((int)(this[this.tabletb_loja.id_lojaColumn]));
                 }
                 set {
-                    this[this.tabletb_loja.idColumn] = value;
+                    this[this.tabletb_loja.id_lojaColumn] = value;
                 }
             }
             
@@ -2950,7 +3051,7 @@ SELECT id_DadosLoja, dominio, nomesrv, nomesrv2, teamviewer, teamviewer2, ipsrv,
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "tb_loja";
-            tableMapping.ColumnMappings.Add("id", "id");
+            tableMapping.ColumnMappings.Add("id", "id_loja");
             tableMapping.ColumnMappings.Add("nome_empresa", "nome_empresa");
             tableMapping.ColumnMappings.Add("nome_responsavel", "nome_responsavel");
             tableMapping.ColumnMappings.Add("email_resp", "email_resp");
@@ -2984,12 +3085,25 @@ SELECT id_DadosLoja, dominio, nomesrv, nomesrv2, teamviewer, teamviewer2, ipsrv,
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT id, nome_empresa, nome_responsavel, email_resp, telefone_1, telefone_2, ce" +
                 "lular_1, celular_2 FROM dbo.tb_loja";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "INSERT INTO [dbo].[tb_loja] ([nome_empresa], [nome_responsavel], [email_resp], [t" +
+                "elefone_1], [telefone_2], [celular_1], [celular_2]) VALUES (@nome_empresa, @nome" +
+                "_responsavel, @email_resp, @telefone_1, @telefone_2, @celular_1, @celular_2)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nome_empresa", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "nome_empresa", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nome_responsavel", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "nome_responsavel", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@email_resp", global::System.Data.SqlDbType.VarChar, 40, global::System.Data.ParameterDirection.Input, 0, 0, "email_resp", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@telefone_1", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, "telefone_1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@telefone_2", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, "telefone_2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@celular_1", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, "celular_1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@celular_2", global::System.Data.SqlDbType.VarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, "celular_2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3106,6 +3220,71 @@ SELECT id_DadosLoja, dominio, nomesrv, nomesrv2, teamviewer, teamviewer2, ipsrv,
                     this.Adapter.InsertCommand.Connection.Close();
                 }
             }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int InsereRespLoja(string nome_empresa, string nome_responsavel, string email_resp, string telefone_1, string telefone_2, string celular_1, string celular_2) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
+            if ((nome_empresa == null)) {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[0].Value = ((string)(nome_empresa));
+            }
+            if ((nome_responsavel == null)) {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[1].Value = ((string)(nome_responsavel));
+            }
+            if ((email_resp == null)) {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[2].Value = ((string)(email_resp));
+            }
+            if ((telefone_1 == null)) {
+                command.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[3].Value = ((string)(telefone_1));
+            }
+            if ((telefone_2 == null)) {
+                command.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[4].Value = ((string)(telefone_2));
+            }
+            if ((celular_1 == null)) {
+                command.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[5].Value = ((string)(celular_1));
+            }
+            if ((celular_2 == null)) {
+                command.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[6].Value = ((string)(celular_2));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
     

@@ -39,6 +39,7 @@ namespace PassManager.DAL
                 this.mensagem = "Erro com o banco de dados";
             }
 
+            
             return tem;
         }
 
