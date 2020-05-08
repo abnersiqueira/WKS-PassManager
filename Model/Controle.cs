@@ -11,6 +11,7 @@ namespace PassManager.Model
     {
         public bool tem;
         public String mensagem = "";
+
         public bool acessar(String login, String senha)
         {
             LoginDaoComandos loginDao = new LoginDaoComandos();
@@ -25,6 +26,10 @@ namespace PassManager.Model
 
         public String cadastrar(String login, String senha)
         {
+            //FUNÇÃO PARA CADASTRO DE U
+            LoginDaoComandos LoginDao = new LoginDaoComandos();
+            this.mensagem = LoginDao.cadastrar(login, senha);
+            
             return mensagem;
         }
     }

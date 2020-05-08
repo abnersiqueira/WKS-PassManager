@@ -52,14 +52,6 @@
     <Compile Include="DAL\Conexao.cs" />
     <Compile Include="DAL\LoginDaoComandos.cs" />
     <Compile Include="Funcions\Funcions.cs" />
-    <Compile Include="masterDataSet.cs">
-      <DependentUpon>masterDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="masterDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>masterDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Model\Controle.cs" />
     <Compile Include="PassManagerDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -83,6 +75,12 @@
     <Compile Include="View\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Lojas\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Lojas\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Lojas\FrmLOJAS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,17 +101,14 @@
     <Compile Include="View\Lojas\FrmTodasLojas.Designer.cs">
       <DependentUpon>FrmTodasLojas.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Lojas\Teste.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Lojas\Teste.Designer.cs">
-      <DependentUpon>Teste.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="View\Disable\DIESABLEFrmPainelLojas.resx">
       <DependentUpon>DIESABLEFrmPainelLojas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Lojas\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Lojas\FrmLOJAS.resx">
       <DependentUpon>FrmLOJAS.cs</DependentUpon>
@@ -133,20 +128,6 @@
     <EmbeddedResource Include="View\Lojas\FrmTodasLojas.resx">
       <DependentUpon>FrmTodasLojas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Lojas\Teste.resx">
-      <DependentUpon>Teste.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="masterDataSet.xsc">
-      <DependentUpon>masterDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="masterDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>masterDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="masterDataSet.xss">
-      <DependentUpon>masterDataSet.xsd</DependentUpon>
-    </None>
     <None Include="PassManagerDataSet.xsc">
       <DependentUpon>PassManagerDataSet.xsd</DependentUpon>
     </None>

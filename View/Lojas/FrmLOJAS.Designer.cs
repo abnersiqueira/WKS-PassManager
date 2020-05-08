@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label idLabel;
             System.Windows.Forms.Label nome_empresaLabel;
             System.Windows.Forms.Label nome_responsavelLabel;
@@ -37,9 +36,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLOJAS));
             this.PainelCentralBranco = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.CheckFirewallEnable = new System.Windows.Forms.CheckBox();
             this.txbTituloLoja = new System.Windows.Forms.TextBox();
             this.PnLPossuiFirewall = new System.Windows.Forms.Panel();
-            this.CheckFirewallEnable = new System.Windows.Forms.CheckBox();
             this.txbOBS = new System.Windows.Forms.TextBox();
             this.txbSelecFirewall = new System.Windows.Forms.ComboBox();
             this.labSenha = new System.Windows.Forms.Label();
@@ -74,13 +73,13 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txbUsuario = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.BtnSalvar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.idTextBox = new System.Windows.Forms.TextBox();
-            this.tb_lojaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.masterDataSet = new PassManager.masterDataSet();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txbCelEmpresa2 = new System.Windows.Forms.TextBox();
@@ -91,11 +90,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txbEmailEmpresa = new System.Windows.Forms.TextBox();
             this.txbRespEmpresa = new System.Windows.Forms.TextBox();
-            this.tb_lojaTableAdapter = new PassManager.masterDataSetTableAdapters.tb_lojaTableAdapter();
-            this.tableAdapterManager = new PassManager.masterDataSetTableAdapters.TableAdapterManager();
-            this.tb_DadosLojaTableAdapter = new PassManager.masterDataSetTableAdapters.tb_DadosLojaTableAdapter();
-            this.tb_lojaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.tb_DadosLojaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             idLabel = new System.Windows.Forms.Label();
             nome_empresaLabel = new System.Windows.Forms.Label();
             nome_responsavelLabel = new System.Windows.Forms.Label();
@@ -105,11 +99,7 @@
             this.panel2.SuspendLayout();
             this.PnLPossuiFirewall.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tb_lojaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.masterDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tb_lojaBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tb_DadosLojaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // idLabel
@@ -170,6 +160,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.Controls.Add(this.CheckFirewallEnable);
             this.panel2.Controls.Add(this.txbTituloLoja);
             this.panel2.Controls.Add(this.PnLPossuiFirewall);
             this.panel2.Controls.Add(this.label12);
@@ -201,6 +192,19 @@
             this.panel2.Size = new System.Drawing.Size(1043, 775);
             this.panel2.TabIndex = 13;
             // 
+            // CheckFirewallEnable
+            // 
+            this.CheckFirewallEnable.AutoSize = true;
+            this.CheckFirewallEnable.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F);
+            this.CheckFirewallEnable.ForeColor = System.Drawing.Color.Black;
+            this.CheckFirewallEnable.Location = new System.Drawing.Point(543, 115);
+            this.CheckFirewallEnable.Name = "CheckFirewallEnable";
+            this.CheckFirewallEnable.Size = new System.Drawing.Size(135, 23);
+            this.CheckFirewallEnable.TabIndex = 72;
+            this.CheckFirewallEnable.Text = "Possuí Firewall ?";
+            this.CheckFirewallEnable.UseVisualStyleBackColor = true;
+            this.CheckFirewallEnable.CheckedChanged += new System.EventHandler(this.CheckFirewallEnable_CheckedChanged_1);
+            // 
             // txbTituloLoja
             // 
             this.txbTituloLoja.BackColor = System.Drawing.SystemColors.Control;
@@ -216,7 +220,6 @@
             // 
             // PnLPossuiFirewall
             // 
-            this.PnLPossuiFirewall.Controls.Add(this.CheckFirewallEnable);
             this.PnLPossuiFirewall.Controls.Add(this.txbOBS);
             this.PnLPossuiFirewall.Controls.Add(this.txbSelecFirewall);
             this.PnLPossuiFirewall.Controls.Add(this.labSenha);
@@ -233,19 +236,6 @@
             this.PnLPossuiFirewall.Name = "PnLPossuiFirewall";
             this.PnLPossuiFirewall.Size = new System.Drawing.Size(1043, 437);
             this.PnLPossuiFirewall.TabIndex = 61;
-            // 
-            // CheckFirewallEnable
-            // 
-            this.CheckFirewallEnable.AutoSize = true;
-            this.CheckFirewallEnable.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F);
-            this.CheckFirewallEnable.ForeColor = System.Drawing.Color.Black;
-            this.CheckFirewallEnable.Location = new System.Drawing.Point(19, 7);
-            this.CheckFirewallEnable.Name = "CheckFirewallEnable";
-            this.CheckFirewallEnable.Size = new System.Drawing.Size(135, 23);
-            this.CheckFirewallEnable.TabIndex = 72;
-            this.CheckFirewallEnable.Text = "Possuí Firewall ?";
-            this.CheckFirewallEnable.UseVisualStyleBackColor = true;
-            this.CheckFirewallEnable.CheckedChanged += new System.EventHandler(this.CheckFirewallEnable_CheckedChanged);
             // 
             // txbOBS
             // 
@@ -525,7 +515,7 @@
             // 
             // textBox15
             // 
-            this.textBox15.BackColor = System.Drawing.Color.DarkGray;
+            this.textBox15.BackColor = System.Drawing.Color.LightGray;
             this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox15.ForeColor = System.Drawing.Color.Lime;
@@ -603,6 +593,8 @@
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(idLabel);
             this.panel1.Controls.Add(this.btnCancelar);
@@ -629,10 +621,35 @@
             this.panel1.Size = new System.Drawing.Size(205, 642);
             this.panel1.TabIndex = 12;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.ForeColor = System.Drawing.Color.Red;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(15, 531);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(159, 21);
+            this.comboBox1.TabIndex = 92;
+            this.comboBox1.Text = "Matriz";
+            // 
+            // button2
+            // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button2.BackColor = System.Drawing.Color.Gray;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.button2.Location = new System.Drawing.Point(15, 490);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(159, 35);
+            this.button2.TabIndex = 91;
+            this.button2.Text = "Configuração Filial";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // button1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button1.BackColor = System.Drawing.Color.Gray;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
@@ -648,6 +665,7 @@
             // 
             // btnCancelar
             // 
+            this.btnCancelar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnCancelar.BackColor = System.Drawing.Color.Gray;
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
@@ -664,25 +682,23 @@
             // 
             // BtnSalvar
             // 
-            this.BtnSalvar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnSalvar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.BtnSalvar.BackColor = System.Drawing.Color.SeaGreen;
             this.BtnSalvar.FlatAppearance.BorderSize = 0;
             this.BtnSalvar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
             this.BtnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSalvar.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSalvar.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.BtnSalvar.Location = new System.Drawing.Point(13, 603);
+            this.BtnSalvar.Location = new System.Drawing.Point(12, 604);
             this.BtnSalvar.Name = "BtnSalvar";
-            this.BtnSalvar.Size = new System.Drawing.Size(57, 37);
+            this.BtnSalvar.Size = new System.Drawing.Size(57, 35);
             this.BtnSalvar.TabIndex = 73;
             this.BtnSalvar.Text = "Salvar";
             this.BtnSalvar.UseVisualStyleBackColor = false;
+            this.BtnSalvar.Click += new System.EventHandler(this.BtnSalvar_Click);
             // 
             // label4
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(12, 400);
             this.label4.Name = "label4";
@@ -694,27 +710,14 @@
             // 
             this.idTextBox.BackColor = System.Drawing.Color.Gainsboro;
             this.idTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_lojaBindingSource, "id", true));
             this.idTextBox.Location = new System.Drawing.Point(90, 95);
             this.idTextBox.Multiline = true;
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(39, 27);
             this.idTextBox.TabIndex = 75;
             // 
-            // tb_lojaBindingSource
-            // 
-            this.tb_lojaBindingSource.DataMember = "tb_loja";
-            this.tb_lojaBindingSource.DataSource = this.masterDataSet;
-            // 
-            // masterDataSet
-            // 
-            this.masterDataSet.DataSetName = "masterDataSet";
-            this.masterDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // label5
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(12, 322);
             this.label5.Name = "label5";
@@ -735,7 +738,6 @@
             // 
             // txbCelEmpresa2
             // 
-            this.txbCelEmpresa2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_lojaBindingSource, "celular_2", true));
             this.txbCelEmpresa2.Location = new System.Drawing.Point(12, 416);
             this.txbCelEmpresa2.Name = "txbCelEmpresa2";
             this.txbCelEmpresa2.Size = new System.Drawing.Size(162, 20);
@@ -743,7 +745,6 @@
             // 
             // txbCelEmpresa
             // 
-            this.txbCelEmpresa.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_lojaBindingSource, "celular_1", true));
             this.txbCelEmpresa.Location = new System.Drawing.Point(12, 377);
             this.txbCelEmpresa.Name = "txbCelEmpresa";
             this.txbCelEmpresa.Size = new System.Drawing.Size(162, 20);
@@ -751,7 +752,6 @@
             // 
             // txbTelefoneEmpresa2
             // 
-            this.txbTelefoneEmpresa2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_lojaBindingSource, "telefone_2", true));
             this.txbTelefoneEmpresa2.Location = new System.Drawing.Point(12, 338);
             this.txbTelefoneEmpresa2.Name = "txbTelefoneEmpresa2";
             this.txbTelefoneEmpresa2.Size = new System.Drawing.Size(162, 20);
@@ -759,7 +759,6 @@
             // 
             // txbTelefoneEmpresa
             // 
-            this.txbTelefoneEmpresa.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_lojaBindingSource, "telefone_1", true));
             this.txbTelefoneEmpresa.Location = new System.Drawing.Point(12, 299);
             this.txbTelefoneEmpresa.Name = "txbTelefoneEmpresa";
             this.txbTelefoneEmpresa.Size = new System.Drawing.Size(162, 20);
@@ -767,7 +766,6 @@
             // 
             // txbNomeEmpresa
             // 
-            this.txbNomeEmpresa.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_lojaBindingSource, "nome_empresa", true));
             this.txbNomeEmpresa.Location = new System.Drawing.Point(12, 182);
             this.txbNomeEmpresa.Name = "txbNomeEmpresa";
             this.txbNomeEmpresa.Size = new System.Drawing.Size(162, 20);
@@ -775,8 +773,6 @@
             // 
             // label6
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(12, 283);
             this.label6.Name = "label6";
@@ -786,7 +782,6 @@
             // 
             // txbEmailEmpresa
             // 
-            this.txbEmailEmpresa.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_lojaBindingSource, "email_resp", true));
             this.txbEmailEmpresa.Location = new System.Drawing.Point(12, 260);
             this.txbEmailEmpresa.Name = "txbEmailEmpresa";
             this.txbEmailEmpresa.Size = new System.Drawing.Size(162, 20);
@@ -794,37 +789,10 @@
             // 
             // txbRespEmpresa
             // 
-            this.txbRespEmpresa.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tb_lojaBindingSource, "nome_responsavel", true));
             this.txbRespEmpresa.Location = new System.Drawing.Point(12, 221);
             this.txbRespEmpresa.Name = "txbRespEmpresa";
             this.txbRespEmpresa.Size = new System.Drawing.Size(162, 20);
             this.txbRespEmpresa.TabIndex = 79;
-            // 
-            // tb_lojaTableAdapter
-            // 
-            this.tb_lojaTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.logonTableAdapter = null;
-            this.tableAdapterManager.tb_DadosLojaTableAdapter = this.tb_DadosLojaTableAdapter;
-            this.tableAdapterManager.tb_lojaTableAdapter = this.tb_lojaTableAdapter;
-            this.tableAdapterManager.UpdateOrder = PassManager.masterDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // tb_DadosLojaTableAdapter
-            // 
-            this.tb_DadosLojaTableAdapter.ClearBeforeFill = true;
-            // 
-            // tb_lojaBindingSource1
-            // 
-            this.tb_lojaBindingSource1.DataMember = "tb_loja";
-            this.tb_lojaBindingSource1.DataSource = this.masterDataSet;
-            // 
-            // tb_DadosLojaBindingSource
-            // 
-            this.tb_DadosLojaBindingSource.DataMember = "tb_DadosLoja";
-            this.tb_DadosLojaBindingSource.DataSource = this.masterDataSet;
             // 
             // FrmLOJAS
             // 
@@ -835,7 +803,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmLOJAS";
             this.Text = "FrmLoja";
-            this.Load += new System.EventHandler(this.FrmLOJAS_Load);
             this.PainelCentralBranco.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -843,11 +810,7 @@
             this.PnLPossuiFirewall.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tb_lojaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.masterDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tb_lojaBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tb_DadosLojaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -899,10 +862,6 @@
         public System.Windows.Forms.CheckBox CheckFirewallEnable;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button BtnSalvar;
-        private masterDataSet masterDataSet;
-        private System.Windows.Forms.BindingSource tb_lojaBindingSource;
-        private masterDataSetTableAdapters.tb_lojaTableAdapter tb_lojaTableAdapter;
-        private masterDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.TextBox idTextBox;
         private System.Windows.Forms.TextBox txbNomeEmpresa;
         private System.Windows.Forms.TextBox txbRespEmpresa;
@@ -911,9 +870,8 @@
         private System.Windows.Forms.TextBox txbTelefoneEmpresa2;
         private System.Windows.Forms.TextBox txbCelEmpresa;
         private System.Windows.Forms.TextBox txbCelEmpresa2;
-        private System.Windows.Forms.BindingSource tb_lojaBindingSource1;
-        private masterDataSetTableAdapters.tb_DadosLojaTableAdapter tb_DadosLojaTableAdapter;
-        private System.Windows.Forms.BindingSource tb_DadosLojaBindingSource;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button2;
     }
 }

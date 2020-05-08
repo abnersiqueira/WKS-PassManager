@@ -55,3 +55,4 @@ C:\Users\Abner\Desktop\PROJETO\WKS-PassManager\obj\Debug\PassManager.View.FrmLOJ
 C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\obj\Debug\PassManager.View.FrmTodasLojas.resources
 C:\Users\Abner\Desktop\PROJETO\WKS-PassManager\obj\Debug\PassManager.View.FrmTodasLojas.resources
 C:\Users\Abner\Desktop\PROJETO\WKS-PassManager\obj\Debug\PassManager.View.Lojas.Teste.resources
+C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\obj\Debug\PassManager.View.Lojas.Form1.resources
