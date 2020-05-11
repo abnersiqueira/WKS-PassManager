@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using PassManager.DAL;
+using PassManager.View;
 
 namespace PassManager.View
 {
@@ -22,7 +25,7 @@ namespace PassManager.View
         private void button1_Click(object sender, EventArgs e)
         {
             _objForm?.Close();
-            _objForm = new FrmLOJAS
+            _objForm = new FrmInfoLoja      
             {
                 TopLevel = false,
                 FormBorderStyle = FormBorderStyle.None,
@@ -30,9 +33,23 @@ namespace PassManager.View
             };
             pnlChamaLoja.Controls.Add(_objForm);
             _objForm.Show();
-
-
             _objForm.BringToFront();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            _objForm?.Close();
+            _objForm = new FrmInfoLoja
+            {
+                TopLevel = false,
+                FormBorderStyle = FormBorderStyle.None,
+                Dock = DockStyle.Fill
+            };
+            pnlChamaLoja.Controls.Add(_objForm);
+            _objForm.Show();
+            _objForm.BringToFront();
+        }
+
+
     }
 }

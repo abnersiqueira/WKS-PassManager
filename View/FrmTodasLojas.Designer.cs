@@ -54,14 +54,14 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnLoja8 = new System.Windows.Forms.Button();
+            this.BtnLoja7 = new System.Windows.Forms.Button();
+            this.BtnLoja6 = new System.Windows.Forms.Button();
+            this.BtnLoja5 = new System.Windows.Forms.Button();
+            this.BtnLoja4 = new System.Windows.Forms.Button();
+            this.BtnLoja3 = new System.Windows.Forms.Button();
+            this.BtnLoja2 = new System.Windows.Forms.Button();
+            this.BtnLoja1 = new System.Windows.Forms.Button();
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlChamaLoja.SuspendLayout();
@@ -94,14 +94,14 @@
             this.pnlChamaLoja.Controls.Add(this.button10);
             this.pnlChamaLoja.Controls.Add(this.button11);
             this.pnlChamaLoja.Controls.Add(this.button12);
-            this.pnlChamaLoja.Controls.Add(this.button5);
-            this.pnlChamaLoja.Controls.Add(this.button6);
-            this.pnlChamaLoja.Controls.Add(this.button7);
-            this.pnlChamaLoja.Controls.Add(this.button8);
-            this.pnlChamaLoja.Controls.Add(this.button4);
-            this.pnlChamaLoja.Controls.Add(this.button3);
-            this.pnlChamaLoja.Controls.Add(this.button2);
-            this.pnlChamaLoja.Controls.Add(this.button1);
+            this.pnlChamaLoja.Controls.Add(this.BtnLoja8);
+            this.pnlChamaLoja.Controls.Add(this.BtnLoja7);
+            this.pnlChamaLoja.Controls.Add(this.BtnLoja6);
+            this.pnlChamaLoja.Controls.Add(this.BtnLoja5);
+            this.pnlChamaLoja.Controls.Add(this.BtnLoja4);
+            this.pnlChamaLoja.Controls.Add(this.BtnLoja3);
+            this.pnlChamaLoja.Controls.Add(this.BtnLoja2);
+            this.pnlChamaLoja.Controls.Add(this.BtnLoja1);
             this.pnlChamaLoja.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlChamaLoja.Location = new System.Drawing.Point(0, 0);
             this.pnlChamaLoja.Name = "pnlChamaLoja";
@@ -348,89 +348,90 @@
             this.button12.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button12.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // BtnLoja8
             // 
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button5.Location = new System.Drawing.Point(913, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(130, 101);
-            this.button5.TabIndex = 8;
-            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.UseVisualStyleBackColor = true;
+            this.BtnLoja8.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.BtnLoja8.Location = new System.Drawing.Point(913, 3);
+            this.BtnLoja8.Name = "BtnLoja8";
+            this.BtnLoja8.Size = new System.Drawing.Size(130, 101);
+            this.BtnLoja8.TabIndex = 8;
+            this.BtnLoja8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnLoja8.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // BtnLoja7
             // 
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button6.Location = new System.Drawing.Point(783, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(130, 101);
-            this.button6.TabIndex = 7;
-            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.UseVisualStyleBackColor = true;
+            this.BtnLoja7.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.BtnLoja7.Location = new System.Drawing.Point(783, 3);
+            this.BtnLoja7.Name = "BtnLoja7";
+            this.BtnLoja7.Size = new System.Drawing.Size(130, 101);
+            this.BtnLoja7.TabIndex = 7;
+            this.BtnLoja7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnLoja7.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // BtnLoja6
             // 
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button7.Location = new System.Drawing.Point(653, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(130, 101);
-            this.button7.TabIndex = 6;
-            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button7.UseVisualStyleBackColor = true;
+            this.BtnLoja6.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.BtnLoja6.Location = new System.Drawing.Point(653, 3);
+            this.BtnLoja6.Name = "BtnLoja6";
+            this.BtnLoja6.Size = new System.Drawing.Size(130, 101);
+            this.BtnLoja6.TabIndex = 6;
+            this.BtnLoja6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnLoja6.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // BtnLoja5
             // 
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button8.Location = new System.Drawing.Point(523, 3);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(130, 101);
-            this.button8.TabIndex = 5;
-            this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button8.UseVisualStyleBackColor = true;
+            this.BtnLoja5.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.BtnLoja5.Location = new System.Drawing.Point(523, 3);
+            this.BtnLoja5.Name = "BtnLoja5";
+            this.BtnLoja5.Size = new System.Drawing.Size(130, 101);
+            this.BtnLoja5.TabIndex = 5;
+            this.BtnLoja5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnLoja5.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // BtnLoja4
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button4.Location = new System.Drawing.Point(393, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(130, 101);
-            this.button4.TabIndex = 4;
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.UseVisualStyleBackColor = true;
+            this.BtnLoja4.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.BtnLoja4.Location = new System.Drawing.Point(393, 3);
+            this.BtnLoja4.Name = "BtnLoja4";
+            this.BtnLoja4.Size = new System.Drawing.Size(130, 101);
+            this.BtnLoja4.TabIndex = 4;
+            this.BtnLoja4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnLoja4.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // BtnLoja3
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button3.Location = new System.Drawing.Point(263, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(130, 101);
-            this.button3.TabIndex = 3;
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnLoja3.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.BtnLoja3.Location = new System.Drawing.Point(263, 3);
+            this.BtnLoja3.Name = "BtnLoja3";
+            this.BtnLoja3.Size = new System.Drawing.Size(130, 101);
+            this.BtnLoja3.TabIndex = 3;
+            this.BtnLoja3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnLoja3.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // BtnLoja2
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button2.Location = new System.Drawing.Point(133, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 101);
-            this.button2.TabIndex = 2;
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnLoja2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.BtnLoja2.Location = new System.Drawing.Point(133, 3);
+            this.BtnLoja2.Name = "BtnLoja2";
+            this.BtnLoja2.Size = new System.Drawing.Size(130, 101);
+            this.BtnLoja2.TabIndex = 2;
+            this.BtnLoja2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnLoja2.UseVisualStyleBackColor = true;
+            this.BtnLoja2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // BtnLoja1
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 101);
-            this.button1.TabIndex = 1;
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BtnLoja1.BackColor = System.Drawing.Color.Transparent;
+            this.BtnLoja1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLoja1.BackgroundImage")));
+            this.BtnLoja1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnLoja1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLoja1.Location = new System.Drawing.Point(3, 3);
+            this.BtnLoja1.Name = "BtnLoja1";
+            this.BtnLoja1.Size = new System.Drawing.Size(130, 101);
+            this.BtnLoja1.TabIndex = 1;
+            this.BtnLoja1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnLoja1.UseVisualStyleBackColor = false;
+            this.BtnLoja1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pnlLeft
             // 
@@ -493,14 +494,14 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnLoja8;
+        private System.Windows.Forms.Button BtnLoja7;
+        private System.Windows.Forms.Button BtnLoja6;
+        private System.Windows.Forms.Button BtnLoja5;
+        private System.Windows.Forms.Button BtnLoja4;
+        private System.Windows.Forms.Button BtnLoja3;
+        private System.Windows.Forms.Button BtnLoja2;
+        private System.Windows.Forms.Button BtnLoja1;
         public System.Windows.Forms.Panel pnlLeft;
         private System.Windows.Forms.Panel panel1;
     }

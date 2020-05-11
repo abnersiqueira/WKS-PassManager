@@ -56,7 +56,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PainelCentral = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.pnLMenu = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -77,7 +77,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PainelCentral.SuspendLayout();
-            this.panel5.SuspendLayout();
+            this.pnLMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -335,6 +335,7 @@
             this.BtnConfigSistema.Text = "Config. do Sistema";
             this.BtnConfigSistema.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnConfigSistema.UseVisualStyleBackColor = false;
+            this.BtnConfigSistema.Click += new System.EventHandler(this.BtnConfigSistema_Click);
             // 
             // BtnControlServidores
             // 
@@ -485,25 +486,27 @@
             // PainelCentral
             // 
             this.PainelCentral.BackColor = System.Drawing.Color.SlateGray;
-            this.PainelCentral.Controls.Add(this.panel5);
+            this.PainelCentral.Controls.Add(this.pnLMenu);
             this.PainelCentral.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PainelCentral.Location = new System.Drawing.Point(200, 30);
             this.PainelCentral.Name = "PainelCentral";
             this.PainelCentral.Size = new System.Drawing.Size(1064, 596);
             this.PainelCentral.TabIndex = 0;
             // 
-            // panel5
+            // pnLMenu
             // 
-            this.panel5.BackColor = System.Drawing.Color.GhostWhite;
-            this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.label3);
-            this.panel5.Controls.Add(this.label2);
-            this.panel5.Controls.Add(this.label1);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1064, 596);
-            this.panel5.TabIndex = 8;
+            this.pnLMenu.BackColor = System.Drawing.Color.GhostWhite;
+            this.pnLMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnLMenu.BackgroundImage")));
+            this.pnLMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnLMenu.Controls.Add(this.label4);
+            this.pnLMenu.Controls.Add(this.label3);
+            this.pnLMenu.Controls.Add(this.label2);
+            this.pnLMenu.Controls.Add(this.label1);
+            this.pnLMenu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnLMenu.Location = new System.Drawing.Point(0, 0);
+            this.pnLMenu.Name = "pnLMenu";
+            this.pnLMenu.Size = new System.Drawing.Size(1064, 596);
+            this.pnLMenu.TabIndex = 8;
             // 
             // label4
             // 
@@ -598,8 +601,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.PainelCentral.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            this.pnLMenu.ResumeLayout(false);
+            this.pnLMenu.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -629,7 +632,7 @@
         private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.PictureBox BtnRestaura;
         private System.Windows.Forms.PictureBox BtnExit;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel pnLMenu;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;

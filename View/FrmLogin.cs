@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using PassManager.Model;
 using PassManager.View;
+using System.Data.SqlClient;
 
 namespace PassManager
 {
@@ -50,7 +51,11 @@ namespace PassManager
 
                 FrmMainMenu menu = new FrmMainMenu();
                 menu.Show();
-              
+               
+
+                FrmLogin login = new FrmLogin();
+                login.Focus();
+                this.Visible = false;
 
             }
             else
@@ -123,9 +128,6 @@ namespace PassManager
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void txbPass_TextChanged(object sender, EventArgs e)
-        {
 
-        }
     }
 }

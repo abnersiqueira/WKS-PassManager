@@ -37,6 +37,7 @@
     <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -51,26 +52,17 @@
   <ItemGroup>
     <Compile Include="DAL\Conexao.cs" />
     <Compile Include="DAL\LoginDaoComandos.cs" />
-    <Compile Include="Funcions\Funcions.cs" />
     <Compile Include="Model\Controle.cs" />
-    <Compile Include="PassManagerDataSet.Designer.cs">
+    <Compile Include="tb_logon_DataGrid.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>PassManagerDataSet.xsd</DependentUpon>
+      <DependentUpon>tb_logon_DataGrid.xsd</DependentUpon>
     </Compile>
-    <Compile Include="tb_loja.cs">
-      <DependentUpon>tb_loja.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="tb_loja.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>tb_loja.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="View\Disable\DIESABLEFrmPainelLojas.cs">
+    <Compile Include="View\FrmCadUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Disable\DIESABLEFrmPainelLojas.Designer.cs">
-      <DependentUpon>DIESABLEFrmPainelLojas.cs</DependentUpon>
+    <Compile Include="View\FrmCadUsuario.Designer.cs">
+      <DependentUpon>FrmCadUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FrmLogin.cs">
       <SubType>Form</SubType>
@@ -78,17 +70,11 @@
     <Compile Include="View\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Form1.cs">
+    <Compile Include="View\FrmInfoLoja.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\FrmLOJAS.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\FrmLOJAS.Designer.cs">
-      <DependentUpon>FrmLOJAS.cs</DependentUpon>
+    <Compile Include="View\FrmInfoLoja.Designer.cs">
+      <DependentUpon>FrmInfoLoja.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FrmMainMenu.cs">
       <SubType>Form</SubType>
@@ -104,17 +90,14 @@
     <Compile Include="View\FrmTodasLojas.Designer.cs">
       <DependentUpon>FrmTodasLojas.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="View\Disable\DIESABLEFrmPainelLojas.resx">
-      <DependentUpon>DIESABLEFrmPainelLojas.cs</DependentUpon>
+    <EmbeddedResource Include="View\FrmCadUsuario.resx">
+      <DependentUpon>FrmCadUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\FrmLOJAS.resx">
-      <DependentUpon>FrmLOJAS.cs</DependentUpon>
+    <EmbeddedResource Include="View\FrmInfoLoja.resx">
+      <DependentUpon>FrmInfoLoja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmMainMenu.resx">
       <DependentUpon>FrmMainMenu.cs</DependentUpon>
@@ -131,17 +114,6 @@
     <EmbeddedResource Include="View\FrmTodasLojas.resx">
       <DependentUpon>FrmTodasLojas.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="PassManagerDataSet.xsc">
-      <DependentUpon>PassManagerDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="PassManagerDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PassManagerDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="PassManagerDataSet.xss">
-      <DependentUpon>PassManagerDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -151,23 +123,23 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="tb_loja.xsc">
-      <DependentUpon>tb_loja.xsd</DependentUpon>
+    <None Include="tb_logon_DataGrid.xsc">
+      <DependentUpon>tb_logon_DataGrid.xsd</DependentUpon>
     </None>
-    <None Include="tb_loja.xsd">
+    <None Include="tb_logon_DataGrid.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>tb_loja.Designer.cs</LastGenOutput>
+      <LastGenOutput>tb_logon_DataGrid.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="tb_loja.xss">
-      <DependentUpon>tb_loja.xsd</DependentUpon>
+    <None Include="tb_logon_DataGrid.xss">
+      <DependentUpon>tb_logon_DataGrid.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="View\Lojas\" />
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

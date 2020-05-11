@@ -41,9 +41,9 @@
             this.txPassManager = new System.Windows.Forms.Label();
             this.txbPass = new System.Windows.Forms.TextBox();
             this.PnlLeft = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.PnLLogo = new System.Windows.Forms.Panel();
             this.picLogo = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.PnlMover.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimize)).BeginInit();
@@ -51,6 +51,10 @@
             this.PnlLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
+            // 
+            // fontDialog1
+            // 
+            this.fontDialog1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             // 
             // panel1
             // 
@@ -192,13 +196,12 @@
             this.txbPass.TabIndex = 15;
             this.txbPass.Text = "Senha";
             this.txbPass.UseSystemPasswordChar = true;
-            this.txbPass.TextChanged += new System.EventHandler(this.txbPass_TextChanged);
             this.txbPass.MouseEnter += new System.EventHandler(this.txbPass_MouseEnter_1);
             this.txbPass.MouseLeave += new System.EventHandler(this.txbPass_MouseLeave);
             // 
             // PnlLeft
             // 
-            this.PnlLeft.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.PnlLeft.BackColor = System.Drawing.Color.GhostWhite;
             this.PnlLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PnlLeft.Controls.Add(this.label4);
             this.PnlLeft.Controls.Add(this.PnLLogo);
@@ -208,6 +211,22 @@
             this.PnlLeft.Name = "PnlLeft";
             this.PnlLeft.Size = new System.Drawing.Size(200, 336);
             this.PnlLeft.TabIndex = 13;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Enabled = false;
+            this.label4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label4.Location = new System.Drawing.Point(16, 203);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(165, 21);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "suporte@wksti.com.br";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PnLLogo
             // 
@@ -227,22 +246,6 @@
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picLogo.TabIndex = 0;
             this.picLogo.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Enabled = false;
-            this.label4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label4.Location = new System.Drawing.Point(16, 203);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(165, 21);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "suporte@wksti.com.br";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FrmLogin
             // 
