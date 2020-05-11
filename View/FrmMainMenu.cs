@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using PassManager.View;
+using System.Data.SqlClient;
+using PassManager.DAL;
 
 namespace PassManager.View
 {
@@ -34,13 +36,13 @@ namespace PassManager.View
         {
             
             _objForm?.Close();
-            _objForm = new FrmTodasLojas
+            _objForm = new FrmTodasLojas//FrmConteudoMenu
             {
                 TopLevel = false,
                 FormBorderStyle = FormBorderStyle.None,
                 Dock = DockStyle.Fill
             };
-            panel5.Controls.Add(_objForm);
+            pnLMenu.Controls.Add(_objForm);   
             _objForm.Show();
 
 
@@ -95,7 +97,7 @@ namespace PassManager.View
         {
             BtnRestaura.Visible = true;
    
-            this.Size = new Size(sw, sh);
+            this.Size = new Size(1180, 720);
             this.Location = new Point(lx, ly);
 
         }

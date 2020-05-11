@@ -118,6 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BtnChat.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAH9JREFUSEvt
+        lEsKgDAMBXs89UJuvamg1/D3AnaTBEnTBrpwYOgmyeyafkqY4A7vSunGAAUtjmdXKNAGvR5QoA1a4Xv9
+        BLz2E7DC904o4EOkFb5nDnjtJ/CFNp/tJ+D1goKWn50aGOEGtYVS1UAtMwwNEDkSFiAoEhoglveNJqUH
+        EoQN9Zvbfa4AAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="picLogo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAANkAAACZCAYAAACi5p8aAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
@@ -815,14 +823,15 @@
   <metadata name="lineShape1.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>0, 660</value>
   </metadata>
-  <data name="BtnChat.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAH9JREFUSEvt
-        lEsKgDAMBXs89UJuvamg1/D3AnaTBEnTBrpwYOgmyeyafkqY4A7vSunGAAUtjmdXKNAGvR5QoA1a4Xv9
-        BLz2E7DC904o4EOkFb5nDnjtJ/CFNp/tJ+D1goKWn50aGOEGtYVS1UAtMwwNEDkSFiAoEhoglveNJqUH
-        EoQN9Zvbfa4AAAAASUVORK5CYII=
-</value>
-  </data>
+  <metadata name="lineShape1.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>198, -4, 0, 660</value>
+  </metadata>
+  <metadata name="lineShape1.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>198, -4</value>
+  </metadata>
+  <metadata name="lineShape1.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 660</value>
+  </metadata>
   <data name="BtnExit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABGdBTUEAALGPC/xhBQAAAxhJREFUeF7t

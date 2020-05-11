@@ -23,7 +23,6 @@ C:\Users\AbnerNB\Desktop\PROJETOS\WKS-PassManager\obj\Debug\PassManager.pdb
 C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\bin\Debug\PassManager.exe.config
 C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\bin\Debug\PassManager.exe
 C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\bin\Debug\PassManager.pdb
-C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\obj\Debug\PassManager.csprojAssemblyReference.cache
 C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\obj\Debug\PassManager.FrmLogin.resources
 C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\obj\Debug\PassManager.Properties.Resources.resources
 C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\obj\Debug\PassManager.csproj.GenerateResource.cache
@@ -31,7 +30,6 @@ C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\obj\De
 C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\obj\Debug\PassManager.exe
 C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\obj\Debug\PassManager.pdb
 C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\obj\Debug\PassManager.View.FrmMainMenu.resources
-C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\obj\Debug\PassManager.View.FrmConteudoMenu.resources
 C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
 C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
 C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\obj\Debug\PassManager.csproj.CopyComplete
@@ -50,9 +48,10 @@ C:\Users\Abner\Desktop\PROJETO\WKS-PassManager\obj\Debug\PassManager.exe
 C:\Users\Abner\Desktop\PROJETO\WKS-PassManager\obj\Debug\PassManager.pdb
 C:\Users\Abner\Desktop\PROJETO\WKS-PassManager\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
 C:\Users\Abner\Desktop\PROJETO\WKS-PassManager\obj\Debug\PassManager.View.FrmConteudoMenu.resources
-C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\obj\Debug\PassManager.View.FrmLOJAS.resources
 C:\Users\Abner\Desktop\PROJETO\WKS-PassManager\obj\Debug\PassManager.View.FrmLOJAS.resources
 C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\obj\Debug\PassManager.View.FrmTodasLojas.resources
 C:\Users\Abner\Desktop\PROJETO\WKS-PassManager\obj\Debug\PassManager.View.FrmTodasLojas.resources
+C:\Users\Abner\Desktop\PROJETO\WKS-PassManager\obj\Debug\PassManager.View.Lojas.Teste.resources
 C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\obj\Debug\PassManager.View.Lojas.Form1.resources
-C:\Users\Abner\Desktop\PROJETO\WKS-PassManager\obj\Debug\PassManager.View.Lojas.Form1.resources
+C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\obj\Debug\PassManager.View.FrmInfoLoja.resources
+C:\Users\Administrador\Desktop\PROJETOS\PassManager - WKS\WKS-PassManager\obj\Debug\PassManager.View.FrmCadUsuario.resources

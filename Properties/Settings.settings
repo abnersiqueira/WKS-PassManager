@@ -26,5 +26,13 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=DESKTOP-0P6UJBL\SQLEXPRESS;Initial Catalog=master;Integrated Security=True</Value>
     </Setting>
+    <Setting Name="wksAWS_ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=wks.ct8ezavef84l.sa-east-1.rds.amazonaws.com;Initial Catalog=wks;Persist Security Info=True;User ID=admin;Password=$Rv#passmanager&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=wks.ct8ezavef84l.sa-east-1.rds.amazonaws.com;Initial Catalog=wks;Persist Security Info=True;User ID=admin;Password=$Rv#passmanager</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
