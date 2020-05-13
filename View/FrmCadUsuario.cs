@@ -20,8 +20,8 @@ namespace PassManager.View
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            CadastroUsuario cad = new CadastroUsuario(txbUser.Text, txbSenha.Text);
-            MessageBox.Show(cad.mensagem);
+            //CadastroUsuario cad = new CadastroUsuario(txbUser.Text, txbSenha.Text);
+            //MessageBox.Show(cad.mensagem);
             //this.dataGridView1.Refresh();
             //this.dataGridView1.RefreshEdit();        //Atualização do DataGrid não funciona
             //this.dataGridView1.Update();

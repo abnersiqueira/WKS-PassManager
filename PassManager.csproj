@@ -52,7 +52,10 @@
   <ItemGroup>
     <Compile Include="DAL\Conexao.cs" />
     <Compile Include="DAL\LoginDaoComandos.cs" />
+    <Compile Include="Funcions\Crud_Empresa.cs" />
+    <Compile Include="Funcions\Cad_Login.cs" />
     <Compile Include="Model\Controle.cs" />
+    <Compile Include="ReceiveData\Dados_Empresa.cs" />
     <Compile Include="tb_logon_DataGrid.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -141,5 +144,6 @@
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

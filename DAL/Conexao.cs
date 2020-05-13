@@ -34,126 +34,95 @@ namespace PassManager.DAL
 
         }
 
+        //public class CadastroResp
+        //{
+        //    Conexao conexao = new Conexao();
+        //    SqlCommand cmd = new SqlCommand();
+        //    public String mensagem = "";
 
-        public class CadastroUsuario
-        {
-            Conexao conexao = new Conexao();
-            SqlCommand cmd = new SqlCommand();
-            public String mensagem = "";
+        //    //Fazer função CadastroResp
+        //    public CadastroResp(String login, String senha)
+        //    {
+        //        cmd.CommandText = "insert into tb_logon Values (login=@login, senha=@senha) ";
 
-            public CadastroUsuario(String login, String senha)
-            {
-                cmd.CommandText = "insert into tb_logon (login, senha) values (@login, @senha)";
+        //        cmd.Parameters.AddWithValue("@login", login);
+        //        cmd.Parameters.AddWithValue("@senha", senha);
 
-                cmd.Parameters.AddWithValue("@login", login);
-                cmd.Parameters.AddWithValue("@senha", senha);
+        //        try
+        //        {
+        //            //Conecta com o banco -- CONEXÃO
+        //            cmd.Connection = conexao.conectar();
+        //            //Excutar comando SQL
+        //            cmd.ExecuteNonQuery();
+        //            //Desconectar
+        //            conexao.desconectar();
 
-                try
-                {
-                    //Conecta com o banco -- CONEXÃO
-                    cmd.Connection = conexao.conectar();
-                    //Excutar comando SQL
-                    cmd.ExecuteNonQuery();
-                    //Desconectar
-                    conexao.desconectar();
+        //            //Mostrar mensagem de erro ou sucesso --Variavel
+        //            this.mensagem = "Cadastro realizado!";
+        //        }
+        //        catch (Exception)
+        //        {
+        //            this.mensagem = "Erro de conexão com banco";
+        //        }
 
-                    //Mostrar mensagem de erro ou sucesso --Variavel
-                    this.mensagem = "Cadastro realizado!";
-                }
-                catch (Exception)
-                {
-                    this.mensagem = "Erro de conexão com banco";
-                }
-
-            }
-
-
-
-
-        }
-
-        public class CadastroResp
-        {
-            Conexao conexao = new Conexao();
-            SqlCommand cmd = new SqlCommand();
-            public String mensagem = "";
-
-            //Fazer função CadastroResp
-            public CadastroResp(String login, String senha)
-            {
-                cmd.CommandText = "insert into tb_logon (login, senha) values (@login, @senha)";
-
-                cmd.Parameters.AddWithValue("@login", login);
-                cmd.Parameters.AddWithValue("@senha", senha);
-
-                try
-                {
-                    //Conecta com o banco -- CONEXÃO
-                    cmd.Connection = conexao.conectar();
-                    //Excutar comando SQL
-                    cmd.ExecuteNonQuery();
-                    //Desconectar
-                    conexao.desconectar();
-
-                    //Mostrar mensagem de erro ou sucesso --Variavel
-                    this.mensagem = "Cadastro realizado!";
-                }
-                catch (Exception)
-                {
-                    this.mensagem = "Erro de conexão com banco";
-                }
-
-            }
-
-            //Função Cadastro Loja
+        //    }
+        //}
 
 
 
 
+        //Criar uma função buscar no BD atravez doi ID empresa retornar as colunas que eu quero
+        // 
 
 
-            //Cadastro Firewall
-
-            //Altera Usuario do sistema
-            //Altera CadastroResp
-            //Altera Cadastro Loja
-            //Altera Cadastro Firewall
+        //Função Cadastro Loja
 
 
-            ///Exlui Usuario do sistema
-            //public ExcluiUser(String login, String senha)
-            //{
-            //    cmd.CommandText = "delete where tb_logon (login, senha) values (@login, @senha)";
 
-            //    cmd.Parameters.AddWithValue("@login", login);
-            //    cmd.Parameters.AddWithValue("@senha", senha);
-
-            //    try
-            //    {
-            //        //Conecta com o banco -- CONEXÃO
-            //        cmd.Connection = conexao.conectar();
-            //        //Excutar comando SQL
-            //        cmd.ExecuteNonQuery();
-            //        //Desconectar
-            //        conexao.desconectar();
-
-            //        //Mostrar mensagem de erro ou sucesso --Variavel
-            //        this.mensagem = "Cadastro realizado!";
-            //    }
-            //    catch (Exception)
-            //    {
-            //        this.mensagem = "Erro de conexão com banco";
-            //    }
-
-            }
-
-            ///Exlui CadastroResp
-            ///Exlui Cadastro Loja
-            //Exlui Cadastro Firewall
+        //select Cad_Empresas.Cod_Nome=@nome,Cad_Empresas.id_Empresa=@ID where Cad_Codigo=@codigo
 
 
+        //Cadastro Firewall
+
+        //Altera Usuario do sistema
+        //Altera CadastroResp
+        //Altera Cadastro Loja
+        //Altera Cadastro Firewall
+
+
+        ///Exlui Usuario do sistema
+        //public ExcluiUser(String login, String senha)
+        //{
+        //    cmd.CommandText = "delete where tb_logon (login, senha) values (@login, @senha)";
+
+        //    cmd.Parameters.AddWithValue("@login", login);
+        //    cmd.Parameters.AddWithValue("@senha", senha);
+
+        //    try
+        //    {
+        //        //Conecta com o banco -- CONEXÃO
+        //        cmd.Connection = conexao.conectar();
+        //        //Excutar comando SQL
+        //        cmd.ExecuteNonQuery();
+        //        //Desconectar
+        //        conexao.desconectar();
+
+        //        //Mostrar mensagem de erro ou sucesso --Variavel
+        //        this.mensagem = "Cadastro realizado!";
+        //    }
+        //    catch (Exception)
+        //    {
+        //        this.mensagem = "Erro de conexão com banco";
+        //    }
 
     }
 
+    ///Exlui CadastroResp
+    ///Exlui Cadastro Loja
+    //Exlui Cadastro Firewall
+
+
 
 }
+
+

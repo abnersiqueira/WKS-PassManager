@@ -54,21 +54,21 @@
             // 
             // txbUser
             // 
-            this.txbUser.Location = new System.Drawing.Point(76, 138);
+            this.txbUser.Location = new System.Drawing.Point(74, 162);
             this.txbUser.Name = "txbUser";
             this.txbUser.Size = new System.Drawing.Size(100, 20);
             this.txbUser.TabIndex = 0;
             // 
             // txbSenha
             // 
-            this.txbSenha.Location = new System.Drawing.Point(76, 164);
+            this.txbSenha.Location = new System.Drawing.Point(74, 188);
             this.txbSenha.Name = "txbSenha";
             this.txbSenha.Size = new System.Drawing.Size(100, 20);
             this.txbSenha.TabIndex = 1;
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(87, 204);
+            this.btnCadastrar.Location = new System.Drawing.Point(85, 228);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
             this.btnCadastrar.TabIndex = 2;
@@ -79,7 +79,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 141);
+            this.label1.Location = new System.Drawing.Point(25, 165);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 3;
@@ -88,7 +88,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 167);
+            this.label2.Location = new System.Drawing.Point(30, 191);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 4;
@@ -117,7 +117,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Bahnschrift Light", 15.75F);
-            this.label4.Location = new System.Drawing.Point(23, 91);
+            this.label4.Location = new System.Drawing.Point(21, 115);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(196, 25);
             this.label4.TabIndex = 7;
@@ -126,7 +126,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(85, 31);
+            this.pictureBox1.Location = new System.Drawing.Point(85, 55);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(56, 57);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

@@ -48,12 +48,14 @@
             this.labIP = new System.Windows.Forms.Label();
             this.txbUsuarioFirewall = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnCadastrar = new System.Windows.Forms.Button();
             this.CheckFirewallEnable = new System.Windows.Forms.CheckBox();
             this.txbTituloLoja = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txbTV2 = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.txbTV = new System.Windows.Forms.TextBox();
+            this.txbID = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.txbSenha2 = new System.Windows.Forms.TextBox();
@@ -65,7 +67,7 @@
             this.txbUsuario2 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.txbSenha = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.txbDominio = new System.Windows.Forms.TextBox();
             this.txbNomeSrv = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txbIP = new System.Windows.Forms.TextBox();
@@ -79,7 +81,6 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.BtnSalvar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.idTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txbCelEmpresa2 = new System.Windows.Forms.TextBox();
@@ -105,7 +106,7 @@
             // idLabel
             // 
             idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(66, 101);
+            idLabel.Location = new System.Drawing.Point(107, 12);
             idLabel.Name = "idLabel";
             idLabel.Size = new System.Drawing.Size(18, 13);
             idLabel.TabIndex = 74;
@@ -298,12 +299,15 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.Controls.Add(this.btnCadastrar);
             this.panel2.Controls.Add(this.CheckFirewallEnable);
             this.panel2.Controls.Add(this.txbTituloLoja);
+            this.panel2.Controls.Add(idLabel);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.txbTV2);
             this.panel2.Controls.Add(this.label23);
             this.panel2.Controls.Add(this.txbTV);
+            this.panel2.Controls.Add(this.txbID);
             this.panel2.Controls.Add(this.label24);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.txbSenha2);
@@ -315,7 +319,7 @@
             this.panel2.Controls.Add(this.txbUsuario2);
             this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.txbSenha);
-            this.panel2.Controls.Add(this.textBox15);
+            this.panel2.Controls.Add(this.txbDominio);
             this.panel2.Controls.Add(this.txbNomeSrv);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.txbIP);
@@ -328,6 +332,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1043, 338);
             this.panel2.TabIndex = 13;
+            // 
+            // btnCadastrar
+            // 
+            this.btnCadastrar.Location = new System.Drawing.Point(515, 216);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(86, 46);
+            this.btnCadastrar.TabIndex = 73;
+            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // CheckFirewallEnable
             // 
@@ -396,6 +410,16 @@
             this.txbTV.Name = "txbTV";
             this.txbTV.Size = new System.Drawing.Size(191, 27);
             this.txbTV.TabIndex = 2;
+            // 
+            // txbID
+            // 
+            this.txbID.BackColor = System.Drawing.Color.Gainsboro;
+            this.txbID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbID.Location = new System.Drawing.Point(131, 12);
+            this.txbID.Multiline = true;
+            this.txbID.Name = "txbID";
+            this.txbID.Size = new System.Drawing.Size(39, 27);
+            this.txbID.TabIndex = 75;
             // 
             // label24
             // 
@@ -513,18 +537,18 @@
             this.txbSenha.Size = new System.Drawing.Size(191, 27);
             this.txbSenha.TabIndex = 5;
             // 
-            // textBox15
+            // txbDominio
             // 
-            this.textBox15.BackColor = System.Drawing.Color.LightGray;
-            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.ForeColor = System.Drawing.Color.Lime;
-            this.textBox15.Location = new System.Drawing.Point(19, 55);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(164, 26);
-            this.textBox15.TabIndex = 30;
-            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txbDominio.BackColor = System.Drawing.Color.LightGray;
+            this.txbDominio.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbDominio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbDominio.ForeColor = System.Drawing.Color.Lime;
+            this.txbDominio.Location = new System.Drawing.Point(19, 55);
+            this.txbDominio.Multiline = true;
+            this.txbDominio.Name = "txbDominio";
+            this.txbDominio.Size = new System.Drawing.Size(164, 26);
+            this.txbDominio.TabIndex = 30;
+            this.txbDominio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txbNomeSrv
             // 
@@ -596,11 +620,9 @@
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(idLabel);
             this.panel1.Controls.Add(this.btnCancelar);
             this.panel1.Controls.Add(this.BtnSalvar);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.idTextBox);
             this.panel1.Controls.Add(nome_empresaLabel);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -705,16 +727,6 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "Celular #2";
             // 
-            // idTextBox
-            // 
-            this.idTextBox.BackColor = System.Drawing.Color.Gainsboro;
-            this.idTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.idTextBox.Location = new System.Drawing.Point(90, 95);
-            this.idTextBox.Multiline = true;
-            this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(39, 27);
-            this.idTextBox.TabIndex = 75;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -802,7 +814,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmInfoLoja";
             this.Text = "FrmLoja";
-            this.Load += new System.EventHandler(this.FrmLOJAS_Load);
             this.PainelCentralBranco.ResumeLayout(false);
             this.PnLinferior.ResumeLayout(false);
             this.PnLinferior.PerformLayout();
@@ -839,7 +850,7 @@
         private System.Windows.Forms.TextBox txbUsuario2;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txbSenha;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox txbDominio;
         private System.Windows.Forms.TextBox txbNomeSrv;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txbIP;
@@ -850,7 +861,7 @@
         public System.Windows.Forms.CheckBox CheckFirewallEnable;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button BtnSalvar;
-        private System.Windows.Forms.TextBox idTextBox;
+        private System.Windows.Forms.TextBox txbID;
         private System.Windows.Forms.TextBox txbNomeEmpresa;
         private System.Windows.Forms.TextBox txbRespEmpresa;
         private System.Windows.Forms.TextBox txbEmailEmpresa;
@@ -873,5 +884,6 @@
         private System.Windows.Forms.Label labUsuario;
         private System.Windows.Forms.Label labIP;
         private System.Windows.Forms.TextBox txbUsuarioFirewall;
+        private System.Windows.Forms.Button btnCadastrar;
     }
 }

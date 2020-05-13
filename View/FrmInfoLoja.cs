@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using PassManager.DAL;
-
+using PassManager.Funcions;
 
 namespace PassManager.View
 {
@@ -18,7 +18,8 @@ namespace PassManager.View
         public FrmInfoLoja()
         {
             InitializeComponent();
-            DisableFirewall();          //--Desabilita as TextBox de preenchimento Relacionado ao Firewall\\
+            DisableFirewall();  
+            //--Desabilita as TextBox de preenchimento Relacionado ao Firewall\\
             
         }
 
@@ -72,19 +73,18 @@ namespace PassManager.View
         }
 
 
-        private void FrmLOJAS_Load(object sender, EventArgs e)
+
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
         {
+            Crud_Empresa Empresa = new Crud_Empresa();
+            Empresa.Cad_Empresa(txbDominio.Text, txbNomeSrv.Text, txbNomeSrv2.Text, txbTV.Text, txbTV2.Text, Convert.ToInt32(txbIP.Text),
+            Convert.ToInt32(txbIP2.Text), txbUsuario.Text, txbUsuario2.Text, txbSenha.Text, txbSenha2.Text, CheckFirewallEnable.Checked,
+            Convert.ToInt32(txbPorta.Text)
+            , txbUsuarioFirewall.Text, txbSenhaFirewall.Text);
 
-            //SqlCommand cmd = new SqlCommand();
-            //Conexao con = new Conexao();
-            //SqlDataReader dr;
+            // Empresa.carregar(1);
 
-            //cmd.Connection = con;
-
-            //con.conectar();
-            //cmd.CommandText = "Select * into tb_lojas(nome_loja,id_loja) values ('" + txbNomeEmpresa.Text + "' '" + idTextBox.Text + "')";
-            //cmd.ExecuteNonQuery();
-            //con.desconectar();
         }
     }
 
