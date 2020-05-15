@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using PassManager.DAL;
 using PassManager.Funcions;
+using PassManager.ReceiveData;
 
 namespace PassManager.View
 {
@@ -18,10 +19,47 @@ namespace PassManager.View
         public FrmInfoLoja()
         {
             InitializeComponent();
-            DisableFirewall();  
+            DisableFirewall();
             //--Desabilita as TextBox de preenchimento Relacionado ao Firewall\\
             
+          
+
+
         }
+
+        public FrmInfoLoja(int id2)
+        {
+            InitializeComponent();
+            codigo = id2;
+            CarregaDados();
+        }
+
+        int codigo = 1337;
+        public void CarregaDados()
+        {
+            Crud_Empresa emp = new Crud_Empresa();
+            Dados_Empresa dados = emp.Carregar(codigo);
+            
+            txbDominio.Text = dados.dominio;
+            txbNomeSrv.Text = dados.nomesrv;
+            txbNomeSrv2.Text = dados.nomesrv2;
+          
+
+            //txbTV.Text,
+            //txbTV2.Text,
+            //txbIP.Text),
+            //txbIP2.Text), 
+            //txbUsuario.Text,
+            //txbUsuario2.Text,
+            //txbSenha.Text,
+            //txbSenha2.Text,
+            //CheckFirewallEnable
+            //txbPorta.Text
+            //txbUsuarioFirewall.Text,
+            //txbSenhaFirewall.Text
+
+        }
+
 
         public void DisableFirewall()
         {
@@ -86,6 +124,8 @@ namespace PassManager.View
             // Empresa.carregar(1);
 
         }
+
+
     }
 
 }

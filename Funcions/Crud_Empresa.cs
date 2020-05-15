@@ -10,12 +10,11 @@ using System.Threading.Tasks;
 namespace PassManager.Funcions
 {
 
-    class Crud_Empresa
-
+    class Crud_Empresa       
     {
         Conexao con = new Conexao();
         SqlCommand cmd = new SqlCommand();
-
+        public int id;
         public void Cad_Empresa(String dominio, String nomesrv, String nomesrv2, String teamviewer, String teamviewer2,
             int ipsrv, int ipsrv2, String usuariosrv, String usuariosrv2, String senhasrv, String senhasrv2, bool checkfirewall, int portafirewall,
             String usuariofirewall, String senhafirewall)
@@ -46,8 +45,10 @@ namespace PassManager.Funcions
             con.desconectar();
         }
 
-        public Dados_Empresa carregar(int IdLoja)
+
+        public Dados_Empresa Carregar (int IdLoja)
         {
+            id = IdLoja;
             Dados_Empresa dados = new Dados_Empresa();
             cmd.Connection = con.conectar();
             cmd.CommandText = "Select * from tb_LojaCliente where id_LojaCliente =" + IdLoja.ToString();
@@ -59,10 +60,26 @@ namespace PassManager.Funcions
                 dados.id = Convert.ToInt32(rd["id_LojaCliente"]);
                 dados.dominio = Convert.ToString(rd["dominio"]);
                 dados.nomesrv = Convert.ToString(rd["nomesrv"]);
+                dados.nomesrv2 = Convert.ToString(rd["nomesrv2"]);
+                dados.teamviewer = Convert.ToString(rd["teamviewer"]);
+                dados.teamviewer2 = Convert.ToString(rd["teamviewer2"]);
+                dados.ipsrv = Convert.ToInt32(rd["ipsrv"]);
+                dados.ipsrv2 = Convert.ToInt32(rd["ipsrv2"]);
+                dados.usuariosrv = Convert.ToString(rd["usuariosrv"]);
+                dados.usuariosrv2 = Convert.ToString(rd["usuariosrv2"]);
+                dados.senhasrv = Convert.ToString(rd["senhasrv"]);
+                dados.senhasrv2 = Convert.ToString(rd["senhasrv2"]);
+                dados.checkfirewall = Convert.ToBoolean(rd["checkfirewall"]);
+                dados.portafirewall = Convert.ToInt32(rd["portafirewall"]);
+                dados.usuariofirewall = Convert.ToString(rd["usuariofirewall"]);
+                dados.senhafirewall = Convert.ToString(rd["senhafirewall"]);
 
-           
             }
+            con.desconectar();
             return dados;
+            
         }
+
+        
     }
 }

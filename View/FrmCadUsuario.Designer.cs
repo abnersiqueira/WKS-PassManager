@@ -58,6 +58,7 @@
             this.txbUser.Name = "txbUser";
             this.txbUser.Size = new System.Drawing.Size(100, 20);
             this.txbUser.TabIndex = 0;
+            this.txbUser.TextChanged += new System.EventHandler(this.txbUser_TextChanged);
             // 
             // txbSenha
             // 

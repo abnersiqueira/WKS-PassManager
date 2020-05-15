@@ -92,18 +92,18 @@ namespace PassManager.View
             ly = this.Location.Y;
             sw = this.Size.Width;
             sh = this.Size.Height;
-            BtnRestaura.Visible = false;
-            BtnRestaura.Visible = true;
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.Location = Screen.PrimaryScreen.WorkingArea.Location;
+            BtnRestaura.Visible = true;
+            BtnMaximize.Visible = false;
         }
 
         private void BtnRestaura_Click(object sender, EventArgs e)
         {
-            BtnRestaura.Visible = true;
-   
             this.Size = new Size(1180, 720);
             this.Location = new Point(lx, ly);
+            BtnRestaura.Visible = false;
+            BtnMaximize.Visible = true;
 
         }
 

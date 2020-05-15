@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using PassManager.DAL;
 using PassManager.View;
+using PassManager.Funcions;
+using PassManager.ReceiveData;
 
 namespace PassManager.View
 {
@@ -22,10 +24,17 @@ namespace PassManager.View
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+
+        int id;
+
+        private void BtnLoja1_Click(object sender, EventArgs e)
         {
+            id = 1;
+            
+
             _objForm?.Close();
-            _objForm = new FrmInfoLoja      
+            _objForm = new FrmInfoLoja (id)
             {
                 TopLevel = false,
                 FormBorderStyle = FormBorderStyle.None,
@@ -35,9 +44,9 @@ namespace PassManager.View
             _objForm.Show();
             _objForm.BringToFront();
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
+            id = 2;
             _objForm?.Close();
             _objForm = new FrmInfoLoja
             {
@@ -50,6 +59,6 @@ namespace PassManager.View
             _objForm.BringToFront();
         }
 
-
+       
     }
 }

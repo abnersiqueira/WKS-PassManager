@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static PassManager.DAL.Conexao;
+using static PassManager.Funcions.Cad_Login;
 
 namespace PassManager.View
 {
@@ -20,15 +21,17 @@ namespace PassManager.View
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            //CadastroUsuario cad = new CadastroUsuario(txbUser.Text, txbSenha.Text);
-            //MessageBox.Show(cad.mensagem);
-            //this.dataGridView1.Refresh();
-            //this.dataGridView1.RefreshEdit();        //Atualização do DataGrid não funciona
-            //this.dataGridView1.Update();
+            CadastroUsuario cad = new CadastroUsuario(txbUser.Text, txbSenha.Text);
+            MessageBox.Show(cad.mensagem);
+            this.dataGridView1.Refresh();
+            this.dataGridView1.RefreshEdit();        //Atualização do DataGrid não funciona
+            this.dataGridView1.Update();
 
             //--Puxa do Banco tabela atualizada conform DataDrid--\\
-            this.tb_logonTableAdapter.Fill(this.tb_logon_DataGrid.tb_logon);  
+            this.tb_logonTableAdapter.Fill(this.tb_logon_DataGrid.tb_logon);
 
+            txbUser.Text = "";
+            txbSenha.Text = "";
 
         }
 
@@ -49,6 +52,11 @@ namespace PassManager.View
             {
                 System.Windows.Forms.MessageBox.Show(ex.Message);
             }
+
+        }
+
+        private void txbUser_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

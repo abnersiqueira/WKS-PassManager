@@ -11,6 +11,8 @@ namespace PassManager.ReceiveData
     {
         public Dados_Empresa()
         {
+
+            //-------Atribuindo um valor vazio a VAR
             this.id = 0;
             this.dominio = "";
             this.nomesrv = "";

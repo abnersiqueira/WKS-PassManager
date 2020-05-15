@@ -412,7 +412,7 @@
             this.BtnRestaura.BackColor = System.Drawing.Color.Transparent;
             this.BtnRestaura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnRestaura.Image = ((System.Drawing.Image)(resources.GetObject("BtnRestaura.Image")));
-            this.BtnRestaura.Location = new System.Drawing.Point(982, 1);
+            this.BtnRestaura.Location = new System.Drawing.Point(1022, 1);
             this.BtnRestaura.Name = "BtnRestaura";
             this.BtnRestaura.Size = new System.Drawing.Size(21, 21);
             this.BtnRestaura.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -535,7 +535,7 @@
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label3.Location = new System.Drawing.Point(275, 160);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(260, 45);
+            this.label3.Size = new System.Drawing.Size(360, 45);
             this.label3.TabIndex = 7;
             this.label3.Text = "WKS Soluções em TI";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
