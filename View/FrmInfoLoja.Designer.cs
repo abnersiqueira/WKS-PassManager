@@ -49,12 +49,10 @@
             this.labIP = new System.Windows.Forms.Label();
             this.txbUsuarioFirewall = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txbTituloLoja = new System.Windows.Forms.TextBox();
             this.LblDominio = new System.Windows.Forms.Label();
             this.txbTV2 = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.txbTV = new System.Windows.Forms.TextBox();
-            this.txbID = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.txbSenha2 = new System.Windows.Forms.TextBox();
@@ -75,9 +73,12 @@
             this.txbUsuario = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCadastrar = new System.Windows.Forms.Button();
+            this.BtnCancel = new System.Windows.Forms.Button();
+            this.BtnEditar = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.txbID = new System.Windows.Forms.TextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.BtnSalvar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -91,8 +92,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txbEmailEmpresa = new System.Windows.Forms.TextBox();
             this.txbRespEmpresa = new System.Windows.Forms.TextBox();
-            this.BtnEditar = new System.Windows.Forms.Button();
-            this.BtnCancel = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             idLabel = new System.Windows.Forms.Label();
             nome_empresaLabel = new System.Windows.Forms.Label();
             nome_responsavelLabel = new System.Windows.Forms.Label();
@@ -103,6 +105,8 @@
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // idLabel
@@ -163,27 +167,16 @@
             // 
             // PnLinferior
             // 
-            this.PnLinferior.Controls.Add(this.txbOBS);
-            this.PnLinferior.Controls.Add(this.CheckFirewallEnable);
-            this.PnLinferior.Controls.Add(this.txbSelecFirewall);
-            this.PnLinferior.Controls.Add(this.labSenha);
-            this.PnLinferior.Controls.Add(this.txbSenhaFirewall);
-            this.PnLinferior.Controls.Add(this.labPorta);
-            this.PnLinferior.Controls.Add(this.labFirewall);
-            this.PnLinferior.Controls.Add(this.txbIPFirewall);
-            this.PnLinferior.Controls.Add(this.txbPorta);
-            this.PnLinferior.Controls.Add(this.labUsuario);
-            this.PnLinferior.Controls.Add(this.labIP);
-            this.PnLinferior.Controls.Add(this.txbUsuarioFirewall);
+            this.PnLinferior.Controls.Add(this.groupBox2);
             this.PnLinferior.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PnLinferior.Location = new System.Drawing.Point(205, 338);
+            this.PnLinferior.Location = new System.Drawing.Point(206, 338);
             this.PnLinferior.Name = "PnLinferior";
-            this.PnLinferior.Size = new System.Drawing.Size(1043, 304);
+            this.PnLinferior.Size = new System.Drawing.Size(1042, 304);
             this.PnLinferior.TabIndex = 14;
             // 
             // txbOBS
             // 
-            this.txbOBS.Location = new System.Drawing.Point(239, 50);
+            this.txbOBS.Location = new System.Drawing.Point(9, 19);
             this.txbOBS.Multiline = true;
             this.txbOBS.Name = "txbOBS";
             this.txbOBS.Size = new System.Drawing.Size(526, 211);
@@ -194,7 +187,7 @@
             this.CheckFirewallEnable.AutoSize = true;
             this.CheckFirewallEnable.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F);
             this.CheckFirewallEnable.ForeColor = System.Drawing.Color.Black;
-            this.CheckFirewallEnable.Location = new System.Drawing.Point(19, 10);
+            this.CheckFirewallEnable.Location = new System.Drawing.Point(21, 19);
             this.CheckFirewallEnable.Name = "CheckFirewallEnable";
             this.CheckFirewallEnable.Size = new System.Drawing.Size(135, 23);
             this.CheckFirewallEnable.TabIndex = 72;
@@ -212,7 +205,7 @@
             "PfSense",
             "Windows",
             "De mal a pior"});
-            this.txbSelecFirewall.Location = new System.Drawing.Point(26, 53);
+            this.txbSelecFirewall.Location = new System.Drawing.Point(21, 67);
             this.txbSelecFirewall.Name = "txbSelecFirewall";
             this.txbSelecFirewall.Size = new System.Drawing.Size(191, 27);
             this.txbSelecFirewall.TabIndex = 72;
@@ -222,7 +215,7 @@
             this.labSenha.AutoSize = true;
             this.labSenha.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labSenha.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labSenha.Location = new System.Drawing.Point(26, 218);
+            this.labSenha.Location = new System.Drawing.Point(21, 232);
             this.labSenha.Name = "labSenha";
             this.labSenha.Size = new System.Drawing.Size(49, 19);
             this.labSenha.TabIndex = 81;
@@ -233,7 +226,7 @@
             this.txbSenhaFirewall.BackColor = System.Drawing.SystemColors.Window;
             this.txbSenhaFirewall.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbSenhaFirewall.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.txbSenhaFirewall.Location = new System.Drawing.Point(26, 237);
+            this.txbSenhaFirewall.Location = new System.Drawing.Point(21, 251);
             this.txbSenhaFirewall.Name = "txbSenhaFirewall";
             this.txbSenhaFirewall.Size = new System.Drawing.Size(191, 27);
             this.txbSenhaFirewall.TabIndex = 76;
@@ -243,7 +236,7 @@
             this.labPorta.AutoSize = true;
             this.labPorta.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labPorta.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labPorta.Location = new System.Drawing.Point(26, 126);
+            this.labPorta.Location = new System.Drawing.Point(21, 140);
             this.labPorta.Name = "labPorta";
             this.labPorta.Size = new System.Drawing.Size(44, 19);
             this.labPorta.TabIndex = 80;
@@ -254,7 +247,7 @@
             this.labFirewall.AutoSize = true;
             this.labFirewall.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labFirewall.ForeColor = System.Drawing.Color.Crimson;
-            this.labFirewall.Location = new System.Drawing.Point(26, 34);
+            this.labFirewall.Location = new System.Drawing.Point(21, 48);
             this.labFirewall.Name = "labFirewall";
             this.labFirewall.Size = new System.Drawing.Size(60, 19);
             this.labFirewall.TabIndex = 77;
@@ -265,7 +258,7 @@
             this.txbIPFirewall.BackColor = System.Drawing.SystemColors.Window;
             this.txbIPFirewall.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbIPFirewall.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.txbIPFirewall.Location = new System.Drawing.Point(26, 99);
+            this.txbIPFirewall.Location = new System.Drawing.Point(21, 113);
             this.txbIPFirewall.Name = "txbIPFirewall";
             this.txbIPFirewall.Size = new System.Drawing.Size(191, 27);
             this.txbIPFirewall.TabIndex = 73;
@@ -275,7 +268,7 @@
             this.txbPorta.BackColor = System.Drawing.SystemColors.Window;
             this.txbPorta.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbPorta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.txbPorta.Location = new System.Drawing.Point(26, 145);
+            this.txbPorta.Location = new System.Drawing.Point(21, 159);
             this.txbPorta.Name = "txbPorta";
             this.txbPorta.Size = new System.Drawing.Size(191, 27);
             this.txbPorta.TabIndex = 74;
@@ -285,7 +278,7 @@
             this.labUsuario.AutoSize = true;
             this.labUsuario.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labUsuario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labUsuario.Location = new System.Drawing.Point(26, 172);
+            this.labUsuario.Location = new System.Drawing.Point(21, 186);
             this.labUsuario.Name = "labUsuario";
             this.labUsuario.Size = new System.Drawing.Size(59, 19);
             this.labUsuario.TabIndex = 79;
@@ -296,7 +289,7 @@
             this.labIP.AutoSize = true;
             this.labIP.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labIP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labIP.Location = new System.Drawing.Point(26, 80);
+            this.labIP.Location = new System.Drawing.Point(21, 94);
             this.labIP.Name = "labIP";
             this.labIP.Size = new System.Drawing.Size(21, 19);
             this.labIP.TabIndex = 78;
@@ -307,7 +300,7 @@
             this.txbUsuarioFirewall.BackColor = System.Drawing.SystemColors.Window;
             this.txbUsuarioFirewall.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbUsuarioFirewall.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.txbUsuarioFirewall.Location = new System.Drawing.Point(26, 191);
+            this.txbUsuarioFirewall.Location = new System.Drawing.Point(21, 205);
             this.txbUsuarioFirewall.Name = "txbUsuarioFirewall";
             this.txbUsuarioFirewall.Size = new System.Drawing.Size(191, 27);
             this.txbUsuarioFirewall.TabIndex = 75;
@@ -315,7 +308,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
-            this.panel2.Controls.Add(this.txbTituloLoja);
             this.panel2.Controls.Add(this.LblDominio);
             this.panel2.Controls.Add(this.txbTV2);
             this.panel2.Controls.Add(this.label23);
@@ -338,25 +330,13 @@
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.txbUsuario);
+            this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel2.Location = new System.Drawing.Point(205, 0);
+            this.panel2.Location = new System.Drawing.Point(206, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1043, 338);
+            this.panel2.Size = new System.Drawing.Size(1042, 338);
             this.panel2.TabIndex = 13;
-            // 
-            // txbTituloLoja
-            // 
-            this.txbTituloLoja.BackColor = System.Drawing.SystemColors.Control;
-            this.txbTituloLoja.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbTituloLoja.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbTituloLoja.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.txbTituloLoja.Location = new System.Drawing.Point(235, 12);
-            this.txbTituloLoja.Multiline = true;
-            this.txbTituloLoja.Name = "txbTituloLoja";
-            this.txbTituloLoja.Size = new System.Drawing.Size(252, 37);
-            this.txbTituloLoja.TabIndex = 62;
-            this.txbTituloLoja.Text = "NomeTítuloLoja";
             // 
             // LblDominio
             // 
@@ -399,16 +379,6 @@
             this.txbTV.Name = "txbTV";
             this.txbTV.Size = new System.Drawing.Size(191, 27);
             this.txbTV.TabIndex = 2;
-            // 
-            // txbID
-            // 
-            this.txbID.BackColor = System.Drawing.Color.Gainsboro;
-            this.txbID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbID.Location = new System.Drawing.Point(147, 25);
-            this.txbID.Multiline = true;
-            this.txbID.Name = "txbID";
-            this.txbID.Size = new System.Drawing.Size(39, 27);
-            this.txbID.TabIndex = 75;
             // 
             // label24
             // 
@@ -528,10 +498,10 @@
             // 
             // txbDominio
             // 
-            this.txbDominio.BackColor = System.Drawing.Color.LightGray;
+            this.txbDominio.BackColor = System.Drawing.Color.Gainsboro;
             this.txbDominio.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbDominio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbDominio.ForeColor = System.Drawing.Color.Lime;
+            this.txbDominio.ForeColor = System.Drawing.Color.Green;
             this.txbDominio.Location = new System.Drawing.Point(19, 55);
             this.txbDominio.Multiline = true;
             this.txbDominio.Name = "txbDominio";
@@ -634,7 +604,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(205, 642);
+            this.panel1.Size = new System.Drawing.Size(206, 642);
             this.panel1.TabIndex = 12;
             // 
             // btnCadastrar
@@ -643,13 +613,39 @@
             this.btnCadastrar.BackColor = System.Drawing.Color.SeaGreen;
             this.btnCadastrar.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnCadastrar.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrar.Location = new System.Drawing.Point(0, 534);
+            this.btnCadastrar.Location = new System.Drawing.Point(3, 534);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(205, 39);
+            this.btnCadastrar.Size = new System.Drawing.Size(202, 39);
             this.btnCadastrar.TabIndex = 73;
             this.btnCadastrar.Text = "Salvar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
+            // 
+            // BtnCancel
+            // 
+            this.BtnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnCancel.BackColor = System.Drawing.Color.Gray;
+            this.BtnCancel.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.BtnCancel.ForeColor = System.Drawing.Color.White;
+            this.BtnCancel.Location = new System.Drawing.Point(3, 603);
+            this.BtnCancel.Name = "BtnCancel";
+            this.BtnCancel.Size = new System.Drawing.Size(202, 39);
+            this.BtnCancel.TabIndex = 94;
+            this.BtnCancel.Text = "Cancelar";
+            this.BtnCancel.UseVisualStyleBackColor = false;
+            // 
+            // BtnEditar
+            // 
+            this.BtnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnEditar.BackColor = System.Drawing.Color.Gray;
+            this.BtnEditar.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
+            this.BtnEditar.ForeColor = System.Drawing.Color.White;
+            this.BtnEditar.Location = new System.Drawing.Point(3, 569);
+            this.BtnEditar.Name = "BtnEditar";
+            this.BtnEditar.Size = new System.Drawing.Size(202, 39);
+            this.BtnEditar.TabIndex = 93;
+            this.BtnEditar.Text = "Editar";
+            this.BtnEditar.UseVisualStyleBackColor = false;
             // 
             // comboBox1
             // 
@@ -670,7 +666,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button2.Location = new System.Drawing.Point(31, 670);
+            this.button2.Location = new System.Drawing.Point(32, 670);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(159, 35);
             this.button2.TabIndex = 91;
@@ -686,12 +682,22 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button1.Location = new System.Drawing.Point(86, 784);
+            this.button1.Location = new System.Drawing.Point(87, 784);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(57, 35);
             this.button1.TabIndex = 90;
             this.button1.Text = "Editar";
             this.button1.UseVisualStyleBackColor = false;
+            // 
+            // txbID
+            // 
+            this.txbID.BackColor = System.Drawing.Color.Gainsboro;
+            this.txbID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txbID.Location = new System.Drawing.Point(147, 25);
+            this.txbID.Multiline = true;
+            this.txbID.Name = "txbID";
+            this.txbID.Size = new System.Drawing.Size(38, 24);
+            this.txbID.TabIndex = 75;
             // 
             // btnCancelar
             // 
@@ -702,7 +708,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnCancelar.Location = new System.Drawing.Point(144, 784);
+            this.btnCancelar.Location = new System.Drawing.Point(145, 784);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(57, 35);
             this.btnCancelar.TabIndex = 74;
@@ -719,7 +725,7 @@
             this.BtnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSalvar.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSalvar.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.BtnSalvar.Location = new System.Drawing.Point(28, 784);
+            this.BtnSalvar.Location = new System.Drawing.Point(29, 784);
             this.BtnSalvar.Name = "BtnSalvar";
             this.BtnSalvar.Size = new System.Drawing.Size(57, 35);
             this.BtnSalvar.TabIndex = 73;
@@ -747,9 +753,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(19, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(37, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(122, 87);
+            this.pictureBox1.Size = new System.Drawing.Size(93, 87);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
@@ -812,31 +818,45 @@
             this.txbRespEmpresa.Size = new System.Drawing.Size(162, 20);
             this.txbRespEmpresa.TabIndex = 79;
             // 
-            // BtnEditar
+            // groupBox1
             // 
-            this.BtnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BtnEditar.BackColor = System.Drawing.Color.Gray;
-            this.BtnEditar.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.BtnEditar.ForeColor = System.Drawing.Color.White;
-            this.BtnEditar.Location = new System.Drawing.Point(0, 569);
-            this.BtnEditar.Name = "BtnEditar";
-            this.BtnEditar.Size = new System.Drawing.Size(205, 39);
-            this.BtnEditar.TabIndex = 93;
-            this.BtnEditar.Text = "Editar";
-            this.BtnEditar.UseVisualStyleBackColor = false;
+            this.groupBox1.Location = new System.Drawing.Point(6, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1024, 318);
+            this.groupBox1.TabIndex = 63;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Cadastro Nova Loja";
             // 
-            // BtnCancel
+            // groupBox2
             // 
-            this.BtnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BtnCancel.BackColor = System.Drawing.Color.Gray;
-            this.BtnCancel.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.BtnCancel.ForeColor = System.Drawing.Color.White;
-            this.BtnCancel.Location = new System.Drawing.Point(0, 603);
-            this.BtnCancel.Name = "BtnCancel";
-            this.BtnCancel.Size = new System.Drawing.Size(205, 39);
-            this.BtnCancel.TabIndex = 94;
-            this.BtnCancel.Text = "Cancelar";
-            this.BtnCancel.UseVisualStyleBackColor = false;
+            this.groupBox2.Controls.Add(this.groupBox3);
+            this.groupBox2.Controls.Add(this.CheckFirewallEnable);
+            this.groupBox2.Controls.Add(this.labFirewall);
+            this.groupBox2.Controls.Add(this.txbUsuarioFirewall);
+            this.groupBox2.Controls.Add(this.txbSelecFirewall);
+            this.groupBox2.Controls.Add(this.labIP);
+            this.groupBox2.Controls.Add(this.labSenha);
+            this.groupBox2.Controls.Add(this.labUsuario);
+            this.groupBox2.Controls.Add(this.txbSenhaFirewall);
+            this.groupBox2.Controls.Add(this.txbPorta);
+            this.groupBox2.Controls.Add(this.labPorta);
+            this.groupBox2.Controls.Add(this.txbIPFirewall);
+            this.groupBox2.Location = new System.Drawing.Point(5, 3);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1025, 298);
+            this.groupBox2.TabIndex = 64;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Firewall";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.txbOBS);
+            this.groupBox3.Location = new System.Drawing.Point(230, 19);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(543, 273);
+            this.groupBox3.TabIndex = 64;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "OBS:..";
             // 
             // FrmInfoLoja
             // 
@@ -849,12 +869,15 @@
             this.Text = "FrmLoja";
             this.PainelCentralBranco.ResumeLayout(false);
             this.PnLinferior.ResumeLayout(false);
-            this.PnLinferior.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -890,7 +913,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txbUsuario;
-        private System.Windows.Forms.TextBox txbTituloLoja;
         public System.Windows.Forms.CheckBox CheckFirewallEnable;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button BtnSalvar;
@@ -920,5 +942,8 @@
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Button BtnCancel;
         private System.Windows.Forms.Button BtnEditar;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }

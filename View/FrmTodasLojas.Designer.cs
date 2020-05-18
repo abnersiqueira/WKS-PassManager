@@ -483,14 +483,14 @@
             // 
             // BtnLoja1
             // 
-            this.BtnLoja1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtnLoja1.BackColor = System.Drawing.Color.Transparent;
             this.BtnLoja1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnLoja1.BackgroundImage")));
-            this.BtnLoja1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnLoja1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BtnLoja1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLoja1.ForeColor = System.Drawing.Color.White;
-            this.BtnLoja1.Location = new System.Drawing.Point(3, 3);
+            this.BtnLoja1.Location = new System.Drawing.Point(39, 26);
             this.BtnLoja1.Name = "BtnLoja1";
-            this.BtnLoja1.Size = new System.Drawing.Size(130, 101);
+            this.BtnLoja1.Size = new System.Drawing.Size(69, 55);
             this.BtnLoja1.TabIndex = 1;
             this.BtnLoja1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja1.UseVisualStyleBackColor = false;

@@ -31,7 +31,7 @@ namespace PassManager.View
         private void BtnLoja1_Click(object sender, EventArgs e)
         {
             id = 1;
-            
+     
 
             _objForm?.Close();
             _objForm = new FrmInfoLoja (id)

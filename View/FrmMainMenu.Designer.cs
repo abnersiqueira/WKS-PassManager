@@ -86,7 +86,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 681);
+            this.panel1.Size = new System.Drawing.Size(200, 720);
             this.panel1.TabIndex = 0;
             // 
             // pnLLeft
@@ -106,7 +106,7 @@
             this.pnLLeft.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnLLeft.Location = new System.Drawing.Point(0, 0);
             this.pnLLeft.Name = "pnLLeft";
-            this.pnLLeft.Size = new System.Drawing.Size(200, 681);
+            this.pnLLeft.Size = new System.Drawing.Size(200, 720);
             this.pnLLeft.TabIndex = 0;
             // 
             // BtnLojas
@@ -140,7 +140,7 @@
             this.BtnSairMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSairMenu.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSairMenu.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.BtnSairMenu.Location = new System.Drawing.Point(14, 626);
+            this.BtnSairMenu.Location = new System.Drawing.Point(14, 665);
             this.BtnSairMenu.Name = "BtnSairMenu";
             this.BtnSairMenu.Size = new System.Drawing.Size(176, 35);
             this.BtnSairMenu.TabIndex = 0;
@@ -166,7 +166,7 @@
             this.BtnChat.Name = "BtnChat";
             this.BtnChat.Size = new System.Drawing.Size(203, 35);
             this.BtnChat.TabIndex = 7;
-            this.BtnChat.Text = "Chat Online";
+            this.BtnChat.Text = "Chat Online Desativado";
             this.BtnChat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnChat.UseVisualStyleBackColor = false;
             this.BtnChat.Visible = false;
@@ -456,7 +456,7 @@
             this.PnLMainMenu.Controls.Add(this.pictureBox2);
             this.PnLMainMenu.Controls.Add(this.pictureBox1);
             this.PnLMainMenu.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.PnLMainMenu.Location = new System.Drawing.Point(200, 626);
+            this.PnLMainMenu.Location = new System.Drawing.Point(200, 665);
             this.PnLMainMenu.Name = "PnLMainMenu";
             this.PnLMainMenu.Size = new System.Drawing.Size(1064, 55);
             this.PnLMainMenu.TabIndex = 2;
@@ -490,7 +490,7 @@
             this.PainelCentral.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PainelCentral.Location = new System.Drawing.Point(200, 30);
             this.PainelCentral.Name = "PainelCentral";
-            this.PainelCentral.Size = new System.Drawing.Size(1064, 596);
+            this.PainelCentral.Size = new System.Drawing.Size(1064, 635);
             this.PainelCentral.TabIndex = 0;
             // 
             // pnLMenu
@@ -505,7 +505,7 @@
             this.pnLMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnLMenu.Location = new System.Drawing.Point(0, 0);
             this.pnLMenu.Name = "pnLMenu";
-            this.pnLMenu.Size = new System.Drawing.Size(1064, 596);
+            this.pnLMenu.Size = new System.Drawing.Size(1064, 635);
             this.pnLMenu.TabIndex = 8;
             // 
             // label4
@@ -517,7 +517,7 @@
             this.label4.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label4.Location = new System.Drawing.Point(276, 285);
+            this.label4.Location = new System.Drawing.Point(276, 304);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(219, 30);
             this.label4.TabIndex = 10;
@@ -533,9 +533,9 @@
             this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label3.Location = new System.Drawing.Point(275, 160);
+            this.label3.Location = new System.Drawing.Point(275, 179);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(360, 45);
+            this.label3.Size = new System.Drawing.Size(260, 45);
             this.label3.TabIndex = 7;
             this.label3.Text = "WKS Soluções em TI";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -549,7 +549,7 @@
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Location = new System.Drawing.Point(276, 205);
+            this.label2.Location = new System.Drawing.Point(276, 224);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(374, 30);
             this.label2.TabIndex = 6;
@@ -565,7 +565,7 @@
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(276, 245);
+            this.label1.Location = new System.Drawing.Point(276, 264);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(262, 30);
             this.label1.TabIndex = 5;
@@ -576,7 +576,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ClientSize = new System.Drawing.Size(1264, 720);
             this.Controls.Add(this.PainelCentral);
             this.Controls.Add(this.PnLMainMenu);
             this.Controls.Add(this.PnLSupMainMenu);
