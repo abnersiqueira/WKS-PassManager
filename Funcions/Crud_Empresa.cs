@@ -55,7 +55,7 @@ namespace PassManager.Funcions
             SqlDataReader rd = cmd.ExecuteReader();
 
             if (rd.HasRows)
-            {
+            { 
                 rd.Read();
                 dados.id = Convert.ToInt32(rd["id_LojaCliente"]);
                 dados.dominio = Convert.ToString(rd["dominio"]);
@@ -73,7 +73,7 @@ namespace PassManager.Funcions
                 dados.portafirewall = Convert.ToInt32(rd["portafirewall"]);
                 dados.usuariofirewall = Convert.ToString(rd["usuariofirewall"]);
                 dados.senhafirewall = Convert.ToString(rd["senhafirewall"]);
-
+                
             }
             con.desconectar();
             return dados;
