@@ -35,28 +35,31 @@ namespace PassManager.View
         }
 
         int codigo = 1337;
-        public void CarregaDados()
+        public void CarregaInfoEmp() //Carrega inf adm Lojas
+        {
+            Crud_EmpInfo eInfo = new Crud_EmpInfo();
+            Dados_EmpInfo DadosInfo = eInfo.Carregar(codigo);
+
+        }
+        public void CarregaDados()  //Carregando config empresa
         {
             Crud_Empresa emp = new Crud_Empresa();
             Dados_Empresa dados = emp.Carregar(codigo);
             
-            txbDominio.Text = dados.dominio;
+            CtxbDominio.Text = dados.dominio;
             txbNomeSrv.Text = dados.nomesrv;
             txbNomeSrv2.Text = dados.nomesrv2;
-          
-
-            //txbTV.Text,
-            //txbTV2.Text,
-            //txbIP.Text),
-            //txbIP2.Text), 
-            //txbUsuario.Text,
-            //txbUsuario2.Text,
-            //txbSenha.Text,
-            //txbSenha2.Text,
-            //CheckFirewallEnable
-            //txbPorta.Text
-            //txbUsuarioFirewall.Text,
-            //txbSenhaFirewall.Text
+            txbTV2.Text = dados.teamviewer;
+            txbIP.Text = dados.ipsrv;
+            txbIP2.Text = dados.ipsrv2;
+            txbUsuario.Text = dados.usuariosrv;
+            txbUsuario2.Text = dados.usuariosrv2;
+            txbSenha.Text = dados.senhasrv;
+            txbSenha2.Text = dados.senhasrv2;
+            CheckFirewallEnable.Text = dados.checkfirewall);
+            txbPorta.Text = dados.portafirewall;
+            txbUsuarioFirewall.Text = dados.usuariofirewall;
+            txbSenhaFirewall.Text = dados.senhafirewall;
 
         }
 

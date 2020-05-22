@@ -77,9 +77,6 @@ namespace PassManager.Funcions
             }
             con.desconectar();
             return dados;
-            
         }
-
-        
     }
 }
