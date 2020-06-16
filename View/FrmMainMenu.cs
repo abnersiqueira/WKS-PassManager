@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -101,7 +100,7 @@ namespace PassManager.View
 
         private void BtnRestaura_Click(object sender, EventArgs e)
         {
-            this.Size = new Size(1180, 720);
+            this.Size = new Size(1080, 720);
             this.Location = new Point(lx, ly);
             BtnRestaura.Visible = false;
             BtnMaximize.Visible = true;

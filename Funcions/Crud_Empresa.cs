@@ -23,7 +23,7 @@ namespace PassManager.Funcions
             String usuariofirewall, String senhafirewall)
         {
             cmd.CommandText = "insert into tb_LojaCliente (dominio,nomesrv,nomesrv2,teamviewer,teamviewer2,ipsrv,ipsrv2,usuariosrv,usuariosrv2,senhasrv," +
-                "senhasrv2,checkfirewall,portafirewall,usuariofirewall,senhafirewall) " +
+                "senhasrv2,portafirewall,usuariofirewall,senhafirewall) " +
                 "values" +
                 " (@dominio, @nomesrv, @nomesrv2, @teamviewer,@teamviewer2,"+
                 "@ipsrv,@ipsrv2,@usuariosrv,@usuariosrv2,@senhasrv,@senhasrv2,@portafirewall,@usuariofirewall,@senhafirewall);" +

@@ -11,8 +11,9 @@ namespace PassManager.ReceiveData
     {
             public Dados_EmpInfo()
             {
-                //Atribuindo valores vazios
+            //Atribuindo valores vazios
 
+     
                 this.PK_IDinfo = 0;
                 this.nome_empresa = "";
                 this.nome_resp = "";
@@ -27,6 +28,7 @@ namespace PassManager.ReceiveData
             public Dados_EmpInfo (int PK_IDinfo, String nome_empresa, String nome_resp, String emp_email, String emp_tel, String emp_tel2,
                 String emp_cel, String emp_cel2)
             {
+               
                 this.PK_IDinfo = PK_IDinfo;
                 this.nome_empresa = nome_empresa;
                 this.nome_resp = nome_resp;

@@ -52,7 +52,7 @@ namespace PassManager.Funcions
             String emp_cel, String emp_cel2)
         {
             cmd.CommandText = "select from tb_InfoEmp (nome_empresa, nome_resp, emp_email, emp_tel, emp_tel2, emp_cel, emp_cel2) values " +
-                "(@nome_empresa, @nome_resp, @emp_email, @emp_tel, @emp_tel2, @emp_cel, emp_cel2);" +
+                "(@nome_empresa, @nome_resp, @emp_email, @emp_tel, @emp_tel2, @emp_cel, @emp_cel2);" +
                 "Select @@identity";
 
             cmd.Parameters.AddWithValue("@nome_empresa", nome_empresa);
@@ -71,4 +71,4 @@ namespace PassManager.Funcions
         }
     }
 }
-}
+

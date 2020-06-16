@@ -18,8 +18,10 @@ namespace PassManager.Funcions
         public void Cad_EmpInfo(String nome_empresa, String nome_resp, String emp_email, String emp_tel, String emp_tel2,
             String emp_cel, String emp_cel2)
         {
+
+            //CADASTRO DA INFORMAÇÕES DA LOJA
             cmd.CommandText = "insert into tb_InfoEmp (nome_empresa, nome_resp, emp_email, emp_tel, emp_tel2, emp_cel, emp_cel2) values " +
-                "(@nome_empresa, @nome_resp, @emp_email, @emp_tel, @emp_tel2, @emp_cel, emp_cel2);"+
+                "(@nome_empresa, @nome_resp, @emp_email, @emp_tel, @emp_tel2, @emp_cel, @emp_cel2);"+
                 "Select @@identity";
 
             cmd.Parameters.AddWithValue("@nome_empresa", nome_empresa);
@@ -42,6 +44,8 @@ namespace PassManager.Funcions
             Dados_EmpInfo DadosInfo = new Dados_EmpInfo();
             cmd.Connection = con.conectar();
             cmd.CommandText = "Select * from tb_EmpInfo where PK_IDinfo =" + idLoja.ToString();
+
+        
             SqlDataReader rd = cmd.ExecuteReader();
 
             if(rd.HasRows)

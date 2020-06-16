@@ -47,7 +47,7 @@ namespace PassManager.View
 
         private void BtnLoja2_Click(object sender, EventArgs e)
         {
-            id = 1;
+            id = 9;
 
 
             _objForm?.Close();

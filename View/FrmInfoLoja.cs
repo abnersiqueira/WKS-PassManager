@@ -19,7 +19,7 @@ namespace PassManager.View
         public FrmInfoLoja()
         {
             InitializeComponent();
-            DisableFirewall();
+            
             //--Desabilita as TextBox de preenchimento Relacionado ao Firewall\\
                       
         }
@@ -69,42 +69,6 @@ namespace PassManager.View
         }
 
 
-        public void DisableFirewall()
-        {
-            //txbSelecFirewall.Visible = false;
-            //txbIPFirewall.Visible = false;
-            //txbPorta.Visible = false;
-            //txbUsuarioFirewall.Visible = false;
-            //txbSenhaFirewall.Visible = false;
-            //txbOBS.Visible = false;
-
-            //labIP.Visible = false;
-            //labPorta.Visible = false;
-            //labUsuario.Visible = false;
-            //labSenha.Visible = false;
-            //labFirewall.Visible = false;
-        }
-
-        public void EnableFirewall()  //Habilitando TextBox FIREWALL
-        {
-            //txbSelecFirewall.Visible = true;
-            //txbIPFirewall.Visible = true;
-            //txbPorta.Visible = true;
-            //txbUsuarioFirewall.Visible = true;
-            //txbSenhaFirewall.Visible = true;
-            //txbOBS.Visible = true;
-
-            //labIP.Visible = true;
-            //labPorta.Visible = true;
-            //labUsuario.Visible = true;
-            //labSenha.Visible = true;
-            //labFirewall.Visible = true;
-        }
-
-        private void CheckFirewallEnable_CheckedChanged_1(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
@@ -119,14 +83,14 @@ namespace PassManager.View
             Convert.ToInt32(txbIP2.Text), txbUsuario.Text, txbUsuario2.Text, txbSenha.Text, txbSenha2.Text,
             Convert.ToInt32(txbPorta.Text), txbUsuarioFirewall.Text, txbSenhaFirewall.Text);
 
-            if (txbNomeEmpresa.Text != "")
+            if (txbNomeEmpresa.Text != null)
             {
                 Crud_EmpInfo DadosCadastrais = new Crud_EmpInfo();
-                
+                DadosCadastrais.Cad_EmpInfo(txbNomeEmpresa.Text, txbRespEmpresa.Text, txbEmailEmpresa.Text, txbTelefoneEmpresa.Text, txbTelefoneEmpresa2.Text,
+                txbCelEmpresa.Text, txbCelEmpresa2.Text);
             }
                      
         }
-
 
     }
 
