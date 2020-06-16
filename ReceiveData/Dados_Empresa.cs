@@ -25,7 +25,6 @@ namespace PassManager.ReceiveData
             this.usuariosrv2 = "";
             this.senhasrv = "";
             this.senhasrv2 = "";
-            this.checkfirewall = true;
             this.portafirewall = 0;
             this.usuariofirewall = "";
             this.senhafirewall = "";
@@ -33,7 +32,7 @@ namespace PassManager.ReceiveData
             
         }
         public Dados_Empresa(int id, String dominio, String nomesrv, String nomesrv2, String teamviewer, String teamviewer2,
-            int ipsrv, int ipsrv2, String usuariosrv, String usuariosrv2, String senhasrv, String senhasrv2, bool checkfirewall, int portafirewall,
+            int ipsrv, int ipsrv2, String usuariosrv, String usuariosrv2, String senhasrv, String senhasrv2, int portafirewall,
             String usuariofirewall, String senhafirewall)
         {
             this.id = id;
@@ -48,7 +47,6 @@ namespace PassManager.ReceiveData
             this.usuariosrv2 = usuariosrv2;
             this.senhasrv = senhasrv;
             this.senhasrv2 = senhasrv2;
-            this.checkfirewall = checkfirewall;
             this.portafirewall = portafirewall;
             this.usuariofirewall = usuariofirewall;
             this.senhafirewall = senhafirewall;
@@ -66,7 +64,6 @@ namespace PassManager.ReceiveData
         String usuariosrv2_Empresa;
         String senhasrv_Empresa;
         String senhasrv2_Empresa;
-        bool checkfirewall_Empresa;
         int portafirewall_Empresa;
         String usuariofirewall_Empresa;
         String senhafirewall_Empresa;
@@ -84,7 +81,6 @@ namespace PassManager.ReceiveData
         public String usuariosrv2 { get { return usuariosrv2_Empresa; } set { this.usuariosrv2_Empresa = value; } }
         public String senhasrv { get { return senhasrv_Empresa; } set { this.senhasrv_Empresa = value; } }
         public String senhasrv2 { get { return senhasrv2_Empresa; } set { this.senhasrv2_Empresa = value; } }
-        public bool checkfirewall { get { return checkfirewall_Empresa; } set { this.checkfirewall_Empresa = value; } }
         public int portafirewall { get { return portafirewall_Empresa; } set { this.portafirewall_Empresa = value; } }
         public String usuariofirewall { get { return usuariofirewall_Empresa; } set { this.usuariofirewall_Empresa = value; } }
         public String senhafirewall { get { return senhafirewall_Empresa; } set { this.senhafirewall_Empresa = value; } }

@@ -34,7 +34,7 @@
             this.BtnLojas = new System.Windows.Forms.Button();
             this.BtnSairMenu = new System.Windows.Forms.Button();
             this.BtnChat = new System.Windows.Forms.Button();
-            this.BtnAvulsos = new System.Windows.Forms.Button();
+            this.BtnNovaLoja = new System.Windows.Forms.Button();
             this.pnLLogo = new System.Windows.Forms.Panel();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.pnLConteudoMenu = new System.Windows.Forms.Panel();
@@ -96,7 +96,7 @@
             this.pnLLeft.Controls.Add(this.BtnLojas);
             this.pnLLeft.Controls.Add(this.BtnSairMenu);
             this.pnLLeft.Controls.Add(this.BtnChat);
-            this.pnLLeft.Controls.Add(this.BtnAvulsos);
+            this.pnLLeft.Controls.Add(this.BtnNovaLoja);
             this.pnLLeft.Controls.Add(this.pnLLogo);
             this.pnLLeft.Controls.Add(this.BtnGuiaEstruturado);
             this.pnLLeft.Controls.Add(this.BtnRel);
@@ -171,25 +171,26 @@
             this.BtnChat.UseVisualStyleBackColor = false;
             this.BtnChat.Visible = false;
             // 
-            // BtnAvulsos
+            // BtnNovaLoja
             // 
-            this.BtnAvulsos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(13)))), ((int)(((byte)(22)))));
-            this.BtnAvulsos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.BtnAvulsos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnAvulsos.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.BtnAvulsos.FlatAppearance.CheckedBackColor = System.Drawing.Color.Magenta;
-            this.BtnAvulsos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
-            this.BtnAvulsos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.BtnAvulsos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAvulsos.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAvulsos.ForeColor = System.Drawing.Color.White;
-            this.BtnAvulsos.Location = new System.Drawing.Point(-1, 151);
-            this.BtnAvulsos.Name = "BtnAvulsos";
-            this.BtnAvulsos.Size = new System.Drawing.Size(203, 35);
-            this.BtnAvulsos.TabIndex = 92;
-            this.BtnAvulsos.Text = "Clientes Avulsos";
-            this.BtnAvulsos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAvulsos.UseVisualStyleBackColor = false;
+            this.BtnNovaLoja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(13)))), ((int)(((byte)(22)))));
+            this.BtnNovaLoja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BtnNovaLoja.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnNovaLoja.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.BtnNovaLoja.FlatAppearance.CheckedBackColor = System.Drawing.Color.Magenta;
+            this.BtnNovaLoja.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.BtnNovaLoja.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.BtnNovaLoja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNovaLoja.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNovaLoja.ForeColor = System.Drawing.Color.White;
+            this.BtnNovaLoja.Location = new System.Drawing.Point(-1, 151);
+            this.BtnNovaLoja.Name = "BtnNovaLoja";
+            this.BtnNovaLoja.Size = new System.Drawing.Size(203, 35);
+            this.BtnNovaLoja.TabIndex = 92;
+            this.BtnNovaLoja.Text = "Nova Loja";
+            this.BtnNovaLoja.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnNovaLoja.UseVisualStyleBackColor = false;
+            this.BtnNovaLoja.Visible = false;
             // 
             // pnLLogo
             // 
@@ -295,6 +296,7 @@
             this.BtnGuiaEstruturado.Text = "Guia Estruturado";
             this.BtnGuiaEstruturado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGuiaEstruturado.UseVisualStyleBackColor = false;
+            this.BtnGuiaEstruturado.Visible = false;
             // 
             // BtnRel
             // 
@@ -315,6 +317,7 @@
             this.BtnRel.Text = "Relatórios";
             this.BtnRel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnRel.UseVisualStyleBackColor = false;
+            this.BtnRel.Visible = false;
             // 
             // BtnConfigSistema
             // 
@@ -335,6 +338,7 @@
             this.BtnConfigSistema.Text = "Config. do Sistema";
             this.BtnConfigSistema.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnConfigSistema.UseVisualStyleBackColor = false;
+            this.BtnConfigSistema.Visible = false;
             this.BtnConfigSistema.Click += new System.EventHandler(this.BtnConfigSistema_Click);
             // 
             // BtnControlServidores
@@ -356,6 +360,7 @@
             this.BtnControlServidores.Text = "Controle de Servidores";
             this.BtnControlServidores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnControlServidores.UseVisualStyleBackColor = false;
+            this.BtnControlServidores.Visible = false;
             // 
             // BtnGuiaClientes
             // 
@@ -376,6 +381,7 @@
             this.BtnGuiaClientes.Text = "Guia de Clientes";
             this.BtnGuiaClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGuiaClientes.UseVisualStyleBackColor = false;
+            this.BtnGuiaClientes.Visible = false;
             // 
             // PnLSupMainMenu
             // 
@@ -535,7 +541,7 @@
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label3.Location = new System.Drawing.Point(275, 179);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(260, 45);
+            this.label3.Size = new System.Drawing.Size(360, 45);
             this.label3.TabIndex = 7;
             this.label3.Text = "WKS Soluções em TI";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -614,7 +620,7 @@
         private System.Windows.Forms.Panel PnLMainMenu;
         private System.Windows.Forms.Panel pnLLeft;
         private System.Windows.Forms.Button BtnLojas;
-        private System.Windows.Forms.Button BtnAvulsos;
+        private System.Windows.Forms.Button BtnNovaLoja;
         private System.Windows.Forms.Button BtnConfigSistema;
         private System.Windows.Forms.Button BtnRel;
         private System.Windows.Forms.Button BtnControlServidores;

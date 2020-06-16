@@ -48,7 +48,7 @@ namespace PassManager.ReceiveData
         String EMP_CEL2;
 
 
-        public int PK_IDinfo { get { return ID_EMP; } set { this.PK_IDinfo = value; } }
+        public int PK_IDinfo { get { return ID_EMP; } set { this.ID_EMP = value; } }
         public String nome_empresa { get { return NOME_EMP; } set { this.NOME_EMP = value; } }
         public String nome_resp { get { return EMP_RESP; } set { this.EMP_RESP = value; } }
         public String emp_email { get { return EMAIL_EMP; } set { this.EMAIL_EMP = value; } }

@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace PassManager.Funcions
 {
@@ -15,13 +16,17 @@ namespace PassManager.Funcions
         Conexao con = new Conexao();
         SqlCommand cmd = new SqlCommand();
         public int id;
+
+      
         public void Cad_Empresa(String dominio, String nomesrv, String nomesrv2, String teamviewer, String teamviewer2,
-            int ipsrv, int ipsrv2, String usuariosrv, String usuariosrv2, String senhasrv, String senhasrv2, bool checkfirewall, int portafirewall,
+            int ipsrv, int ipsrv2, String usuariosrv, String usuariosrv2, String senhasrv, String senhasrv2, int portafirewall,
             String usuariofirewall, String senhafirewall)
         {
-            cmd.CommandText = "insert into tb_LojaCliente (dominio,nomesrv,nomesrv2,teamviewer,teamviewer2,ipsrv,ipsvr2,usuariosrv,usuariosrv2,senhasrv," +
-                "senhasrv2,checkfirewall,portafirewall,usuariofirewall,senhafirewall) values (@dominio, @nomesrv, @nomesrv2, @teamviewer,@teamviewer2,"+
-                "@ipsrv,@ipsrv2,@usuariosrv,@usuariosrv2,@senhasrv,@senhasrv2,@checkfirewall,@portafirewall,@usuariofirewall,@senhafirewall);" +
+            cmd.CommandText = "insert into tb_LojaCliente (dominio,nomesrv,nomesrv2,teamviewer,teamviewer2,ipsrv,ipsrv2,usuariosrv,usuariosrv2,senhasrv," +
+                "senhasrv2,checkfirewall,portafirewall,usuariofirewall,senhafirewall) " +
+                "values" +
+                " (@dominio, @nomesrv, @nomesrv2, @teamviewer,@teamviewer2,"+
+                "@ipsrv,@ipsrv2,@usuariosrv,@usuariosrv2,@senhasrv,@senhasrv2,@portafirewall,@usuariofirewall,@senhafirewall);" +
                 "Select @@identity";
 
             cmd.Parameters.AddWithValue("@dominio", dominio);
@@ -35,7 +40,6 @@ namespace PassManager.Funcions
             cmd.Parameters.AddWithValue("@usuariosrv2", usuariosrv2);
             cmd.Parameters.AddWithValue("@senhasrv", senhasrv);
             cmd.Parameters.AddWithValue("@senhasrv2", senhasrv2);
-            cmd.Parameters.AddWithValue("@checkfirewall", checkfirewall);
             cmd.Parameters.AddWithValue("@portafirewall", portafirewall);
             cmd.Parameters.AddWithValue("@usuariofirewall", usuariofirewall);
             cmd.Parameters.AddWithValue("@senhafirewall", senhafirewall);
@@ -43,6 +47,7 @@ namespace PassManager.Funcions
             cmd.Connection = con.conectar();
             cmd.ExecuteNonQuery();
             con.desconectar();
+            MessageBox.Show ("Cadastro efetuado!");
         }
 
 
@@ -69,7 +74,6 @@ namespace PassManager.Funcions
                 dados.usuariosrv2 = Convert.ToString(rd["usuariosrv2"]);
                 dados.senhasrv = Convert.ToString(rd["senhasrv"]);
                 dados.senhasrv2 = Convert.ToString(rd["senhasrv2"]);
-                dados.checkfirewall = Convert.ToBoolean(rd["checkfirewall"]);
                 dados.portafirewall = Convert.ToInt32(rd["portafirewall"]);
                 dados.usuariofirewall = Convert.ToString(rd["usuariofirewall"]);
                 dados.senhafirewall = Convert.ToString(rd["senhafirewall"]);

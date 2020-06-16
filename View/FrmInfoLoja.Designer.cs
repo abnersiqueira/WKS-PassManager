@@ -37,6 +37,7 @@
             this.PainelCentralBranco = new System.Windows.Forms.Panel();
             this.PnLinferior = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txbOBS = new System.Windows.Forms.TextBox();
             this.CheckFirewallEnable = new System.Windows.Forms.CheckBox();
@@ -74,11 +75,12 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txbUsuario = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.BtnCancel = new System.Windows.Forms.Button();
             this.BtnEditar = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbTipoLoja = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.txbID = new System.Windows.Forms.TextBox();
@@ -95,8 +97,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txbEmailEmpresa = new System.Windows.Forms.TextBox();
             this.txbRespEmpresa = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             idLabel = new System.Windows.Forms.Label();
             nome_empresaLabel = new System.Windows.Forms.Label();
             nome_responsavelLabel = new System.Windows.Forms.Label();
@@ -105,13 +105,13 @@
             this.PainelCentralBranco.SuspendLayout();
             this.PnLinferior.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // idLabel
@@ -200,6 +200,16 @@
             this.groupBox2.TabIndex = 64;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Firewall";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(159, 15);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(46, 46);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 95;
+            this.pictureBox2.TabStop = false;
             // 
             // groupBox3
             // 
@@ -619,6 +629,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cadastro Nova Loja";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(194, 32);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(35, 37);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 95;
+            this.pictureBox3.TabStop = false;
+            // 
             // panel1
             // 
             this.panel1.AutoScroll = true;
@@ -627,7 +647,7 @@
             this.panel1.Controls.Add(idLabel);
             this.panel1.Controls.Add(this.BtnCancel);
             this.panel1.Controls.Add(this.BtnEditar);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.cbTipoLoja);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.txbID);
@@ -660,14 +680,15 @@
             this.btnCadastrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCadastrar.CausesValidation = false;
             this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCadastrar.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrar.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnCadastrar.ForeColor = System.Drawing.Color.White;
             this.btnCadastrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCadastrar.Image")));
             this.btnCadastrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCadastrar.Location = new System.Drawing.Point(4, 533);
+            this.btnCadastrar.Location = new System.Drawing.Point(0, 525);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(200, 39);
+            this.btnCadastrar.Size = new System.Drawing.Size(206, 39);
             this.btnCadastrar.TabIndex = 73;
             this.btnCadastrar.Text = "Salvar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
@@ -675,43 +696,45 @@
             // 
             // BtnCancel
             // 
-            this.BtnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.BtnCancel.BackColor = System.Drawing.Color.Gray;
+            this.BtnCancel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BtnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCancel.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
             this.BtnCancel.ForeColor = System.Drawing.Color.White;
             this.BtnCancel.Image = ((System.Drawing.Image)(resources.GetObject("BtnCancel.Image")));
             this.BtnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCancel.Location = new System.Drawing.Point(4, 602);
+            this.BtnCancel.Location = new System.Drawing.Point(0, 564);
             this.BtnCancel.Name = "BtnCancel";
-            this.BtnCancel.Size = new System.Drawing.Size(202, 39);
+            this.BtnCancel.Size = new System.Drawing.Size(206, 39);
             this.BtnCancel.TabIndex = 94;
             this.BtnCancel.Text = "Cancelar";
             this.BtnCancel.UseVisualStyleBackColor = false;
             // 
             // BtnEditar
             // 
-            this.BtnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.BtnEditar.BackColor = System.Drawing.Color.Gray;
+            this.BtnEditar.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEditar.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
             this.BtnEditar.ForeColor = System.Drawing.Color.White;
             this.BtnEditar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEditar.Image")));
             this.BtnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnEditar.Location = new System.Drawing.Point(4, 568);
+            this.BtnEditar.Location = new System.Drawing.Point(0, 603);
             this.BtnEditar.Name = "BtnEditar";
-            this.BtnEditar.Size = new System.Drawing.Size(202, 39);
+            this.BtnEditar.Size = new System.Drawing.Size(206, 39);
             this.BtnEditar.TabIndex = 93;
             this.BtnEditar.Text = "Editar";
             this.BtnEditar.UseVisualStyleBackColor = false;
             // 
-            // comboBox1
+            // cbTipoLoja
             // 
-            this.comboBox1.ForeColor = System.Drawing.Color.Red;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(15, 96);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(159, 21);
-            this.comboBox1.TabIndex = 92;
-            this.comboBox1.Text = "Matriz";
+            this.cbTipoLoja.ForeColor = System.Drawing.Color.Red;
+            this.cbTipoLoja.FormattingEnabled = true;
+            this.cbTipoLoja.Location = new System.Drawing.Point(44, 92);
+            this.cbTipoLoja.Name = "cbTipoLoja";
+            this.cbTipoLoja.Size = new System.Drawing.Size(81, 21);
+            this.cbTipoLoja.TabIndex = 92;
+            this.cbTipoLoja.Text = "Matriz";
             // 
             // button2
             // 
@@ -874,26 +897,6 @@
             this.txbRespEmpresa.Size = new System.Drawing.Size(162, 20);
             this.txbRespEmpresa.TabIndex = 79;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(159, 15);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(46, 46);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 95;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(194, 32);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(35, 37);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 95;
-            this.pictureBox3.TabStop = false;
-            // 
             // FrmInfoLoja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -907,16 +910,16 @@
             this.PnLinferior.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -964,7 +967,7 @@
         private System.Windows.Forms.TextBox txbCelEmpresa;
         private System.Windows.Forms.TextBox txbCelEmpresa2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbTipoLoja;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel PnLinferior;
         private System.Windows.Forms.TextBox txbOBS;

@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace PassManager.Funcions
 {
@@ -32,10 +33,10 @@ namespace PassManager.Funcions
             cmd.Connection = con.conectar();
             cmd.ExecuteNonQuery();
             con.desconectar();
-
+            MessageBox.Show("Dados EmpresaInfo CADASTRADKO!");
         }
 
-        public Dados_EmpInfo Carregar (int idLoja)
+        public Dados_EmpInfo Carregar_EmpINFO (int idLoja)
         {
             id = idLoja;
             Dados_EmpInfo DadosInfo = new Dados_EmpInfo();

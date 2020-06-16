@@ -53,7 +53,7 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.Btn_wks = new System.Windows.Forms.Button();
             this.BtnLoja8 = new System.Windows.Forms.Button();
             this.BtnLoja7 = new System.Windows.Forms.Button();
             this.BtnLoja6 = new System.Windows.Forms.Button();
@@ -93,7 +93,7 @@
             this.pnlChamaLoja.Controls.Add(this.button9);
             this.pnlChamaLoja.Controls.Add(this.button10);
             this.pnlChamaLoja.Controls.Add(this.button11);
-            this.pnlChamaLoja.Controls.Add(this.button12);
+            this.pnlChamaLoja.Controls.Add(this.Btn_wks);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja8);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja7);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja6);
@@ -384,17 +384,18 @@
             this.button11.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button11.UseVisualStyleBackColor = false;
             // 
-            // button12
+            // Btn_wks
             // 
-            this.button12.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Location = new System.Drawing.Point(3, 104);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(130, 101);
-            this.button12.TabIndex = 9;
-            this.button12.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button12.UseVisualStyleBackColor = false;
+            this.Btn_wks.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Btn_wks.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.Btn_wks.ForeColor = System.Drawing.Color.White;
+            this.Btn_wks.Location = new System.Drawing.Point(3, 104);
+            this.Btn_wks.Name = "Btn_wks";
+            this.Btn_wks.Size = new System.Drawing.Size(130, 101);
+            this.Btn_wks.TabIndex = 9;
+            this.Btn_wks.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_wks.UseVisualStyleBackColor = false;
+            this.Btn_wks.Click += new System.EventHandler(this.Btn_wks_Click);
             // 
             // BtnLoja8
             // 
@@ -479,7 +480,7 @@
             this.BtnLoja2.TabIndex = 2;
             this.BtnLoja2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja2.UseVisualStyleBackColor = false;
-            this.BtnLoja2.Click += new System.EventHandler(this.button2_Click);
+            this.BtnLoja2.Click += new System.EventHandler(this.BtnLoja2_Click);
             // 
             // BtnLoja1
             // 
@@ -556,7 +557,7 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button Btn_wks;
         private System.Windows.Forms.Button BtnLoja8;
         private System.Windows.Forms.Button BtnLoja7;
         private System.Windows.Forms.Button BtnLoja6;
