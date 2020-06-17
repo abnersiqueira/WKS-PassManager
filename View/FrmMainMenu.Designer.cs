@@ -541,7 +541,7 @@
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label3.Location = new System.Drawing.Point(275, 179);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(360, 45);
+            this.label3.Size = new System.Drawing.Size(260, 45);
             this.label3.TabIndex = 7;
             this.label3.Text = "WKS Soluções em TI";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -557,9 +557,9 @@
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Location = new System.Drawing.Point(276, 224);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(374, 30);
+            this.label2.Size = new System.Drawing.Size(318, 30);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Rua Dr. Armando Sales de Oliveira, 832";
+            this.label2.Text = "Rua Dr. Afonso Pena, 59 - Centro";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1

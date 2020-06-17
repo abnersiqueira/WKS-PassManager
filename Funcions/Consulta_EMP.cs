@@ -19,11 +19,12 @@ namespace PassManager.Funcions
 
         public void Consulta_EMPRESA(String dominio, String nomesrv, String nomesrv2, String teamviewer, String teamviewer2,
           int ipsrv, int ipsrv2, String usuariosrv, String usuariosrv2, String senhasrv, String senhasrv2, int portafirewall,
-          String usuariofirewall, String senhafirewall)
+          String usuariofirewall, String senhafirewall, String ipfirewall, String nome_empresa, String nome_resp, String emp_email, String emp_tel, String emp_tel2)
         {
-            cmd.CommandText = "select * from tb_LojaCliente (dominio,nomesrv,nomesrv2,teamviewer,teamviewer2,ipsrv,ipsrv2,usuariosrv,usuariosrv2,senhasrv," +
-               "senhasrv2,checkfirewall,portafirewall,usuariofirewall,senhafirewall) values (@dominio, @nomesrv, @nomesrv2, @teamviewer,@teamviewer2," +
-               "@ipsrv,@ipsrv2,@usuariosrv,@usuariosrv2,@senhasrv,@senhasrv2,@portafirewall,@usuariofirewall,@senhafirewall);" +
+            cmd.CommandText = "select * from tb_DadosLoja (dominio,nomesrv,nomesrv2,teamviewer,teamviewer2,ipsrv,ipsrv2,usuariosrv,usuariosrv2,senhasrv," +
+               "senhasrv2,checkfirewall,portafirewall,usuariofirewall,senhafirewall,ipfirewall,nome_empresa,nome_resp,emp_email,emp_tel,emptel2) values (@dominio, @nomesrv, @nomesrv2, @teamviewer,@teamviewer2," +
+               "@ipsrv,@ipsrv2,@usuariosrv,@usuariosrv2,@senhasrv,@senhasrv2,@portafirewall,@usuariofirewall,@senhafirewall," +
+               " @ipfirewall,@nome_empresa,@nome_resp,@emp_email,@emp_tel,@emp_tel2);" +
                "Select @@identity";
 
             cmd.Parameters.AddWithValue("@dominio", dominio);
@@ -40,6 +41,13 @@ namespace PassManager.Funcions
             cmd.Parameters.AddWithValue("@portafirewall", portafirewall);
             cmd.Parameters.AddWithValue("@usuariofirewall", usuariofirewall);
             cmd.Parameters.AddWithValue("@senhafirewall", senhafirewall);
+            cmd.Parameters.AddWithValue("@ipfirewall", ipfirewall);
+            cmd.Parameters.AddWithValue("@nome_empresa", nome_empresa);
+            cmd.Parameters.AddWithValue("@nome_resp", nome_resp);
+            cmd.Parameters.AddWithValue("@emp_email", emp_email);
+            cmd.Parameters.AddWithValue("@emp_tel", emp_tel);
+            cmd.Parameters.AddWithValue("@emp_tel2", emp_tel2);
+
 
             cmd.Connection = con.conectar();
             cmd.ExecuteNonQuery();
@@ -48,27 +56,7 @@ namespace PassManager.Funcions
 
         }
 
-        public void Consulta_DadosEmp (String nome_empresa, String nome_resp, String emp_email, String emp_tel, String emp_tel2,
-            String emp_cel, String emp_cel2)
-        {
-            cmd.CommandText = "select from tb_InfoEmp (nome_empresa, nome_resp, emp_email, emp_tel, emp_tel2, emp_cel, emp_cel2) values " +
-                "(@nome_empresa, @nome_resp, @emp_email, @emp_tel, @emp_tel2, @emp_cel, @emp_cel2);" +
-                "Select @@identity";
 
-            cmd.Parameters.AddWithValue("@nome_empresa", nome_empresa);
-            cmd.Parameters.AddWithValue("@nome_resp", emp_email);
-            cmd.Parameters.AddWithValue("@emp_email", emp_email);
-            cmd.Parameters.AddWithValue("@emp_tel", emp_tel);
-            cmd.Parameters.AddWithValue("@emp_tel2", emp_tel2);
-            cmd.Parameters.AddWithValue("@emp_cel", emp_cel);
-            cmd.Parameters.AddWithValue("@emp_cel2", emp_cel2);
-         
-            cmd.Connection = con.conectar();
-            cmd.ExecuteNonQuery();
-            con.desconectar();
-            MessageBox.Show("Lista consulta NOME EMPRESA carregada!");
-
-        }
     }
 }
 

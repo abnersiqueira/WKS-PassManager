@@ -47,7 +47,7 @@ namespace PassManager.View
 
         private void BtnLoja2_Click(object sender, EventArgs e)
         {
-            id = 9;
+            id = 1;
 
 
             _objForm?.Close();
@@ -66,6 +66,28 @@ namespace PassManager.View
         {
             Consulta_EMP consulta = new Consulta_EMP();
 
+        }
+
+        private void pnlChamaLoja_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            id = 2;
+
+
+            _objForm?.Close();
+            _objForm = new FrmInfoLoja(id)
+            {
+                TopLevel = false,
+                FormBorderStyle = FormBorderStyle.None,
+                Dock = DockStyle.Fill
+            };
+            pnlChamaLoja.Controls.Add(_objForm);
+            _objForm.Show();
+            _objForm.BringToFront();
         }
     }
 }

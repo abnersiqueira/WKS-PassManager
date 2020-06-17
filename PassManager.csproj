@@ -53,11 +53,9 @@
     <Compile Include="DAL\Conexao.cs" />
     <Compile Include="DAL\LoginDaoComandos.cs" />
     <Compile Include="Funcions\Consulta_EMP.cs" />
-    <Compile Include="Funcions\Crud_EmpInfo.cs" />
     <Compile Include="Funcions\Crud_Empresa.cs" />
     <Compile Include="Funcions\Cad_Login.cs" />
     <Compile Include="Model\Controle.cs" />
-    <Compile Include="ReceiveData\Dados_EmpInfo.cs" />
     <Compile Include="ReceiveData\Dados_Empresa.cs" />
     <Compile Include="tb_logon_DataGrid.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -150,6 +148,138 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\plus_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ABC.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apae.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Acap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AE Cidade.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AE Marina.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bicho Papao.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Biolub.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BM7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cidade Auto Escola.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CCS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clube de Campo Sorocaba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cnh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CriartFarma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dex Transportes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GKS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Impresso Brasil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JDJ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_omni.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M&amp;S Corretora.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marcio Reze Novo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marina Auto Escola.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MDL-BRASIL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ortoclin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Radio Vanguarda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CristalFM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CristalFM1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CristalFM %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CristalFM %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RBA Imobiliaria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RBA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Residencial Mont Blanc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ronaldo Borges.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SCL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Seritec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Soares Contabilidade.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TV Sorocaba.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TV Sorocaba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unigra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Valarelli &amp; Buffalo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Weizur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server_500px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firewall_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\workstation_200px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\workstation_500px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
