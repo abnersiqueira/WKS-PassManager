@@ -120,7 +120,7 @@
             this.txbLogin1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(117)))), ((int)(((byte)(227)))));
             this.txbLogin1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbLogin1.Font = new System.Drawing.Font("Bahnschrift Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbLogin1.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.txbLogin1.ForeColor = System.Drawing.Color.Black;
             this.txbLogin1.Location = new System.Drawing.Point(279, 132);
             this.txbLogin1.Name = "txbLogin1";
             this.txbLogin1.Size = new System.Drawing.Size(195, 26);
@@ -190,7 +190,7 @@
             this.txbPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(117)))), ((int)(((byte)(227)))));
             this.txbPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbPass.Font = new System.Drawing.Font("Bahnschrift Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbPass.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.txbPass.ForeColor = System.Drawing.Color.Black;
             this.txbPass.Location = new System.Drawing.Point(279, 170);
             this.txbPass.Name = "txbPass";
             this.txbPass.Size = new System.Drawing.Size(195, 26);

@@ -118,17 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="workstation_500px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\workstation_500px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Weizur" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Weizur.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Apae" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Apae.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="JDJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\JDJ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="RBA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RBA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CristalFM1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CristalFM1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="server_500px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\server_500px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -138,6 +141,9 @@
   </data>
   <data name="TV Sorocaba" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TV Sorocaba.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="server_500px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\server_500px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="RBA Imobiliaria" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RBA Imobiliaria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,23 +169,17 @@
   <data name="TV Sorocaba1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TV Sorocaba.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="workstation_200px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\workstation_200px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Bicho Papao" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bicho Papao.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ABC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ABC.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CristalFM (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CristalFM (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="logo_omni" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_omni.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Acap" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Acap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="workstation_200px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\workstation_200px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Marina Auto Escola" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Marina Auto Escola.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,8 +196,8 @@
   <data name="CriartFarma" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CriartFarma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CristalFM (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CristalFM (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="workstation_200px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\workstation_200px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BM7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BM7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,14 +208,17 @@
   <data name="SCL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SCL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Acap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Acap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Residencial Mont Blanc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Residencial Mont Blanc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Apae" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Apae.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Biolub" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Biolub.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="workstation_500px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\workstation_500px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AE Cidade" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AE Cidade.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -250,7 +253,7 @@
   <data name="Ronaldo Borges" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ronaldo Borges.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="workstation_500px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\workstation_500px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="firewall_80px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\firewall_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

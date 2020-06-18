@@ -56,6 +56,11 @@
     <Compile Include="Funcions\Crud_Empresa.cs" />
     <Compile Include="Funcions\Cad_Login.cs" />
     <Compile Include="Model\Controle.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="ReceiveData\Dados_Empresa.cs" />
     <Compile Include="tb_logon_DataGrid.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -108,14 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="View\FrmTodasLojas.resx">
       <DependentUpon>FrmTodasLojas.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,15 +223,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\CristalFM.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\CristalFM1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\CristalFM %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\CristalFM %283%29.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\RBA Imobiliaria.png" />

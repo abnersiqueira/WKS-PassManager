@@ -203,36 +203,6 @@ namespace PassManager.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CristalFM__2_ {
-            get {
-                object obj = ResourceManager.GetObject("CristalFM (2)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap CristalFM__3_ {
-            get {
-                object obj = ResourceManager.GetObject("CristalFM (3)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap CristalFM1 {
-            get {
-                object obj = ResourceManager.GetObject("CristalFM1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Dex_Transportes {
             get {
                 object obj = ResourceManager.GetObject("Dex Transportes", resourceCulture);
@@ -246,6 +216,16 @@ namespace PassManager.Properties {
         internal static System.Drawing.Bitmap firewall_80px {
             get {
                 object obj = ResourceManager.GetObject("firewall_80px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap firewall_80px1 {
+            get {
+                object obj = ResourceManager.GetObject("firewall_80px1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -433,6 +413,16 @@ namespace PassManager.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap server_500px1 {
+            get {
+                object obj = ResourceManager.GetObject("server_500px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Soares_Contabilidade {
             get {
                 object obj = ResourceManager.GetObject("Soares Contabilidade", resourceCulture);
@@ -503,9 +493,29 @@ namespace PassManager.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap workstation_200px1 {
+            get {
+                object obj = ResourceManager.GetObject("workstation_200px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap workstation_500px {
             get {
                 object obj = ResourceManager.GetObject("workstation_500px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap workstation_500px1 {
+            get {
+                object obj = ResourceManager.GetObject("workstation_500px1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

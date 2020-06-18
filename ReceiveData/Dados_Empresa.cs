@@ -19,8 +19,8 @@ namespace PassManager.ReceiveData
             this.nomesrv2 = "";
             this.teamviewer = "";
             this.teamviewer2 = "";
-            this.ipsrv = 0;
-            this.ipsrv2 = 0;
+            this.ipsrv = "";
+            this.ipsrv2 = "";
             this.usuariosrv = "";
             this.usuariosrv2 = "";
             this.senhasrv = "";
@@ -40,7 +40,7 @@ namespace PassManager.ReceiveData
 
         }
         public Dados_Empresa(int id, String dominio, String nomesrv, String nomesrv2, String teamviewer, String teamviewer2,
-            int ipsrv, int ipsrv2, String usuariosrv, String usuariosrv2, String senhasrv, String senhasrv2, String ipfirewall,int portafirewall,
+            String ipsrv, String ipsrv2, String usuariosrv, String usuariosrv2, String senhasrv, String senhasrv2, String ipfirewall,int portafirewall,
             String usuariofirewall, String senhafirewall, String nome_empresa, String nome_resp, String emp_email, String emp_tel, String emp_tel2,
             String emp_cel, String emp_cel2)
         {
@@ -75,8 +75,8 @@ namespace PassManager.ReceiveData
         String nomesrv2_Empresa;
         String teamviewer_Empresa;
         String teamviewer2_Empresa;
-        int ipsrv_Empresa;
-        int ipsrv2_Empresa;
+        String ipsrv_Empresa;
+        String ipsrv2_Empresa;
         String usuariosrv_Empresa;
         String usuariosrv2_Empresa;
         String senhasrv_Empresa;
@@ -100,8 +100,8 @@ namespace PassManager.ReceiveData
         public String nomesrv2 { get { return nomesrv2_Empresa; } set { this.nomesrv2_Empresa = value; } }
         public String teamviewer { get { return teamviewer_Empresa; } set { this.teamviewer_Empresa = value; } }
         public String teamviewer2 { get { return teamviewer2_Empresa; } set { this.teamviewer2_Empresa = value; } }
-        public int ipsrv { get { return ipsrv_Empresa; } set { this.ipsrv_Empresa = value; } }
-        public int ipsrv2 { get { return ipsrv2_Empresa; } set { this.ipsrv2_Empresa = value; } }
+        public String ipsrv { get { return ipsrv_Empresa; } set { this.ipsrv_Empresa = value; } }
+        public String ipsrv2 { get { return ipsrv2_Empresa; } set { this.ipsrv2_Empresa = value; } }
         public String usuariosrv { get { return usuariosrv_Empresa; } set { this.usuariosrv_Empresa = value; } }
         public String usuariosrv2 { get { return usuariosrv2_Empresa; } set { this.usuariosrv2_Empresa = value; } }
         public String senhasrv { get { return senhasrv_Empresa; } set { this.senhasrv_Empresa = value; } }

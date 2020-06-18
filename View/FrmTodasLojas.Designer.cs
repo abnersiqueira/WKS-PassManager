@@ -302,7 +302,6 @@
             this.BtnLoja28.BackColor = System.Drawing.Color.Transparent;
             this.BtnLoja28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLoja28.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja28.Image = global::PassManager.Properties.Resources.CristalFM__3_;
             this.BtnLoja28.Location = new System.Drawing.Point(143, 306);
             this.BtnLoja28.Name = "BtnLoja28";
             this.BtnLoja28.Size = new System.Drawing.Size(130, 101);

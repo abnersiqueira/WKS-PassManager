@@ -50,7 +50,7 @@ namespace PassManager.View
             txbUsuario2.Text            = dados.usuariosrv2;
             txbSenha.Text               = dados.senhasrv;
             txbSenha2.Text              = dados.senhasrv2;
-            txbIPFirewall.Text          = dados.ipfirewall;
+            txbIPFirewall.Text          = Convert.ToString(dados.ipfirewall);
             txbPorta.Text               = Convert.ToString(dados.portafirewall);
             txbUsuarioFirewall.Text     = dados.usuariofirewall;
             txbSenhaFirewall.Text       = dados.senhafirewall;
@@ -78,8 +78,8 @@ namespace PassManager.View
             Empresa.Cad_Empresa(txbDominio.Text,
             txbNomeSrv.Text, txbNomeSrv2.Text,
             txbTV.Text, txbTV2.Text,
-            Convert.ToInt32(txbIP.Text),
-            Convert.ToInt32(txbIP2.Text),
+            Convert.ToString(txbIP.Text),
+            txbIP2.Text,
             txbUsuario.Text, txbUsuario2.Text,
             txbSenha.Text, txbSenha2.Text,
             txbIPFirewall.Text,
@@ -98,6 +98,11 @@ namespace PassManager.View
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbSelecFirewall_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

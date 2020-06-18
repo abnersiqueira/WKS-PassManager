@@ -81,7 +81,7 @@ namespace PassManager
             if (txbLogin1.Text == "Login")
             {
                 txbLogin1.Text = "";
-                txbLogin1.ForeColor = Color.DarkTurquoise;
+                txbLogin1.ForeColor = Color.Black;
             }
         }
 
@@ -90,7 +90,7 @@ namespace PassManager
             if (txbLogin1.Text == "")
             {
                 txbLogin1.Text = "Login";
-                txbLogin1.ForeColor = Color.DarkTurquoise;
+                txbLogin1.ForeColor = Color.Black;
             }
         }
 
@@ -100,7 +100,7 @@ namespace PassManager
             if (txbPass.Text == "")
             {
                 txbPass.Text = "Senha";
-                txbPass.ForeColor = Color.DarkTurquoise;
+                txbPass.ForeColor = Color.Black;
                 txbPass.UseSystemPasswordChar = true;
             }
         }
@@ -110,7 +110,7 @@ namespace PassManager
             if (txbPass.Text == "Senha")
             {
                 txbPass.Text = "";
-                txbPass.ForeColor = Color.DarkTurquoise;
+                txbPass.ForeColor = Color.Black;
                 txbPass.UseSystemPasswordChar = true;
 
             }

@@ -18,7 +18,7 @@ namespace PassManager.Funcions
         public int id;
 
         public void Consulta_EMPRESA(String dominio, String nomesrv, String nomesrv2, String teamviewer, String teamviewer2,
-          int ipsrv, int ipsrv2, String usuariosrv, String usuariosrv2, String senhasrv, String senhasrv2, int portafirewall,
+          String ipsrv, String ipsrv2, String usuariosrv, String usuariosrv2, String senhasrv, String senhasrv2, int portafirewall,
           String usuariofirewall, String senhafirewall, String ipfirewall, String nome_empresa, String nome_resp, String emp_email, String emp_tel, String emp_tel2)
         {
             cmd.CommandText = "select * from tb_DadosLoja (dominio,nomesrv,nomesrv2,teamviewer,teamviewer2,ipsrv,ipsrv2,usuariosrv,usuariosrv2,senhasrv," +

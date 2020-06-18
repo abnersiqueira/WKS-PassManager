@@ -19,7 +19,7 @@ namespace PassManager.Funcions
 
       
         public void Cad_Empresa(String dominio, String nomesrv, String nomesrv2, String teamviewer, String teamviewer2,
-            int ipsrv, int ipsrv2, String usuariosrv, String usuariosrv2, String senhasrv, String senhasrv2, String ipfirewall, int portafirewall,
+            String ipsrv, String ipsrv2, String usuariosrv, String usuariosrv2, String senhasrv, String senhasrv2, String ipfirewall, int portafirewall,
             String usuariofirewall, String senhafirewall, String nome_empresa, String nome_resp, String emp_email, String emp_tel, String emp_tel2,
             String emp_cel, String emp_cel2)
         {
@@ -78,8 +78,8 @@ namespace PassManager.Funcions
                 dados.nomesrv2 = Convert.ToString(rd["nomesrv2"]);
                 dados.teamviewer = Convert.ToString(rd["teamviewer"]);
                 dados.teamviewer2 = Convert.ToString(rd["teamviewer2"]);
-                dados.ipsrv = Convert.ToInt32(rd["ipsrv"]);
-                dados.ipsrv2 = Convert.ToInt32(rd["ipsrv2"]);
+                dados.ipsrv = Convert.ToString(rd["ipsrv"]);
+                dados.ipsrv2 = Convert.ToString(rd["ipsrv2"]);
                 dados.usuariosrv = Convert.ToString(rd["usuariosrv"]);
                 dados.usuariosrv2 = Convert.ToString(rd["usuariosrv2"]);
                 dados.senhasrv = Convert.ToString(rd["senhasrv"]);
