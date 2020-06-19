@@ -111,6 +111,7 @@
             // 
             // BtnLojas
             // 
+            this.BtnLojas.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BtnLojas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(13)))), ((int)(((byte)(22)))));
             this.BtnLojas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtnLojas.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -125,7 +126,7 @@
             this.BtnLojas.Name = "BtnLojas";
             this.BtnLojas.Size = new System.Drawing.Size(203, 35);
             this.BtnLojas.TabIndex = 5;
-            this.BtnLojas.Text = "Lojas";
+            this.BtnLojas.Text = "Clientes";
             this.BtnLojas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnLojas.UseVisualStyleBackColor = false;
             this.BtnLojas.Click += new System.EventHandler(this.BtnLojas_Click);
@@ -150,6 +151,7 @@
             // 
             // BtnChat
             // 
+            this.BtnChat.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BtnChat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(13)))), ((int)(((byte)(22)))));
             this.BtnChat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtnChat.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -173,6 +175,7 @@
             // 
             // BtnNovaLoja
             // 
+            this.BtnNovaLoja.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BtnNovaLoja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(13)))), ((int)(((byte)(22)))));
             this.BtnNovaLoja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtnNovaLoja.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -187,7 +190,7 @@
             this.BtnNovaLoja.Name = "BtnNovaLoja";
             this.BtnNovaLoja.Size = new System.Drawing.Size(203, 35);
             this.BtnNovaLoja.TabIndex = 92;
-            this.BtnNovaLoja.Text = "Nova Loja";
+            this.BtnNovaLoja.Text = "Novo Cliente";
             this.BtnNovaLoja.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnNovaLoja.UseVisualStyleBackColor = false;
             this.BtnNovaLoja.Visible = false;
@@ -279,6 +282,7 @@
             // 
             // BtnGuiaEstruturado
             // 
+            this.BtnGuiaEstruturado.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BtnGuiaEstruturado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(13)))), ((int)(((byte)(22)))));
             this.BtnGuiaEstruturado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtnGuiaEstruturado.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -300,6 +304,7 @@
             // 
             // BtnRel
             // 
+            this.BtnRel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BtnRel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(13)))), ((int)(((byte)(22)))));
             this.BtnRel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtnRel.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -321,6 +326,7 @@
             // 
             // BtnConfigSistema
             // 
+            this.BtnConfigSistema.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BtnConfigSistema.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(13)))), ((int)(((byte)(22)))));
             this.BtnConfigSistema.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtnConfigSistema.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -338,11 +344,11 @@
             this.BtnConfigSistema.Text = "Config. do Sistema";
             this.BtnConfigSistema.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnConfigSistema.UseVisualStyleBackColor = false;
-            this.BtnConfigSistema.Visible = false;
             this.BtnConfigSistema.Click += new System.EventHandler(this.BtnConfigSistema_Click);
             // 
             // BtnControlServidores
             // 
+            this.BtnControlServidores.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BtnControlServidores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(13)))), ((int)(((byte)(22)))));
             this.BtnControlServidores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtnControlServidores.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -364,6 +370,7 @@
             // 
             // BtnGuiaClientes
             // 
+            this.BtnGuiaClientes.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BtnGuiaClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(13)))), ((int)(((byte)(22)))));
             this.BtnGuiaClientes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtnGuiaClientes.Cursor = System.Windows.Forms.Cursors.Hand;

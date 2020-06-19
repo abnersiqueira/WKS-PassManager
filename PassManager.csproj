@@ -73,6 +73,12 @@
     <Compile Include="View\FrmCadUsuario.Designer.cs">
       <DependentUpon>FrmCadUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FrmCadCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmCadCliente.Designer.cs">
+      <DependentUpon>FrmCadCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     </Compile>
     <EmbeddedResource Include="View\FrmCadUsuario.resx">
       <DependentUpon>FrmCadUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmCadCliente.resx">
+      <DependentUpon>FrmCadCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
