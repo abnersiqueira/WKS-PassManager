@@ -22,11 +22,24 @@ namespace PassManager.View
         public FrmTodasLojas()
         {
             InitializeComponent();
+            
         }
-
-
-
         int id;
+
+        private void AbrirPainelLoja()
+        {
+        
+            _objForm?.Close();
+            _objForm = new FrmInfoLoja(id)
+            {
+                TopLevel = false,
+                FormBorderStyle = FormBorderStyle.None,
+                Dock = DockStyle.Fill
+            };
+            pnlChamaLoja.Controls.Add(_objForm);
+            _objForm.Show();
+            _objForm.BringToFront();
+        }
 
         private void BtnLoja1_Click(object sender, EventArgs e)
         {
@@ -47,7 +60,7 @@ namespace PassManager.View
 
         private void BtnLoja2_Click(object sender, EventArgs e)
         {
-            id = 1;
+            id = 2; // Assecex
 
 
             _objForm?.Close();
@@ -62,11 +75,7 @@ namespace PassManager.View
             _objForm.BringToFront();
         }
 
-        private void Btn_wks_Click(object sender, EventArgs e)
-        {
-            Consulta_EMP consulta = new Consulta_EMP();
 
-        }
 
         private void pnlChamaLoja_Paint(object sender, PaintEventArgs e)
         {
@@ -75,19 +84,59 @@ namespace PassManager.View
 
         private void button6_Click(object sender, EventArgs e)
         {
-            id = 2;
+            id = 1;
 
+            AbrirPainelLoja();
+        }
 
-            _objForm?.Close();
-            _objForm = new FrmInfoLoja(id)
-            {
-                TopLevel = false,
-                FormBorderStyle = FormBorderStyle.None,
-                Dock = DockStyle.Fill
-            };
-            pnlChamaLoja.Controls.Add(_objForm);
-            _objForm.Show();
-            _objForm.BringToFront();
+        private void BtnLoja01_Click(object sender, EventArgs e)
+        {
+            id = 1; //Abc
+
+            AbrirPainelLoja();
+        }
+
+        private void BtnLoja03_Click(object sender, EventArgs e)
+        {
+            id = 3; // Arrais
+
+            AbrirPainelLoja();
+        }
+
+        private void BtnLoja04_Click(object sender, EventArgs e)
+        {
+            id = 4;
+            AbrirPainelLoja();
+        }
+
+        private void BtnLoja05_Click(object sender, EventArgs e)
+        {
+            id = 5;
+            AbrirPainelLoja();
+        }
+
+        private void BtnLoja06_Click(object sender, EventArgs e)
+        {
+            id = 6; //AE Cidade
+            AbrirPainelLoja();
+        }
+
+        private void BtnLoja07_Click(object sender, EventArgs e)
+        {
+            id = 7;  //Marina
+            AbrirPainelLoja();
+        }
+
+        private void BtnLoja09_Click(object sender, EventArgs e)
+        {
+            id = 9; //BICHO PAPAO
+            AbrirPainelLoja();
+        }
+
+        private void BtnLoja10_Click(object sender, EventArgs e)
+        {
+            id = 10;
+            AbrirPainelLoja();
         }
     }
 }

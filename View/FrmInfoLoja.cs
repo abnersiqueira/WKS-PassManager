@@ -62,6 +62,10 @@ namespace PassManager.View
             txbCelEmpresa.Text          = dados.emp_cel;
             txbCelEmpresa2.Text         = dados.emp_cel2;
 
+
+            txbID.Text = Convert.ToString(dados.id);   //Tratamento do ID para "somente leitura"
+            txbID.ReadOnly = true;
+
         }
 
 
@@ -99,12 +103,7 @@ namespace PassManager.View
 
         private void BtnCancel_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void txbSelecFirewall_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
     }
 

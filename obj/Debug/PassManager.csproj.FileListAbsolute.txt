@@ -59,7 +59,6 @@ C:\Users\AbnerWKS\Desktop\PROJETOS\WKS-PassManager\bin\Debug\PassManager.exe
 C:\Users\AbnerWKS\Desktop\PROJETOS\WKS-PassManager\bin\Debug\PassManager.pdb
 C:\Users\AbnerWKS\Desktop\PROJETOS\WKS-PassManager\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
 C:\Users\AbnerWKS\Desktop\PROJETOS\WKS-PassManager\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
-C:\Users\AbnerWKS\Desktop\PROJETOS\WKS-PassManager\obj\Debug\PassManager.csprojAssemblyReference.cache
 C:\Users\AbnerWKS\Desktop\PROJETOS\WKS-PassManager\obj\Debug\PassManager.View.FrmCadUsuario.resources
 C:\Users\AbnerWKS\Desktop\PROJETOS\WKS-PassManager\obj\Debug\PassManager.FrmLogin.resources
 C:\Users\AbnerWKS\Desktop\PROJETOS\WKS-PassManager\obj\Debug\PassManager.View.FrmInfoLoja.resources
@@ -87,3 +86,4 @@ C:\Users\AbnerNB\Desktop\WKS-PassManager\bin\Debug\PassManager.exe
 C:\Users\AbnerNB\Desktop\WKS-PassManager\bin\Debug\PassManager.pdb
 C:\Users\AbnerNB\Desktop\WKS-PassManager\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
 C:\Users\AbnerNB\Desktop\WKS-PassManager\obj\Debug\PassManager.csproj.CopyComplete
+C:\Users\AbnerWKS\Desktop\PROJETOS\WKS-PassManager\obj\Debug\PassManager.csprojAssemblyReference.cache

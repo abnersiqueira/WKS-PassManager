@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTodasLojas));
             this.pnlChamaLoja = new System.Windows.Forms.Panel();
-            this.pnlLeft = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -69,6 +67,8 @@
             this.BtnLoja04 = new System.Windows.Forms.Button();
             this.BtnLoja03 = new System.Windows.Forms.Button();
             this.BtnLoja02 = new System.Windows.Forms.Button();
+            this.pnlLeft = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pnlChamaLoja.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -118,24 +118,6 @@
             this.pnlChamaLoja.Size = new System.Drawing.Size(1264, 681);
             this.pnlChamaLoja.TabIndex = 2;
             this.pnlChamaLoja.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlChamaLoja_Paint);
-            // 
-            // pnlLeft
-            // 
-            this.pnlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlLeft.Location = new System.Drawing.Point(0, 0);
-            this.pnlLeft.Name = "pnlLeft";
-            this.pnlLeft.Size = new System.Drawing.Size(10, 681);
-            this.pnlLeft.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.pnlLeft);
-            this.panel1.Controls.Add(this.pnlChamaLoja);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1264, 681);
-            this.panel1.TabIndex = 4;
             // 
             // button7
             // 
@@ -244,6 +226,7 @@
             this.BtnLoja01.TabIndex = 31;
             this.BtnLoja01.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja01.UseVisualStyleBackColor = false;
+            this.BtnLoja01.Click += new System.EventHandler(this.BtnLoja01_Click);
             // 
             // BtnLoja32
             // 
@@ -529,7 +512,7 @@
             this.BtnLoja10.TabIndex = 9;
             this.BtnLoja10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja10.UseVisualStyleBackColor = false;
-            this.BtnLoja10.Click += new System.EventHandler(this.Btn_wks_Click);
+            this.BtnLoja10.Click += new System.EventHandler(this.BtnLoja10_Click);
             // 
             // BtnLoja09
             // 
@@ -543,6 +526,7 @@
             this.BtnLoja09.TabIndex = 8;
             this.BtnLoja09.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja09.UseVisualStyleBackColor = false;
+            this.BtnLoja09.Click += new System.EventHandler(this.BtnLoja09_Click);
             // 
             // BtnLoja07
             // 
@@ -556,6 +540,7 @@
             this.BtnLoja07.TabIndex = 7;
             this.BtnLoja07.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja07.UseVisualStyleBackColor = false;
+            this.BtnLoja07.Click += new System.EventHandler(this.BtnLoja07_Click);
             // 
             // BtnLoja06
             // 
@@ -569,6 +554,7 @@
             this.BtnLoja06.TabIndex = 6;
             this.BtnLoja06.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja06.UseVisualStyleBackColor = false;
+            this.BtnLoja06.Click += new System.EventHandler(this.BtnLoja06_Click);
             // 
             // BtnLoja05
             // 
@@ -582,6 +568,7 @@
             this.BtnLoja05.TabIndex = 5;
             this.BtnLoja05.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja05.UseVisualStyleBackColor = false;
+            this.BtnLoja05.Click += new System.EventHandler(this.BtnLoja05_Click);
             // 
             // BtnLoja04
             // 
@@ -595,6 +582,7 @@
             this.BtnLoja04.TabIndex = 4;
             this.BtnLoja04.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja04.UseVisualStyleBackColor = false;
+            this.BtnLoja04.Click += new System.EventHandler(this.BtnLoja04_Click);
             // 
             // BtnLoja03
             // 
@@ -608,6 +596,7 @@
             this.BtnLoja03.TabIndex = 3;
             this.BtnLoja03.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja03.UseVisualStyleBackColor = false;
+            this.BtnLoja03.Click += new System.EventHandler(this.BtnLoja03_Click);
             // 
             // BtnLoja02
             // 
@@ -624,6 +613,24 @@
             this.BtnLoja02.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.BtnLoja02.UseVisualStyleBackColor = false;
             this.BtnLoja02.Click += new System.EventHandler(this.BtnLoja2_Click);
+            // 
+            // pnlLeft
+            // 
+            this.pnlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlLeft.Location = new System.Drawing.Point(0, 0);
+            this.pnlLeft.Name = "pnlLeft";
+            this.pnlLeft.Size = new System.Drawing.Size(10, 681);
+            this.pnlLeft.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.pnlLeft);
+            this.panel1.Controls.Add(this.pnlChamaLoja);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1264, 681);
+            this.panel1.TabIndex = 4;
             // 
             // FrmTodasLojas
             // 

@@ -29,12 +29,8 @@ namespace PassManager.View
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
 
-
-
-                        
-        private void BtnLojas_Click(object sender, EventArgs e)
+        private void MenuLojas()
         {
-            
             _objForm?.Close();
             _objForm = new FrmTodasLojas//FrmConteudoMenu
             {
@@ -42,15 +38,22 @@ namespace PassManager.View
                 FormBorderStyle = FormBorderStyle.None,
                 Dock = DockStyle.Fill
             };
-            pnLMenu.Controls.Add(_objForm);   
+            pnLMenu.Controls.Add(_objForm);
             _objForm.Show();
 
 
             _objForm.BringToFront();
-           // this.Close();
-            
+            // this.Close();
+
 
             // AbrirFormulario<FrmConteudoMenu>();
+        }
+
+
+        private void BtnLojas_Click(object sender, EventArgs e)
+        {
+            MenuLojas();
+
         }
 
         private void PnLSupMainMenu_MouseDown(object sender, MouseEventArgs e)

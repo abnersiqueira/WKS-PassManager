@@ -40,12 +40,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.login = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.senhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tblogonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tb_logon_DataGrid = new PassManager.tb_logon_DataGrid();
             this.tb_logonTableAdapter = new PassManager.tb_logon_DataGridTableAdapters.tb_logonTableAdapter();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.login = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.senhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblogonBindingSource)).BeginInit();
@@ -64,12 +64,13 @@
             // 
             this.txbSenha.Location = new System.Drawing.Point(74, 188);
             this.txbSenha.Name = "txbSenha";
+            this.txbSenha.PasswordChar = '*';
             this.txbSenha.Size = new System.Drawing.Size(100, 20);
             this.txbSenha.TabIndex = 1;
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(85, 228);
+            this.btnCadastrar.Location = new System.Drawing.Point(85, 214);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
             this.btnCadastrar.TabIndex = 2;
@@ -102,7 +103,7 @@
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(575, 378);
+            this.shapeContainer1.Size = new System.Drawing.Size(481, 378);
             this.shapeContainer1.TabIndex = 5;
             this.shapeContainer1.TabStop = false;
             // 
@@ -148,32 +149,8 @@
             this.dataGridView1.Location = new System.Drawing.Point(230, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(313, 350);
+            this.dataGridView1.Size = new System.Drawing.Size(249, 350);
             this.dataGridView1.TabIndex = 9;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "id_login";
-            this.Column1.Frozen = true;
-            this.Column1.HeaderText = "ID";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // login
-            // 
-            this.login.DataPropertyName = "login";
-            this.login.Frozen = true;
-            this.login.HeaderText = "Login";
-            this.login.Name = "login";
-            this.login.ReadOnly = true;
-            // 
-            // senhaDataGridViewTextBoxColumn
-            // 
-            this.senhaDataGridViewTextBoxColumn.DataPropertyName = "senha";
-            this.senhaDataGridViewTextBoxColumn.Frozen = true;
-            this.senhaDataGridViewTextBoxColumn.HeaderText = "Senha";
-            this.senhaDataGridViewTextBoxColumn.Name = "senhaDataGridViewTextBoxColumn";
-            this.senhaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // tblogonBindingSource
             // 
@@ -189,11 +166,38 @@
             // 
             this.tb_logonTableAdapter.ClearBeforeFill = true;
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "id_login";
+            this.Column1.Frozen = true;
+            this.Column1.HeaderText = "ID";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 40;
+            // 
+            // login
+            // 
+            this.login.DataPropertyName = "login";
+            this.login.Frozen = true;
+            this.login.HeaderText = "Login";
+            this.login.Name = "login";
+            this.login.ReadOnly = true;
+            // 
+            // senhaDataGridViewTextBoxColumn
+            // 
+            this.senhaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.senhaDataGridViewTextBoxColumn.DataPropertyName = "senha";
+            this.senhaDataGridViewTextBoxColumn.Frozen = true;
+            this.senhaDataGridViewTextBoxColumn.HeaderText = "Senha";
+            this.senhaDataGridViewTextBoxColumn.Name = "senhaDataGridViewTextBoxColumn";
+            this.senhaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.senhaDataGridViewTextBoxColumn.Width = 63;
+            // 
             // FrmCadUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(575, 378);
+            this.ClientSize = new System.Drawing.Size(481, 378);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
