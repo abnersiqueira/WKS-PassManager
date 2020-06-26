@@ -29,6 +29,9 @@ namespace PassManager.View
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
 
+        //::::::::::::::::::::::::::::::::::::::::::::::::
+        //:::::::::::::: FUNÇÕES DO SISTEMA ::::::::::::::
+        //::::::::::::::::::::::::::::::::::::::::::::::::
         private void MenuLojas()
         {
             _objForm?.Close();
@@ -103,7 +106,7 @@ namespace PassManager.View
 
         private void BtnRestaura_Click(object sender, EventArgs e)
         {
-            this.Size = new Size(1080, 720);
+            this.Size = new Size(1260, 720);
             this.Location = new Point(lx, ly);
             BtnRestaura.Visible = false;
             BtnMaximize.Visible = true;

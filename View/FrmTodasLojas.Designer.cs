@@ -30,16 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTodasLojas));
             this.pnlChamaLoja = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnLoja32 = new System.Windows.Forms.Button();
+            this.BtnLoja36 = new System.Windows.Forms.Button();
+            this.BtnLoja35 = new System.Windows.Forms.Button();
+            this.BtnLoja34 = new System.Windows.Forms.Button();
             this.BtnLoja33 = new System.Windows.Forms.Button();
+            this.BtnLoja31 = new System.Windows.Forms.Button();
             this.BtnAddLoja = new System.Windows.Forms.Button();
             this.BtnLoja01 = new System.Windows.Forms.Button();
-            this.BtnLoja32 = new System.Windows.Forms.Button();
-            this.BtnLoja31 = new System.Windows.Forms.Button();
             this.BtnLoja30 = new System.Windows.Forms.Button();
             this.BtnLoja29 = new System.Windows.Forms.Button();
             this.BtnLoja28 = new System.Windows.Forms.Button();
@@ -47,6 +45,7 @@
             this.BtnLoja26 = new System.Windows.Forms.Button();
             this.BtnLoja25 = new System.Windows.Forms.Button();
             this.BtnLoja24 = new System.Windows.Forms.Button();
+            this.BtnLoja23 = new System.Windows.Forms.Button();
             this.BtnLoja22 = new System.Windows.Forms.Button();
             this.BtnLoja21 = new System.Windows.Forms.Button();
             this.BtnLoja20 = new System.Windows.Forms.Button();
@@ -61,6 +60,7 @@
             this.BtnLoja11 = new System.Windows.Forms.Button();
             this.BtnLoja10 = new System.Windows.Forms.Button();
             this.BtnLoja09 = new System.Windows.Forms.Button();
+            this.BtnLoja08 = new System.Windows.Forms.Button();
             this.BtnLoja07 = new System.Windows.Forms.Button();
             this.BtnLoja06 = new System.Windows.Forms.Button();
             this.BtnLoja05 = new System.Windows.Forms.Button();
@@ -69,22 +69,22 @@
             this.BtnLoja02 = new System.Windows.Forms.Button();
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnlChamaLoja.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlChamaLoja
             // 
-            this.pnlChamaLoja.Controls.Add(this.button7);
-            this.pnlChamaLoja.Controls.Add(this.button6);
-            this.pnlChamaLoja.Controls.Add(this.button3);
-            this.pnlChamaLoja.Controls.Add(this.button2);
-            this.pnlChamaLoja.Controls.Add(this.button1);
+            this.pnlChamaLoja.Controls.Add(this.label1);
+            this.pnlChamaLoja.Controls.Add(this.BtnLoja32);
+            this.pnlChamaLoja.Controls.Add(this.BtnLoja36);
+            this.pnlChamaLoja.Controls.Add(this.BtnLoja35);
+            this.pnlChamaLoja.Controls.Add(this.BtnLoja34);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja33);
+            this.pnlChamaLoja.Controls.Add(this.BtnLoja31);
             this.pnlChamaLoja.Controls.Add(this.BtnAddLoja);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja01);
-            this.pnlChamaLoja.Controls.Add(this.BtnLoja32);
-            this.pnlChamaLoja.Controls.Add(this.BtnLoja31);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja30);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja29);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja28);
@@ -92,6 +92,7 @@
             this.pnlChamaLoja.Controls.Add(this.BtnLoja26);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja25);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja24);
+            this.pnlChamaLoja.Controls.Add(this.BtnLoja23);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja22);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja21);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja20);
@@ -106,6 +107,7 @@
             this.pnlChamaLoja.Controls.Add(this.BtnLoja11);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja10);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja09);
+            this.pnlChamaLoja.Controls.Add(this.BtnLoja08);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja07);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja06);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja05);
@@ -117,101 +119,100 @@
             this.pnlChamaLoja.Name = "pnlChamaLoja";
             this.pnlChamaLoja.Size = new System.Drawing.Size(1264, 681);
             this.pnlChamaLoja.TabIndex = 2;
-            this.pnlChamaLoja.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlChamaLoja_Paint);
             // 
-            // button7
+            // BtnLoja32
             // 
-            this.button7.BackColor = System.Drawing.Color.Transparent;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.ForeColor = System.Drawing.Color.LightGray;
-            this.button7.Image = global::PassManager.Properties.Resources.Soares_Contabilidade;
-            this.button7.Location = new System.Drawing.Point(923, 306);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(130, 101);
-            this.button7.TabIndex = 41;
-            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button7.UseVisualStyleBackColor = false;
+            this.BtnLoja32.BackColor = System.Drawing.Color.Transparent;
+            this.BtnLoja32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLoja32.ForeColor = System.Drawing.Color.LightGray;
+            this.BtnLoja32.Image = global::PassManager.Properties.Resources.Soares_Contabilidade;
+            this.BtnLoja32.Location = new System.Drawing.Point(923, 306);
+            this.BtnLoja32.Name = "BtnLoja32";
+            this.BtnLoja32.Size = new System.Drawing.Size(130, 101);
+            this.BtnLoja32.TabIndex = 41;
+            this.BtnLoja32.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnLoja32.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // BtnLoja36
             // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.Color.LightGray;
-            this.button6.Image = global::PassManager.Properties.Resources.Weizur;
-            this.button6.Location = new System.Drawing.Point(403, 407);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(130, 101);
-            this.button6.TabIndex = 38;
-            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.BtnLoja36.BackColor = System.Drawing.Color.Transparent;
+            this.BtnLoja36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLoja36.ForeColor = System.Drawing.Color.LightGray;
+            this.BtnLoja36.Image = global::PassManager.Properties.Resources.Weizur;
+            this.BtnLoja36.Location = new System.Drawing.Point(403, 407);
+            this.BtnLoja36.Name = "BtnLoja36";
+            this.BtnLoja36.Size = new System.Drawing.Size(130, 101);
+            this.BtnLoja36.TabIndex = 38;
+            this.BtnLoja36.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnLoja36.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // BtnLoja35
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.LightGray;
-            this.button3.Image = global::PassManager.Properties.Resources.Valarelli___Buffalo;
-            this.button3.Location = new System.Drawing.Point(273, 407);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(130, 101);
-            this.button3.TabIndex = 37;
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.UseVisualStyleBackColor = false;
+            this.BtnLoja35.BackColor = System.Drawing.Color.Transparent;
+            this.BtnLoja35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLoja35.ForeColor = System.Drawing.Color.LightGray;
+            this.BtnLoja35.Image = global::PassManager.Properties.Resources.Valarelli___Buffalo;
+            this.BtnLoja35.Location = new System.Drawing.Point(273, 407);
+            this.BtnLoja35.Name = "BtnLoja35";
+            this.BtnLoja35.Size = new System.Drawing.Size(130, 101);
+            this.BtnLoja35.TabIndex = 37;
+            this.BtnLoja35.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnLoja35.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // BtnLoja34
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.LightGray;
-            this.button2.Image = global::PassManager.Properties.Resources.Unigra;
-            this.button2.Location = new System.Drawing.Point(143, 407);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 101);
-            this.button2.TabIndex = 36;
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.LightGray;
-            this.button1.Image = global::PassManager.Properties.Resources.TV_Sorocaba1;
-            this.button1.Location = new System.Drawing.Point(13, 407);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 101);
-            this.button1.TabIndex = 35;
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtnLoja34.BackColor = System.Drawing.Color.Transparent;
+            this.BtnLoja34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLoja34.ForeColor = System.Drawing.Color.LightGray;
+            this.BtnLoja34.Image = global::PassManager.Properties.Resources.Unigra;
+            this.BtnLoja34.Location = new System.Drawing.Point(143, 407);
+            this.BtnLoja34.Name = "BtnLoja34";
+            this.BtnLoja34.Size = new System.Drawing.Size(130, 101);
+            this.BtnLoja34.TabIndex = 36;
+            this.BtnLoja34.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnLoja34.UseVisualStyleBackColor = false;
             // 
             // BtnLoja33
             // 
             this.BtnLoja33.BackColor = System.Drawing.Color.Transparent;
             this.BtnLoja33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLoja33.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja33.Image = global::PassManager.Properties.Resources.Seritec;
-            this.BtnLoja33.Location = new System.Drawing.Point(793, 306);
+            this.BtnLoja33.Image = global::PassManager.Properties.Resources.TV_Sorocaba1;
+            this.BtnLoja33.Location = new System.Drawing.Point(13, 407);
             this.BtnLoja33.Name = "BtnLoja33";
             this.BtnLoja33.Size = new System.Drawing.Size(130, 101);
-            this.BtnLoja33.TabIndex = 34;
+            this.BtnLoja33.TabIndex = 35;
             this.BtnLoja33.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja33.UseVisualStyleBackColor = false;
+            // 
+            // BtnLoja31
+            // 
+            this.BtnLoja31.BackColor = System.Drawing.Color.Transparent;
+            this.BtnLoja31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLoja31.ForeColor = System.Drawing.Color.LightGray;
+            this.BtnLoja31.Image = global::PassManager.Properties.Resources.Seritec;
+            this.BtnLoja31.Location = new System.Drawing.Point(793, 306);
+            this.BtnLoja31.Name = "BtnLoja31";
+            this.BtnLoja31.Size = new System.Drawing.Size(130, 101);
+            this.BtnLoja31.TabIndex = 34;
+            this.BtnLoja31.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnLoja31.UseVisualStyleBackColor = false;
             // 
             // BtnAddLoja
             // 
             this.BtnAddLoja.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnAddLoja.BackColor = System.Drawing.Color.Transparent;
+            this.BtnAddLoja.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAddLoja.BackgroundImage")));
             this.BtnAddLoja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtnAddLoja.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnAddLoja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAddLoja.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAddLoja.ForeColor = System.Drawing.Color.Red;
+            this.BtnAddLoja.ForeColor = System.Drawing.Color.Transparent;
             this.BtnAddLoja.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnAddLoja.Location = new System.Drawing.Point(1173, 614);
+            this.BtnAddLoja.Location = new System.Drawing.Point(1200, 620);
             this.BtnAddLoja.Name = "BtnAddLoja";
-            this.BtnAddLoja.Size = new System.Drawing.Size(69, 55);
+            this.BtnAddLoja.Size = new System.Drawing.Size(37, 35);
             this.BtnAddLoja.TabIndex = 33;
-            this.BtnAddLoja.Text = "Criar Novo";
+            this.BtnAddLoja.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnAddLoja.UseVisualStyleBackColor = false;
             // 
             // BtnLoja01
@@ -228,42 +229,16 @@
             this.BtnLoja01.UseVisualStyleBackColor = false;
             this.BtnLoja01.Click += new System.EventHandler(this.BtnLoja01_Click);
             // 
-            // BtnLoja32
-            // 
-            this.BtnLoja32.BackColor = System.Drawing.Color.Transparent;
-            this.BtnLoja32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLoja32.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja32.Image = global::PassManager.Properties.Resources.SCL;
-            this.BtnLoja32.Location = new System.Drawing.Point(663, 306);
-            this.BtnLoja32.Name = "BtnLoja32";
-            this.BtnLoja32.Size = new System.Drawing.Size(130, 101);
-            this.BtnLoja32.TabIndex = 30;
-            this.BtnLoja32.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnLoja32.UseVisualStyleBackColor = false;
-            // 
-            // BtnLoja31
-            // 
-            this.BtnLoja31.BackColor = System.Drawing.Color.Transparent;
-            this.BtnLoja31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLoja31.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja31.Image = global::PassManager.Properties.Resources.Ronaldo_Borges;
-            this.BtnLoja31.Location = new System.Drawing.Point(533, 306);
-            this.BtnLoja31.Name = "BtnLoja31";
-            this.BtnLoja31.Size = new System.Drawing.Size(130, 101);
-            this.BtnLoja31.TabIndex = 29;
-            this.BtnLoja31.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnLoja31.UseVisualStyleBackColor = false;
-            // 
             // BtnLoja30
             // 
             this.BtnLoja30.BackColor = System.Drawing.Color.Transparent;
             this.BtnLoja30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLoja30.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja30.Image = global::PassManager.Properties.Resources.Residencial_Mont_Blanc;
-            this.BtnLoja30.Location = new System.Drawing.Point(403, 306);
+            this.BtnLoja30.Image = global::PassManager.Properties.Resources.SCL;
+            this.BtnLoja30.Location = new System.Drawing.Point(663, 306);
             this.BtnLoja30.Name = "BtnLoja30";
             this.BtnLoja30.Size = new System.Drawing.Size(130, 101);
-            this.BtnLoja30.TabIndex = 28;
+            this.BtnLoja30.TabIndex = 30;
             this.BtnLoja30.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja30.UseVisualStyleBackColor = false;
             // 
@@ -272,11 +247,11 @@
             this.BtnLoja29.BackColor = System.Drawing.Color.Transparent;
             this.BtnLoja29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLoja29.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja29.Image = global::PassManager.Properties.Resources.RBA_Imobiliaria;
-            this.BtnLoja29.Location = new System.Drawing.Point(273, 306);
+            this.BtnLoja29.Image = global::PassManager.Properties.Resources.Ronaldo_Borges;
+            this.BtnLoja29.Location = new System.Drawing.Point(533, 306);
             this.BtnLoja29.Name = "BtnLoja29";
             this.BtnLoja29.Size = new System.Drawing.Size(130, 101);
-            this.BtnLoja29.TabIndex = 27;
+            this.BtnLoja29.TabIndex = 29;
             this.BtnLoja29.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja29.UseVisualStyleBackColor = false;
             // 
@@ -285,10 +260,11 @@
             this.BtnLoja28.BackColor = System.Drawing.Color.Transparent;
             this.BtnLoja28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLoja28.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja28.Location = new System.Drawing.Point(143, 306);
+            this.BtnLoja28.Image = global::PassManager.Properties.Resources.Residencial_Mont_Blanc;
+            this.BtnLoja28.Location = new System.Drawing.Point(403, 306);
             this.BtnLoja28.Name = "BtnLoja28";
             this.BtnLoja28.Size = new System.Drawing.Size(130, 101);
-            this.BtnLoja28.TabIndex = 26;
+            this.BtnLoja28.TabIndex = 28;
             this.BtnLoja28.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja28.UseVisualStyleBackColor = false;
             // 
@@ -297,11 +273,11 @@
             this.BtnLoja27.BackColor = System.Drawing.Color.Transparent;
             this.BtnLoja27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLoja27.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja27.Image = global::PassManager.Properties.Resources.Radio_Vanguarda;
-            this.BtnLoja27.Location = new System.Drawing.Point(13, 306);
+            this.BtnLoja27.Image = global::PassManager.Properties.Resources.RBA_Imobiliaria;
+            this.BtnLoja27.Location = new System.Drawing.Point(273, 306);
             this.BtnLoja27.Name = "BtnLoja27";
             this.BtnLoja27.Size = new System.Drawing.Size(130, 101);
-            this.BtnLoja27.TabIndex = 25;
+            this.BtnLoja27.TabIndex = 27;
             this.BtnLoja27.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja27.UseVisualStyleBackColor = false;
             // 
@@ -310,11 +286,10 @@
             this.BtnLoja26.BackColor = System.Drawing.Color.Transparent;
             this.BtnLoja26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLoja26.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja26.Image = global::PassManager.Properties.Resources.Ortoclin;
-            this.BtnLoja26.Location = new System.Drawing.Point(923, 205);
+            this.BtnLoja26.Location = new System.Drawing.Point(143, 306);
             this.BtnLoja26.Name = "BtnLoja26";
             this.BtnLoja26.Size = new System.Drawing.Size(130, 101);
-            this.BtnLoja26.TabIndex = 24;
+            this.BtnLoja26.TabIndex = 26;
             this.BtnLoja26.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja26.UseVisualStyleBackColor = false;
             // 
@@ -323,11 +298,11 @@
             this.BtnLoja25.BackColor = System.Drawing.Color.Transparent;
             this.BtnLoja25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLoja25.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja25.Image = global::PassManager.Properties.Resources.MDL_BRASIL;
-            this.BtnLoja25.Location = new System.Drawing.Point(793, 205);
+            this.BtnLoja25.Image = global::PassManager.Properties.Resources.Radio_Vanguarda;
+            this.BtnLoja25.Location = new System.Drawing.Point(13, 306);
             this.BtnLoja25.Name = "BtnLoja25";
             this.BtnLoja25.Size = new System.Drawing.Size(130, 101);
-            this.BtnLoja25.TabIndex = 23;
+            this.BtnLoja25.TabIndex = 25;
             this.BtnLoja25.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja25.UseVisualStyleBackColor = false;
             // 
@@ -336,24 +311,37 @@
             this.BtnLoja24.BackColor = System.Drawing.Color.Transparent;
             this.BtnLoja24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLoja24.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja24.Image = global::PassManager.Properties.Resources.Marina_Auto_Escola;
-            this.BtnLoja24.Location = new System.Drawing.Point(663, 205);
+            this.BtnLoja24.Image = global::PassManager.Properties.Resources.Ortoclin;
+            this.BtnLoja24.Location = new System.Drawing.Point(923, 205);
             this.BtnLoja24.Name = "BtnLoja24";
             this.BtnLoja24.Size = new System.Drawing.Size(130, 101);
-            this.BtnLoja24.TabIndex = 22;
+            this.BtnLoja24.TabIndex = 24;
             this.BtnLoja24.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja24.UseVisualStyleBackColor = false;
+            // 
+            // BtnLoja23
+            // 
+            this.BtnLoja23.BackColor = System.Drawing.Color.Transparent;
+            this.BtnLoja23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLoja23.ForeColor = System.Drawing.Color.LightGray;
+            this.BtnLoja23.Image = global::PassManager.Properties.Resources.MDL_BRASIL;
+            this.BtnLoja23.Location = new System.Drawing.Point(793, 205);
+            this.BtnLoja23.Name = "BtnLoja23";
+            this.BtnLoja23.Size = new System.Drawing.Size(130, 101);
+            this.BtnLoja23.TabIndex = 23;
+            this.BtnLoja23.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnLoja23.UseVisualStyleBackColor = false;
             // 
             // BtnLoja22
             // 
             this.BtnLoja22.BackColor = System.Drawing.Color.Transparent;
             this.BtnLoja22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLoja22.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja22.Image = global::PassManager.Properties.Resources.Marcio_Reze_Novo;
-            this.BtnLoja22.Location = new System.Drawing.Point(533, 205);
+            this.BtnLoja22.Image = global::PassManager.Properties.Resources.Marina_Auto_Escola;
+            this.BtnLoja22.Location = new System.Drawing.Point(663, 205);
             this.BtnLoja22.Name = "BtnLoja22";
             this.BtnLoja22.Size = new System.Drawing.Size(130, 101);
-            this.BtnLoja22.TabIndex = 21;
+            this.BtnLoja22.TabIndex = 22;
             this.BtnLoja22.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja22.UseVisualStyleBackColor = false;
             // 
@@ -362,11 +350,11 @@
             this.BtnLoja21.BackColor = System.Drawing.Color.Transparent;
             this.BtnLoja21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLoja21.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja21.Image = global::PassManager.Properties.Resources.M_S_Corretora;
-            this.BtnLoja21.Location = new System.Drawing.Point(403, 205);
+            this.BtnLoja21.Image = global::PassManager.Properties.Resources.Marcio_Reze_Novo;
+            this.BtnLoja21.Location = new System.Drawing.Point(533, 205);
             this.BtnLoja21.Name = "BtnLoja21";
             this.BtnLoja21.Size = new System.Drawing.Size(130, 101);
-            this.BtnLoja21.TabIndex = 20;
+            this.BtnLoja21.TabIndex = 21;
             this.BtnLoja21.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja21.UseVisualStyleBackColor = false;
             // 
@@ -375,11 +363,11 @@
             this.BtnLoja20.BackColor = System.Drawing.Color.Transparent;
             this.BtnLoja20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLoja20.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja20.Image = global::PassManager.Properties.Resources.logo_omni;
-            this.BtnLoja20.Location = new System.Drawing.Point(273, 205);
+            this.BtnLoja20.Image = global::PassManager.Properties.Resources.M_S_Corretora;
+            this.BtnLoja20.Location = new System.Drawing.Point(403, 205);
             this.BtnLoja20.Name = "BtnLoja20";
             this.BtnLoja20.Size = new System.Drawing.Size(130, 101);
-            this.BtnLoja20.TabIndex = 19;
+            this.BtnLoja20.TabIndex = 20;
             this.BtnLoja20.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja20.UseVisualStyleBackColor = false;
             // 
@@ -388,11 +376,11 @@
             this.BtnLoja19.BackColor = System.Drawing.Color.Transparent;
             this.BtnLoja19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLoja19.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja19.Image = global::PassManager.Properties.Resources.JDJ;
-            this.BtnLoja19.Location = new System.Drawing.Point(143, 205);
+            this.BtnLoja19.Image = global::PassManager.Properties.Resources.logo_omni;
+            this.BtnLoja19.Location = new System.Drawing.Point(273, 205);
             this.BtnLoja19.Name = "BtnLoja19";
             this.BtnLoja19.Size = new System.Drawing.Size(130, 101);
-            this.BtnLoja19.TabIndex = 18;
+            this.BtnLoja19.TabIndex = 19;
             this.BtnLoja19.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja19.UseVisualStyleBackColor = false;
             // 
@@ -401,115 +389,123 @@
             this.BtnLoja18.BackColor = System.Drawing.Color.Transparent;
             this.BtnLoja18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLoja18.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja18.Image = global::PassManager.Properties.Resources.Impresso_Brasil;
-            this.BtnLoja18.Location = new System.Drawing.Point(13, 205);
+            this.BtnLoja18.Image = global::PassManager.Properties.Resources.JDJ;
+            this.BtnLoja18.Location = new System.Drawing.Point(143, 205);
             this.BtnLoja18.Name = "BtnLoja18";
             this.BtnLoja18.Size = new System.Drawing.Size(130, 101);
-            this.BtnLoja18.TabIndex = 17;
+            this.BtnLoja18.TabIndex = 18;
             this.BtnLoja18.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja18.UseVisualStyleBackColor = false;
+            this.BtnLoja18.Click += new System.EventHandler(this.BtnLoja18_Click);
             // 
             // BtnLoja17
             // 
             this.BtnLoja17.BackColor = System.Drawing.Color.Transparent;
             this.BtnLoja17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLoja17.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja17.Image = global::PassManager.Properties.Resources.GKS;
-            this.BtnLoja17.Location = new System.Drawing.Point(923, 104);
+            this.BtnLoja17.Image = global::PassManager.Properties.Resources.Impresso_Brasil;
+            this.BtnLoja17.Location = new System.Drawing.Point(13, 205);
             this.BtnLoja17.Name = "BtnLoja17";
             this.BtnLoja17.Size = new System.Drawing.Size(130, 101);
-            this.BtnLoja17.TabIndex = 16;
+            this.BtnLoja17.TabIndex = 17;
             this.BtnLoja17.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja17.UseVisualStyleBackColor = false;
+            this.BtnLoja17.Click += new System.EventHandler(this.BtnLoja17_Click);
             // 
             // BtnLoja16
             // 
             this.BtnLoja16.BackColor = System.Drawing.Color.Transparent;
             this.BtnLoja16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLoja16.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja16.Image = global::PassManager.Properties.Resources.Dex_Transportes;
-            this.BtnLoja16.Location = new System.Drawing.Point(793, 104);
+            this.BtnLoja16.Image = global::PassManager.Properties.Resources.GKS;
+            this.BtnLoja16.Location = new System.Drawing.Point(923, 104);
             this.BtnLoja16.Name = "BtnLoja16";
             this.BtnLoja16.Size = new System.Drawing.Size(130, 101);
-            this.BtnLoja16.TabIndex = 15;
+            this.BtnLoja16.TabIndex = 16;
             this.BtnLoja16.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja16.UseVisualStyleBackColor = false;
+            this.BtnLoja16.Click += new System.EventHandler(this.BtnLoja16_Click);
             // 
             // BtnLoja15
             // 
             this.BtnLoja15.BackColor = System.Drawing.Color.Transparent;
             this.BtnLoja15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLoja15.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja15.Image = global::PassManager.Properties.Resources.CriartFarma;
-            this.BtnLoja15.Location = new System.Drawing.Point(663, 104);
+            this.BtnLoja15.Image = global::PassManager.Properties.Resources.Dex_Transportes;
+            this.BtnLoja15.Location = new System.Drawing.Point(793, 104);
             this.BtnLoja15.Name = "BtnLoja15";
             this.BtnLoja15.Size = new System.Drawing.Size(130, 101);
-            this.BtnLoja15.TabIndex = 14;
+            this.BtnLoja15.TabIndex = 15;
             this.BtnLoja15.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja15.UseVisualStyleBackColor = false;
+            this.BtnLoja15.Click += new System.EventHandler(this.BtnLoja15_Click);
             // 
             // BtnLoja14
             // 
             this.BtnLoja14.BackColor = System.Drawing.Color.Transparent;
             this.BtnLoja14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLoja14.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja14.Image = global::PassManager.Properties.Resources.Cnh;
-            this.BtnLoja14.Location = new System.Drawing.Point(533, 104);
+            this.BtnLoja14.Image = global::PassManager.Properties.Resources.CriartFarma;
+            this.BtnLoja14.Location = new System.Drawing.Point(663, 104);
             this.BtnLoja14.Name = "BtnLoja14";
             this.BtnLoja14.Size = new System.Drawing.Size(130, 101);
-            this.BtnLoja14.TabIndex = 13;
+            this.BtnLoja14.TabIndex = 14;
             this.BtnLoja14.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja14.UseVisualStyleBackColor = false;
+            this.BtnLoja14.Click += new System.EventHandler(this.BtnLoja14_Click);
             // 
             // BtnLoja13
             // 
             this.BtnLoja13.BackColor = System.Drawing.Color.Transparent;
             this.BtnLoja13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLoja13.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja13.Image = global::PassManager.Properties.Resources.Clube_de_Campo_Sorocaba;
-            this.BtnLoja13.Location = new System.Drawing.Point(403, 104);
+            this.BtnLoja13.Image = global::PassManager.Properties.Resources.Cnh;
+            this.BtnLoja13.Location = new System.Drawing.Point(533, 104);
             this.BtnLoja13.Name = "BtnLoja13";
             this.BtnLoja13.Size = new System.Drawing.Size(130, 101);
-            this.BtnLoja13.TabIndex = 12;
+            this.BtnLoja13.TabIndex = 13;
             this.BtnLoja13.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja13.UseVisualStyleBackColor = false;
+            this.BtnLoja13.Click += new System.EventHandler(this.BtnLoja13_Click);
             // 
             // BtnLoja12
             // 
             this.BtnLoja12.BackColor = System.Drawing.Color.Transparent;
             this.BtnLoja12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLoja12.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja12.Image = global::PassManager.Properties.Resources.Cidade_Auto_Escola;
-            this.BtnLoja12.Location = new System.Drawing.Point(273, 104);
+            this.BtnLoja12.Image = global::PassManager.Properties.Resources.Clube_de_Campo_Sorocaba;
+            this.BtnLoja12.Location = new System.Drawing.Point(403, 104);
             this.BtnLoja12.Name = "BtnLoja12";
             this.BtnLoja12.Size = new System.Drawing.Size(130, 101);
-            this.BtnLoja12.TabIndex = 11;
+            this.BtnLoja12.TabIndex = 12;
             this.BtnLoja12.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja12.UseVisualStyleBackColor = false;
+            this.BtnLoja12.Click += new System.EventHandler(this.BtnLoja12_Click);
             // 
             // BtnLoja11
             // 
             this.BtnLoja11.BackColor = System.Drawing.Color.Transparent;
             this.BtnLoja11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLoja11.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja11.Image = global::PassManager.Properties.Resources.BM7;
-            this.BtnLoja11.Location = new System.Drawing.Point(143, 104);
+            this.BtnLoja11.Image = global::PassManager.Properties.Resources.Cidade_Auto_Escola;
+            this.BtnLoja11.Location = new System.Drawing.Point(273, 104);
             this.BtnLoja11.Name = "BtnLoja11";
             this.BtnLoja11.Size = new System.Drawing.Size(130, 101);
-            this.BtnLoja11.TabIndex = 10;
+            this.BtnLoja11.TabIndex = 11;
             this.BtnLoja11.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja11.UseVisualStyleBackColor = false;
+            this.BtnLoja11.Click += new System.EventHandler(this.BtnLoja11_Click);
             // 
             // BtnLoja10
             // 
             this.BtnLoja10.BackColor = System.Drawing.Color.Transparent;
             this.BtnLoja10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLoja10.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja10.Image = global::PassManager.Properties.Resources.Biolub;
-            this.BtnLoja10.Location = new System.Drawing.Point(13, 104);
+            this.BtnLoja10.Image = global::PassManager.Properties.Resources.BM7;
+            this.BtnLoja10.Location = new System.Drawing.Point(143, 104);
             this.BtnLoja10.Name = "BtnLoja10";
             this.BtnLoja10.Size = new System.Drawing.Size(130, 101);
-            this.BtnLoja10.TabIndex = 9;
+            this.BtnLoja10.TabIndex = 10;
             this.BtnLoja10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja10.UseVisualStyleBackColor = false;
             this.BtnLoja10.Click += new System.EventHandler(this.BtnLoja10_Click);
@@ -519,14 +515,28 @@
             this.BtnLoja09.BackColor = System.Drawing.Color.Transparent;
             this.BtnLoja09.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLoja09.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja09.Image = global::PassManager.Properties.Resources.Bicho_Papao;
-            this.BtnLoja09.Location = new System.Drawing.Point(923, 3);
+            this.BtnLoja09.Image = global::PassManager.Properties.Resources.Biolub;
+            this.BtnLoja09.Location = new System.Drawing.Point(13, 104);
             this.BtnLoja09.Name = "BtnLoja09";
             this.BtnLoja09.Size = new System.Drawing.Size(130, 101);
-            this.BtnLoja09.TabIndex = 8;
+            this.BtnLoja09.TabIndex = 9;
             this.BtnLoja09.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja09.UseVisualStyleBackColor = false;
             this.BtnLoja09.Click += new System.EventHandler(this.BtnLoja09_Click);
+            // 
+            // BtnLoja08
+            // 
+            this.BtnLoja08.BackColor = System.Drawing.Color.Transparent;
+            this.BtnLoja08.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLoja08.ForeColor = System.Drawing.Color.LightGray;
+            this.BtnLoja08.Image = global::PassManager.Properties.Resources.Bicho_Papao;
+            this.BtnLoja08.Location = new System.Drawing.Point(923, 3);
+            this.BtnLoja08.Name = "BtnLoja08";
+            this.BtnLoja08.Size = new System.Drawing.Size(130, 101);
+            this.BtnLoja08.TabIndex = 8;
+            this.BtnLoja08.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnLoja08.UseVisualStyleBackColor = false;
+            this.BtnLoja08.Click += new System.EventHandler(this.BtnLoja08_Click);
             // 
             // BtnLoja07
             // 
@@ -547,7 +557,7 @@
             this.BtnLoja06.BackColor = System.Drawing.Color.Transparent;
             this.BtnLoja06.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLoja06.ForeColor = System.Drawing.Color.LightGray;
-            this.BtnLoja06.Image = global::PassManager.Properties.Resources.AE_Cidade;
+            this.BtnLoja06.Image = ((System.Drawing.Image)(resources.GetObject("BtnLoja06.Image")));
             this.BtnLoja06.Location = new System.Drawing.Point(663, 3);
             this.BtnLoja06.Name = "BtnLoja06";
             this.BtnLoja06.Size = new System.Drawing.Size(130, 101);
@@ -632,6 +642,15 @@
             this.panel1.Size = new System.Drawing.Size(1264, 681);
             this.panel1.TabIndex = 4;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1136, 630);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(68, 13);
+            this.label1.TabIndex = 42;
+            this.label1.Text = "Novo Cliente";
+            // 
             // FrmTodasLojas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -643,6 +662,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmTodasLojas";
             this.pnlChamaLoja.ResumeLayout(false);
+            this.pnlChamaLoja.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -652,8 +672,6 @@
 
         public System.Windows.Forms.Panel pnlChamaLoja;
         private System.Windows.Forms.Button BtnLoja01;
-        private System.Windows.Forms.Button BtnLoja32;
-        private System.Windows.Forms.Button BtnLoja31;
         private System.Windows.Forms.Button BtnLoja30;
         private System.Windows.Forms.Button BtnLoja29;
         private System.Windows.Forms.Button BtnLoja28;
@@ -661,6 +679,7 @@
         private System.Windows.Forms.Button BtnLoja26;
         private System.Windows.Forms.Button BtnLoja25;
         private System.Windows.Forms.Button BtnLoja24;
+        private System.Windows.Forms.Button BtnLoja23;
         private System.Windows.Forms.Button BtnLoja22;
         private System.Windows.Forms.Button BtnLoja21;
         private System.Windows.Forms.Button BtnLoja20;
@@ -675,6 +694,7 @@
         private System.Windows.Forms.Button BtnLoja11;
         private System.Windows.Forms.Button BtnLoja10;
         private System.Windows.Forms.Button BtnLoja09;
+        private System.Windows.Forms.Button BtnLoja08;
         private System.Windows.Forms.Button BtnLoja07;
         private System.Windows.Forms.Button BtnLoja06;
         private System.Windows.Forms.Button BtnLoja05;
@@ -683,12 +703,13 @@
         private System.Windows.Forms.Button BtnLoja02;
         public System.Windows.Forms.Panel pnlLeft;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button BtnLoja33;
+        private System.Windows.Forms.Button BtnLoja31;
         private System.Windows.Forms.Button BtnAddLoja;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnLoja32;
+        private System.Windows.Forms.Button BtnLoja36;
+        private System.Windows.Forms.Button BtnLoja35;
+        private System.Windows.Forms.Button BtnLoja34;
+        private System.Windows.Forms.Button BtnLoja33;
+        private System.Windows.Forms.Label label1;
     }
 }

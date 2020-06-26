@@ -384,7 +384,7 @@
             // 
             // PnLSupMainMenu
             // 
-            this.PnLSupMainMenu.BackColor = System.Drawing.Color.GhostWhite;
+            this.PnLSupMainMenu.BackColor = System.Drawing.Color.Gainsboro;
             this.PnLSupMainMenu.Controls.Add(this.BtnExit);
             this.PnLSupMainMenu.Controls.Add(this.BtnRestaura);
             this.PnLSupMainMenu.Controls.Add(this.BtnMaximize);
