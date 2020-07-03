@@ -42,7 +42,7 @@ namespace PassManager.View
             txbDominio.Text             = dados.dominio;
             txbNomeSrv.Text             = dados.nomesrv;
             txbNomeSrv2.Text            = dados.nomesrv2;
-            txbTV.Text                 = dados.teamviewer;
+            txbTV.Text                  = dados.teamviewer;
             txbTV2.Text                 = dados.teamviewer2;
             txbIP.Text                  = Convert.ToString(dados.ipsrv);
             txbIP2.Text                 = Convert.ToString(dados.ipsrv2);
@@ -61,7 +61,9 @@ namespace PassManager.View
             txbTelefoneEmpresa2.Text    = dados.emp_tel2;
             txbCelEmpresa.Text          = dados.emp_cel;
             txbCelEmpresa2.Text         = dados.emp_cel2;
-
+            TxbOBS1.Text                = dados.obs1;
+            TxbOBS2.Text                = dados.obs2;
+            txbSelecFirewall.Text       = dados.selectfirewall;
 
             txbID.Text = Convert.ToString(dados.id);   //Tratamento do ID para "somente leitura"
             txbID.ReadOnly = true;
@@ -78,6 +80,7 @@ namespace PassManager.View
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+
             Crud_Empresa Empresa = new Crud_Empresa();
             Empresa.Cad_Empresa(txbDominio.Text,
             txbNomeSrv.Text, txbNomeSrv2.Text,
@@ -96,7 +99,10 @@ namespace PassManager.View
             txbTelefoneEmpresa.Text,
             txbTelefoneEmpresa2.Text,
             txbCelEmpresa.Text,
-            txbCelEmpresa2.Text);
+            txbCelEmpresa2.Text,
+            TxbOBS1.Text,
+            TxbOBS2.Text,
+            txbSelecFirewall.Text);
 
                      
         }

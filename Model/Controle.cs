@@ -26,7 +26,7 @@ namespace PassManager.Model
 
         public String cadastrar(String login, String senha)
         {
-            //FUNÇÃO PARA CADASTRO DE U
+            //FUNÇÃO PARA CADASTRO DE USER
             LoginDaoComandos LoginDao = new LoginDaoComandos();
             this.mensagem = LoginDao.cadastrar(login, senha);
             

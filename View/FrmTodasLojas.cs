@@ -56,7 +56,7 @@ namespace PassManager.View
         private void BtnLoja2_Click(object sender, EventArgs e)
         {
             id = 2; // Assecex
-            Console.WriteLine("TESTEOK");
+    
             AbrirPainelLoja();
             
         }

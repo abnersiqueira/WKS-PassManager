@@ -36,13 +36,16 @@ namespace PassManager.ReceiveData
             this.emp_tel2 = "";
             this.emp_cel = "";
             this.emp_cel2 = "";
+            this.obs1 = "";
+            this.obs2 = "";
+            this.selectfirewall = "";
 
 
         }
         public Dados_Empresa(int id, String dominio, String nomesrv, String nomesrv2, String teamviewer, String teamviewer2,
-            String ipsrv, String ipsrv2, String usuariosrv, String usuariosrv2, String senhasrv, String senhasrv2, String ipfirewall,int portafirewall,
+            String ipsrv, String ipsrv2, String usuariosrv, String usuariosrv2, String senhasrv, String senhasrv2, String ipfirewall, int portafirewall,
             String usuariofirewall, String senhafirewall, String nome_empresa, String nome_resp, String emp_email, String emp_tel, String emp_tel2,
-            String emp_cel, String emp_cel2)
+            String emp_cel, String emp_cel2, String obs1, String obs2, String selectfirewall)
         {
             this.id = id;
             this.dominio = dominio;
@@ -67,6 +70,9 @@ namespace PassManager.ReceiveData
             this.emp_tel2 = emp_tel2;
             this.emp_cel = emp_cel;
             this.emp_cel2 = emp_cel2;
+            this.obs1 = obs1;
+            this.obs2 = obs2;
+            this.selectfirewall = selectfirewall;
 
         }
         int id_Empresa;
@@ -92,6 +98,9 @@ namespace PassManager.ReceiveData
         String EMP_TEL2;
         String EMP_CEL;
         String EMP_CEL2;
+        String EMP_obs1;
+        String EMP_obs2;
+        String EMP_selectfirewall;
 
 
         public int id { get {return id_Empresa; } set {this.id_Empresa = value; } }
@@ -117,6 +126,9 @@ namespace PassManager.ReceiveData
         public String emp_tel2 { get { return EMP_TEL2; } set { this.EMP_TEL2 = value; } }
         public String emp_cel { get { return EMP_CEL; } set { this.EMP_CEL = value; } }
         public String emp_cel2 { get { return EMP_CEL2; } set { this.EMP_CEL2 = value; } }
+        public String obs1 { get { return EMP_obs1; } set { this.EMP_obs1 = value; } }
+        public String obs2 { get { return EMP_obs2; } set { this.EMP_obs2 = value; } }
+        public String selectfirewall { get { return EMP_selectfirewall; } set { this.EMP_selectfirewall = value; } }
     }
 
 

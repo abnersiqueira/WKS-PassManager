@@ -19,12 +19,15 @@ namespace PassManager.Funcions
 
         public void Consulta_EMPRESA(String dominio, String nomesrv, String nomesrv2, String teamviewer, String teamviewer2,
           String ipsrv, String ipsrv2, String usuariosrv, String usuariosrv2, String senhasrv, String senhasrv2, int portafirewall,
-          String usuariofirewall, String senhafirewall, String ipfirewall, String nome_empresa, String nome_resp, String emp_email, String emp_tel, String emp_tel2)
+          String usuariofirewall, String senhafirewall, String ipfirewall, String nome_empresa, String nome_resp, String emp_email,
+          String emp_tel, String emp_tel2, String obs1, String obs2, String selectfirewall)
         {
             cmd.CommandText = "select * from tb_DadosLoja (dominio,nomesrv,nomesrv2,teamviewer,teamviewer2,ipsrv,ipsrv2,usuariosrv,usuariosrv2,senhasrv," +
-               "senhasrv2,checkfirewall,portafirewall,usuariofirewall,senhafirewall,ipfirewall,nome_empresa,nome_resp,emp_email,emp_tel,emptel2) values (@dominio, @nomesrv, @nomesrv2, @teamviewer,@teamviewer2," +
+               "senhasrv2,checkfirewall,portafirewall,usuariofirewall,senhafirewall,ipfirewall,nome_empresa,nome_resp,emp_email,emp_tel,emptel2,obs1," +
+               " obs2, selectfirewall)" +
+               " values (@dominio, @nomesrv, @nomesrv2, @teamviewer,@teamviewer2," +
                "@ipsrv,@ipsrv2,@usuariosrv,@usuariosrv2,@senhasrv,@senhasrv2,@portafirewall,@usuariofirewall,@senhafirewall," +
-               " @ipfirewall,@nome_empresa,@nome_resp,@emp_email,@emp_tel,@emp_tel2);" +
+               " @ipfirewall,@nome_empresa,@nome_resp,@emp_email,@emp_tel,@emp_tel2, @obs1, @obs2, @selectfirewall);" +
                "Select @@identity";
 
             cmd.Parameters.AddWithValue("@dominio", dominio);
@@ -47,6 +50,9 @@ namespace PassManager.Funcions
             cmd.Parameters.AddWithValue("@emp_email", emp_email);
             cmd.Parameters.AddWithValue("@emp_tel", emp_tel);
             cmd.Parameters.AddWithValue("@emp_tel2", emp_tel2);
+            cmd.Parameters.AddWithValue("@obs1", obs1);
+            cmd.Parameters.AddWithValue("@obs2", obs2);
+            cmd.Parameters.AddWithValue("@selectfirewall", selectfirewall);
 
 
             cmd.Connection = con.conectar();

@@ -45,12 +45,13 @@ namespace PassManager.DAL
 
 
         //Validação de cadastro em banco
-
         public String cadastrar(String login, String senha)
         {
 
             //FUNÇÃO RESPONSÁVEL PARA CADASTRO DE USUÁRIOS SISTEMA
             return mensagem;
         }
+
+
     }
 }

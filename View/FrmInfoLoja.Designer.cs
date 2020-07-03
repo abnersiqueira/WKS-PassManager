@@ -38,6 +38,7 @@
             this.PainelCentralBranco = new System.Windows.Forms.Panel();
             this.PnLinferior = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.TxbOBS2 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -49,8 +50,6 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
-            this.PicRouterConfig = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.labFirewall = new System.Windows.Forms.Label();
             this.txbUsuarioFirewall = new System.Windows.Forms.TextBox();
@@ -63,7 +62,12 @@
             this.labPorta = new System.Windows.Forms.Label();
             this.txbIPFirewall = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.TxbOBS1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.txbTV = new System.Windows.Forms.TextBox();
+            this.PicEmailConfig = new System.Windows.Forms.PictureBox();
             this.txbTV2 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -75,6 +79,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txbIP = new System.Windows.Forms.TextBox();
             this.txbDominio = new System.Windows.Forms.TextBox();
+            this.PicRouterConfig = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -107,11 +112,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txbEmailEmpresa = new System.Windows.Forms.TextBox();
             this.txbRespEmpresa = new System.Windows.Forms.TextBox();
-            this.PicEmailConfig = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txbOBS = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             idLabel = new System.Windows.Forms.Label();
             nome_empresaLabel = new System.Windows.Forms.Label();
             nome_responsavelLabel = new System.Windows.Forms.Label();
@@ -122,14 +122,14 @@
             this.PnLinferior.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicRouterConfig)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicEmailConfig)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicRouterConfig)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicEmailConfig)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // idLabel
@@ -208,7 +208,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.txbOBS);
+            this.groupBox2.Controls.Add(this.TxbOBS2);
             this.groupBox2.Controls.Add(this.textBox10);
             this.groupBox2.Controls.Add(this.label21);
             this.groupBox2.Controls.Add(this.pictureBox5);
@@ -239,9 +239,18 @@
             this.groupBox2.Text = "Firewall";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
+            // TxbOBS2
+            // 
+            this.TxbOBS2.Location = new System.Drawing.Point(410, 19);
+            this.TxbOBS2.Multiline = true;
+            this.TxbOBS2.Name = "TxbOBS2";
+            this.TxbOBS2.Size = new System.Drawing.Size(434, 251);
+            this.TxbOBS2.TabIndex = 82;
+            // 
             // textBox10
             // 
             this.textBox10.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox10.Enabled = false;
             this.textBox10.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.textBox10.Location = new System.Drawing.Point(277, 105);
@@ -252,6 +261,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
+            this.label21.Enabled = false;
             this.label21.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label21.Location = new System.Drawing.Point(187, 40);
@@ -262,6 +272,7 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Enabled = false;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(253, 7);
             this.pictureBox5.Name = "pictureBox5";
@@ -273,6 +284,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
+            this.label16.Enabled = false;
             this.label16.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Crimson;
             this.label16.Location = new System.Drawing.Point(211, 21);
@@ -284,6 +296,7 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.textBox1.Location = new System.Drawing.Point(187, 151);
@@ -294,6 +307,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
+            this.label18.Enabled = false;
             this.label18.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label18.Location = new System.Drawing.Point(187, 178);
@@ -305,6 +319,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
+            this.label19.Enabled = false;
             this.label19.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label19.Location = new System.Drawing.Point(187, 132);
@@ -316,6 +331,7 @@
             // textBox7
             // 
             this.textBox7.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox7.Enabled = false;
             this.textBox7.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.textBox7.Location = new System.Drawing.Point(187, 197);
@@ -326,6 +342,7 @@
             // textBox8
             // 
             this.textBox8.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox8.Enabled = false;
             this.textBox8.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.textBox8.Location = new System.Drawing.Point(187, 105);
@@ -336,6 +353,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
+            this.label20.Enabled = false;
             this.label20.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label20.Location = new System.Drawing.Point(187, 86);
@@ -347,35 +365,13 @@
             // textBox9
             // 
             this.textBox9.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox9.Enabled = false;
             this.textBox9.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.textBox9.Location = new System.Drawing.Point(187, 59);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(170, 27);
             this.textBox9.TabIndex = 109;
-            // 
-            // PicRouterConfig
-            // 
-            this.PicRouterConfig.Enabled = false;
-            this.PicRouterConfig.Image = ((System.Drawing.Image)(resources.GetObject("PicRouterConfig.Image")));
-            this.PicRouterConfig.Location = new System.Drawing.Point(444, 22);
-            this.PicRouterConfig.Name = "PicRouterConfig";
-            this.PicRouterConfig.Size = new System.Drawing.Size(53, 46);
-            this.PicRouterConfig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PicRouterConfig.TabIndex = 107;
-            this.PicRouterConfig.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Enabled = false;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Crimson;
-            this.label1.Location = new System.Drawing.Point(431, 67);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 19);
-            this.label1.TabIndex = 102;
-            this.label1.Text = "Roteadores";
             // 
             // pictureBox3
             // 
@@ -506,6 +502,75 @@
             this.panel2.Size = new System.Drawing.Size(1036, 337);
             this.panel2.TabIndex = 13;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.TxbOBS1);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txbTV);
+            this.groupBox1.Controls.Add(this.PicEmailConfig);
+            this.groupBox1.Controls.Add(this.txbTV2);
+            this.groupBox1.Controls.Add(this.label24);
+            this.groupBox1.Controls.Add(this.label17);
+            this.groupBox1.Controls.Add(this.label23);
+            this.groupBox1.Controls.Add(this.txbSenha);
+            this.groupBox1.Controls.Add(this.LblDominio);
+            this.groupBox1.Controls.Add(this.txbNomeSrv);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.pictureBox2);
+            this.groupBox1.Controls.Add(this.txbIP);
+            this.groupBox1.Controls.Add(this.txbDominio);
+            this.groupBox1.Controls.Add(this.PicRouterConfig);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Controls.Add(this.txbUsuario);
+            this.groupBox1.Controls.Add(this.txbSenha2);
+            this.groupBox1.Controls.Add(this.txbUsuario2);
+            this.groupBox1.Controls.Add(this.txbNomeSrv2);
+            this.groupBox1.Controls.Add(this.label15);
+            this.groupBox1.Controls.Add(this.label14);
+            this.groupBox1.Controls.Add(this.txbIP2);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(866, 337);
+            this.groupBox1.TabIndex = 63;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Cadastro Nova Loja";
+            // 
+            // TxbOBS1
+            // 
+            this.TxbOBS1.Location = new System.Drawing.Point(421, 96);
+            this.TxbOBS1.Multiline = true;
+            this.TxbOBS1.Name = "TxbOBS1";
+            this.TxbOBS1.Size = new System.Drawing.Size(434, 218);
+            this.TxbOBS1.TabIndex = 82;
+            this.TxbOBS1.Tag = "";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Crimson;
+            this.label1.Location = new System.Drawing.Point(431, 67);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(85, 19);
+            this.label1.TabIndex = 102;
+            this.label1.Text = "Roteadores";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Crimson;
+            this.label2.Location = new System.Drawing.Point(526, 67);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(52, 19);
+            this.label2.TabIndex = 121;
+            this.label2.Text = "E-mail";
+            // 
             // txbTV
             // 
             this.txbTV.BackColor = System.Drawing.SystemColors.Window;
@@ -515,6 +580,16 @@
             this.txbTV.Name = "txbTV";
             this.txbTV.Size = new System.Drawing.Size(191, 27);
             this.txbTV.TabIndex = 2;
+            // 
+            // PicEmailConfig
+            // 
+            this.PicEmailConfig.Image = ((System.Drawing.Image)(resources.GetObject("PicEmailConfig.Image")));
+            this.PicEmailConfig.Location = new System.Drawing.Point(524, 17);
+            this.PicEmailConfig.Name = "PicEmailConfig";
+            this.PicEmailConfig.Size = new System.Drawing.Size(53, 60);
+            this.PicEmailConfig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PicEmailConfig.TabIndex = 120;
+            this.PicEmailConfig.TabStop = false;
             // 
             // txbTV2
             // 
@@ -633,6 +708,16 @@
             this.txbDominio.Size = new System.Drawing.Size(164, 26);
             this.txbDominio.TabIndex = 30;
             this.txbDominio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // PicRouterConfig
+            // 
+            this.PicRouterConfig.Image = ((System.Drawing.Image)(resources.GetObject("PicRouterConfig.Image")));
+            this.PicRouterConfig.Location = new System.Drawing.Point(444, 22);
+            this.PicRouterConfig.Name = "PicRouterConfig";
+            this.PicRouterConfig.Size = new System.Drawing.Size(53, 46);
+            this.PicRouterConfig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PicRouterConfig.TabIndex = 107;
+            this.PicRouterConfig.TabStop = false;
             // 
             // label9
             // 
@@ -1010,84 +1095,6 @@
             this.txbRespEmpresa.Size = new System.Drawing.Size(162, 20);
             this.txbRespEmpresa.TabIndex = 79;
             // 
-            // PicEmailConfig
-            // 
-            this.PicEmailConfig.Enabled = false;
-            this.PicEmailConfig.Image = ((System.Drawing.Image)(resources.GetObject("PicEmailConfig.Image")));
-            this.PicEmailConfig.Location = new System.Drawing.Point(524, 17);
-            this.PicEmailConfig.Name = "PicEmailConfig";
-            this.PicEmailConfig.Size = new System.Drawing.Size(53, 60);
-            this.PicEmailConfig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PicEmailConfig.TabIndex = 120;
-            this.PicEmailConfig.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Enabled = false;
-            this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Crimson;
-            this.label2.Location = new System.Drawing.Point(526, 67);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 19);
-            this.label2.TabIndex = 121;
-            this.label2.Text = "E-mail";
-            // 
-            // txbOBS
-            // 
-            this.txbOBS.Location = new System.Drawing.Point(410, 19);
-            this.txbOBS.Multiline = true;
-            this.txbOBS.Name = "txbOBS";
-            this.txbOBS.Size = new System.Drawing.Size(434, 251);
-            this.txbOBS.TabIndex = 82;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(421, 96);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(434, 218);
-            this.textBox6.TabIndex = 82;
-            this.textBox6.Tag = "";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txbTV);
-            this.groupBox1.Controls.Add(this.PicEmailConfig);
-            this.groupBox1.Controls.Add(this.txbTV2);
-            this.groupBox1.Controls.Add(this.label24);
-            this.groupBox1.Controls.Add(this.label17);
-            this.groupBox1.Controls.Add(this.label23);
-            this.groupBox1.Controls.Add(this.txbSenha);
-            this.groupBox1.Controls.Add(this.LblDominio);
-            this.groupBox1.Controls.Add(this.txbNomeSrv);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.pictureBox2);
-            this.groupBox1.Controls.Add(this.txbIP);
-            this.groupBox1.Controls.Add(this.txbDominio);
-            this.groupBox1.Controls.Add(this.PicRouterConfig);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.txbUsuario);
-            this.groupBox1.Controls.Add(this.txbSenha2);
-            this.groupBox1.Controls.Add(this.txbUsuario2);
-            this.groupBox1.Controls.Add(this.txbNomeSrv2);
-            this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.txbIP2);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(866, 337);
-            this.groupBox1.TabIndex = 63;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Cadastro Nova Loja";
-            // 
             // FrmInfoLoja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1102,16 +1109,16 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicRouterConfig)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicEmailConfig)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicRouterConfig)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicEmailConfig)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1192,8 +1199,8 @@
         private System.Windows.Forms.Button BtnAlterar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox PicEmailConfig;
-        private System.Windows.Forms.TextBox txbOBS;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox TxbOBS2;
+        private System.Windows.Forms.TextBox TxbOBS1;
         private System.Windows.Forms.GroupBox groupBox1;
     }
 }
