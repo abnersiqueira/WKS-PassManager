@@ -15,7 +15,7 @@ namespace PassManager.Funcions
 
         Conexao con = new Conexao();
         SqlCommand cmd = new SqlCommand();
-        public int id;
+        
 
         public void Consulta_EMPRESA(String dominio, String nomesrv, String nomesrv2, String teamviewer, String teamviewer2,
           String ipsrv, String ipsrv2, String usuariosrv, String usuariosrv2, String senhasrv, String senhasrv2, int portafirewall,

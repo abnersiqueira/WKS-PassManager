@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="DAL\Conexao.cs" />
     <Compile Include="DAL\LoginDaoComandos.cs" />
+    <Compile Include="Funcions\Alter_Empresa.cs" />
     <Compile Include="Funcions\Consulta_EMP.cs" />
     <Compile Include="Funcions\Crud_Empresa.cs" />
     <Compile Include="Funcions\Cad_Login.cs" />

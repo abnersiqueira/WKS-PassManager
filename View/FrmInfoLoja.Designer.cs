@@ -885,6 +885,7 @@
             this.BtnAlterar.TabIndex = 96;
             this.BtnAlterar.Text = "Atualizar dados";
             this.BtnAlterar.UseVisualStyleBackColor = false;
+            this.BtnAlterar.Click += new System.EventHandler(this.BtnAlterar_Click);
             // 
             // pictureBox1
             // 

@@ -30,7 +30,6 @@ namespace PassManager.View
             codigo = id2;
             CarregaDados();
         }
-
         int codigo = 1337;
 
 
@@ -38,7 +37,8 @@ namespace PassManager.View
         {
             Crud_Empresa emp = new Crud_Empresa();
             Dados_Empresa dados = emp.Carregar(codigo);
-            
+
+            txbID.Text                  = Convert.ToString(dados.id);
             txbDominio.Text             = dados.dominio;
             txbNomeSrv.Text             = dados.nomesrv;
             txbNomeSrv2.Text            = dados.nomesrv2;
@@ -82,7 +82,9 @@ namespace PassManager.View
         {
 
             Crud_Empresa Empresa = new Crud_Empresa();
-            Empresa.Cad_Empresa(txbDominio.Text,
+            Empresa.
+                Cad_Empresa(
+            txbDominio.Text,
             txbNomeSrv.Text, txbNomeSrv2.Text,
             txbTV.Text, txbTV2.Text,
             Convert.ToString(txbIP.Text),
@@ -115,6 +117,34 @@ namespace PassManager.View
         private void groupBox2_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnAlterar_Click(object sender, EventArgs e)
+        {
+            Alter_Empresa Empresa = new Alter_Empresa();
+            Empresa.Crud_Empresa(
+            Convert.ToInt32(txbID.Text),
+            txbDominio.Text,
+            txbNomeSrv.Text, txbNomeSrv2.Text,
+            txbTV.Text, txbTV2.Text,
+            Convert.ToString(txbIP.Text),
+            txbIP2.Text,
+            txbUsuario.Text, txbUsuario2.Text,
+            txbSenha.Text, txbSenha2.Text,
+            txbIPFirewall.Text,
+            Convert.ToInt32(txbPorta.Text),
+            txbUsuarioFirewall.Text,
+            txbSenhaFirewall.Text,
+            txbNomeEmpresa.Text,
+            txbRespEmpresa.Text,
+            txbEmailEmpresa.Text,
+            txbTelefoneEmpresa.Text,
+            txbTelefoneEmpresa2.Text,
+            txbCelEmpresa.Text,
+            txbCelEmpresa2.Text,
+            TxbOBS1.Text,
+            TxbOBS2.Text,
+            txbSelecFirewall.Text);
         }
     }
 

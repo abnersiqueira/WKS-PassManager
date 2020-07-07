@@ -54,7 +54,7 @@
             // 
             // txbUser
             // 
-            this.txbUser.Location = new System.Drawing.Point(74, 162);
+            this.txbUser.Location = new System.Drawing.Point(87, 206);
             this.txbUser.Name = "txbUser";
             this.txbUser.Size = new System.Drawing.Size(100, 20);
             this.txbUser.TabIndex = 0;
@@ -62,15 +62,16 @@
             // 
             // txbSenha
             // 
-            this.txbSenha.Location = new System.Drawing.Point(74, 188);
+            this.txbSenha.Location = new System.Drawing.Point(87, 232);
             this.txbSenha.Name = "txbSenha";
             this.txbSenha.PasswordChar = '*';
             this.txbSenha.Size = new System.Drawing.Size(100, 20);
             this.txbSenha.TabIndex = 1;
+            this.txbSenha.UseSystemPasswordChar = true;
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(85, 214);
+            this.btnCadastrar.Location = new System.Drawing.Point(98, 258);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
             this.btnCadastrar.TabIndex = 2;
@@ -81,7 +82,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 165);
+            this.label1.Location = new System.Drawing.Point(38, 209);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 3;
@@ -90,7 +91,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(30, 191);
+            this.label2.Location = new System.Drawing.Point(43, 235);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 4;
@@ -110,16 +111,17 @@
             // lineShape1
             // 
             this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 230;
-            this.lineShape1.X2 = 230;
-            this.lineShape1.Y1 = 4;
-            this.lineShape1.Y2 = 401;
+            this.lineShape1.X1 = 261;
+            this.lineShape1.X2 = 261;
+            this.lineShape1.Y1 = -1;
+            this.lineShape1.Y2 = 383;
+            this.lineShape1.Click += new System.EventHandler(this.lineShape1_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Bahnschrift Light", 15.75F);
-            this.label4.Location = new System.Drawing.Point(21, 115);
+            this.label4.Location = new System.Drawing.Point(34, 172);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(196, 25);
             this.label4.TabIndex = 7;
@@ -128,7 +130,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(75, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(88, 69);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(99, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -137,8 +139,6 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -146,10 +146,9 @@
             this.login,
             this.senhaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.tblogonBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(230, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(284, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(249, 350);
+            this.dataGridView1.Size = new System.Drawing.Size(185, 350);
             this.dataGridView1.TabIndex = 9;
             // 
             // tblogonBindingSource
@@ -181,7 +180,6 @@
             this.login.Frozen = true;
             this.login.HeaderText = "Login";
             this.login.Name = "login";
-            this.login.ReadOnly = true;
             // 
             // senhaDataGridViewTextBoxColumn
             // 
@@ -190,7 +188,8 @@
             this.senhaDataGridViewTextBoxColumn.Frozen = true;
             this.senhaDataGridViewTextBoxColumn.HeaderText = "Senha";
             this.senhaDataGridViewTextBoxColumn.Name = "senhaDataGridViewTextBoxColumn";
-            this.senhaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.senhaDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.senhaDataGridViewTextBoxColumn.Visible = false;
             this.senhaDataGridViewTextBoxColumn.Width = 63;
             // 
             // FrmCadUsuario

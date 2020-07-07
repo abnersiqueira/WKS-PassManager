@@ -17,16 +17,14 @@ namespace PassManager.Funcions
         SqlCommand cmd = new SqlCommand();
         public int id;
 
-        public object IdLoja { get; private set; }
-
-
-        public void Cad_Empresa( String dominio, String nomesrv, String nomesrv2, String teamviewer, String teamviewer2,
+       // public object IdLoja { get; private set; }
+     
+        public void Cad_Empresa( int idLoja, String dominio, String nomesrv, String nomesrv2, String teamviewer, String teamviewer2,
             String ipsrv, String ipsrv2, String usuariosrv, String usuariosrv2, String senhasrv, String senhasrv2, String ipfirewall, int portafirewall,
             String usuariofirewall, String senhafirewall, String nome_empresa, String nome_resp, String emp_email, String emp_tel, String emp_tel2,
             String emp_cel, String emp_cel2, String emp_obs1, String emp_obs2, String selectfirewall)
         {
            
-          
             {
                 if (id == 0)
                 {
@@ -42,18 +40,8 @@ namespace PassManager.Funcions
                 else
                 {
 
-                    cmd.CommandText = "Select * from tb_DadosLoja where id_DadosLoja = " + id.ToString();
-                    MessageBox.Show("LENDO POR ID"+ id);
-                    
-                  
-                    //(dominio, nomesrv, nomesrv2, teamviewer, teamviewer2, ipsrv, ipsrv2, usuariosrv, usuariosrv2, senhasrv, " +
-                    //  "senhasrv2,ipfirewall,portafirewall,usuariofirewall,senhafirewall,nome_empresa, nome_resp, emp_email, emp_tel, emp_tel2, emp_cel, emp_cel2," +
-                    //  "obs1, obs2, selectfirewall) " +
-                    //  "values" +
-                    //  " (@dominio, @nomesrv, @nomesrv2, @teamviewer,@teamviewer2," +
-                    //  "@ipsrv,@ipsrv2,@usuariosrv,@usuariosrv2,@senhasrv,@senhasrv2,@ipfirewall,@portafirewall,@usuariofirewall,@senhafirewall" +
-                    //  ",@nome_empresa, @nome_resp, @emp_email, @emp_tel, @emp_tel2, @emp_cel, @emp_cel2, @obs1, @obs2, @selectfirewall);" +
-                    //  "Select @@identity";
+                    cmd.CommandText = "Select * from tb_DadosLoja where id_DadosLoja = " + idLoja.ToString();
+                    MessageBox.Show("LENDO POR ID"+" "+ idLoja);
 
                 }
 
@@ -84,9 +72,6 @@ namespace PassManager.Funcions
                 cmd.Parameters.AddWithValue("@obs2", emp_obs2);
                 cmd.Parameters.AddWithValue("@selectfirewall", selectfirewall);
 
-
-
-
                 cmd.Connection = con.conectar();
                 cmd.ExecuteNonQuery();
                 con.desconectar();
@@ -99,6 +84,7 @@ namespace PassManager.Funcions
         public Dados_Empresa Carregar (int IdLoja)
         {
             id = IdLoja;
+
             Dados_Empresa dados = new Dados_Empresa();
             cmd.Connection = con.conectar();
             cmd.CommandText = "Select * from tb_DadosLoja where id_DadosLoja =" + IdLoja.ToString();
@@ -138,5 +124,7 @@ namespace PassManager.Funcions
             con.desconectar();
             return dados;
         }
+
+
     }
 }
