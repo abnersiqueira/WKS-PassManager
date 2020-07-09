@@ -83,7 +83,7 @@ namespace PassManager.View
 
             Crud_Empresa Empresa = new Crud_Empresa();
             Empresa.
-                Cad_Empresa(
+            Cad_Empresa(
             txbDominio.Text,
             txbNomeSrv.Text, txbNomeSrv2.Text,
             txbTV.Text, txbTV2.Text,

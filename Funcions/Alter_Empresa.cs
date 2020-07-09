@@ -35,60 +35,51 @@ namespace PassManager.Funcions
                     + "senhafirewall=@senhafirewall,"
                     + "nome_empresa=@nome_empresa, nome_resp=@nome_resp, emp_email=@emp_email, emp_tel=@emp_tel, emp_tel2=@emp_tel2,"
                     + " emp_cel=@emp_cel, "
-                    + "emp_cel2=@emp_cel2,obs1=@obs1, obs2=@obs2, selectfirewall=@selectfirewall where id_DadosLoja ="
-                    + @idLoja;
+                    + "emp_cel2=@emp_cel2,obs1=@obs1, obs2=@obs2, selectfirewall=@selectfirewall where id_DadosLoja =" + idLoja;
 
-
-                //where id_DadosLoja =" + id.ToString();
-
-
-                //cmd.CommandText = "Select * from tb_DadosLoja where id_DadosLoja = " + id.ToString();
-                //MessageBox.Show("LENDO POR ID" + id);
            
                 cmd.Parameters.AddWithValue("@idLoja", idLoja);
                 cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@dominio", dominio);
+                cmd.Parameters.AddWithValue("@nomesrv", nomesrv);
+                cmd.Parameters.AddWithValue("@nomesrv2", nomesrv2);
+                cmd.Parameters.AddWithValue("@teamviewer", teamviewer);
+                cmd.Parameters.AddWithValue("@teamviewer2", teamviewer2);
+                cmd.Parameters.AddWithValue("@ipsrv", ipsrv);
+                cmd.Parameters.AddWithValue("@ipsrv2", ipsrv2);
+                cmd.Parameters.AddWithValue("@usuariosrv", usuariosrv);
+                cmd.Parameters.AddWithValue("@usuariosrv2", usuariosrv2);
+                cmd.Parameters.AddWithValue("@senhasrv", senhasrv);
+                cmd.Parameters.AddWithValue("@senhasrv2", senhasrv2);
+                cmd.Parameters.AddWithValue("@ipfirewall", ipfirewall);
+                cmd.Parameters.AddWithValue("@portafirewall", portafirewall);
+                cmd.Parameters.AddWithValue("@usuariofirewall", usuariofirewall);
+                cmd.Parameters.AddWithValue("@senhafirewall", senhafirewall);
+                cmd.Parameters.AddWithValue("@nome_empresa", nome_empresa);
+                cmd.Parameters.AddWithValue("@nome_resp", nome_resp);
+                cmd.Parameters.AddWithValue("@emp_email", emp_email);
+                cmd.Parameters.AddWithValue("@emp_tel", emp_tel);
+                cmd.Parameters.AddWithValue("@emp_tel2", emp_tel2);
+                cmd.Parameters.AddWithValue("@emp_cel", emp_cel);
+                cmd.Parameters.AddWithValue("@emp_cel2", emp_cel2);
+                cmd.Parameters.AddWithValue("@obs1", emp_obs1);
+                cmd.Parameters.AddWithValue("@obs2", emp_obs2);
+                cmd.Parameters.AddWithValue("@selectfirewall", selectfirewall);
 
-                MessageBox.Show("O VALOR DO ID EH:" + id);
-                    cmd.Parameters.AddWithValue("@dominio", dominio);
-                    cmd.Parameters.AddWithValue("@nomesrv", nomesrv);
-                    cmd.Parameters.AddWithValue("@nomesrv2", nomesrv2);
-                    cmd.Parameters.AddWithValue("@teamviewer", teamviewer);
-                    cmd.Parameters.AddWithValue("@teamviewer2", teamviewer2);
-                    cmd.Parameters.AddWithValue("@ipsrv", ipsrv);
-                    cmd.Parameters.AddWithValue("@ipsrv2", ipsrv2);
-                    cmd.Parameters.AddWithValue("@usuariosrv", usuariosrv);
-                    cmd.Parameters.AddWithValue("@usuariosrv2", usuariosrv2);
-                    cmd.Parameters.AddWithValue("@senhasrv", senhasrv);
-                    cmd.Parameters.AddWithValue("@senhasrv2", senhasrv2);
-                    cmd.Parameters.AddWithValue("@ipfirewall", ipfirewall);
-                    cmd.Parameters.AddWithValue("@portafirewall", portafirewall);
-                    cmd.Parameters.AddWithValue("@usuariofirewall", usuariofirewall);
-                    cmd.Parameters.AddWithValue("@senhafirewall", senhafirewall);
-                    cmd.Parameters.AddWithValue("@nome_empresa", nome_empresa);
-                    cmd.Parameters.AddWithValue("@nome_resp", nome_resp);
-                    cmd.Parameters.AddWithValue("@emp_email", emp_email);
-                    cmd.Parameters.AddWithValue("@emp_tel", emp_tel);
-                    cmd.Parameters.AddWithValue("@emp_tel2", emp_tel2);
-                    cmd.Parameters.AddWithValue("@emp_cel", emp_cel);
-                    cmd.Parameters.AddWithValue("@emp_cel2", emp_cel2);
-                    cmd.Parameters.AddWithValue("@obs1", emp_obs1);
-                    cmd.Parameters.AddWithValue("@obs2", emp_obs2);
-                    cmd.Parameters.AddWithValue("@selectfirewall", selectfirewall);
-
-                    cmd.Connection = con.conectar();
-                    cmd.ExecuteNonQuery();
-                    con.desconectar();
+                cmd.Connection = con.conectar();
+                cmd.ExecuteNonQuery();
+                con.desconectar();
                     MessageBox.Show("Atualização Realizada!");
                 }
             
         }
-        public Dados_Empresa Carregar(int IdLoja)
+        public Dados_Empresa Carregar(int idLoja)
         {
-            id = IdLoja;
-            MessageBox.Show("O valor do IDLOJA EH:" + IdLoja);
+            id = idLoja;
+            MessageBox.Show("O valor do IDLOJA EH:" + idLoja);
             Dados_Empresa dados = new Dados_Empresa();
             cmd.Connection = con.conectar();
-            cmd.CommandText = "Select * from tb_DadosLoja where id_DadosLoja =" + IdLoja.ToString();
+            cmd.CommandText = "Select * from tb_DadosLoja where id_DadosLoja =" + idLoja.ToString();
          
             SqlDataReader rd = cmd.ExecuteReader();
             

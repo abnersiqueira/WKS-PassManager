@@ -19,7 +19,7 @@ namespace PassManager.Funcions
 
        // public object IdLoja { get; private set; }
      
-        public void Cad_Empresa( int idLoja, String dominio, String nomesrv, String nomesrv2, String teamviewer, String teamviewer2,
+        public void Cad_Empresa(int idLoja, String dominio, String nomesrv, String nomesrv2, String teamviewer, String teamviewer2,
             String ipsrv, String ipsrv2, String usuariosrv, String usuariosrv2, String senhasrv, String senhasrv2, String ipfirewall, int portafirewall,
             String usuariofirewall, String senhafirewall, String nome_empresa, String nome_resp, String emp_email, String emp_tel, String emp_tel2,
             String emp_cel, String emp_cel2, String emp_obs1, String emp_obs2, String selectfirewall)
@@ -32,7 +32,7 @@ namespace PassManager.Funcions
                           "senhasrv2,ipfirewall,portafirewall,usuariofirewall,senhafirewall,nome_empresa, nome_resp, emp_email, emp_tel, emp_tel2, emp_cel, emp_cel2," +
                           "obs1, obs2, selectfirewall) " +
                           "values" +
-                          " (@dominio, @nomesrv, @nomesrv2, @teamviewer,@teamviewer2," +
+                          "(@dominio, @nomesrv, @nomesrv2, @teamviewer,@teamviewer2," +
                           "@ipsrv,@ipsrv2,@usuariosrv,@usuariosrv2,@senhasrv,@senhasrv2,@ipfirewall,@portafirewall,@usuariofirewall,@senhafirewall" +
                           ",@nome_empresa, @nome_resp, @emp_email, @emp_tel, @emp_tel2, @emp_cel, @emp_cel2, @obs1, @obs2, @selectfirewall);" +
                           "Select @@identity";
@@ -81,18 +81,19 @@ namespace PassManager.Funcions
         }
 
 
-        public Dados_Empresa Carregar (int IdLoja)
+        public Dados_Empresa Carregar (int idLoja)
         {
-            id = IdLoja;
+            id = idLoja;
 
             Dados_Empresa dados = new Dados_Empresa();
             cmd.Connection = con.conectar();
-            cmd.CommandText = "Select * from tb_DadosLoja where id_DadosLoja =" + IdLoja.ToString();
+            cmd.CommandText = "Select * from tb_DadosLoja where id_DadosLoja =" + idLoja.ToString();
             SqlDataReader rd = cmd.ExecuteReader();
 
             if (rd.HasRows)
             { 
                 rd.Read();
+               
                 dados.id = Convert.ToInt32(rd["id_DadosLoja"]);
                 dados.dominio = Convert.ToString(rd["dominio"]);
                 dados.nomesrv = Convert.ToString(rd["nomesrv"]);

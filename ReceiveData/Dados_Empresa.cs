@@ -13,8 +13,7 @@ namespace PassManager.ReceiveData
         {
 
             //-------Atribuindo um valor vazio a VAR
-            this.idLoja = 0;
-           // this.id = 0;
+            this.id_DadosLoja = 0;
             this.dominio = "";
             this.nomesrv = "";
             this.nomesrv2 = "";
@@ -43,13 +42,13 @@ namespace PassManager.ReceiveData
 
 
         }
-        public Dados_Empresa(int idLoja, String dominio, String nomesrv, String nomesrv2, String teamviewer, String teamviewer2,
+        public Dados_Empresa(int id_DadosLoja, String dominio, String nomesrv, String nomesrv2, String teamviewer, String teamviewer2,
             String ipsrv, String ipsrv2, String usuariosrv, String usuariosrv2, String senhasrv, String senhasrv2, String ipfirewall, int portafirewall,
             String usuariofirewall, String senhafirewall, String nome_empresa, String nome_resp, String emp_email, String emp_tel, String emp_tel2,
             String emp_cel, String emp_cel2, String obs1, String obs2, String selectfirewall)
         {
-            this.id = idLoja
-           // this.id = id;
+
+            this.id_DadosLoja = id_DadosLoja;
             this.dominio = dominio;
             this.nomesrv = nomesrv;
             this.nomesrv2 = nomesrv2;
@@ -77,8 +76,8 @@ namespace PassManager.ReceiveData
             this.selectfirewall = selectfirewall;
 
         }
-     
-        int idLoja;
+
+        int id_DadosLoja;
         String dominio_Empresa;
         String nomesrv_Empresa;
         String nomesrv2_Empresa;
@@ -106,7 +105,9 @@ namespace PassManager.ReceiveData
         String EMP_selectfirewall;
 
 
-        public int id { get {return idLoja; } set {this.idLoja = value; } }
+        
+       
+        public int id { get { return id_DadosLoja; } set { this.id_DadosLoja = value; } }
         public String dominio { get { return dominio_Empresa; } set { this.dominio_Empresa = value; } }
         public String nomesrv { get { return nomesrv_Empresa; } set { this.nomesrv_Empresa = value; } }
         public String nomesrv2 { get { return nomesrv2_Empresa; } set { this.nomesrv2_Empresa = value; } }

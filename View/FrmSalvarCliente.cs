@@ -1,4 +1,5 @@
 ﻿using PassManager.Funcions;
+using PassManager.ReceiveData;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,7 +22,8 @@ namespace PassManager.View
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             Crud_Empresa Empresa = new Crud_Empresa();
-            Empresa.Cad_Empresa(txbDominio.Text,
+            Empresa.Cad_Empresa(
+            txbDominio.Text,
             txbNomeSrv.Text, txbNomeSrv2.Text,
             txbTV.Text, txbTV2.Text,
             Convert.ToString(txbIP.Text),
