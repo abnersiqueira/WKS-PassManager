@@ -144,36 +144,40 @@
             // nome_empresaLabel
             // 
             nome_empresaLabel.AutoSize = true;
+            nome_empresaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             nome_empresaLabel.Location = new System.Drawing.Point(12, 156);
             nome_empresaLabel.Name = "nome_empresaLabel";
-            nome_empresaLabel.Size = new System.Drawing.Size(94, 13);
+            nome_empresaLabel.Size = new System.Drawing.Size(109, 13);
             nome_empresaLabel.TabIndex = 76;
             nome_empresaLabel.Text = "Nome da Empresa";
             // 
             // nome_responsavelLabel
             // 
             nome_responsavelLabel.AutoSize = true;
+            nome_responsavelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             nome_responsavelLabel.Location = new System.Drawing.Point(12, 195);
             nome_responsavelLabel.Name = "nome_responsavelLabel";
-            nome_responsavelLabel.Size = new System.Drawing.Size(100, 13);
+            nome_responsavelLabel.Size = new System.Drawing.Size(116, 13);
             nome_responsavelLabel.TabIndex = 78;
             nome_responsavelLabel.Text = "Nome Responsável";
             // 
             // email_respLabel
             // 
             email_respLabel.AutoSize = true;
+            email_respLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             email_respLabel.Location = new System.Drawing.Point(12, 234);
             email_respLabel.Name = "email_respLabel";
-            email_respLabel.Size = new System.Drawing.Size(35, 13);
+            email_respLabel.Size = new System.Drawing.Size(41, 13);
             email_respLabel.TabIndex = 80;
             email_respLabel.Text = "E-mail";
             // 
             // celular_1Label
             // 
             celular_1Label.AutoSize = true;
+            celular_1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             celular_1Label.Location = new System.Drawing.Point(12, 351);
             celular_1Label.Name = "celular_1Label";
-            celular_1Label.Size = new System.Drawing.Size(39, 13);
+            celular_1Label.Size = new System.Drawing.Size(46, 13);
             celular_1Label.TabIndex = 86;
             celular_1Label.Text = "Celular";
             // 
@@ -262,11 +266,11 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Enabled = false;
-            this.label21.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label21.Location = new System.Drawing.Point(187, 40);
+            this.label21.Location = new System.Drawing.Point(187, 43);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(21, 19);
+            this.label21.Size = new System.Drawing.Size(20, 16);
             this.label21.TabIndex = 118;
             this.label21.Text = "IP";
             // 
@@ -285,11 +289,11 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Enabled = false;
-            this.label16.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Crimson;
-            this.label16.Location = new System.Drawing.Point(211, 21);
+            this.label16.Location = new System.Drawing.Point(211, 24);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(38, 19);
+            this.label16.Size = new System.Drawing.Size(35, 16);
             this.label16.TabIndex = 113;
             this.label16.Text = "DVR";
             // 
@@ -308,11 +312,11 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Enabled = false;
-            this.label18.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label18.Location = new System.Drawing.Point(187, 178);
+            this.label18.Location = new System.Drawing.Point(187, 181);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(49, 19);
+            this.label18.Size = new System.Drawing.Size(45, 16);
             this.label18.TabIndex = 116;
             this.label18.Text = "Senha";
             // 
@@ -320,11 +324,11 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Enabled = false;
-            this.label19.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label19.Location = new System.Drawing.Point(187, 132);
+            this.label19.Location = new System.Drawing.Point(187, 135);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(59, 19);
+            this.label19.Size = new System.Drawing.Size(55, 16);
             this.label19.TabIndex = 114;
             this.label19.Text = "Usuário";
             // 
@@ -354,11 +358,11 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Enabled = false;
-            this.label20.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label20.Location = new System.Drawing.Point(187, 86);
+            this.label20.Location = new System.Drawing.Point(187, 89);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(119, 19);
+            this.label20.Size = new System.Drawing.Size(110, 16);
             this.label20.TabIndex = 115;
             this.label20.Text = "Portas de acesso";
             // 
@@ -386,11 +390,11 @@
             // labFirewall
             // 
             this.labFirewall.AutoSize = true;
-            this.labFirewall.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labFirewall.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labFirewall.ForeColor = System.Drawing.Color.Crimson;
-            this.labFirewall.Location = new System.Drawing.Point(11, 19);
+            this.labFirewall.Location = new System.Drawing.Point(11, 22);
             this.labFirewall.Name = "labFirewall";
-            this.labFirewall.Size = new System.Drawing.Size(60, 19);
+            this.labFirewall.Size = new System.Drawing.Size(56, 16);
             this.labFirewall.TabIndex = 77;
             this.labFirewall.Text = "Firewall";
             // 
@@ -421,33 +425,33 @@
             // labIP
             // 
             this.labIP.AutoSize = true;
-            this.labIP.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labIP.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labIP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labIP.Location = new System.Drawing.Point(4, 85);
+            this.labIP.Location = new System.Drawing.Point(4, 88);
             this.labIP.Name = "labIP";
-            this.labIP.Size = new System.Drawing.Size(21, 19);
+            this.labIP.Size = new System.Drawing.Size(20, 16);
             this.labIP.TabIndex = 78;
             this.labIP.Text = "IP";
             // 
             // labSenha
             // 
             this.labSenha.AutoSize = true;
-            this.labSenha.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labSenha.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labSenha.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labSenha.Location = new System.Drawing.Point(4, 224);
+            this.labSenha.Location = new System.Drawing.Point(4, 227);
             this.labSenha.Name = "labSenha";
-            this.labSenha.Size = new System.Drawing.Size(49, 19);
+            this.labSenha.Size = new System.Drawing.Size(45, 16);
             this.labSenha.TabIndex = 81;
             this.labSenha.Text = "Senha";
             // 
             // labUsuario
             // 
             this.labUsuario.AutoSize = true;
-            this.labUsuario.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labUsuario.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labUsuario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labUsuario.Location = new System.Drawing.Point(4, 178);
+            this.labUsuario.Location = new System.Drawing.Point(4, 181);
             this.labUsuario.Name = "labUsuario";
-            this.labUsuario.Size = new System.Drawing.Size(59, 19);
+            this.labUsuario.Size = new System.Drawing.Size(55, 16);
             this.labUsuario.TabIndex = 79;
             this.labUsuario.Text = "Usuário";
             // 
@@ -474,11 +478,11 @@
             // labPorta
             // 
             this.labPorta.AutoSize = true;
-            this.labPorta.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labPorta.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labPorta.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labPorta.Location = new System.Drawing.Point(4, 132);
+            this.labPorta.Location = new System.Drawing.Point(4, 135);
             this.labPorta.Name = "labPorta";
-            this.labPorta.Size = new System.Drawing.Size(44, 19);
+            this.labPorta.Size = new System.Drawing.Size(41, 16);
             this.labPorta.TabIndex = 80;
             this.labPorta.Text = "Porta";
             // 
@@ -604,33 +608,33 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label24.Location = new System.Drawing.Point(6, 126);
+            this.label24.Location = new System.Drawing.Point(6, 129);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(91, 19);
+            this.label24.Size = new System.Drawing.Size(84, 16);
             this.label24.TabIndex = 55;
             this.label24.Text = "TeamViewer";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label17.Location = new System.Drawing.Point(6, 264);
+            this.label17.Location = new System.Drawing.Point(6, 267);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(49, 19);
+            this.label17.Size = new System.Drawing.Size(45, 16);
             this.label17.TabIndex = 33;
             this.label17.Text = "Senha";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label23.Location = new System.Drawing.Point(203, 126);
+            this.label23.Location = new System.Drawing.Point(203, 129);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(91, 19);
+            this.label23.Size = new System.Drawing.Size(84, 16);
             this.label23.TabIndex = 57;
             this.label23.Text = "TeamViewer";
             // 
@@ -647,11 +651,11 @@
             // LblDominio
             // 
             this.LblDominio.AutoSize = true;
-            this.LblDominio.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDominio.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblDominio.ForeColor = System.Drawing.Color.Black;
-            this.LblDominio.Location = new System.Drawing.Point(95, 18);
+            this.LblDominio.Location = new System.Drawing.Point(95, 21);
             this.LblDominio.Name = "LblDominio";
-            this.LblDominio.Size = new System.Drawing.Size(67, 19);
+            this.LblDominio.Size = new System.Drawing.Size(62, 16);
             this.LblDominio.TabIndex = 58;
             this.LblDominio.Text = "Domínio";
             // 
@@ -668,11 +672,11 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Crimson;
-            this.label8.Location = new System.Drawing.Point(6, 80);
+            this.label8.Location = new System.Drawing.Point(6, 83);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(154, 19);
+            this.label8.Size = new System.Drawing.Size(141, 16);
             this.label8.TabIndex = 15;
             this.label8.Text = "Descrição Servidor #1";
             // 
@@ -722,44 +726,44 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(6, 218);
+            this.label9.Location = new System.Drawing.Point(6, 221);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(59, 19);
+            this.label9.Size = new System.Drawing.Size(55, 16);
             this.label9.TabIndex = 21;
             this.label9.Text = "Usuário";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(199, 264);
+            this.label11.Location = new System.Drawing.Point(199, 267);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(49, 19);
+            this.label11.Size = new System.Drawing.Size(45, 16);
             this.label11.TabIndex = 43;
             this.label11.Text = "Senha";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(6, 172);
+            this.label10.Location = new System.Drawing.Point(6, 175);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(21, 19);
+            this.label10.Size = new System.Drawing.Size(20, 16);
             this.label10.TabIndex = 18;
             this.label10.Text = "IP";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Crimson;
-            this.label13.Location = new System.Drawing.Point(203, 80);
+            this.label13.Location = new System.Drawing.Point(203, 83);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(154, 19);
+            this.label13.Size = new System.Drawing.Size(141, 16);
             this.label13.TabIndex = 35;
             this.label13.Text = "Descrição Servidor #2";
             // 
@@ -806,22 +810,22 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label15.Location = new System.Drawing.Point(203, 172);
+            this.label15.Location = new System.Drawing.Point(203, 175);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(21, 19);
+            this.label15.Size = new System.Drawing.Size(20, 16);
             this.label15.TabIndex = 38;
             this.label15.Text = "IP";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label14.Location = new System.Drawing.Point(203, 218);
+            this.label14.Location = new System.Drawing.Point(203, 221);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(59, 19);
+            this.label14.Size = new System.Drawing.Size(55, 16);
             this.label14.TabIndex = 40;
             this.label14.Text = "Usuário";
             // 
@@ -883,7 +887,7 @@
             this.BtnAlterar.Name = "BtnAlterar";
             this.BtnAlterar.Size = new System.Drawing.Size(200, 39);
             this.BtnAlterar.TabIndex = 96;
-            this.BtnAlterar.Text = "Atualizar dados";
+            this.BtnAlterar.Text = "Salvar Alteraçoes";
             this.BtnAlterar.UseVisualStyleBackColor = false;
             this.BtnAlterar.Click += new System.EventHandler(this.BtnAlterar_Click);
             // 
@@ -1023,18 +1027,20 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(12, 390);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 13);
+            this.label4.Size = new System.Drawing.Size(65, 13);
             this.label4.TabIndex = 11;
             this.label4.Text = "Celular #2";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(12, 312);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 13);
+            this.label5.Size = new System.Drawing.Size(76, 13);
             this.label5.TabIndex = 10;
             this.label5.Text = "Telefone #2";
             // 
@@ -1076,9 +1082,10 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(12, 273);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 13);
+            this.label6.Size = new System.Drawing.Size(57, 13);
             this.label6.TabIndex = 7;
             this.label6.Text = "Telefone";
             // 

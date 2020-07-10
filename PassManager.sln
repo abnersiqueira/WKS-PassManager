@@ -7,20 +7,24 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassManager", "PassManager.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Info.DAL", "..\Info.DAL\Info.DAL.csproj", "{F52EE237-B70E-489A-B69E-EE7FBB5CFD64}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "PassManager Setup", "Instalador\Setup V1\Setup V1.vdproj", "{D1AA82F8-F30D-4ACD-A884-B769E1299E51}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FD2F9D7E-FB41-40CD-8F90-5F22CC266560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FD2F9D7E-FB41-40CD-8F90-5F22CC266560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD2F9D7E-FB41-40CD-8F90-5F22CC266560}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{FD2F9D7E-FB41-40CD-8F90-5F22CC266560}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{FD2F9D7E-FB41-40CD-8F90-5F22CC266560}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD2F9D7E-FB41-40CD-8F90-5F22CC266560}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F52EE237-B70E-489A-B69E-EE7FBB5CFD64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F52EE237-B70E-489A-B69E-EE7FBB5CFD64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F52EE237-B70E-489A-B69E-EE7FBB5CFD64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F52EE237-B70E-489A-B69E-EE7FBB5CFD64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1AA82F8-F30D-4ACD-A884-B769E1299E51}.Debug|Any CPU.ActiveCfg = Debug
+		{D1AA82F8-F30D-4ACD-A884-B769E1299E51}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -23,6 +23,7 @@ namespace PassManager.View
         {
             Crud_Empresa Empresa = new Crud_Empresa();
             Empresa.Cad_Empresa(
+            Convert.ToInt32(txbDominio.Text),
             txbDominio.Text,
             txbNomeSrv.Text, txbNomeSrv2.Text,
             txbTV.Text, txbTV2.Text,
