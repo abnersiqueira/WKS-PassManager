@@ -249,7 +249,7 @@
             this.TxbOBS2.Multiline = true;
             this.TxbOBS2.Name = "TxbOBS2";
             this.TxbOBS2.Size = new System.Drawing.Size(434, 251);
-            this.TxbOBS2.TabIndex = 82;
+            this.TxbOBS2.TabIndex = 30;
             // 
             // textBox10
             // 
@@ -260,7 +260,7 @@
             this.textBox10.Location = new System.Drawing.Point(277, 105);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(80, 27);
-            this.textBox10.TabIndex = 119;
+            this.textBox10.TabIndex = 27;
             // 
             // label21
             // 
@@ -306,7 +306,7 @@
             this.textBox1.Location = new System.Drawing.Point(187, 151);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(170, 27);
-            this.textBox1.TabIndex = 111;
+            this.textBox1.TabIndex = 28;
             // 
             // label18
             // 
@@ -341,7 +341,7 @@
             this.textBox7.Location = new System.Drawing.Point(187, 197);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(170, 27);
-            this.textBox7.TabIndex = 112;
+            this.textBox7.TabIndex = 29;
             // 
             // textBox8
             // 
@@ -352,7 +352,7 @@
             this.textBox8.Location = new System.Drawing.Point(187, 105);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(80, 27);
-            this.textBox8.TabIndex = 110;
+            this.textBox8.TabIndex = 26;
             // 
             // label20
             // 
@@ -375,7 +375,7 @@
             this.textBox9.Location = new System.Drawing.Point(187, 59);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(170, 27);
-            this.textBox9.TabIndex = 109;
+            this.textBox9.TabIndex = 25;
             // 
             // pictureBox3
             // 
@@ -406,7 +406,7 @@
             this.txbUsuarioFirewall.Location = new System.Drawing.Point(4, 197);
             this.txbUsuarioFirewall.Name = "txbUsuarioFirewall";
             this.txbUsuarioFirewall.Size = new System.Drawing.Size(170, 27);
-            this.txbUsuarioFirewall.TabIndex = 75;
+            this.txbUsuarioFirewall.TabIndex = 23;
             // 
             // txbSelecFirewall
             // 
@@ -414,13 +414,14 @@
             this.txbSelecFirewall.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbSelecFirewall.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.txbSelecFirewall.FormattingEnabled = true;
+            this.txbSelecFirewall.ItemHeight = 19;
             this.txbSelecFirewall.Items.AddRange(new object[] {
             "PfSense",
             "Windows"});
             this.txbSelecFirewall.Location = new System.Drawing.Point(4, 59);
             this.txbSelecFirewall.Name = "txbSelecFirewall";
             this.txbSelecFirewall.Size = new System.Drawing.Size(170, 27);
-            this.txbSelecFirewall.TabIndex = 72;
+            this.txbSelecFirewall.TabIndex = 20;
             // 
             // labIP
             // 
@@ -463,7 +464,7 @@
             this.txbSenhaFirewall.Location = new System.Drawing.Point(4, 243);
             this.txbSenhaFirewall.Name = "txbSenhaFirewall";
             this.txbSenhaFirewall.Size = new System.Drawing.Size(170, 27);
-            this.txbSenhaFirewall.TabIndex = 76;
+            this.txbSenhaFirewall.TabIndex = 24;
             // 
             // txbPorta
             // 
@@ -473,7 +474,7 @@
             this.txbPorta.Location = new System.Drawing.Point(4, 151);
             this.txbPorta.Name = "txbPorta";
             this.txbPorta.Size = new System.Drawing.Size(170, 27);
-            this.txbPorta.TabIndex = 74;
+            this.txbPorta.TabIndex = 22;
             // 
             // labPorta
             // 
@@ -494,7 +495,7 @@
             this.txbIPFirewall.Location = new System.Drawing.Point(4, 105);
             this.txbIPFirewall.Name = "txbIPFirewall";
             this.txbIPFirewall.Size = new System.Drawing.Size(170, 27);
-            this.txbIPFirewall.TabIndex = 73;
+            this.txbIPFirewall.TabIndex = 21;
             // 
             // panel2
             // 
@@ -550,7 +551,7 @@
             this.TxbOBS1.Multiline = true;
             this.TxbOBS1.Name = "TxbOBS1";
             this.TxbOBS1.Size = new System.Drawing.Size(434, 218);
-            this.TxbOBS1.TabIndex = 82;
+            this.TxbOBS1.TabIndex = 19;
             this.TxbOBS1.Tag = "";
             // 
             // label1
@@ -583,10 +584,11 @@
             this.txbTV.Location = new System.Drawing.Point(6, 145);
             this.txbTV.Name = "txbTV";
             this.txbTV.Size = new System.Drawing.Size(191, 27);
-            this.txbTV.TabIndex = 2;
+            this.txbTV.TabIndex = 10;
             // 
             // PicEmailConfig
             // 
+            this.PicEmailConfig.Enabled = false;
             this.PicEmailConfig.Image = ((System.Drawing.Image)(resources.GetObject("PicEmailConfig.Image")));
             this.PicEmailConfig.Location = new System.Drawing.Point(524, 17);
             this.PicEmailConfig.Name = "PicEmailConfig";
@@ -603,7 +605,7 @@
             this.txbTV2.Location = new System.Drawing.Point(203, 145);
             this.txbTV2.Name = "txbTV2";
             this.txbTV2.Size = new System.Drawing.Size(191, 27);
-            this.txbTV2.TabIndex = 7;
+            this.txbTV2.TabIndex = 15;
             // 
             // label24
             // 
@@ -646,7 +648,7 @@
             this.txbSenha.Location = new System.Drawing.Point(6, 283);
             this.txbSenha.Name = "txbSenha";
             this.txbSenha.Size = new System.Drawing.Size(191, 27);
-            this.txbSenha.TabIndex = 5;
+            this.txbSenha.TabIndex = 13;
             // 
             // LblDominio
             // 
@@ -667,7 +669,7 @@
             this.txbNomeSrv.Location = new System.Drawing.Point(6, 99);
             this.txbNomeSrv.Name = "txbNomeSrv";
             this.txbNomeSrv.Size = new System.Drawing.Size(191, 27);
-            this.txbNomeSrv.TabIndex = 1;
+            this.txbNomeSrv.TabIndex = 9;
             // 
             // label8
             // 
@@ -698,7 +700,7 @@
             this.txbIP.Location = new System.Drawing.Point(6, 191);
             this.txbIP.Name = "txbIP";
             this.txbIP.Size = new System.Drawing.Size(191, 27);
-            this.txbIP.TabIndex = 3;
+            this.txbIP.TabIndex = 11;
             // 
             // txbDominio
             // 
@@ -710,11 +712,12 @@
             this.txbDominio.Multiline = true;
             this.txbDominio.Name = "txbDominio";
             this.txbDominio.Size = new System.Drawing.Size(164, 26);
-            this.txbDominio.TabIndex = 30;
+            this.txbDominio.TabIndex = 8;
             this.txbDominio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // PicRouterConfig
             // 
+            this.PicRouterConfig.Enabled = false;
             this.PicRouterConfig.Image = ((System.Drawing.Image)(resources.GetObject("PicRouterConfig.Image")));
             this.PicRouterConfig.Location = new System.Drawing.Point(444, 22);
             this.PicRouterConfig.Name = "PicRouterConfig";
@@ -775,7 +778,7 @@
             this.txbUsuario.Location = new System.Drawing.Point(6, 237);
             this.txbUsuario.Name = "txbUsuario";
             this.txbUsuario.Size = new System.Drawing.Size(191, 27);
-            this.txbUsuario.TabIndex = 4;
+            this.txbUsuario.TabIndex = 12;
             // 
             // txbSenha2
             // 
@@ -785,7 +788,7 @@
             this.txbSenha2.Location = new System.Drawing.Point(203, 283);
             this.txbSenha2.Name = "txbSenha2";
             this.txbSenha2.Size = new System.Drawing.Size(191, 27);
-            this.txbSenha2.TabIndex = 10;
+            this.txbSenha2.TabIndex = 18;
             // 
             // txbUsuario2
             // 
@@ -795,7 +798,7 @@
             this.txbUsuario2.Location = new System.Drawing.Point(203, 237);
             this.txbUsuario2.Name = "txbUsuario2";
             this.txbUsuario2.Size = new System.Drawing.Size(191, 27);
-            this.txbUsuario2.TabIndex = 9;
+            this.txbUsuario2.TabIndex = 17;
             // 
             // txbNomeSrv2
             // 
@@ -805,7 +808,7 @@
             this.txbNomeSrv2.Location = new System.Drawing.Point(203, 99);
             this.txbNomeSrv2.Name = "txbNomeSrv2";
             this.txbNomeSrv2.Size = new System.Drawing.Size(191, 27);
-            this.txbNomeSrv2.TabIndex = 6;
+            this.txbNomeSrv2.TabIndex = 14;
             // 
             // label15
             // 
@@ -837,7 +840,7 @@
             this.txbIP2.Location = new System.Drawing.Point(203, 191);
             this.txbIP2.Name = "txbIP2";
             this.txbIP2.Size = new System.Drawing.Size(191, 27);
-            this.txbIP2.TabIndex = 8;
+            this.txbIP2.TabIndex = 16;
             // 
             // panel1
             // 
@@ -886,7 +889,7 @@
             this.BtnAlterar.Location = new System.Drawing.Point(0, 565);
             this.BtnAlterar.Name = "BtnAlterar";
             this.BtnAlterar.Size = new System.Drawing.Size(200, 39);
-            this.BtnAlterar.TabIndex = 96;
+            this.BtnAlterar.TabIndex = 31;
             this.BtnAlterar.Text = "Salvar Alteraçoes";
             this.BtnAlterar.UseVisualStyleBackColor = false;
             this.BtnAlterar.Click += new System.EventHandler(this.BtnAlterar_Click);
@@ -915,7 +918,7 @@
             this.btnCadastrar.Location = new System.Drawing.Point(0, 527);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(200, 39);
-            this.btnCadastrar.TabIndex = 73;
+            this.btnCadastrar.TabIndex = 32;
             this.btnCadastrar.Text = "Salvar Cliente";
             this.btnCadastrar.UseVisualStyleBackColor = false;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
@@ -931,7 +934,7 @@
             this.BtnCancel.Location = new System.Drawing.Point(0, 603);
             this.BtnCancel.Name = "BtnCancel";
             this.BtnCancel.Size = new System.Drawing.Size(200, 39);
-            this.BtnCancel.TabIndex = 94;
+            this.BtnCancel.TabIndex = 0;
             this.BtnCancel.Text = "Cancelar";
             this.BtnCancel.UseVisualStyleBackColor = false;
             this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
@@ -1049,35 +1052,35 @@
             this.txbCelEmpresa2.Location = new System.Drawing.Point(12, 406);
             this.txbCelEmpresa2.Name = "txbCelEmpresa2";
             this.txbCelEmpresa2.Size = new System.Drawing.Size(164, 20);
-            this.txbCelEmpresa2.TabIndex = 89;
+            this.txbCelEmpresa2.TabIndex = 7;
             // 
             // txbCelEmpresa
             // 
             this.txbCelEmpresa.Location = new System.Drawing.Point(12, 367);
             this.txbCelEmpresa.Name = "txbCelEmpresa";
             this.txbCelEmpresa.Size = new System.Drawing.Size(164, 20);
-            this.txbCelEmpresa.TabIndex = 87;
+            this.txbCelEmpresa.TabIndex = 6;
             // 
             // txbTelefoneEmpresa2
             // 
             this.txbTelefoneEmpresa2.Location = new System.Drawing.Point(12, 328);
             this.txbTelefoneEmpresa2.Name = "txbTelefoneEmpresa2";
             this.txbTelefoneEmpresa2.Size = new System.Drawing.Size(162, 20);
-            this.txbTelefoneEmpresa2.TabIndex = 85;
+            this.txbTelefoneEmpresa2.TabIndex = 5;
             // 
             // txbTelefoneEmpresa
             // 
             this.txbTelefoneEmpresa.Location = new System.Drawing.Point(12, 289);
             this.txbTelefoneEmpresa.Name = "txbTelefoneEmpresa";
             this.txbTelefoneEmpresa.Size = new System.Drawing.Size(162, 20);
-            this.txbTelefoneEmpresa.TabIndex = 83;
+            this.txbTelefoneEmpresa.TabIndex = 4;
             // 
             // txbNomeEmpresa
             // 
             this.txbNomeEmpresa.Location = new System.Drawing.Point(12, 172);
             this.txbNomeEmpresa.Name = "txbNomeEmpresa";
             this.txbNomeEmpresa.Size = new System.Drawing.Size(162, 20);
-            this.txbNomeEmpresa.TabIndex = 77;
+            this.txbNomeEmpresa.TabIndex = 1;
             // 
             // label6
             // 
@@ -1094,14 +1097,14 @@
             this.txbEmailEmpresa.Location = new System.Drawing.Point(12, 250);
             this.txbEmailEmpresa.Name = "txbEmailEmpresa";
             this.txbEmailEmpresa.Size = new System.Drawing.Size(162, 20);
-            this.txbEmailEmpresa.TabIndex = 81;
+            this.txbEmailEmpresa.TabIndex = 3;
             // 
             // txbRespEmpresa
             // 
             this.txbRespEmpresa.Location = new System.Drawing.Point(12, 211);
             this.txbRespEmpresa.Name = "txbRespEmpresa";
             this.txbRespEmpresa.Size = new System.Drawing.Size(162, 20);
-            this.txbRespEmpresa.TabIndex = 79;
+            this.txbRespEmpresa.TabIndex = 2;
             // 
             // FrmInfoLoja
             // 

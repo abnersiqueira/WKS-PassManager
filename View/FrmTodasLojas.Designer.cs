@@ -36,7 +36,6 @@
             this.BtnLoja34 = new System.Windows.Forms.Button();
             this.BtnLoja33 = new System.Windows.Forms.Button();
             this.BtnLoja31 = new System.Windows.Forms.Button();
-            this.BtnAddLoja = new System.Windows.Forms.Button();
             this.BtnLoja01 = new System.Windows.Forms.Button();
             this.BtnLoja30 = new System.Windows.Forms.Button();
             this.BtnLoja29 = new System.Windows.Forms.Button();
@@ -69,21 +68,18 @@
             this.BtnLoja02 = new System.Windows.Forms.Button();
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.pnlChamaLoja.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlChamaLoja
             // 
-            this.pnlChamaLoja.Controls.Add(this.label1);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja32);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja36);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja35);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja34);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja33);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja31);
-            this.pnlChamaLoja.Controls.Add(this.BtnAddLoja);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja01);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja30);
             this.pnlChamaLoja.Controls.Add(this.BtnLoja29);
@@ -197,23 +193,6 @@
             this.BtnLoja31.TabIndex = 34;
             this.BtnLoja31.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnLoja31.UseVisualStyleBackColor = false;
-            // 
-            // BtnAddLoja
-            // 
-            this.BtnAddLoja.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnAddLoja.BackColor = System.Drawing.Color.Transparent;
-            this.BtnAddLoja.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnAddLoja.BackgroundImage")));
-            this.BtnAddLoja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtnAddLoja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAddLoja.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAddLoja.ForeColor = System.Drawing.Color.Transparent;
-            this.BtnAddLoja.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnAddLoja.Location = new System.Drawing.Point(1200, 620);
-            this.BtnAddLoja.Name = "BtnAddLoja";
-            this.BtnAddLoja.Size = new System.Drawing.Size(37, 35);
-            this.BtnAddLoja.TabIndex = 33;
-            this.BtnAddLoja.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnAddLoja.UseVisualStyleBackColor = false;
             // 
             // BtnLoja01
             // 
@@ -642,15 +621,6 @@
             this.panel1.Size = new System.Drawing.Size(1264, 681);
             this.panel1.TabIndex = 4;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1136, 630);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 13);
-            this.label1.TabIndex = 42;
-            this.label1.Text = "Novo Cliente";
-            // 
             // FrmTodasLojas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -662,7 +632,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmTodasLojas";
             this.pnlChamaLoja.ResumeLayout(false);
-            this.pnlChamaLoja.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -704,12 +673,10 @@
         public System.Windows.Forms.Panel pnlLeft;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button BtnLoja31;
-        private System.Windows.Forms.Button BtnAddLoja;
         private System.Windows.Forms.Button BtnLoja32;
         private System.Windows.Forms.Button BtnLoja36;
         private System.Windows.Forms.Button BtnLoja35;
         private System.Windows.Forms.Button BtnLoja34;
         private System.Windows.Forms.Button BtnLoja33;
-        private System.Windows.Forms.Label label1;
     }
 }
