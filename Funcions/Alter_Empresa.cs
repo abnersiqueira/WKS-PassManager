@@ -15,10 +15,8 @@ namespace PassManager.Funcions
     {
         Conexao con = new Conexao();
         SqlCommand cmd = new SqlCommand();
-        public int id;
+       
 
-
- 
        
         public void  Crud_Empresa(int idLoja, String dominio, String nomesrv, String nomesrv2, String teamviewer, String teamviewer2,
         String ipsrv, String ipsrv2, String usuariosrv, String usuariosrv2, String senhasrv, String senhasrv2, String ipfirewall, int portafirewall,
@@ -39,7 +37,6 @@ namespace PassManager.Funcions
 
            
                 cmd.Parameters.AddWithValue("@idLoja", idLoja);
-                cmd.Parameters.AddWithValue("@id", id);
                 cmd.Parameters.AddWithValue("@dominio", dominio);
                 cmd.Parameters.AddWithValue("@nomesrv", nomesrv);
                 cmd.Parameters.AddWithValue("@nomesrv2", nomesrv2);
@@ -73,51 +70,51 @@ namespace PassManager.Funcions
                 }
             
         }
-        public Dados_Empresa Carregar(int idLoja)
-        {
-            id = idLoja;
-            MessageBox.Show("O valor do IDLOJA EH:" + idLoja);
-            Dados_Empresa dados = new Dados_Empresa();
-            cmd.Connection = con.conectar();
-            cmd.CommandText = "Select * from tb_DadosLoja where id_DadosLoja =" + idLoja.ToString();
+        //public Dados_Empresa Carregar(int idLoja)
+        //{
+        //    id = idLoja;
+        //    MessageBox.Show("O valor do IDLOJA EH:" + idLoja);
+        //    Dados_Empresa dados = new Dados_Empresa();
+        //    cmd.Connection = con.conectar();
+        //    cmd.CommandText = "Select * from tb_DadosLoja where id_DadosLoja =" + idLoja.ToString();
          
-            SqlDataReader rd = cmd.ExecuteReader();
+        //    SqlDataReader rd = cmd.ExecuteReader();
             
 
-            if (rd.HasRows)
-            {
-                rd.Read();
-                dados.id = Convert.ToInt32(rd["id_DadosLoja"]);
-                dados.dominio = Convert.ToString(rd["dominio"]);
-                dados.nomesrv = Convert.ToString(rd["nomesrv"]);
-                dados.nomesrv2 = Convert.ToString(rd["nomesrv2"]);
-                dados.teamviewer = Convert.ToString(rd["teamviewer"]);
-                dados.teamviewer2 = Convert.ToString(rd["teamviewer2"]);
-                dados.ipsrv = Convert.ToString(rd["ipsrv"]);
-                dados.ipsrv2 = Convert.ToString(rd["ipsrv2"]);
-                dados.usuariosrv = Convert.ToString(rd["usuariosrv"]);
-                dados.usuariosrv2 = Convert.ToString(rd["usuariosrv2"]);
-                dados.senhasrv = Convert.ToString(rd["senhasrv"]);
-                dados.senhasrv2 = Convert.ToString(rd["senhasrv2"]);
-                dados.ipfirewall = Convert.ToString(rd["ipfirewall"]);
-                dados.portafirewall = Convert.ToInt32(rd["portafirewall"]);
-                dados.usuariofirewall = Convert.ToString(rd["usuariofirewall"]);
-                dados.senhafirewall = Convert.ToString(rd["senhafirewall"]);
-                dados.nome_empresa = Convert.ToString(rd["nome_empresa"]);
-                dados.nome_resp = Convert.ToString(rd["nome_resp"]);
-                dados.emp_email = Convert.ToString(rd["emp_email"]);
-                dados.emp_tel = Convert.ToString(rd["emp_tel"]);
-                dados.emp_tel2 = Convert.ToString(rd["emp_tel2"]);
-                dados.emp_cel = Convert.ToString(rd["emp_cel"]);
-                dados.emp_cel2 = Convert.ToString(rd["emp_cel2"]);
-                dados.obs1 = Convert.ToString(rd["obs1"]);
-                dados.obs2 = Convert.ToString(rd["obs2"]);
-                dados.selectfirewall = Convert.ToString(rd["selectfirewall"]);
+        //    if (rd.HasRows)
+        //    {
+        //        rd.Read();
+        //        dados.id = Convert.ToInt32(rd["id_DadosLoja"]);
+        //        dados.dominio = Convert.ToString(rd["dominio"]);
+        //        dados.nomesrv = Convert.ToString(rd["nomesrv"]);
+        //        dados.nomesrv2 = Convert.ToString(rd["nomesrv2"]);
+        //        dados.teamviewer = Convert.ToString(rd["teamviewer"]);
+        //        dados.teamviewer2 = Convert.ToString(rd["teamviewer2"]);
+        //        dados.ipsrv = Convert.ToString(rd["ipsrv"]);
+        //        dados.ipsrv2 = Convert.ToString(rd["ipsrv2"]);
+        //        dados.usuariosrv = Convert.ToString(rd["usuariosrv"]);
+        //        dados.usuariosrv2 = Convert.ToString(rd["usuariosrv2"]);
+        //        dados.senhasrv = Convert.ToString(rd["senhasrv"]);
+        //        dados.senhasrv2 = Convert.ToString(rd["senhasrv2"]);
+        //        dados.ipfirewall = Convert.ToString(rd["ipfirewall"]);
+        //        dados.portafirewall = Convert.ToInt32(rd["portafirewall"]);
+        //        dados.usuariofirewall = Convert.ToString(rd["usuariofirewall"]);
+        //        dados.senhafirewall = Convert.ToString(rd["senhafirewall"]);
+        //        dados.nome_empresa = Convert.ToString(rd["nome_empresa"]);
+        //        dados.nome_resp = Convert.ToString(rd["nome_resp"]);
+        //        dados.emp_email = Convert.ToString(rd["emp_email"]);
+        //        dados.emp_tel = Convert.ToString(rd["emp_tel"]);
+        //        dados.emp_tel2 = Convert.ToString(rd["emp_tel2"]);
+        //        dados.emp_cel = Convert.ToString(rd["emp_cel"]);
+        //        dados.emp_cel2 = Convert.ToString(rd["emp_cel2"]);
+        //        dados.obs1 = Convert.ToString(rd["obs1"]);
+        //        dados.obs2 = Convert.ToString(rd["obs2"]);
+        //        dados.selectfirewall = Convert.ToString(rd["selectfirewall"]);
 
-            }
-            con.desconectar();
-            return dados;
-        }
+        //    }
+        ////    con.desconectar();
+        ////    return dados;
+        //}
     }
 }
 

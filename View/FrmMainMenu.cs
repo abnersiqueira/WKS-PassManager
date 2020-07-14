@@ -20,6 +20,7 @@ namespace PassManager.View
         public FrmMainMenu()
         {
             InitializeComponent();
+            
         }
 
 
@@ -77,8 +78,7 @@ namespace PassManager.View
             this.WindowState = FormWindowState.Minimized;
         }
 
-        int lx, ly;
-        int sw, sh;
+     
 
         private void BtnSairMenu_Click(object sender, EventArgs e)
         {
@@ -94,20 +94,29 @@ namespace PassManager.View
         private void BtnMaximize_Click(object sender, EventArgs e)
         {
             //Pega a posição e tamanho antes de restaurar
-            lx = this.Location.X;
-            ly = this.Location.Y;
-            sw = this.Size.Width;
-            sh = this.Size.Height;
+            //lx = 1260;
+            //ly = 720;
+            ////sw = this.Size.Width;
+            ////sh = this.Size.Height;
+            WindowState = FormWindowState.Normal;
+            
+
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.Location = Screen.PrimaryScreen.WorkingArea.Location;
+            this.Size = new Size(1260, 720);
             BtnRestaura.Visible = true;
             BtnMaximize.Visible = false;
+
+            
+            //this.Location = new Point(lx, ly);
         }
 
         private void BtnRestaura_Click(object sender, EventArgs e)
         {
-            this.Size = new Size(1260, 720);
-            this.Location = new Point(lx, ly);
+
+            WindowState = FormWindowState.Maximized;
+            //this.Size = new Size(sw, sh);
+            //this.Location = new Point(lx, ly);
             BtnRestaura.Visible = false;
             BtnMaximize.Visible = true;
 

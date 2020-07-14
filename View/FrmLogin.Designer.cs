@@ -44,6 +44,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.PnLLogo = new System.Windows.Forms.Panel();
             this.picLogo = new System.Windows.Forms.PictureBox();
+            this.LblVersion = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.PnlMover.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimize)).BeginInit();
@@ -124,7 +125,7 @@
             this.txbLogin1.Location = new System.Drawing.Point(279, 132);
             this.txbLogin1.Name = "txbLogin1";
             this.txbLogin1.Size = new System.Drawing.Size(195, 26);
-            this.txbLogin1.TabIndex = 12;
+            this.txbLogin1.TabIndex = 1;
             this.txbLogin1.Text = "Login";
             this.txbLogin1.TextChanged += new System.EventHandler(this.txbLogin1_TextChanged);
             this.txbLogin1.MouseEnter += new System.EventHandler(this.txbLogin1_MouseEnter_1);
@@ -143,7 +144,7 @@
             this.BtnEntrar.Location = new System.Drawing.Point(337, 211);
             this.BtnEntrar.Name = "BtnEntrar";
             this.BtnEntrar.Size = new System.Drawing.Size(73, 35);
-            this.BtnEntrar.TabIndex = 0;
+            this.BtnEntrar.TabIndex = 3;
             this.BtnEntrar.Text = "Entrar";
             this.BtnEntrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEntrar.UseVisualStyleBackColor = false;
@@ -194,7 +195,7 @@
             this.txbPass.Location = new System.Drawing.Point(279, 170);
             this.txbPass.Name = "txbPass";
             this.txbPass.Size = new System.Drawing.Size(195, 26);
-            this.txbPass.TabIndex = 15;
+            this.txbPass.TabIndex = 2;
             this.txbPass.Text = "Senha";
             this.txbPass.UseSystemPasswordChar = true;
             this.txbPass.MouseEnter += new System.EventHandler(this.txbPass_MouseEnter_1);
@@ -204,6 +205,7 @@
             // 
             this.PnlLeft.BackColor = System.Drawing.Color.GhostWhite;
             this.PnlLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PnlLeft.Controls.Add(this.LblVersion);
             this.PnlLeft.Controls.Add(this.label4);
             this.PnlLeft.Controls.Add(this.PnLLogo);
             this.PnlLeft.Controls.Add(this.picLogo);
@@ -247,6 +249,22 @@
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picLogo.TabIndex = 0;
             this.picLogo.TabStop = false;
+            // 
+            // LblVersion
+            // 
+            this.LblVersion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LblVersion.AutoSize = true;
+            this.LblVersion.BackColor = System.Drawing.Color.Transparent;
+            this.LblVersion.Enabled = false;
+            this.LblVersion.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblVersion.ForeColor = System.Drawing.Color.DarkGray;
+            this.LblVersion.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.LblVersion.Location = new System.Drawing.Point(149, 231);
+            this.LblVersion.Name = "LblVersion";
+            this.LblVersion.Size = new System.Drawing.Size(32, 15);
+            this.LblVersion.TabIndex = 12;
+            this.LblVersion.Text = "V 1.1";
+            this.LblVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FrmLogin
             // 
@@ -292,6 +310,7 @@
         private System.Windows.Forms.TextBox txbPass;
         private System.Windows.Forms.Panel PnLLogo;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label LblVersion;
     }
 }
 
