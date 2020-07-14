@@ -1,6 +1,5 @@
 ﻿using PassManager.DAL;
 using PassManager.ReceiveData;
-using PassManager.View;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -27,32 +26,22 @@ namespace PassManager.Funcions
         {
            
             {
-                if (idLoja == 0)
+                if (id == 0)
                 {
                     cmd.CommandText = "Insert into tb_DadosLoja (dominio,nomesrv,nomesrv2,teamviewer,teamviewer2,ipsrv,ipsrv2,usuariosrv,usuariosrv2,senhasrv," +
-                    "senhasrv2,ipfirewall,portafirewall,usuariofirewall,senhafirewall,nome_empresa, nome_resp, emp_email, emp_tel, emp_tel2, emp_cel, emp_cel2," +
-                    "obs1, obs2, selectfirewall) " +
-                    "values" +
-                    "(@dominio, @nomesrv, @nomesrv2, @teamviewer,@teamviewer2," +
-                    "@ipsrv,@ipsrv2,@usuariosrv,@usuariosrv2,@senhasrv,@senhasrv2,@ipfirewall,@portafirewall,@usuariofirewall,@senhafirewall" +
-                    ",@nome_empresa, @nome_resp, @emp_email, @emp_tel, @emp_tel2, @emp_cel, @emp_cel2, @obs1, @obs2, @selectfirewall);" +
-                    "Select @@identity";
+                          "senhasrv2,ipfirewall,portafirewall,usuariofirewall,senhafirewall,nome_empresa, nome_resp, emp_email, emp_tel, emp_tel2, emp_cel, emp_cel2," +
+                          "obs1, obs2, selectfirewall) " +
+                          "values" +
+                          "(@dominio, @nomesrv, @nomesrv2, @teamviewer,@teamviewer2," +
+                          "@ipsrv,@ipsrv2,@usuariosrv,@usuariosrv2,@senhasrv,@senhasrv2,@ipfirewall,@portafirewall,@usuariofirewall,@senhafirewall" +
+                          ",@nome_empresa, @nome_resp, @emp_email, @emp_tel, @emp_tel2, @emp_cel, @emp_cel2, @obs1, @obs2, @selectfirewall);" +
+                          "Select @@identity";
                 }
                 else
                 {
 
-                    cmd.CommandText = "update tb_DadosLoja set dominio=@dominio,nomesrv=@nomesrv,nomesrv2=@nomesrv2,teamviewer=@teamviewer,"
-                    + "teamviewer2=@teamviewer2,ipsrv=@ipsrv,ipsrv2=@ipsrv2,usuariosrv=@usuariosrv,usuariosrv2=@usuariosrv2,senhasrv=@senhasrv,"
-                    + "senhasrv2=@senhasrv2,ipfirewall=@ipfirewall,portafirewall=@portafirewall,usuariofirewall=@usuariofirewall,"
-                    + "senhafirewall=@senhafirewall,"
-                    + "nome_empresa=@nome_empresa, nome_resp=@nome_resp, emp_email=@emp_email, emp_tel=@emp_tel, emp_tel2=@emp_tel2,"
-                    + " emp_cel=@emp_cel, "
-                    + "emp_cel2=@emp_cel2,obs1=@obs1, obs2=@obs2, selectfirewall=@selectfirewall where id_DadosLoja =" + idLoja;
-
-                    //cmd.CommandText = "Select * from tb_DadosLoja where id_DadosLoja = " + idLoja.ToString();
-                    //MessageBox.Show("LENDO POR ID"+" "+ idLoja);
-
-                  
+                    cmd.CommandText = "Select * from tb_DadosLoja where id_DadosLoja = " + idLoja.ToString();
+                    MessageBox.Show("LENDO POR ID"+" "+ idLoja);
 
                 }
 
@@ -86,7 +75,7 @@ namespace PassManager.Funcions
                 cmd.Connection = con.conectar();
                 cmd.ExecuteNonQuery();
                 con.desconectar();
-                MessageBox.Show("Dados Atualizados!");
+                MessageBox.Show("Cadastro efetuado!");
             }
 
         }
