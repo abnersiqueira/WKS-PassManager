@@ -11,7 +11,6 @@ using System.Data.SqlClient;
 using PassManager.DAL;
 using PassManager.Funcions;
 using PassManager.ReceiveData;
-using System.Security.Cryptography.X509Certificates;
 
 namespace PassManager.View
 {
@@ -70,21 +69,27 @@ namespace PassManager.View
             txbID.ReadOnly = true;
 
         }
+
+
+
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        public void btnCadastrar_Click(object sender, EventArgs e)
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            
+
             Crud_Empresa Empresa = new Crud_Empresa();
+
             Empresa.Cad_Empresa(
             Convert.ToInt32(txbDominio.Text),
             txbDominio.Text,
-            txbNomeSrv.Text, txbNomeSrv2.Text,
+            txbNomeSrv.Text,
+            txbNomeSrv2.Text,
             txbTV.Text, txbTV2.Text,
-            Convert.ToString(txbIP.Text),
+            txbIP.Text,
             txbIP2.Text,
             txbUsuario.Text, txbUsuario2.Text,
             txbSenha.Text, txbSenha2.Text,
@@ -102,6 +107,7 @@ namespace PassManager.View
             TxbOBS1.Text,
             TxbOBS2.Text,
             txbSelecFirewall.Text);
+
                      
         }
 
@@ -115,10 +121,8 @@ namespace PassManager.View
 
         }
 
-        public void BtnAlterar_Click(object sender, EventArgs e)
+        private void BtnAlterar_Click(object sender, EventArgs e)
         {
-            
-            
             Alter_Empresa Empresa = new Alter_Empresa();
             Empresa.Crud_Empresa(
             Convert.ToInt32(txbID.Text),
@@ -143,6 +147,12 @@ namespace PassManager.View
             TxbOBS1.Text,
             TxbOBS2.Text,
             txbSelecFirewall.Text);
+
+        }
+
+        private void txbID_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 
