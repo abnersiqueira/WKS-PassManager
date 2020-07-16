@@ -416,8 +416,10 @@
             this.txbSelecFirewall.FormattingEnabled = true;
             this.txbSelecFirewall.ItemHeight = 19;
             this.txbSelecFirewall.Items.AddRange(new object[] {
+            "Endian",
             "PfSense",
-            "Windows"});
+            "Windows",
+            "Outro"});
             this.txbSelecFirewall.Location = new System.Drawing.Point(4, 59);
             this.txbSelecFirewall.Name = "txbSelecFirewall";
             this.txbSelecFirewall.Size = new System.Drawing.Size(170, 27);
@@ -890,7 +892,7 @@
             this.BtnAlterar.Name = "BtnAlterar";
             this.BtnAlterar.Size = new System.Drawing.Size(200, 39);
             this.BtnAlterar.TabIndex = 31;
-            this.BtnAlterar.Text = "Salvar Alteraçoes";
+            this.BtnAlterar.Text = "Atualizar";
             this.BtnAlterar.UseVisualStyleBackColor = false;
             this.BtnAlterar.Click += new System.EventHandler(this.BtnAlterar_Click);
             // 
@@ -919,7 +921,7 @@
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(200, 39);
             this.btnCadastrar.TabIndex = 32;
-            this.btnCadastrar.Text = "Salvar Cliente";
+            this.btnCadastrar.Text = "Salvar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
@@ -993,6 +995,7 @@
             this.txbID.Size = new System.Drawing.Size(38, 24);
             this.txbID.TabIndex = 75;
             this.txbID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txbID.TextChanged += new System.EventHandler(this.txbID_TextChanged);
             // 
             // btnCancelar
             // 

@@ -18,18 +18,15 @@ namespace PassManager.Funcions
         public int id;
 
 
- 
-       
-        public void  Crud_Empresa(int idLoja, String dominio, String nomesrv, String nomesrv2, String teamviewer, String teamviewer2,
+
+        public void Crud_Empresa(int idLoja, String dominio, String nomesrv, String nomesrv2, String teamviewer, String teamviewer2,
         String ipsrv, String ipsrv2, String usuariosrv, String usuariosrv2, String senhasrv, String senhasrv2, String ipfirewall, int portafirewall,
         String usuariofirewall, String senhafirewall, String nome_empresa, String nome_resp, String emp_email, String emp_tel, String emp_tel2,
         String emp_cel, String emp_cel2, String emp_obs1, String emp_obs2, String selectfirewall)
+        {
+
             {
-
-                {
-
-
-                cmd.CommandText = "update tb_DadosLoja set dominio=@dominio,nomesrv=@nomesrv,nomesrv2=@nomesrv2,teamviewer=@teamviewer,"
+                cmd.CommandText = "Update tb_DadosLoja set dominio=@dominio,nomesrv=@nomesrv,nomesrv2=@nomesrv2,teamviewer=@teamviewer,"
                     + "teamviewer2=@teamviewer2,ipsrv=@ipsrv,ipsrv2=@ipsrv2,usuariosrv=@usuariosrv,usuariosrv2=@usuariosrv2,senhasrv=@senhasrv,"
                     + "senhasrv2=@senhasrv2,ipfirewall=@ipfirewall,portafirewall=@portafirewall,usuariofirewall=@usuariofirewall,"
                     + "senhafirewall=@senhafirewall,"
@@ -37,7 +34,7 @@ namespace PassManager.Funcions
                     + " emp_cel=@emp_cel, "
                     + "emp_cel2=@emp_cel2,obs1=@obs1, obs2=@obs2, selectfirewall=@selectfirewall where id_DadosLoja =" + idLoja;
 
-           
+
                 cmd.Parameters.AddWithValue("@idLoja", idLoja);
                 cmd.Parameters.AddWithValue("@id", id);
                 cmd.Parameters.AddWithValue("@dominio", dominio);
@@ -69,9 +66,9 @@ namespace PassManager.Funcions
                 cmd.Connection = con.conectar();
                 cmd.ExecuteNonQuery();
                 con.desconectar();
-                    MessageBox.Show("Atualização Realizada!");
-                }
-            
+                MessageBox.Show("Atualização Realizada!");
+            }
+
         }
         public Dados_Empresa Carregar(int idLoja)
         {
@@ -80,9 +77,18 @@ namespace PassManager.Funcions
             Dados_Empresa dados = new Dados_Empresa();
             cmd.Connection = con.conectar();
             cmd.CommandText = "Select * from tb_DadosLoja where id_DadosLoja =" + idLoja.ToString();
-         
+
             SqlDataReader rd = cmd.ExecuteReader();
-            
+
+            //public Dados_Empresa Carregar(int idLoja)
+            //{
+            //    id = idLoja;
+            //    MessageBox.Show("O valor do IDLOJA EH:" + idLoja);
+            //    Dados_Empresa dados = new Dados_Empresa();
+            //    cmd.Connection = con.conectar();
+            //    cmd.CommandText = "Select * from tb_DadosLoja where id_DadosLoja =" + idLoja.ToString();
+
+            //    SqlDataReader rd = cmd.ExecuteReader();
 
             if (rd.HasRows)
             {
