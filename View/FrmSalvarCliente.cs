@@ -32,7 +32,7 @@ namespace PassManager.View
             txbUsuario.Text, txbUsuario2.Text,
             txbSenha.Text, txbSenha2.Text,
             txbIPFirewall.Text,
-            Convert.ToInt32(txbPorta.Text),
+            txbPorta.Text,
             txbUsuarioFirewall.Text,
             txbSenhaFirewall.Text,
             txbNomeEmpresa.Text,

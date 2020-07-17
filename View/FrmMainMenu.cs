@@ -20,6 +20,7 @@ namespace PassManager.View
         public FrmMainMenu()
         {
             InitializeComponent();
+            WindowState = FormWindowState.Maximized;
         }
 
 
@@ -94,6 +95,8 @@ namespace PassManager.View
         private void BtnMaximize_Click(object sender, EventArgs e)
         {
             //Pega a posição e tamanho antes de restaurar
+
+            WindowState = FormWindowState.Normal;
             lx = this.Location.X;
             ly = this.Location.Y;
             sw = this.Size.Width;

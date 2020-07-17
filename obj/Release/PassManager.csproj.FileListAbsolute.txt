@@ -26,7 +26,6 @@ C:\Users\AbnerWKS\Desktop\PROJETOS\WKS-PassManager\obj\Release\PassManager.cspro
 C:\Users\AbnerWKS\Desktop\PROJETOS\WKS-PassManager\obj\Release\PassManager.csproj.CopyComplete
 C:\Users\AbnerWKS\Desktop\PROJETOS\WKS-PassManager\obj\Release\PassManager.exe
 C:\Users\AbnerWKS\Desktop\PROJETOS\WKS-PassManager\obj\Release\PassManager.pdb
-C:\Users\Administrador\Desktop\PROJETOS\WKS-PassManager\obj\Release\PassManager.csprojAssemblyReference.cache
 C:\Users\Administrador\Desktop\PROJETOS\WKS-PassManager\obj\Release\PassManager.View.FrmCadLoja.resources
 C:\Users\Administrador\Desktop\PROJETOS\WKS-PassManager\obj\Release\PassManager.View.FrmCadUsuario.resources
 C:\Users\Administrador\Desktop\PROJETOS\WKS-PassManager\obj\Release\PassManager.FrmLogin.resources

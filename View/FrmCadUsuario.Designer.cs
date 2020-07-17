@@ -40,12 +40,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tblogonBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tb_logon_DataGrid = new PassManager.tb_logon_DataGrid();
-            this.tb_logonTableAdapter = new PassManager.tb_logon_DataGridTableAdapters.tb_logonTableAdapter();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.login = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.senhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblogonBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tb_logon_DataGrid = new PassManager.tb_logon_DataGrid();
+            this.tb_logonTableAdapter = new PassManager.tb_logon_DataGridTableAdapters.tb_logonTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblogonBindingSource)).BeginInit();
@@ -150,20 +150,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(185, 350);
             this.dataGridView1.TabIndex = 9;
-            // 
-            // tblogonBindingSource
-            // 
-            this.tblogonBindingSource.DataMember = "tb_logon";
-            this.tblogonBindingSource.DataSource = this.tb_logon_DataGrid;
-            // 
-            // tb_logon_DataGrid
-            // 
-            this.tb_logon_DataGrid.DataSetName = "tb_logon_DataGrid";
-            this.tb_logon_DataGrid.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tb_logonTableAdapter
-            // 
-            this.tb_logonTableAdapter.ClearBeforeFill = true;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Column1
             // 
@@ -190,7 +177,20 @@
             this.senhaDataGridViewTextBoxColumn.Name = "senhaDataGridViewTextBoxColumn";
             this.senhaDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.senhaDataGridViewTextBoxColumn.Visible = false;
-            this.senhaDataGridViewTextBoxColumn.Width = 63;
+            // 
+            // tblogonBindingSource
+            // 
+            this.tblogonBindingSource.DataMember = "tb_logon";
+            this.tblogonBindingSource.DataSource = this.tb_logon_DataGrid;
+            // 
+            // tb_logon_DataGrid
+            // 
+            this.tb_logon_DataGrid.DataSetName = "tb_logon_DataGrid";
+            this.tb_logon_DataGrid.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tb_logonTableAdapter
+            // 
+            this.tb_logonTableAdapter.ClearBeforeFill = true;
             // 
             // FrmCadUsuario
             // 
@@ -206,6 +206,7 @@
             this.Controls.Add(this.txbSenha);
             this.Controls.Add(this.txbUser);
             this.Controls.Add(this.shapeContainer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmCadUsuario";

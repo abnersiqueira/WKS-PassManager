@@ -124,7 +124,7 @@
             this.txbLogin1.Location = new System.Drawing.Point(279, 132);
             this.txbLogin1.Name = "txbLogin1";
             this.txbLogin1.Size = new System.Drawing.Size(195, 26);
-            this.txbLogin1.TabIndex = 12;
+            this.txbLogin1.TabIndex = 1;
             this.txbLogin1.Text = "Login";
             this.txbLogin1.TextChanged += new System.EventHandler(this.txbLogin1_TextChanged);
             this.txbLogin1.MouseEnter += new System.EventHandler(this.txbLogin1_MouseEnter_1);
@@ -143,7 +143,7 @@
             this.BtnEntrar.Location = new System.Drawing.Point(337, 211);
             this.BtnEntrar.Name = "BtnEntrar";
             this.BtnEntrar.Size = new System.Drawing.Size(73, 35);
-            this.BtnEntrar.TabIndex = 0;
+            this.BtnEntrar.TabIndex = 3;
             this.BtnEntrar.Text = "Entrar";
             this.BtnEntrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEntrar.UseVisualStyleBackColor = false;
@@ -194,7 +194,7 @@
             this.txbPass.Location = new System.Drawing.Point(279, 170);
             this.txbPass.Name = "txbPass";
             this.txbPass.Size = new System.Drawing.Size(195, 26);
-            this.txbPass.TabIndex = 15;
+            this.txbPass.TabIndex = 2;
             this.txbPass.Text = "Senha";
             this.txbPass.UseSystemPasswordChar = true;
             this.txbPass.MouseEnter += new System.EventHandler(this.txbPass_MouseEnter_1);
