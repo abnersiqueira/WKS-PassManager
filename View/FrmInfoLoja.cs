@@ -11,6 +11,7 @@ using System.Data.SqlClient;
 using PassManager.DAL;
 using PassManager.Funcions;
 using PassManager.ReceiveData;
+using System.Runtime.CompilerServices;
 
 namespace PassManager.View
 {
@@ -94,7 +95,7 @@ namespace PassManager.View
             txbUsuario.Text, txbUsuario2.Text,
             txbSenha.Text, txbSenha2.Text,
             txbIPFirewall.Text,
-            Convert.ToInt32(txbPorta.Text),
+            txbPorta.Text,
             txbUsuarioFirewall.Text,
             txbSenhaFirewall.Text,
             txbNomeEmpresa.Text,
@@ -134,7 +135,7 @@ namespace PassManager.View
             txbUsuario.Text, txbUsuario2.Text,
             txbSenha.Text, txbSenha2.Text,
             txbIPFirewall.Text,
-            Convert.ToInt32(txbPorta.Text),
+            txbPorta.Text,
             txbUsuarioFirewall.Text,
             txbSenhaFirewall.Text,
             txbNomeEmpresa.Text,
@@ -152,6 +153,16 @@ namespace PassManager.View
 
         private void txbID_TextChanged(object sender, EventArgs e)
         {
+            if(txbID.Text == "0")
+            {
+                btnCadastrar.Visible = Enabled;
+            }
+            else
+            {
+                BtnAlterar.Visible = Enabled;
+                //Não exibe
+            }
+
 
         }
     }

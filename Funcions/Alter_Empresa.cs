@@ -20,7 +20,7 @@ namespace PassManager.Funcions
 
 
         public void Crud_Empresa(int idLoja, String dominio, String nomesrv, String nomesrv2, String teamviewer, String teamviewer2,
-        String ipsrv, String ipsrv2, String usuariosrv, String usuariosrv2, String senhasrv, String senhasrv2, String ipfirewall, int portafirewall,
+        String ipsrv, String ipsrv2, String usuariosrv, String usuariosrv2, String senhasrv, String senhasrv2, String ipfirewall, String portafirewall,
         String usuariofirewall, String senhafirewall, String nome_empresa, String nome_resp, String emp_email, String emp_tel, String emp_tel2,
         String emp_cel, String emp_cel2, String emp_obs1, String emp_obs2, String selectfirewall)
         {
@@ -106,7 +106,7 @@ namespace PassManager.Funcions
                 dados.senhasrv = Convert.ToString(rd["senhasrv"]);
                 dados.senhasrv2 = Convert.ToString(rd["senhasrv2"]);
                 dados.ipfirewall = Convert.ToString(rd["ipfirewall"]);
-                dados.portafirewall = Convert.ToInt32(rd["portafirewall"]);
+                dados.portafirewall = Convert.ToString(rd["portafirewall"]);
                 dados.usuariofirewall = Convert.ToString(rd["usuariofirewall"]);
                 dados.senhafirewall = Convert.ToString(rd["senhafirewall"]);
                 dados.nome_empresa = Convert.ToString(rd["nome_empresa"]);

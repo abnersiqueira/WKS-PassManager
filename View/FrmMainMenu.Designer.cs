@@ -587,6 +587,7 @@
             this.Controls.Add(this.PnLSupMainMenu);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmMainMenu";
             this.RightToLeftLayout = true;
             this.Text = "FrmMainMenu";

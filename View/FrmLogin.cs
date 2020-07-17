@@ -47,7 +47,7 @@ namespace PassManager
 
             if (controle.tem)
             {
-                MessageBox.Show("Logon com sucesso", "LOGON", MessageBoxButtons.OK, MessageBoxIcon.Information);
+               // MessageBox.Show("Logon com sucesso", "LOGON", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 FrmMainMenu menu = new FrmMainMenu();
                 menu.Show();

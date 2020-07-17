@@ -559,6 +559,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Enabled = false;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Crimson;
             this.label1.Location = new System.Drawing.Point(431, 67);
@@ -570,6 +571,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Enabled = false;
             this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Crimson;
             this.label2.Location = new System.Drawing.Point(526, 67);
@@ -882,18 +884,19 @@
             // 
             // BtnAlterar
             // 
-            this.BtnAlterar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BtnAlterar.BackColor = System.Drawing.Color.SteelBlue;
+            this.BtnAlterar.BackColor = System.Drawing.Color.Green;
+            this.BtnAlterar.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.BtnAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAlterar.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
             this.BtnAlterar.ForeColor = System.Drawing.Color.White;
             this.BtnAlterar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnAlterar.Location = new System.Drawing.Point(0, 565);
+            this.BtnAlterar.Location = new System.Drawing.Point(0, 525);
             this.BtnAlterar.Name = "BtnAlterar";
             this.BtnAlterar.Size = new System.Drawing.Size(200, 39);
             this.BtnAlterar.TabIndex = 31;
-            this.BtnAlterar.Text = "Atualizar";
+            this.BtnAlterar.Text = "Salvar";
             this.BtnAlterar.UseVisualStyleBackColor = false;
+            this.BtnAlterar.Visible = false;
             this.BtnAlterar.Click += new System.EventHandler(this.BtnAlterar_Click);
             // 
             // pictureBox1
@@ -908,27 +911,28 @@
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnCadastrar.BackColor = System.Drawing.Color.Green;
             this.btnCadastrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCadastrar.CausesValidation = false;
             this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCadastrar.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrar.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnCadastrar.ForeColor = System.Drawing.Color.White;
             this.btnCadastrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCadastrar.Location = new System.Drawing.Point(0, 527);
+            this.btnCadastrar.Location = new System.Drawing.Point(0, 564);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(200, 39);
             this.btnCadastrar.TabIndex = 32;
             this.btnCadastrar.Text = "Salvar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Visible = false;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // BtnCancel
             // 
-            this.BtnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.BtnCancel.BackColor = System.Drawing.Color.Gray;
+            this.BtnCancel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.BtnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCancel.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold);
             this.BtnCancel.ForeColor = System.Drawing.Color.White;
@@ -1116,6 +1120,7 @@
             this.ClientSize = new System.Drawing.Size(1248, 642);
             this.Controls.Add(this.PainelCentralBranco);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmInfoLoja";
             this.Text = "FrmLoja";
             this.PainelCentralBranco.ResumeLayout(false);
