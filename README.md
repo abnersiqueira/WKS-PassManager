@@ -1,4 +1,4 @@
 # WKS-PassManager
-![alt text](./Resources/Telas/login.png | width=60)
+![alt text](https://github.com/abnersiqueira/WKS-PassManager/blob/master/login.png?raw=true  | width=70)
 
 Sistema para gerenciamento de Servidores por loja com fim de suporte
