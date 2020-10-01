@@ -1,5 +1,4 @@
 # WKS-PassManager
-#####Tela de Login
-Sistema para gerenciamento de Servidores por loja com fim de suporte
-![alt text](./Resources/Telas/login.png){:height="50%" width="50%"}
-
+## Sistema para gerenciamento de Servidores por loja com fim de suporte
+#### Tela de Login
+<img src="./Resources/Telas/login.png" width="60%" height="60%">
