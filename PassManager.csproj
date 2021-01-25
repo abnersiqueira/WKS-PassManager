@@ -52,6 +52,14 @@
   <ItemGroup>
     <Compile Include="DAL\Conexao.cs" />
     <Compile Include="DAL\LoginDaoComandos.cs" />
+    <Compile Include="Empresas.cs">
+      <DependentUpon>Empresas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Empresas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Empresas.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Funcions\Alter_Empresa.cs" />
     <Compile Include="Funcions\Crud_Empresa.cs" />
     <Compile Include="Funcions\Cad_Login.cs" />
@@ -105,6 +113,12 @@
     <Compile Include="View\FrmTodasLojas.Designer.cs">
       <DependentUpon>FrmTodasLojas.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FrmTodasLojasList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmTodasLojasList.Designer.cs">
+      <DependentUpon>FrmTodasLojasList.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="View\FrmSalvarCliente.resx">
       <DependentUpon>FrmSalvarCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +142,20 @@
     <EmbeddedResource Include="View\FrmTodasLojas.resx">
       <DependentUpon>FrmTodasLojas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmTodasLojasList.resx">
+      <DependentUpon>FrmTodasLojasList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Empresas.xsc">
+      <DependentUpon>Empresas.xsd</DependentUpon>
+    </None>
+    <None Include="Empresas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Empresas.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Empresas.xss">
+      <DependentUpon>Empresas.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
